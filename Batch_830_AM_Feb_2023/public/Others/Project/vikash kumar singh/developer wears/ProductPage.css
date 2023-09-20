@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap');
+.product{
+    border: 2px solid black;
+    width: 350px;
+    height: 600px;
+    position: fixed;
+}
+ul,li{
+    list-style: none;
+    font-size: larger;
+}
+
+.shirt{
+    border: 2px solid black;
+    margin: 40px;
+    padding: 5px;
+    width: 180px;
+
+    height: 40px;
+    border-radius: 70px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+  text-shadow: 2px 2px 3px rgb(255, 21, 21);
+}
+
+.home{
+    border: 2px solid black;
+    margin: 40px;
+    padding: 5px;
+    width: 180px;
+    height: 40px;
+    text-shadow: 2px 2px 3px rgb(185, 255, 21);
+    border-radius: 70px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.hodies,.Sweatshirt,.caps,.Mousepads{
+    border: 2px solid black;
+    margin: 40px;
+    padding: 5px;
+    width: 180px;
+    height: 40px;
+    text-shadow: 2px 2px 3px rgb(17, 233, 168);
+    border-radius: 70px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.container{
+    border: 2px solid black;
+    width: 980px;
+    height: 800px;
+     position: fixed;
+    margin-left: 360px;
+    top: 10px;
+}
+
+.tshirt{
+    border: 2px solid;
+    width: 160px;
+    height: 250px;
+    border-radius: 20px;
+    float: left;
+    margin: 10px;
+    padding: 3px;
+    box-shadow: 20px 6px 20px 10px grey;
+}
+ul, li {
+    list-style: none;
+    font-size: larger;
+  }
+.addcrt{
+    border: 2px solid;
+width: 150px;
+height: 25px;
+top: 25px;
+position: relative;
+margin: 2px;
+text-align: center;
+border-radius: 20px;
+font-size: medium;
+background-color: blanchedalmond;
+}
+
+.topp,.price{
+    position: relative;
+    margin-left: 45px; 
+    font-size: medium;
+}
+
+.tshirts{
+ border: 2px solid;
+width: 160px;
+height: 250px;
+border-radius: 20px;
+padding: 3px;
+bottom: 509px;
+position: absolute;
+margin-left: 250px;
+box-shadow: 20px 6px 20px 10px grey;
+}
+ 
+
+.addcartt{
+    border: 2px solid;
+    width: 150px;
+    top: 15px;
+    height: 25px;
+    position: relative;
+    text-align: center;
+    border-radius: 20px;
+    font-size: medium;
+    background-color: blanchedalmond;
+
+}
+
+.prices{
+    position: relative;
+  top: 1px;
+    margin-left: 45px; 
+    font-size: medium;
+}
+
+
+.Sweatshirts{
+    border: 2px solid;
+    width: 160px;
+    height: 250px;
+    border-radius: 20px;
+    padding: 3px;
+    bottom: 509px;
+    position: absolute;
+    margin-left: 513px;
+    box-shadow: 20px 6px 20px 10px grey;
+
+}
+
+
+
+.capss{
+    border: 2px solid;
+    width: 160px;
+    height: 250px;
+    border-radius: 20px;
+    padding: 3px;
+    position: absolute;
+     top: 350px;
+    box-shadow: 20px 6px 20px 10px grey; 
+
+}
+
+.Mousepadss{
+    border: 2px solid;
+    width: 160px;
+    height: 250px;
+    border-radius: 20px;
+    padding: 3px;
+    position: absolute;
+   top:360px;
+   margin-left: 300px;
+    box-shadow: 20px 6px 20px 10px rgba(124, 124, 121, 0.973);    
+}
+
+
+
+

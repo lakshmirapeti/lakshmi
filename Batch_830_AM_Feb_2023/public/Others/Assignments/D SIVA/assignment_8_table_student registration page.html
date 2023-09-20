@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>student registration page</title>
+        <style>
+            .top{
+                border: 1px solid;
+                width: 100%;
+                height: 30px;
+                text-align: center;
+                font-weight: bold;
+                font-size: 22px;
+                margin: 2px 2px 2px 2px;
+                background-color: lightskyblue;
+            }
+            .bottom {
+                border: 1px solid;
+                width: 100%;
+                height: 20px;
+                text-align: center;
+                font-weight: bold;
+                font-size: 13px;
+                margin: 2px 2px 2px 2px;
+                background-color: lightskyblue;
+            }
+            .maincontainer {
+                border: 1px solid;
+                width: 100%;
+                height: 567px;
+                margin: 2px 2px 2px 2px;
+                overflow: auto;
+            }
+            .big {
+                border: 1px solid;
+                width: 95%;
+                height: 200px;
+                margin: 25px 5px;
+            }
+            .small{
+                border: 1px solid;
+                width: 150px;
+                height: 40px;
+                text-align: center;
+                font-size: 20px;
+                font-weight: bold;
+                position: relative;
+                bottom: 22px;
+                left: 25px;
+                background-color: aqua;
+            }
+            .small1{
+                border: 1px solid;
+                width: 150px;
+                height: 40px;
+                text-align: center;
+                font-size: 19px;
+                font-weight: bold;
+                position: relative;
+                bottom: 22px;
+                left: 25px;
+                background-color: aqua;
+            }
+            .small2{
+                border: 1px solid;
+                width: 150px;
+                height: 40px;
+                text-align: center;
+                font-size: 19px;
+                font-weight: bold;
+                position: relative;
+                bottom: 22px;
+                left: 25px;
+                background-color: aqua;
+            }
+            .small3{
+                border: 1px solid;
+                width: 150px;
+                height: 40px;
+                text-align: center;
+                font-size: 19px;
+                font-weight: bold;
+                position: relative;
+                bottom: 22px;
+                left: 25px;
+                background-color: aqua;
+            }
+            .content{
+                position: relative;
+                bottom: 20px;
+            }
+            .content1{
+                position: relative;
+                top: 18px;
+            }
+            .content11{
+                position: relative;
+                top: 48px;
+            }
+            .content2{
+                position: relative;
+                left: 420px;
+                bottom: 84px;
+            }
+            .content3{
+                position: relative;
+                left: 420px;
+                bottom: 41px;
+            }
+            .content4{
+                position: relative;
+                left: 420px;
+                bottom: 12px;
+            }
+            .content5{
+                position: relative;
+                left: 700px;
+                bottom: 145px;
+            }
+            .content6{
+                position: relative;
+                left: 700px;
+                bottom: 104px;
+            }
+            .content7{
+                position: relative;
+                left: 700px;    
+                bottom: 73px;
+            }
+            .content8{
+                position: relative;
+                left: 1000px;
+                bottom: 239px;  
+            }
+            .content9{
+                position: relative;
+                left: 420px;
+                bottom: 39px;
+            }
+            .content12{
+                position: relative;
+                left: 420px;
+                bottom: 44px;
+            }
+            .content10{
+                position: relative;
+                left: 740px;
+                bottom: 58px;
+            }
+            .content13{
+                position: relative;
+                bottom: 1px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="top"> Student Registration Page</div>
+        <div class="maincontainer">
+            <div class="big">
+                <div class="small">Personal Details</div>
+                <ul>
+                    <li class="content">
+                        <label for="name">Enter Candidate Name</label>
+                        <input type="text" name="name">
+                    </li>
+                    <li class="content1">
+                        <label for="name">Enter Father Name</label>
+                        <input type="text" name="name">
+                    </li>
+                    <li class="content11">
+                        <label for="name">Enter Mother Name</label>
+                        <input type="text" name="name">
+                    </li>
+                    <li class="content2">Gender
+                        <input type="radio" name="gender"> Male
+                        <input type="radio" name="gender"> Female
+                    </li>
+                    <li class="content3">
+                        Date of Britha:
+                        <input type="date" name="date of britha"> 
+                    </li>
+                    <li class="content4">
+                        <label for="name">Birtha Place</label>
+                        <input type="text" name="name">
+                    </li>
+                    <li class="content5">
+                        <label for="name">Region</label>
+                        <input type="text" name="name">
+                    </li>
+                    <li class="content6">
+                        <label for="name">Nationalty</label>
+                        <input type="text" name="name">
+                    </li>
+                    <li class="content7">
+                        <label for="name">State</label>
+                        <input type="text" name="name">
+                    </li>
+                    <li class="content8">
+                    <p><label for="address">Address:</label></p>
+                    <textarea name="address" rows="6" columns="20" maxlength="300px"></textarea>
+                    </li>
+                </ul>
+            </div>
+            <div class="big">
+                <div class="small1">Education Details</div>
+                <ul>
+                    <li class="content">Higher Qualification:
+                        <select>
+                            <option selected>select</option>
+                            <option>HSC</option>
+                            <option>Graduate</option>
+                            <option>Post Graduate</option>
+                            <option>Ph.D</option>
+                            <option>B.tch</option>
+                            <option>M.tch</option>
+                            <option>MCA</option>
+                            <option>B.Sc</option>
+                            <option>M.Sc</option>
+                            <option>BCA</option>
+                            <option>B.Com</option>
+                        </select>
+                    </li>
+                    <li class="content9">
+                        SSC Passing Year:
+                        <input type="date" name="ssc passing year">                        
+                    </li>
+                    <li class="content10">
+                        HSC Passing Year:
+                        <input type="date" name="hsc passing year">                        
+                    </li>
+                    <li class="content">Languagues Knows:
+                        <input type="checkbox">English
+                        <input type="checkbox">Hindi
+                        <input type="checkbox">Telugu
+                        <input type="checkbox">Tamil
+                    </li>
+                </ul>
+            </div>
+            <div class="big">
+                <div class="small2">Course Details</div>
+                <ul>
+                    <li class="content">Course option for:
+                        <select>
+                            <option selected>select</option>
+                            <option>AWS Cloud</option>
+                            <option>Devpos</option>
+                            <option>Fullstack Developer</option>
+                            <option>UIWeb Developer</option>
+                            <option>Data Analyst</option>
+                            <option>Data Science </option>
+                            <option>Software Developer</option>
+                            <option>Cyber Security</option>
+                            <option>Python Developer</option>
+                            <option>Advaned Java Developer</option>
+                            <option>Web Designer</option>
+                        </select>
+                    </li>
+                    <li class="content12">Course Available for Location:
+                        <select>
+                            <option selected>select</option>
+                            <option>Hyderabad</option>
+                            <option>Viskhapatnam</option>
+                            <option>Kadapa</option>
+                            <option>VIjayawada</option>
+                            <option>Khamma</option>
+                         </select>
+                    </li>
+                    <li class="content13">Course Available for Languages:
+                        <select>
+                            <option selected>select</option>
+                            <option>English</option>
+                            <option>Hindi</option>
+                            <option>Telugu</option>
+                            <option>Tamil</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+            <div class="big">
+                <div class="small3">About Your Self</div>
+                <ul>
+                 <li class="content">
+                    <p><label for="about">Few words about your self</label></p>
+                    <textarea name="about" rows="5" columns="" maxlength="100%"></textarea>
+                 </li>   
+                </ul>
+            </div>
+            <ul>
+                <il>
+                    <input type="button" value="Save Details">
+                </il>
+            </ul>
+        </div>
+        <div class="bottom">@copy right 2023</div>
+    </body>
+</html>

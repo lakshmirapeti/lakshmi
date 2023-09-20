@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment5</title>
+    <style>
+        .mainblock > div {
+            border: 1px solid;
+            margin: 10px;
+            padding: 10px;
+        }
+        .header {
+            text-align: center;
+            font-weight: bold;
+        }
+        .footer {
+            text-align: center;
+            font-weight: bold;
+        }
+        .block1 {
+            height: 620px;
+        }
+        .block2, .block3 {
+            border: 1px solid;
+            margin: 10px;
+            padding: 10px;
+            height: 580px;
+            float: left;
+            overflow: auto;
+        }
+        .block2{
+            width: 200px;
+        }
+        .block3 {
+            width: 700px;
+        }
+        .block2 li {
+            border: 1px solid;
+            margin: 5px auto;
+            padding: 10px;
+            list-style-position: inside;
+        }
+        ol, ul {
+            margin: 5px;
+            padding: 5px;
+        }
+        .list > li {
+            border: 1px solid;
+            height: 120px;
+            margin: 10px;
+            padding: 10px;
+            list-style: none;
+        }
+        .block, .details {
+            float: left;
+        }
+        .block {
+            height: 120px;
+            width: 120px;
+            border: 1px solid;
+            background-image: url("img/image1.png");
+        }
+        .block, .img{
+            background-position: -144px -70px;
+        }
+        .img1 {
+            background-position: -384px -79px;
+        }
+        .img2 {
+            background-position: -480px -293px;
+        }
+        .img3 {
+            background-position: -133px 270px;
+        }
+        .img4 {
+            background-position: 185px 476px;
+        }
+        img{
+            width: 120px;
+            height: 120px;
+        }
+        .details, li {
+            list-style: none;
+            padding: 2px;
+        }
+        a {
+            text-decoration: none;
+            color: red;
+        }
+        a:visited {
+            color:blue
+        }
+    </style>
+</head>
+<body>
+    <div class="mainblock">
+        <div class="header">student details</div>
+        <div class="block1">
+            <div class="block2">
+                <ol>
+                    <li><a href="#emp_01">Rajesh</a></li>
+                    <li><a href="#emp_02">Sangram</a></li>
+                    <li><a href="#emp_03">Deepak</a></li>
+                    <li><a href="#emp_04">Bamdev</a></li>
+                    <li><a href="#emp_05">Sarat</a></li>
+                </ol>
+            </div>
+            <div class="block3">
+                <ul class="list"> 
+                    <li id="emp_01">
+                        <div class="block img">
+
+                        </div>
+                        <div class="details">
+                            <ul>
+                                <li>Name:Rajesh</li>
+                                <li>Age:25</li>
+                                <li>Gender:Male</li>
+                                <li>Location:Ganjam</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="emp_02">
+                        <div class=" block img1">
+                            
+                        </div>
+                        <div class="details">
+                            <ul>
+                                <li>Name:Sangram</li>
+                                <li>Age:25</li>
+                                <li>Gender:Male</li>
+                                <li>Location:Ganjam</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="emp_03">
+                        <div class=" block img2">
+                            
+                        </div>
+                        <div class="details">
+                            <ul>
+                                <li>Name:Deepak</li>
+                                <li>Age:25</li>
+                                <li>Gender:Male</li>
+                                <li>Location:Ganjam</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="emp_04">
+                        <div class="block img3">
+                            
+                        </div>
+                        <div class="details">
+                            <ul>
+                                <li>Name:Bamdev</li>
+                                <li>Age:25</li>
+                                <li>Gender:Male</li>
+                                <li>Location:Ganjam</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="emp_05">
+                        <div class="block img4">
+                            
+                        </div>
+                        <div class="details">
+                            <ul>
+                                <li>Name:Sarat</li>
+                                <li>Age:25</li>
+                                <li>Gender:Male</li>
+                                <li>Location:Ganjam</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer">@copy rights 2023</div>
+    </div>
+</body>
+</html>

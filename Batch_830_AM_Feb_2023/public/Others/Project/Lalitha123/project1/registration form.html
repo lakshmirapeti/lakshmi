@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>
+                    Registration form
+                </title>
+                <style>
+                    body{
+                        background-color:antiquewhite;
+                    }
+                    .mainContainer {
+                        border: 1px solid;
+                        width: 600px;
+                        margin: 20px auto;
+                        background-color:#ff7f7f;
+        
+                    }
+                    h3 {
+                        text-align: center;
+                        margin: 10px;
+                        color: #ff00c8;
+                        font-size:30px;
+                    }
+                    li {
+                        list-style: none;
+                        border: 1px solid #ccc;
+                        margin: 5px;
+                        padding: 5px;
+                    }
+                    button{
+                        text-align:center;
+                        position :relative;
+                        left:170px;
+                        top:0.8px;
+                        font-size:20px;
+                        color:hsl(240, 90%, 52%);
+                        font-weight:bold;
+                    }
+                </style>
+            </head>
+            <body>
+                <ul class="mainContainer">
+                    <h3>
+                        Registration form
+                   </h3>
+                    <li>
+                        <label for="uname">Enter user name:</label>                
+                        <input type="text" name="uname">
+                    </li>
+                    <li>
+                        <label for="upwd">Enter Account Password:</label>                
+                        <input type="password" name="upwd" maxlength="8">
+                        <div>
+                            <input type="checkbox" onchange="applyChange()" id="showpwdcheckbx">showPassword
+                        </div>
+                    </li>
+                    <li>
+                        Gender:
+                        <input type="radio" name="gender"> Male
+                        <input type="radio" name="gender" checked> Female
+                    </li>
+                    <li>
+                        Languagues User knows: 
+                        <input type="checkbox"> English
+                        <input type="checkbox"> Telugu
+                        <input type="checkbox"> Hindi
+                    </li>
+                    <li>
+                        SElect country: 
+                        <select>
+                            <option>India</option>
+                            <option>China</option>
+                            <option selected>Japan</option>
+                            <option>USA</option>
+                        </select>
+                    </li>
+                   
+                    <li>
+                        Tell few words about u: 
+                            <textarea rows="20" columns="10" maxlength="300">
+                            </textarea>
+                    </li>
+    <button><a href="content of Tourist places in India.html">submit</a></button>
+                    
+                </ul>
+            </body>
+        </html>

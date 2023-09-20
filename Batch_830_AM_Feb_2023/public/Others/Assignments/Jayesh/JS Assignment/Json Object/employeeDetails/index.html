@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./employee.js"></script>
+</head>
+<body>
+    <div class="heading">
+        <h3>Employee Salary Slip Generator</h3>
+    </div>
+    <div class="container">
+        <ul>
+            <li>
+                Enter Employee Name :
+                <input type="text" id="ename">
+            </li>
+            <li>
+                Age :
+                <input type="text" id="eage">
+            </li>
+            <li>
+                Gender :
+                
+                <select name="" id="egender">
+                    <option value="male" selected>Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </li>
+            <li>
+                Department :
+                <select name="" id="edepartment">
+                    <option value="IT">IT</option>
+                    <option value="Sales">Sales</option>
+                    <option value="Marketing">Marketing</option>
+                </select>
+            </li>
+            <li>
+                Enter Basic Salary :
+                <input type="text" id="esalary">
+            </li>
+            <li>
+                <input type="button" value="Generate Salary Slip" onclick="generateSlip();">
+            </li>
+        </ul>
+    </div>
+    <div class="salarySlip">
+        <ul>
+            <li>Employee Name :<span id="rname"></span></li>
+            <li>Employee Age : <span id="rage"></span></li>
+            <li>Employee Gender : <span id="rgender"></span></li>
+            <li>Employee Department : <span id="rdepartment"></span></li>
+            <li>Total Salary : <span id="rtotalSalary"></span></li>
+            <li>PF: <span id="rpf"></span></li>
+            <li>HRA : <span id="rhra"></span></li>
+        </ul>
+    </div>
+</body>
+</html>

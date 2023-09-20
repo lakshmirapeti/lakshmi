@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+    h2{
+        border: 1px solid;
+        text-align: center;
+    }
+    img{
+        height: 150px;
+        width: 250px;
+    }
+    hr{
+        color: black;
+    }
+     h3{
+        border: 1px solid;
+        text-align: center;
+     clear: both;
+    }
+    .container{
+        width:900px;
+        height:700px;
+        border: 1px solid;
+        margin: auto;
+    }
+    .container1, .container2, .container3, .container4{
+        position:relative;
+        padding: 10px;
+        margin: 10px;
+        width:800px;
+        height:110px;
+        border: 1px solid;
+        margin-bottom: 5px;
+        margin-top: 25px;
+    }
+    .block{
+        position:absolute;
+        width: 135px;
+        height: 15px;
+        border: 1px solid;
+        top: -22px;
+        z-index: 1;
+        padding: 5px 0px;
+        text-align: center;
+        background-color: aliceblue;
+}
+    </style>
+    <h2>Student Details</h2>
+    <div class="container">
+    <div class="container1">
+        <div class="block">personal details</div>
+<li>
+<label for="username ">Name :</label>
+<input type="text" name="username" placeholder="Enter your name" maxlength="15">
+</li>
+<li>
+    <label for="username">Country Name:</label>
+    <input type="text" name="username" placeholder="Enter contry name" maxlength="15">
+    </li>
+    <li>
+        <label for="username">Age:</label>
+        <input type="text" name="username" placeholder="Enter your Age" maxlength="15">
+        </li>
+        <li>
+            <label for="gender"> Gender</label>
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">FeMale
+            <input type="radio" name="gender">Others
+            </li>
+        <li>
+            <label for="username">class:</label>
+            <input type="text" name="username" placeholder="Enter your class" maxlength="15">
+            </li>
+    </div>
+    
+        <div class="container2">
+            <div class="block">Education details</div>
+            <li>
+                <label for="gender">languages known</label>
+                <input type="checkbox" name="languages">English
+                <input type="checkbox" name="languages">Hindi
+                <input type="checkbox" name="languages">Telugu
+                </li>
+<li>
+<label for="gender">Qualification</label>
+<input type="checkbox" name="languages">MBA
+ <input type="checkbox" name="languages">MCA
+ <input type="checkbox" name="languages">BETECH
+<input type="checkbox" name="languages">Gaduation
+</li> 
+</div>
+<div class="container3">
+    <div class="block">Course details</div>
+<li>
+<label>course option for</label>
+<select title="click to get course">
+<option></option>
+<option>MBA</option>
+<option>MCA</option>
+<option>BETECH</option>
+</select>
+</li>
+<li>
+    <label>languages</label>
+    <select title="click to getlanguages">
+    <option></option>
+    <option>Telugu</option>
+    <option>Hindi</option>
+    <option>English</option>
+    </select>
+    </li>
+</div>
+    <div class="container1">
+        <div class="block">About urself</div>
+<li>
+<label for="text">Write about your Self?</label><br>
+<textarea name="text" rows="4" cols="50"></textarea>
+</li>
+</div>
+<div style="text-align: center;"><input type="submit" 
+name="submit" value="Submit Registration"></div>
+</div>
+<h3>@copy right 2023</h3> 
+</body>
+</html>

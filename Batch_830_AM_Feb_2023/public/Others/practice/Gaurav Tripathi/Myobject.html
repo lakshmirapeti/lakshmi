@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const facebookProfiles = [{
+    firstName: "Akash",
+    lastName: "Agarwal",
+    number: "111111111",
+    likes: ["music", "movies"],
+    hasDrivingLicense: false,
+    address: {
+        location: "rampur",
+        state: "up",
+    },
+    emails: ["abc@outlook.com", "efg@gamil.com", "ghj@gmail.com"],
+},
+{
+    firstName: "Gaurav",
+    lastName: "Kumar",
+    number: "222222222",
+    likes: ["code", "Cricket"],
+    hasDrivingLicense: false,
+    address: {
+        location: "gurgaon",
+        state: "haryana",
+    },
+    emails: ["fgdfg@gmail.com"],
+},
+{
+    firstName: "Akid",
+    lastName: "Khan",
+    number: "333333333",
+    hasDrivingLicense: false,
+    address: {
+        location: "lucknow",
+        state: "up",
+    },
+},
+{
+    firstName: "Suyash",
+    lastName: "Kashyap",
+    number: "444444444",
+    likes: ["travel", "driving"],
+    hasDrivingLicense: true,
+    address: {
+        location: "alwar",
+        state: "rajasthan",
+    },
+    emails: ["abc@yahoo.com"],
+},
+{
+    firstName: "Jay",
+    likes: ["food", "mobile"],
+    hasDrivingLicense: true,
+    address: {
+        location: "gurgaon",
+        state: "haryana",
+    },
+    emails: ["abc@gmail.com", "efg@yahoo.com", "ghj@outlook.com"],
+},
+];
+
+function profileLookup(name, number)
+{
+if (name === "Gaurav" && number === "222222222")
+{
+    return number
+}
+else if (name !== "Suyash" || name !== "Gaurav" || name !== "Jay" || name !== "Gaurav" || name !== "Akid")
+{
+    return "Person does not Exist"
+} 
+else
+{
+    return "not present"
+}
+}
+const result = profileLookup("Gaurav", "222222222")
+console.log(result)
+    </script>
+</body>
+</html>

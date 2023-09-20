@@ -1,0 +1,52 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating creating DOM elements through js
+        </title>
+    </head>
+    <body>
+        <span id="ccontent">hello</span>
+        <input type="button" value="Delete" onclick="deleteElment()">
+        <div id="container">
+            
+        </div>
+        <script>
+            var createAElement = () => {
+
+                var tagname = prompt("enter tagname");
+                var msg = prompt("Enter msg");
+                var id = prompt("enter id");
+
+                var myelement = document.createElement(tagname);
+                myelement.innerText = msg;
+                myelement.setAttribute("name", 'test');
+                myelement.setAttribute("id", id);
+                myelement.setAttribute("class", 'hello');
+
+                myelement.style.color = 'green';
+                console.log(myelement);
+
+
+                document.querySelector("#container").append(myelement);
+            }
+
+            var deleteElment = () => {
+                    // document.querySelector('span').remove();
+                    // document.querySelector('#ccontent').remove();
+
+                    // hide.
+                    document.querySelector('#ccontent').style.display = 'none';
+
+            }
+
+            createAElement();
+        </script>
+    </body>
+</html>

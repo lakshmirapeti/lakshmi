@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even numbers</title>
+</head>
+<body>
+    <script>
+        var checkEven = (n) => {
+            var rem;
+            
+            for(var i = 1; i <=n; i++) {
+                rem = n % 2;
+                if(rem == 0) {
+                return n;
+                }
+            }
+        }
+        var data = [2, 4, 5, 7, 8];
+        console.log(data)
+         var evenArray = [];
+         for(var i = 0; i < data.length; i++) {
+            var result = checkEven(data[i]);
+            if(result){
+            evenArray.push(result);
+         }
+        }
+         console.log(evenArray)
+    </script>
+</body>
+</html>

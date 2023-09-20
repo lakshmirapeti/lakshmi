@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demonstrating If Condition with studentDetails</title>
+</head>
+<body>
+    <script>
+        var sname, sage, sgender;
+        sname = prompt("enter your name")
+        sage = prompt("enter your age");
+        sgender = prompt('enter your gender');
+        
+        var m1 = prompt("Sub 1 marks");
+        m1 = parseInt(m1);
+        var m2 = prompt("Sub 2 marks");
+        m2 = parseInt(m2);
+        var m3 = prompt("Sub 3 marks");
+        m3 = parseInt(m3);
+
+        var total = m1 + m2 + m3;
+        var avg = (total / 3);
+
+        console.log("sname is " + sname);
+        console.log("sage is " + sage);
+        console.log("sgender is " + sgender);
+        console.log("totalMarks is " + total);
+        console.log("avg is " + avg);
+
+        if(avg>=40){
+            console.log("student is passed");
+        }
+        if(avg<40){
+            console.log("student is failed");
+        }
+        
+        console.log("end");
+    </script>
+</body>
+</html>

@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>students marks table</title>
+    <style>
+        *{
+            background-color: lightcyan;
+        }
+        p{
+            border: 2px solid;
+            text-align: center;
+            font-size: large;
+            background-color: lightslategray;
+            padding: 2px;
+        }
+        h1{
+            border: 2px solid;
+            text-align: center;
+            background-color: rgb(119, 136, 153);
+            padding: 2px;
+            color:black;
+        }
+       thead ,tbody , tr , th ,td{
+            border: 1px solid;
+            margin: none;
+            text-align: center;
+        }
+        th{
+            background-color: lightcoral;
+        }
+        div{
+            border: 2px solid;
+            width:100%;
+            height: 100%;
+            padding: 4px;
+        }
+        .imag{
+            height: 150px;
+            width: 150px;
+            background: url(./spritingimage3.jpg);
+            border: 1px solid;
+        }
+        .im1{
+            background-position:502px 401px;
+        }
+        .im2{
+            background-position: 192px 401px;
+        }
+        .im3{
+            background-position: 6px 401px;
+        }
+        .im4{
+            background-position: -146px 401px;
+        }
+        .im5{
+            background-position: 202px 198px;
+        }
+        .im6{
+            background-position: 344px 406px;
+        }
+        .im7{
+            background-position: 501px 203px;
+        }
+        .im8{
+            background-position: -298px 402px;
+        }
+        .im9{
+            background-position: 7px 199px;
+        }
+        .im10{
+            background-position: -455px 402px;
+        }
+        .im11{
+            background-position: -443px 206px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Details</h1>
+    <div>
+    <table border:1px solid cellspacing="0" cellpadding="2" width="100%">
+        <thead>
+            <tr>
+                <th>Sno</th>
+                <th>Name</th>
+                <th>Photo</th>
+                <th>Age</th>
+                <th>Class</th>
+                <th>Marks</th>
+            </tr>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Raj</td>
+                <td class="imag im1"></td>
+                <td>20</td>
+                <td>12</td>
+                <td>
+                <table border:1px solid cellspacing="0" cellpadding="2" width="100%">    
+                   <thead>
+                         <tr>
+                            <th>Subject</th>
+                            <th>Max</th>
+                            <th>Min</th>
+                            <th>Obtained</th>
+                         </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                            <td>Maths</td>
+                            <td>100</td>
+                            <td>40</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>Physics</td>
+                            <td>100</td>
+                            <td>40</td>
+                            <td>85</td>
+                        </tr>
+                        <tr>
+                            <td>chemistry</td>
+                            <td>100</td>
+                            <td>40</td>
+                            <td>75</td>
+                        </tr>
+                     </tbody>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Rani</td>
+                <td class="imag im2"></td>
+                <td>20</td>
+                <td>12</td>
+                <td>
+                <table border:1px solid cellspacing="0" cellpadding="2" width="100%">    
+                   <thead>
+                         <tr>
+                            <th>Subject</th>
+                            <th>Max</th>
+                            <th>Min</th>
+                            <th>Obtained</th>
+                         </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                            <td>Maths</td>
+                            <td>100</td>
+                            <td>40</td>
+                            <td>85</td>
+                        </tr>
+                        <tr>
+                            <td>Physics</td>
+                            <td>100</td>
+                            <td>40</td>
+                            <td>69</td>
+                        </tr>
+                        <tr>
+                            <td>chemistry</td>
+                            <td>100</td>
+                            <td>40</td>
+                            <td>70</td>
+                        </tr>
+                     </tbody>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Harsh</td>
+                <td class="imag im3"></td>
+                <td>20</td>
+                <td>12</td>
+                <td>
+                <table border:1px solid cellspacing="0" cellpadding="2" width="100%">    
+                   <thead>
+                         <tr>
+                            <th>Subject</th>
+                            <th>Max</th>
+                            <th>Min</th>
+                            <th>Obtained</th>
+                         </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                            <td>Maths</td>
+                            <td>100</td>
+                            <td>40</td>
+                            <td>90</td>
+                        </tr>
+                        <tr>
+                            <td>Physics</td>
+                            <td>100</td>
+                            <td>40</td>
+                            <td>75</td>
+                        </tr>
+                        <tr>
+                            <td>chemistry</td>
+                            <td>100</td>
+                            <td>40</td>
+                            <td>70</td>
+                        </tr>
+                     </tbody>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Rajesh</td>
+                <td class="imag im4"></td>
+                <td>20</td>
+                <td>12</td>
+                <td>
+                <table border:1px solid cellspacing="0" cellpadding="2" width="100%">    
+                   <thead>
+                         <tr>
+                            <th>Subject</th>
+                            <th>Max</th>
+                            <th>Min</th>
+                            <th>Obtained</th>
+                         </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                            <td>Maths</td>
+                            <td>100</td>
+                            <td>40</td>
+                            <td>60</td>
+                        </tr>
+                        <tr>
+                            <td>Physics</td>
+                            <td>100</td>
+                            <td>40</td>
+                            <td>70</td>
+                        </tr>
+                        <tr>
+                            <td>chemistry</td>
+                            <td>100</td>
+                            <td>40</td>
+                            <td>76</td>
+                        </tr>
+                     </tbody>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>hanvika</td>
+                <td class="imag im5"></td>
+                <td>20</td>
+                <td>12</td>
+                <td>
+                <table border:1px solid cellspacing="0" cellpadding="2" width="100%">    
+                   <thead>
+                         <tr>
+                            <th>Subject</th>
+                            <th>Max</th>
+                            <th>Min</th>
+                            <th>Obtained</th>
+                         </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                            <td>Maths</td>
+                            <td>100</td>
+                            <td>40</td>
+                            <td>78</td>
+                        </tr>
+                        <tr>
+                            <td>Physics</td>
+                            <td>100</td>
+                            <td>40</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>chemistry</td>
+                            <td>100</td>
+                            <td>40</td>
+                            <td>60</td>
+                        </tr>
+                     </tbody>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Meena</td>
+                <td class="imag im6"></td>
+                <td>20</td>
+                <td>12</td>
+                <td>
+                <table border:1px solid cellspacing="0" cellpadding="2" width="100%">    
+                   <thead>
+                         <tr>
+                            <th>Subject</th>
+                            <th>Max</th>
+                            <th>Min</th>
+                            <th>Obtained</th>
+                         </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                            <td>Maths</td>
+                            <td>100</td>
+                            <td>40</td>
+                            <td>65</td>
+                        </tr>
+                        <tr>
+                            <td>Physics</td>
+                            <td>100</td>
+                            <td>40</td>
+                            <td>67</td>
+                        </tr>
+                        <tr>
+                            <td>chemistry</td>
+                            <td>100</td>
+                            <td>40</td>
+                            <td>75</td>
+                        </tr>
+                     </tbody>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>teena</td>
+                <td class="imag im7"></td>
+                <td>20</td>
+                <td>12</td>
+                <td>
+                <table border:1px solid cellspacing="0" cellpadding="2" width="100%">    
+                   <thead>
+                         <tr>
+                            <th>Subject</th>
+                            <th>Max</th>
+                            <th>Min</th>
+                            <th>Obtained</th>
+                         </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                            <td>Maths</td>
+                            <td>100</td>
+                            <td>40</td>
+                            <td>70</td>
+                        </tr>
+                        <tr>
+                            <td>Physics</td>
+                            <td>100</td>
+                            <td>40</td>
+                            <td>65</td>
+                        </tr>
+                        <tr>
+                            <td>chemistry</td>
+                            <td>100</td>
+                            <td>40</td>
+                            <td>79</td>
+                        </tr>
+                     </tbody>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>bhasker</td>
+                <td class="imag im8"></td>
+                <td>20</td>
+                <td>12</td>
+                <td>
+                <table border:1px solid cellspacing="0" cellpadding="2" width="100%">    
+                   <thead>
+                         <tr>
+                            <th>Subject</th>
+                            <th>Max</th>
+                            <th>Min</th>
+                            <th>Obtained</th>
+                         </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                            <td>Maths</td>
+                            <td>100</td>
+                            <td>40</td>
+                            <td>60</td>
+                        </tr>
+                        <tr>
+                            <td>Physics</td>
+                            <td>100</td>
+                            <td>40</td>
+                            <td>75</td>
+                        </tr>
+                        <tr>
+                            <td>chemistry</td>
+                            <td>100</td>
+                            <td>40</td>
+                            <td>70</td>
+                        </tr>
+                     </tbody>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>suresh</td>
+                <td class="imag im9"></td>
+                <td>20</td>
+                <td>12</td>
+                <td>
+                <table border:1px solid cellspacing="0" cellpadding="2" width="100%">    
+                   <thead>
+                         <tr>
+                            <th>Subject</th>
+                            <th>Max</th>
+                            <th>Min</th>
+                            <th>Obtained</th>
+                         </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                            <td>Maths</td>
+                            <td>100</td>
+                            <td>40</td>
+                            <td>55</td>
+                        </tr>
+                        <tr>
+                            <td>Physics</td>
+                            <td>100</td>
+                            <td>40</td>
+                            <td>70</td>
+                        </tr>
+                        <tr>
+                            <td>chemistry</td>
+                            <td>100</td>
+                            <td>40</td>
+                            <td>60</td>
+                        </tr>
+                     </tbody>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Rithesh</td>
+                <td class="imag im10"></td>
+                <td>20</td>
+                <td>12</td>
+                <td>
+                <table border:1px solid cellspacing="0" cellpadding="2" width="100%">    
+                   <thead>
+                         <tr>
+                            <th>Subject</th>
+                            <th>Max</th>
+                            <th>Min</th>
+                            <th>Obtained</th>
+                         </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                            <td>Maths</td>
+                            <td>100</td>
+                            <td>40</td>
+                            <td>70</td>
+                        </tr>
+                        <tr>
+                            <td>Physics</td>
+                            <td>100</td>
+                            <td>40</td>
+                            <td>65</td>
+                        </tr>
+                        <tr>
+                            <td>chemistry</td>
+                            <td>100</td>
+                            <td>40</td>
+                            <td>85</td>
+                        </tr>
+                     </tbody>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>radika</td>
+                <td class="imag im11"></td>
+                <td>20</td>
+                <td>12</td>
+                <td>
+                <table border:1px solid cellspacing="0" cellpadding="2" width="100%">    
+                   <thead>
+                         <tr>
+                            <th>Subject</th>
+                            <th>Max</th>
+                            <th>Min</th>
+                            <th>Obtained</th>
+                         </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                            <td>Maths</td>
+                            <td>100</td>
+                            <td>40</td>
+                            <td>60</td>
+                        </tr>
+                        <tr>
+                            <td>Physics</td>
+                            <td>100</td>
+                            <td>40</td>
+                            <td>75</td>
+                        </tr>
+                        <tr>
+                            <td>chemistry</td>
+                            <td>100</td>
+                            <td>40</td>
+                            <td>65</td>
+                        </tr>
+
+                     </tbody>
+                </table>
+                </td>
+            </tr>
+        </tbody>
+        </thead>
+    </table>
+</div>
+    <p>@copyrights 2023</p>
+</body>
+</html>

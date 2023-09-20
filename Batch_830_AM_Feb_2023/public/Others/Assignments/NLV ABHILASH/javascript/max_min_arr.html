@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>To find the maximum and minimum value of array</h3>
+    <script>
+        var a =[];
+        for(var i=0;i<5;i++){
+            a[i]=parseInt(prompt("enter"+ i +"element of the array"));
+        }
+        var min=a[0],max=a[0];
+        for(var i=0;i<10;i++){
+            if(min>a[i]){
+                min=a[i];
+            }
+            if(max<a[i]){
+                max=a[i];
+            }
+        }
+        console.log("the smallest num in the array is"+min);
+        console.log("the largest num in the array is"+max);
+    </script>
+</body>
+</html>

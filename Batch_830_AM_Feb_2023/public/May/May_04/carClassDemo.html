@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            class CarModel {
+                constructor(data) {
+                    this.carModel = data.model;
+                    this.gearType = data.gearType;
+                    this.fuelType = data.ftype;
+                    this.color = data.color;
+                }
+                manufactureCar() {
+                    // ....
+                    console.log("CAr with model " + this.carModel + ' Gor created');
+                }
+            }
+            var obj1 = {
+                model: 'XUV',
+                gearType: 'Automatic',
+                fuelType: 'Petrol',
+                color: 'Black'
+            }
+            var c1 = new CarModel(obj1);
+            c1.manufactureCar();
+
+            var obj2 = {
+                model: 'Hushpack',
+                gearType: 'Manual',
+                fuelType: 'Electric',
+                color: 'Green'
+            }
+            var c2 = new CarModel(obj2);
+            c2.manufactureCar();
+        </script>
+    </body>
+</html>

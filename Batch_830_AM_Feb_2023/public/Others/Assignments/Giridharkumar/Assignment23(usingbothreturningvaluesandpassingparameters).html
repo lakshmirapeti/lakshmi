@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment - 23</title>
+    </head>
+    <body>
+        <script>
+
+            // using both return values and pass by parameters //
+
+            var data_from_user = () => {
+                var empname, empage, empgender, empdepartment, empbasesal, emppf, emphra, emptotalsal;
+                empname = prompt("Enter the empname")
+                empage = prompt("Enter the empage")
+                empgender = prompt("Enter the empgender")
+                empdepartment = prompt("Enter the empdepartment")
+                empbasesal = prompt("Enter the basesal")
+                empbasesal = parseInt(empbasesal)
+                display_details(empname, empage, empgender, empdepartment)
+                 var emptotalsal = find_pf_hra( empgender, empbasesal);
+
+            }
+            var find_pf_hra = ( empgender, empbasesal) => {                 // using pass by parameters //
+                pf = (empbasesal * 14) / 100;
+                hra = (empbasesal * 24) / 100;
+                emptotalsal = empbasesal + pf + hra;
+                console.log("Enter the employee pf is --> " + pf)
+                console.log("Enter the employee hra is --> " + hra)
+                console.log("Enter the Employee Totalsal is --> " + emptotalsal)
+                get_taxpercent(empgender, emptotalsal);
+                return emptotalsal;                             // using returning values
+
+            }
+            var get_taxpercent = (empgender, emmptotalsal) => {
+                taxpercent = 0;
+                empgender = empgender.toLowerCase()
+                if (empgender == 'male') {
+                    if (emptotalsal >= 400000) {
+                        taxpercent = 15;
+
+                    } else if (empgender >= 350000) {
+                        taxpercent = 10;
+
+                    } else if (empgender < 350000) {
+                        taxpercent = 5;
+
+                    } else {
+                        if (emptotalsal >= 360000) {
+                            taxpercent = 10;
+
+                        } else if (emptotalsal < 360000) {
+                            taxpercent = 5;
+
+                        }
+                    }
+                    console.log("taxtobepaid is --> " + (emptotalsal * taxpercent) / 100)
+                }
+            }
+                var display_details = (empname, empage, empgender, empdepartment) => {
+                    console.log("Enter the Employee name --> " + empname)
+                    console.log("Enter the Employee age -->  " + empage)
+                    console.log("Enter the Employee Gender --> " + empgender)
+                    console.log("Enter the Employee Department --> " + empdepartment)
+                }
+            data_from_user();
+        </script>
+    </body>
+</html>

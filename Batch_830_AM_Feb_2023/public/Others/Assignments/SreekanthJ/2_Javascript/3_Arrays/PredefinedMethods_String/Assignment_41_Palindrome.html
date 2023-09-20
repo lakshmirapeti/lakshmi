@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome</title>
+</head>
+
+<body>
+    <script>
+
+        var inputString = prompt("Enter a string: ");//Eg:madam,Noon,Refer
+
+        // Remove any non-alphanumeric characters from the string and convert it to lowercase
+        inputString = inputString.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
+
+        // Convert the string to an array of characters
+        var inputArray = inputString.split("");
+
+        // Create a reversed array
+        var reversedArray = [];
+
+        // Loop through the input array backwards and add each character to the reversed array
+        for (var i = inputArray.length - 1; i >= 0; i--) {
+            reversedArray.push(inputArray[i]);
+        }
+
+        // Convert the reversed array back to a string
+        var reversedString = reversedArray.join("");
+
+        // Compare the original string with the reversed string
+        if (inputString === reversedString) {
+            console.log("Given string is a palindrome.");
+        } else {
+            console.log("Given string is not a palindrome.");
+        }
+
+    </script>
+</body>
+
+</html>

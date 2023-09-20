@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>small/largenumber</title>
+</head>
+<body>
+    <script>
+
+        var data=[45,55,87,33,53,];
+        console.log(data)
+
+        var smallvalue=data[0];
+        var largestvalue=data[0];
+          for(var i=1;i<data.length;i++){
+              if(smallvalue>data[i]) {
+                  smallvalue=data[i];
+              }
+              if(largestvalue<data[i]) {
+                  largestvalue=data[i];
+              }
+          }
+          console.log("the small value is"+ smallvalue)
+          console.log("the largest value is"+ largestvalue)
+    </script>
+</body>
+</html>

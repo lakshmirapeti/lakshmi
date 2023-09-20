@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose date type you want</title>
+</head>
+
+<body>
+    <h3>Choose date type you want</h3>
+    <script>
+        var readUserInput = () => {
+            var userDate = new Date();
+            var userType = parseInt(prompt("Choose a Number for Date Style You want  1. Saturday, 10/01/2020  2. Sat, 10/01/2020  3. Sat, 10/Jan/2020  4. January, 15th 2020  5. 10th January 2020  6. January/10/2020  7. 9 hrs: 05 min: 21 sec"));
+            var getUserDate = getUserDateType(userDate, userType);
+            console.log(getUserDate);
+        }
+
+        var getUserDateType = (userDate, userType) => {
+
+            var fullDay = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+            var day = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+            var fullYear = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+            var year = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+            switch (userType) {
+                case 1:
+                    var date = fullDay[userDate.getDay()] + "," + userDate.getDate() + "/" + userDate.getMonth() + "/" + userDate.getFullYear();
+                    return date;
+                    break;
+                case 2:
+                    var date = day[userDate.getDay()] + "," + userDate.getDate() + "/" + userDate.getMonth() + "/" + userDate.getFullYear();
+                    return date;
+                    break;
+                case 3:
+                    var date = day[userDate.getDay()] + "," + userDate.getDate() + "/" + year[userDate.getMonth()] + "/" + userDate.getFullYear();
+                    return date;
+                    break;
+                case 4:
+                    var date = fullYear[userDate.getMonth()] + "," + userDate.getDate() + "th " + userDate.getFullYear();
+                    return date;
+                    break;
+                case 5:
+                    if (userDate.getDate() == 1) {
+                        var date = userDate.getDate() + "st " + fullYear[userDate.getMonth()] + " " + userDate.getFullYear() + " " + userDate.getHours() + ":" + userDate.getMinutes() + ":" + userDate.getSeconds();
+                    } 
+                    else if (userDate.getDate() == 2) {
+                        var date = userDate.getDate() + "nd " + fullYear[userDate.getMonth()] + " " + userDate.getFullYear() + " " + userDate.getHours() + ":" + userDate.getMinutes() + ":" + userDate.getSeconds();
+                    } 
+                    else if (userDate.getDate() == 3) {
+                        var date = userDate.getDate() + "rd " + fullYear[userDate.getMonth()] + " " + userDate.getFullYear() + " " + userDate.getHours() + ":" + userDate.getMinutes() + ":" + userDate.getSeconds();
+                    } 
+                    else {
+                        var date = userDate.getDate() + "th " + fullYear[userDate.getMonth()] + " " + userDate.getFullYear() + " " + userDate.getHours() + ":" + userDate.getMinutes() + ":" + userDate.getSeconds();
+                    }
+                    
+                    return date;
+                    break;
+                case 6:
+                    var date = fullYear[userDate.getMonth()] + "/" + userDate.getDate() + "/" + userDate.getFullYear();
+                    return date;
+                    break;
+                case 7:
+                    var date = userDate.getHours() + "hrs:" + userDate.getMinutes() + "min:" + userDate.getSeconds() + "sec";
+                    return date;
+                    break;
+
+                default:
+                    alert("Wrong input given, give a number from 1 to 7")
+                    break;
+            }
+        }
+
+        readUserInput();
+    </script>
+</body>
+
+</html>

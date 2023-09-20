@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Input types</title>
+        <style>
+            .header, .footer{
+                text-align: center;
+                padding: 3px;
+                font-weight: bold;
+                border: 1px solid ;
+                clear: both;
+            }
+            .PDetails, .Education, .course, .about{
+                width: 98%;
+                height: 150px;
+                border: 1px solid;
+                margin: 10px;
+                position: relative;
+            }
+            .PDetails, .perLeft input{
+              padding-top: 5px;
+              margin-top: 3px;
+            }
+            .PDetails, .perRight select{
+              padding-top: 5px;
+              margin-top: 3px;
+            }
+            .content{
+                height: auto;
+                border: 1px solid;
+                margin: 12px 0px  1px 0px;
+            }
+            .pheading, .Eduheading, .courseHeading, .aboutHeading{
+             position: absolute;
+             border: 1px solid;
+             width: 10%;
+             height: 20px;
+             top: -10px;
+             left: 100px;
+             background-color: black;
+             color: white;
+             text-align: center;
+            }
+            .sub{
+             float: right;
+             margin: 5px;
+            }
+            .btn{
+                padding: 4px;
+                margin: 5px;
+            }
+            .perLeft, .perRight{
+                float: left;
+            }
+            ul li {
+                list-style: none;
+                margin-top: 15px;
+            }
+            ul li label {
+                font-size: 20px;
+                font-weight: bold;
+            }
+            .Education label,.courseOption,.LanguagePara, .about label{
+                font-size: 20px;
+                font-weight: bold;
+                margin-left: 3%;
+                margin-top: 10px;
+            }
+            .eduDescription,.Language{
+                margin-top: 15px;
+            } 
+            .course select{
+                padding-top: 3px;
+                padding-bottom: 4px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">Student Registration page</div>
+            <div class="content">
+                <div class="PDetails">
+                  <div class="pheading"> Personal Details</div>
+                    <div class="perLeft">
+                        <ul>
+                            <li>
+                                <label for="stuName">Name: </label>
+                                <input type="text" name="stuName">
+                            </li>
+                            <li>
+                                <label for="age">Age: </label>
+                                <input type="text" name="age" style="margin-left: 17px;">
+                            </li>
+                            <li>
+                                <label for="gen">Gender: </label>
+                                <input type="radio" name="gen"> male
+                                <input type="radio" name="gen"> Female
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="perRight">
+                        <ul>
+                            <li>
+                                <label for="">Course: </label>
+                                <select name="" id="">
+                                    <option value="">Delhi</option>
+                                    <option value="">Khargone</option>
+                                    <option value="">Indore</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="">Class: </label>
+                                <select name="" id="" style="margin-left: 16px;">
+                                    <option value="">8<sub>th</sub></option>
+                                    <option value="">9<sub>th</sub></option>
+                                    <option value="">10<sub>th</sub></option>
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="Education">
+                   <div class="Eduheading">Education Details</div>
+                    <div style="margin-top: 2%;" class="Language">
+                        <label for="lang" >Language Known :</label>
+                        <input type="checkbox">English
+                        <input type="checkbox">Hindi
+                        <input type="checkbox">Telgu
+                    </div>
+                    <div class="eduDescription">
+                        <label for="">Qualification :</label>
+                        <input type="checkbox">MCA
+                        <input type="checkbox">MBA
+                        <input type="checkbox">Btech
+                    </div>
+                </div>
+
+                <div class="course">
+                    <div class="aboutHeading">Course Details</div>
+                    <div class="courseOption" style="margin-top: 12px;">
+                        <label for="">Course option for :</label>
+                        <select name="" id="">
+                            <option value="">BE</option>
+                            <option value="">ME</option>
+                            <option value="">MCA</option>
+                            <option value="">Nursing</option>
+                        </select>
+                    </div>
+                    <div class="LanguagePara">
+                        <label for="">Languages  :</label>
+                        <select name="" id="">
+                            <option value="">Hindi</option>
+                            <option value="">English</option>
+                            <option value="">Marathi</option>
+                            <option value="">Telgu</option>
+                        </select>
+                    </div>
+                 </div>
+
+                 <div class="about">
+                    <div class="courseHeading">About Yourself</div>
+                    <div style="margin-top: 12px;">
+                        <label for="intro">Few words about you :</label>
+                      <textarea name="intro" id="" cols="100" rows="6"></textarea>
+                    </div>
+                 </div>
+                 <div class="sub">
+                    <input type="button" value="submit" class="btn">
+                 </div>
+                 <div class="footer">&copy; copy rights 2023</div>
+            </div>            
+        </div>
+    </body>
+</html>

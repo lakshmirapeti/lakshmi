@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Page</title>
+    <style>
+        .header{
+            border: 3px solid;
+            text-align: center;
+            font-size: 30px;
+            margin: 5px;
+            padding: 5px;
+        }
+        .footer{
+            border: 3px solid;
+            text-align: center;
+            font-size: 20px;
+            margin: 5px;
+            padding: 5px;
+        }
+        .formDiv{
+            border: 3px solid;
+            margin: 5px;
+            padding: 5px;
+        }
+        li{
+            list-style: none;
+        }
+        .personalDetails, .educationDetails, .courseDetails, .aboutYourself{
+            border: 1px solid;
+            margin: 5px;
+            padding: 5px;
+        }
+        .aboutYourself{
+            height: 300px;
+        }
+        .personalD, .educationD, .courseD, .aboutY{
+            border: 1px solid;
+            width: 180px;
+            font-size: 25px;
+            margin: 5px;
+            padding: 5px;
+            position: absolute;
+            text-decoration: underline;
+        }
+        .personalD{
+            top: 74px;
+            left: 129px;
+            background-color: white;
+            text-align: center;
+        }
+         .educationD{
+            top: 285px;
+            left: 129px;
+            background-color: white;
+            text-align: center;
+        }
+        .courseD{
+            top: 453px;
+            left: 129px;
+            background-color: white;
+            text-align: center;
+        }
+        .aboutY{
+            top: 621px;
+            left: 129px;
+            background-color: white;
+            text-align: center;
+        } 
+        ul{
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .column{
+            float: left;
+        }
+        .left{
+            width: 50%;
+        }
+        .right{
+            width: 50%;
+        }
+        .class{
+            clear: both;
+        }
+        #personal{
+            text-decoration: underline;
+        }
+        li{
+            font-size: 27px;
+            padding: 10px;
+        }
+        .spaceTitle{
+            height: 5px;
+        }
+        .formDiv > li{
+            margin-bottom: 30px;
+        }
+        .personalDetails{
+            margin-top: 25px;
+        }
+        .label{
+            width: 25%;
+        }
+        .textarea{
+            width: 60%;
+        }
+        textarea{
+            height: 230px;
+            width: 910px;
+            font-size: 22px;
+        }
+        .areaAbout{
+            float: left;
+        }
+        .button{
+            clear: both;
+        }
+        #textbox{
+            box-sizing: border-box;
+            height: 30px;
+            font-size: 22px;
+        }
+        option{
+            font-size: 20px;
+        }
+        select{
+            font-size: 20px;
+        }
+        .radio, .checkbox{
+            height: 20px;
+            width: 20px;
+        }
+        #button{
+            color: black;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 22px;
+        }
+        .button{
+            text-align: right;
+            position: relative;
+            right: 30px;
+            bottom: 10px;
+        }
+        .main1, .main2{
+            width: 100%;
+            display: flex;
+            margin: 10px;
+        }
+        .class{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Student Registration Page</div>
+        <div class="personalD">Personal Details</div>
+        <div class="educationD">Education Details</div>
+        <div class="courseD">Course Details</div>
+        <div class="aboutY">About Yourself</div>
+        <ul class="formDiv">
+            <li class="personalDetails">
+                <ul>
+                    <li>
+                        <div class="spaceTitle"></div>
+                    </li>
+                    <!-- <li> -->
+                    <div class="main1">
+                            <div class="column left">
+                                <label for="name" id="personal">Name:</label>
+                                <input type="text" name="name" id="textbox">
+                            </div>
+                        <!-- </li> -->
+                        <!-- <li> -->
+                        <div class="column right">
+                            <label for="age" id="personal">Age:</label>
+                            <input type="text" name="age" id="textbox">
+                        </div>
+                    </div>
+                    <!-- </li> -->
+                    <!-- <li> -->
+                    <div class="main2">
+                    <div class="column left">
+                        <label for="gender" id="personal">Gender:</label>
+                        <input type="radio" name="gender" class="radio">Male
+                        <input type="radio" name="gender" class="radio">Female
+                    </div>
+                    <!-- </li> -->
+                    <!-- <li> -->
+                    <div class="column right">
+                        <label for="country" id="personal">Country Name</label>
+                        <select title="Click To Get Country" name="country">
+                            <option>India</option>
+                            <option>Pakistan</option>
+                            <option>Dubai</option>
+                            <option>USA</option>
+                            <option>China</option>
+                            <option>Africa</option>
+                            <option>Singapore</option>
+                            <option>Qatar</option>
+                            <option>Philippines</option>
+                            <option>South Korea</option>
+                        </select>
+                    </div>
+                    </div>
+                    <!-- </li> -->
+                    <!-- <li> -->
+                        <div class="class">
+                            <li class="class">
+                                <label for="class" id="personal">Class</label>
+                                <select name="class">
+                                    <option>1st</option>
+                                    <option>2nd</option>
+                                    <option>3rd</option>
+                                    <option>4th</option>
+                                    <option>5th</option>
+                                    <option>6th</option>
+                                    <option>7th</option>
+                                    <option>8th</option>
+                                    <option>9th</option>
+                                    <option>10th</option>
+                                </select>
+                            </li>
+                        </div>
+                    <!-- </li> -->
+                </ul>
+            </li>
+            <li class="educationDetails">
+                <ul>
+                    <li>
+                        <div class="spaceTitle"></div>
+                    </li>
+                    <li>
+                        <label for="language">Languages Known:</label>
+                        <input type="checkbox" name="language" class="checkbox">
+                        <label for="language">English</label>
+                        <input type="checkbox" name="language" class="checkbox">
+                        <label for="language">Hindi</label>
+                        <input type="checkbox" name="language" class="checkbox">
+                        <label for="language">Telugu</label>
+                    </li>
+                    <li>
+                        <label for="qualification">Qualification:</label>
+                        <input type="checkbox" name="qualification" class="checkbox">
+                        <label for="qualification">MCA</label>
+                        <input type="checkbox" name="qualification" class="checkbox">
+                        <label for="qualification">MBA</label>
+                        <input type="checkbox" name="qualification" class="checkbox">
+                        <label for="qualification">Btech</label>
+                        <input type="checkbox" name="qualification" class="checkbox">
+                        <label for="qualification">Graduation</label>
+                    </li>
+                </ul>
+            </li>
+            <li class="courseDetails">
+                <ul>
+                    <li>
+                        <div class="spaceTitle"></div>
+                    </li>
+                    <li>
+                        <label for="course">Course Option for:</label>
+                        <select name="course">
+                            <option>UI Full Stack</option>
+                            <option>JAVA Full Stack</option>
+                            <option>AWS</option>
+                            <option>Devops</option>
+                            <option>Python Full Stack</option>
+                            <option>Data Science</option>
+                            <option>.Net Full Stack</option>
+                            <option>Hadoop</option>
+                            <option>ReactJS</option>
+                            <option>NodeJS</option>
+                            <option>PowerBI</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="language">Language</label>
+                        <select name="language">
+                            <option>English</option>
+                            <option>Hindi</option>
+                            <option>Telugu</option>
+                        </select>
+                    </li>
+                </ul>
+            </li>
+            <li class="aboutYourself">
+                <ul>
+                   <li>
+                        <div class="spaceTitle"></div>
+                    </li>
+                        <li class="label areaAbout">
+                                <label for="text">Few Words About Yourself: </label>
+                        </li>
+                        <li>
+                            <div class="textarea areaAbout">
+                                <textarea name="text"></textarea>
+                            </div>
+                        </li>
+                </ul>
+            </li>
+                <div class="button">
+                <input type="submit" id="button" value="Save Details">
+                </div>
+        </ul>
+    <div class="footer">@CopyRights 2023</div>
+</body>
+</html>

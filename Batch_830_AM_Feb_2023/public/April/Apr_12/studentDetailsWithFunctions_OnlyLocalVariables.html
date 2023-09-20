@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student details using functions</title>
+    </head>
+    <body>
+        <script>
+           
+           
+
+            function readDataFromUser() {
+                var sname, sage, sgender, m1, m2, m3, avg;
+                sname = prompt("Etner student name");
+                sage = prompt("Etner student age");
+                sgender = prompt("Gender");
+
+                m1 = prompt("Sub 1 marks");
+                m1 = parseInt(m1);
+                m2 = prompt("Sub 1 marks");
+                m2 = parseInt(m2);
+                m3 = prompt("Sub 1 marks");
+                m3 = parseInt(m3);
+                var data = getTotalAndAvg(m1, m2, m3);
+                total = data[0]
+                avg = data[1]
+                displayStudentDetails(sname, sage, avg, total);
+            }
+
+            var  getTotalAndAvg = (m1, m2, m3) => {
+                var total = m1 + m2 + m3;
+                var avg = total / 3;
+                return [total, avg];
+            }
+           
+            function displayStudentDetails(sname, sage, avg, total) {
+                
+                console.log("Student details");
+                console.log("Student name " + sname);
+                console.log("Age is " + sage);
+                console.log('total is ' + total);
+                console.log('Avg is ' + avg);
+                getStudentGrade(avg);
+            }
+
+            var getStudentGrade = (avg) => {                
+                if (avg >= 40) {
+                    console.log("Student got Passed");
+                    if (avg >= 90) {
+                        console.log("Student got Distinction");
+                    } else if (avg >= 60) {
+                        console.log("Student got first class");
+                    } else {
+                        console.log("Student got Second class");
+                    }
+                } else {
+                    console.log("Student got failed");
+                }
+            }        
+            readDataFromUser();
+            
+
+            console.log("END")
+           
+           
+        </script>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student details with passing parameter and returning parameter</title>
+</head>
+<body>
+    <script>
+        var getStudentDetails = () => {
+            sname = prompt('Enter Student Name :');
+            sage = prompt('Enter Student Age :');
+            sgender = prompt('Enter Student Gender :');
+            m1 = prompt('Subject 1 marks :');
+            m1 = parseInt(m1);
+            m2 = prompt('Subject 2 marks :');
+            m2 = parseInt(m2);
+            m3 = prompt('Subject 3 marks :');
+            m3 = parseInt(m3);
+            m4 = prompt('Subject 4 marks :');
+            m4 = parseInt(m4);
+            var result = getTotalAndAvg(m1, m2, m3, m4);
+            total = result[0]
+            avg = result[1]
+            displayDetails(sname, sage, sgender, avg, total);
+        }
+        var getTotalAndAvg = (m1 , m2, m3, m4) => {
+            var total = m1 + m2 + m3 + m4;
+            var avg = total / 4;
+            return [total, avg];
+        }
+        var displayDetails = (sname, sage, sgender, Total,avg) => {
+            console.log('Student Details');
+            console.log('Student Name :' +sname);
+            console.log('Student Age :' +sage);
+            console.log('Gender :' +sgender);
+            console.log('Total Of Marks :' +total);
+            console.log('Average is :' +avg);
+            getStudentGrade(avg);
+        }
+        var getStudentGrade = (avg) => {                
+                if (avg >= 40) {
+                    console.log("Student got Passed");
+                    if (avg >= 90) {
+                        console.log("Student got Distinction");
+                    } else if (avg >= 60) {
+                        console.log("Student got first class");
+                    } else {
+                        console.log("Student got Second class");
+                    }
+                } else {
+                    console.log("Student got failed");
+                }
+            }        
+         getStudentDetails();
+    </script>
+</body>
+</html>

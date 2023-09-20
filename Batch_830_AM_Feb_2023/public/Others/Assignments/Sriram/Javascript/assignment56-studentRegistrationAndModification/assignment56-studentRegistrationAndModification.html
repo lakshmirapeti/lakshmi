@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Crud Operation</title>
+    <link rel="stylesheet" href="assignment56-studentRegistrationAndModification.css">
+    <script src="assignment56-studentRegistrationAndModification.js"></script>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="studenName">Name</label>
+                        <input type="text" name="studentName" id="sName">
+                    </div>
+                    <div>
+                        <label for="age">Age</label>
+                        <input type="text" name="age" id="sAge">
+                    </div class="gender">
+                    <label for="gender" id="genderLabel">Gender:</label>
+                    <input type="radio" name="gender" value="male" checked>Male
+                    <input type="radio" name="gender" value="female">Female
+                    </div>
+                    <div>
+                        <label for="location">Location</label>
+                        <input type="text" name="location" id="sLocation">
+                    </div>
+                    <div class="country">
+                        <label for="country" id="countryLabel">Country Name</label>
+                        <select title="Click To Get Country" name="country" id="select">
+                            <option>India</option>
+                            <option>Pakistan</option>
+                            <option>Dubai</option>
+                            <option>USA</option>
+                            <option>China</option>
+                            <option>Africa</option>
+                            <option>Singapore</option>
+                            <option>Qatar</option>
+                            <option>Philippines</option>
+                            <option>South Korea</option>
+                        </select>
+                    </div>
+
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+
+            <td>
+                <table class="list" id="storeList">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Gender</th>
+                            <th>Location</th>
+                            <th>Country</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Smallest & Largest Number</title>
+    </head>
+    <body>
+        <script>
+            var data =[24, 87, 55, 36, 10, 99, 65]
+
+            var smallestValue = data[0];
+            var largestValue = data[0];
+            for (var i = 1; i < data.length; i++)  {
+                if (smallestValue > data[i]) {
+                    smallestValue = data[i];
+                }
+                if (largestValue < data[i]) {
+                    largestValue = data[i];
+                }
+            }
+
+            console.log("The smallest value is " + smallestValue)
+            console.log("The largest value is " + largestValue)
+        </script>
+        
+    </body>
+</html>

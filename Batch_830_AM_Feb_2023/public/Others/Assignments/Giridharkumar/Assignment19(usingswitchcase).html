@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment - 19</title>
+    </head>
+    <body>
+        <script>
+            var n = prompt("Enter the a value")
+            
+           
+
+            var userinput = prompt("choose => prime/Amstrong/luckynumber/even or odd")
+
+            switch (userinput) {
+                case 'prime' : 
+                var count = 0;
+                for (var i = 1; i <= 100; i++) {
+                    var rem = n % i;
+                    if (rem == 0) {
+                        count++
+                    }
+                }
+                if (count == 2) {
+                    console.log("it is prime number")
+
+                } else {
+                    console.log("it is not prime number")
+                }
+                console.log(count)
+                      break;
+
+                case 'Amstrong' :
+                    var temp;
+                    temp = n;
+                    var sum = 0;
+                    while (n > 0) {
+                        var rem = n % 10;
+                        sum = sum + (rem ** 3)
+                        n = n / 10;
+                        n = parseInt(n)
+                        
+                    }
+                    if (sum == temp) {
+                        console.log("it is Amstrong number " + sum)
+                    } else {
+                        console.log("it is not Amstrong number " + sum)
+                    }
+                    break;
+
+                case 'luckynumber' :
+                    var sum = 0;
+                    while (n > 0) {
+                        var rem = n % 10
+                        sum  +=  rem;
+                        n = n / 10
+                        n = parseInt(n)
+                        
+                    }
+                    if (n == 0 && sum > 9) {
+                        n = sum;
+                        sum = 0;
+                    }
+                    console.log("lucky number is " + sum)
+                            break;
+
+                case 'even or odd' :
+                    if (n % 2 == 0) {
+                        console.log("It is even number")
+
+                    } else {
+                        console.log(" It is odd number")
+                    }
+                    break;
+
+                default :
+                 console.log("Choosing Invalid option")
+                
+            }
+
+        </script>
+    </body>
+</html>

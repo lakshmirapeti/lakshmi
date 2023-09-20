@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Limitations / Disadvantages with Global variables</title>
+    </head>
+    <body>
+        <script>
+            
+            console.log("Start point")
+            var readUserData = () => {
+                var a1, a2, username = 'Teena', isFeePaid = true;
+                a1 = prompt("Enter value for a1"); //"90"
+                a1 = parseInt(a1); //90
+
+                a2 = prompt("Enter value for a2"); // "81"
+                a2 = parseInt(a2); // 81
+
+                getAddition(a1, a2, username, isFeePaid); // getAddition(90, 81)
+            }
+
+            var getAddition = (a1, a3) => {
+                var result;
+                result = a1 + a3;
+                console.log("the sum of values is " + result);
+            }
+
+           // readUserData();
+    
+
+        </script>
+    </body>
+</html>

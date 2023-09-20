@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Details</title>
+  </head>
+  <body>
+    <script>
+      var empname, empage, empgender, empdepartment;
+      empname = prompt("Enter a name ");
+      empage = prompt("Enter a age ");
+      empgender = prompt("Enter a gender ");
+      empbasicSal = prompt("Enter Salary");
+      empbasicSal = parseInt(empbasicSal);
+
+      var pf = (empbasicSal * 14) / 100;
+      var hra = (empbasicSal * 25) / 100;
+
+      var totalSal = empbasicSal + pf + hra;
+      var taxPercent = 0;
+      empgender = empgender.toLocaleLowerCase();
+      if (empgender == "Male") {
+        if (totalSal >= 500000) {
+          taxPercent = 15;
+        } else if (totalSal >= 400000) {
+          taxPercent = 10;
+        } else if ((totalSal = 300000)) {
+          taxPercent = 5;
+        }
+      } else {
+      
+        if (totalSal >= 500000) {
+          taxPercent = 10;
+        } else if (totalSal >= 400000) {
+          taxPercent = 5;
+        } 
+      }
+
+      var TaxtobePaid = (totalSal * taxPercent) / 100
+
+      
+    </script>
+  </body>
+</html>

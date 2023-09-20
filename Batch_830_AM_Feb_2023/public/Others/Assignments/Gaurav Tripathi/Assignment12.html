@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+    var Oprations=prompt("Choose Even/Odd/SumOf/PrimeNu/Palindrome/Armstrong/LuckyNu");
+
+switch (Oprations) {
+  case 'Even':
+       var n=parseInt(prompt("enter the Number "))
+         if(n%2==0){
+            console.log("even Number")
+         }
+         else{
+            console.log("not a even Number")
+         }
+           break
+
+  case 'Odd':
+  var n=parseInt(prompt("enter the Number "))
+         if(n%2!=0){
+            console.log("odd Number")
+         }
+         else{
+            console.log("not a odd Number")
+         }
+             break
+
+  case 'SumOf':
+     var sum=0
+         var n=parseInt(prompt("enter the number "))
+         while(n>0){
+            var d=parseInt(n%10)
+            sum =sum+d
+            n=parseInt(n/10)
+
+         }
+         console.log(sum)
+            break
+
+  case 'PrimeNu':
+         const number = parseInt(prompt("Enter a positive number: "));
+          let isPrime = true;
+    if (number === 1) {
+        console.log("1 is neither prime nor composite number.");
+    }
+    
+    
+    else if (number > 1) {
+    
+    
+        for (let i = 2; i < number; i++) {
+            if (number % i == 0) {
+                isPrime = false;
+                break;
+            }
+        }
+    
+        if (isPrime) {
+            console.log(`${number} is a prime number`);
+        } else {
+            console.log(`${number} is a not prime number`);
+        }
+    }
+            break
+
+  case 'Palindrome':
+  var rev,sum=0,temp
+        var n=parseInt(prompt("enter the number"))
+        temp=n;
+        while (n>0) {
+            rev=n%10
+            sum=(sum*10)+rev
+            n=parseInt(n/10)
+        }
+        if(temp==sum){
+            console.log(`${temp} is a palidrome Number`)
+        }
+        else{
+            console.log(`${temp} not a palidrome Number`)
+        }
+           break
+
+  case 'Armstrong':
+  var rev,sum=0,temp
+        var n=parseInt(prompt("enter the number"))
+        temp=n;
+        while (n>0) {
+            rev=n%10
+            sum +=rev*rev*rev
+            n=parseInt(n/10)
+        }
+        if(temp==sum){
+            console.log(`${temp} is a Armstromg Number`)
+        }
+        else{
+            console.log(`${temp} not a Armstrong Number`)
+        }
+  break
+
+  case 'LuckyNu':
+  var sum = 0;
+        var n = prompt("entr a  number");
+        n = parseInt(n);
+        while (n > 0) {
+            var rem = n % 10;
+            sum += rem;
+            n = n / 10;
+            n = parseInt(n);
+
+            if (n == 0 && sum > 9) {
+                n = sum;
+                sum = 0;
+            }
+        }
+        console.log(sum)
+  break
+
+  default:
+  console.log("Invalid Choice:" + Oprations)
+}
+    </script>
+</body>
+</html>

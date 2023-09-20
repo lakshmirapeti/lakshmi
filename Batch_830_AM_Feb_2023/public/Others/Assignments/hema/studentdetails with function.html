@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function readthedata(){
+        var studentname = prompt("Enter studentname");
+        var age = prompt("Enter studentage") ;
+        age = parseInt(age);
+        var gender = prompt("Enter gender");
+        var m1 = prompt("Enter studentmarks1") ;
+        m1 = parseInt(m1);
+        var m2 = prompt("Enter studentmarks2") ;
+        m2 = parseInt(m2);
+        var m3 = prompt("Enter studentmarks3") ;
+        m3 = parseInt(m3);
+        }
+       function total_avg(){
+       var total = m1+m2+m3;
+       var avg  = total/3;
+       }
+       function displaydata() {
+       console.log("Student name is "+studentname);
+       console.log("Student age is "+age);
+       console.log("Student gender is "+gender);
+
+       if(avg>40){
+                console.log("Student got passed");
+       }if(avg<40){
+                console.log("student got failed");
+       }
+    }
+    readthedata();
+    total_avg();
+    </script>
+</body>
+</html>

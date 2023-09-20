@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignupPage</title>
+    
+    <style>
+        #container{
+            height: 500px;
+            background-color:rgb(218, 232, 64)
+          
+        }
+        .maincontainer{
+            margin: 10px;
+            border:1px solid;
+            height: 300px;
+            width: 400px;
+            position: relative;
+            left: 260px;
+            top: 5px;
+            bottom: 20px;
+            background-color: chartreuse;
+        }
+
+.uname{
+    position: relative;
+    top: 30px;
+   
+}
+.uname.uname1{
+left:60px;
+
+}
+.upswd{
+    position: relative;
+    top: 80px;
+    right: 250px;
+  
+    
+    
+}
+.upswd.upswd1{
+    position: relative;
+    top: 60px;
+    left: 140px;
+    
+}
+.cupswd{
+    position: relative;
+    top: 110px;
+    right: 174px;
+    
+
+}
+.cupswd.cupswd1{
+   
+    left: 140px ;
+    top: 90px;   
+}
+.mob{
+    position: relative;
+top: 140px;
+right: 170px;
+
+}
+.mob.mobno{
+   left: 140px;
+top: 120px;
+
+}
+.ema{
+position: relative;
+top: 160px;
+right: 172px;
+}
+.ema.emai1{
+left: -80px;
+}
+.submit{
+    position: relative;
+    top: 190px;
+    left: 190px;   
+}
+  .submit:hover{
+    background-color: rgb(237, 91, 206);
+}  
+
+h4{
+    text-align: center;
+    position: relative;
+    color: deeppink;
+   
+}
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+    <h4>New User Registration Page</h4>
+    <div class="maincontainer">
+        <label class="uname">UserName: </label>
+        <input type="text"class="uname uname1" maxlength="10" autofocus>
+         <label for=""class="upswd">Password: </label>
+        <input type="text"class="upswd upswd1"maxlength="10" >
+        <label for=""class="cupswd">ConfirmPassword: </label>
+        <input type="text"class="cupswd cupswd1"maxlength="10" > 
+        <label for=""class="mob">MobileNo: </label>
+        <input type="text"class="mob mobno"maxlength="10" > 
+        <label for=""class="ema">Email: </label>
+        <input type="email"class="ema emai1"maxlength="10" > 
+        <a href="LoginPage.html"><input type="button" value="submit" class="submit"></a>
+
+
+    </div>
+</div>
+</body>
+</html>

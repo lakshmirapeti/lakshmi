@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>sum of even number within array</title>
+    </head>
+    <script>
+      
+      function evenSum(){
+        var arrayOfNum = [];
+        var sum = 0;
+        for(var i = 0 ; i<7; i++){
+            arrayOfNum[i] = prompt("Enter your number");
+            arrayOfNum[i] = parseInt(arrayOfNum[i]);
+        }
+        for(var b = 0; b<arrayOfNum.length; b++){
+            if(arrayOfNum[b]%2 == 0){
+             sum = sum + arrayOfNum[b];
+            }
+        }
+        console.log(`sum of even number is ${sum}`);
+      }
+      evenSum();
+    </script>
+    <body>
+        <h1>Sum of all even number within array</h1>
+        <p id="evenSum"></p>
+    </body>
+</html>

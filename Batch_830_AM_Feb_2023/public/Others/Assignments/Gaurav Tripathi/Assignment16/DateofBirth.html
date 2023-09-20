@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// var user dob <-
+//     ur age is 2345days
+
+    // ur age is 20 yrs 2 months 4 days
+
+
+    //     var dob = new Date("04/12/1999");  
+    // //calculate month difference from current date in time  
+    // var month_diff = Date.now() - dob.getTime();  
+      
+    // //convert the calculated difference in date format  
+    // var age_dt = new Date(month_diff);   
+      
+    // //extract year from date      
+    // var year = age_dt.getUTCFullYear();  
+      
+    // //now calculate the age of the user  
+    // var age = Math.abs(year - 1970);  
+      
+    // //display the calculated age  
+    // document.write("your age: " + age + " years" +" "+month_diff+" "+age_dt+" "+year);  
+
+
+    var dob = prompt("enter your dob");
+var year = Number(dob.substr(0, 4));
+var month = Number(dob.substr(4, 2)-1);
+var day = Number(dob.substr(6, 2));
+var today = new Date();
+var age = today.getFullYear() - year
+var months=today.getMonth() - month
+var days=today.getDate() -day
+// if (today.getMonth() < month || (today.getMonth() == month && today.getDate() < day)) {
+//   age--;
+// }
+// alert(age);
+console.log(age+"Yrs "+months+"Months "+days+"Days")
+
+    </script>
+</body>
+</html>

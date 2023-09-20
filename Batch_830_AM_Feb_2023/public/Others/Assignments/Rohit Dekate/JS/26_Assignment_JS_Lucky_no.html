@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- write a program to find the lucky no of given no-->
+    <script>
+        // <!-- write a program to find the lucky no of given no-->
+
+        var no=prompt("enter the lucky no");
+        no=parseInt(no);
+        var rem,sum=0,x;
+
+        while(no>0 ){
+            rem=no%10;
+            sum += rem;
+            no=no/10;
+            no=Math.floor(no);
+
+            if(no==0 && sum>9){
+                no=sum;
+                sum=0;
+            }
+        }
+        console.log(sum);
+    
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <style>
+        .container{
+           /* width: 100%; */
+           border: 1px solid;
+           padding: 5px;
+           height: 500px;
+           margin: 5px;
+           overflow: auto;
+           /* position: relative; */
+
+        }
+        
+        h1{
+            /* overflow: auto; */
+        }
+        .middle{
+            /* overflow: auto; */
+        }
+        .contain{
+           /* overflow: scroll; */
+        }
+        .heading, .foot{
+            border: 2px solid;
+            text-align: center;
+            text-size-adjust: 3px;
+            background-color:  rgb(236, 71, 223);
+            font-size: 40px;
+            
+        }
+     td,th,tr{
+        text-align: center;
+     }
+    table{
+        width: 100%;
+    }
+    .marks{
+        position:relative ;
+        width: 30%;
+        align-items: center;
+    }
+  
+    </style>
+</head>
+<body>
+    <div class="heading">Student Detail</div>
+    
+    <div class="container">
+    
+       <table class="contain" border="2px solid"  cellpadding="1px" cellspacing="1px">
+          <thead>  
+     <tr>
+     <th>srno</th>
+     <th>Name</th>
+     <th>Picture</th>
+     <th>AGE</th>
+     <th>Class</th>
+     <th class="marks">Marks</th>
+     </tr>
+</thead>
+<tbody>
+    <tr>
+       <td>1</td>
+       <td>Raju</td>
+       <td><img src="95484768.jpg" width="100px" height="100px" alt="amazon"></td>
+       <td>50</td>
+       <td>Btech</td>
+       <td>
+        <table  border="2px solid" cellpadding="0.5px" cellspacing="2px">
+            <tr>
+                <th>Subject</th>
+                <th>Max.Mark</th>
+                <th>Min.Mark</th>
+                <th>Obtained</th>
+            </tr>
+            <tr>
+            <td>SOM</td>
+            <td>100</td>
+            <td>40</td>
+            <td>43</td>
+        </tr>
+        <tr>
+            <td>M3</td>
+            <td>100</td>
+            <td>40</td>
+            <td>34@</td>
+
+        </tr>
+        <tr>
+            <td>tos</td>
+            <td>100</td>
+            <td>40</td>
+            <td>45</td>
+        </tr>
+        <tr>
+            <td>asd</td>
+            <td>100</td>
+            <td>40</td>
+            <td>45 </td>
+        </tr>
+        </table>
+       </td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Titu</td>
+        <td><img src="titu.jpeg" width="100px" height="100px" alt="amazon"></td>
+        <td>30</td>
+        <td>Btech</td>
+        <td>
+         <table  border="2px solid" cellpadding="0.5px" cellspacing="2px">
+             <tr>
+                 <th>Subject</th>
+                 <th>Max.Mark</th>
+                 <th>Min.Mark</th>
+                 <th>Obtained</th>
+             </tr>
+             <tr>
+             <td>SOM</td>
+             <td>100</td>
+             <td>30</td>
+             <td>43</td>
+         </tr>
+         <tr>
+             <td>M3</td>
+             <td>100</td>
+             <td>40</td>
+             <td>44</td>
+ 
+         </tr>
+         <tr>
+             <td>TOS</td>
+             <td>100</td>
+             <td>40</td>
+             <td>65</td>
+         </tr>
+         <tr>
+             <td>ASD</td>
+             <td>100</td>
+             <td>40</td>
+             <td>75 </td>
+         </tr>
+         </table>
+        </td>
+     </tr>
+     <tr>
+        <td>3</td>
+        <td>ASHISH</td>
+        <td><img src="ashish.jpeg" width="100px" height="100px" alt="amazon"></td>
+        <td>31</td>
+        <td>Btech</td>
+        <td>
+         <table border="2px solid" cellpadding="0.5px" cellspacing="2px">
+             <tr>
+                 <th>Subject</th>
+                 <th>Max.Mark</th>
+                 <th>Min.Mark</th>
+                 <th>Obtained</th>
+             </tr>
+             <tr>
+             <td>SOM</td>
+             <td>100</td>
+             <td>40</td>
+             <td>23</td>
+         </tr>
+         <tr>
+             <td>M3</td>
+             <td>100</td>
+             <td>40</td>
+             <td>21</td>
+ 
+         </tr>
+         <tr>
+             <td>tos</td>
+             <td>100</td>
+             <td>40</td>
+             <td>-2</td>
+         </tr>
+         <tr>
+             <td>asd</td>
+             <td>100</td>
+             <td>40</td>
+             <td>30 </td>
+         </tr>
+         </table>
+        </td>
+     </tr>
+     <tr>
+        <td>4</td>
+        <td>Ajay</td>
+        <td><img src="carry.jpeg" width="100px" height="100px" alt="amazon"></td>
+        <td>23</td>
+        <td>11th</td>
+        <td>
+         <table border="2px solid" cellpadding="0.5px" cellspacing="2px">
+             <tr>
+                 <th>Subject</th>
+                 <th>Max.Mark</th>
+                 <th>Min.Mark</th>
+                 <th>Obtained</th>
+             </tr>
+             <tr>
+             <td>SOM</td>
+             <td>100</td>
+             <td>40</td>
+             <td>93</td>
+         </tr>
+         <tr>
+             <td>M3</td>
+             <td>100</td>
+             <td>40</td>
+             <td>88</td>
+ 
+         </tr>
+         <tr>
+             <td>tos</td>
+             <td>100</td>
+             <td>40</td>
+             <td>54</td>
+         </tr>
+         <tr>
+             <td>asd</td>
+             <td>100</td>
+             <td>40</td>
+             <td>54</td>
+         </tr>
+         </table>
+        </td>
+     </tr>
+     <tr>
+        <td>5</td>
+        <td>Bandiya</td>
+        <td><img src="bamdiya.jpeg" width="100px" height="100px" alt="amazon"></td>
+        <td>43</td>
+        <td>Btech</td>
+        <td>
+         <table border="2px solid" cellpadding="0.5px" cellspacing="2px">
+             <tr>
+                 <th>Subject</th>
+                 <th>Max.Mark</th>
+                 <th>Min.Mark</th>
+                 <th>Obtained</th>
+             </tr>
+             <tr>
+             <td>SOM</td>
+             <td>100</td>
+             <td>40</td>
+             <td>66</td>
+         </tr>
+         <tr>
+             <td>M3</td>
+             <td>100</td>
+             <td>40</td>
+             <td>87</td>
+ 
+         </tr>
+         <tr>
+             <td>tos</td>
+             <td>100</td>
+             <td>40</td>
+             <td>43</td>
+         </tr>
+         <tr>
+             <td>asd</td>
+             <td>100</td>
+             <td>40</td>
+             <td>48 </td>
+         </tr>
+         </table>
+        </td>
+     </tr>
+     <tr>
+        <td>6</td>
+        <td>Aliya</td>
+        <td><img src="aliya.jpeg" width="100px" height="100px" alt="amazon"></td>
+        <td>28</td>
+        <td>Btech</td>
+        <td>
+         <table border="2px solid" cellpadding="0.5px" cellspacing="2px">
+             <tr>
+                 <th>Subject</th>
+                 <th>Max.Mark</th>
+                 <th>Min.Mark</th>
+                 <th>Obtained</th>
+             </tr>
+             <tr>
+             <td>SOM</td>
+             <td>100</td>
+             <td>40</td>
+             <td>43</td>
+         </tr>
+         <tr>
+             <td>M3</td>
+             <td>100</td>
+             <td>40</td>
+             <td>23</td>
+ 
+         </tr>
+         <tr>
+             <td>tos</td>
+             <td>100</td>
+             <td>40</td>
+             <td>85</td>
+         </tr>
+         <tr>
+             <td>asd</td>
+             <td>100</td>
+             <td>40</td>
+             <td>45 </td>
+         </tr>
+         </table>
+        </td>
+     </tr>
+ 
+</tbody>
+
+   </table>
+ </div>
+
+<div class="foot"> Copyright@2023 </div>
+</body>
+</html >

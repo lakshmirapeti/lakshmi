@@ -1,0 +1,35 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background:white;
+}
+.register-form{
+    background-image:url("D:\img\office 1.png") ;
+    padding: 40px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+h1{
+    text-align: center;
+      color: darkslategray;
+    
+}
+input,
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 5px 5px 5px;
+    border: 1px solid blue ;
+    border-radius: 10px;
+}
+button{
+    border: outset;
+    border-color: brown;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 10px;
+    width: 150px;
+}

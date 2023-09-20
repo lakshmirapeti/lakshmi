@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Sign Up Page
+        </title>
+        <style>
+            .background{
+                background-image: linear-gradient(to right,rgb(124, 124, 247),rgb(137, 251, 137));
+            }
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .header{
+                border: 1px solid rgb(7, 7, 7);
+                font-size: 37px;
+                font-weight: bold;
+                background-color: rgb(78, 75, 75);
+            }
+            .footer{
+                border: 1px solid rgb(7, 7, 7);
+                text-align: center;
+                font-size: 27px;
+                font-weight: bold;
+                background-color: rgb(78, 75, 75);
+                position: absolute;
+                bottom: 0px;
+                right: 0px;
+                left: 0px;
+    
+            }
+            .sitename{
+            position: relative;
+            left: 20px;
+            bottom: 3px;
+            color: white;
+        }
+        .sitename:hover{
+            cursor: default;
+        }
+        .link{
+            text-decoration: none;
+        }
+        a:visited{
+            color: rgb(11, 7, 7);
+        }
+        a:focus{
+            color: rgb(15, 10, 10);
+        }
+        .signup{
+            background-color: rgb(44, 85, 52);
+            box-shadow: 3px 3px 3px 3px;
+            opacity: 0.8;
+            border: 1px solid;
+            border-radius: 7px;
+            height: 400px;
+            width: 500px;
+            position: absolute;
+            left: 370px;
+            top: 100px;
+        }
+        .uname, .password, .cpassword, .mobile, .mail{
+            font-size: 17px;
+            position: relative;
+            left: 17px;
+            color: white;
+        }
+        .uname{
+            position: relative;
+            top: 40px;
+        }
+        .uname1{
+            position: relative;
+            left: 75px;
+            top: 7px;
+        }
+        .password{
+            position: relative;
+            top: 50px;
+        }
+        .password1{
+            position: relative;
+            left: 80px;
+            top: 7px;
+        }
+        .cpassword{
+            position: relative;
+            top: 60px;
+        }
+        .cpassword1{
+            position: relative;
+            left: 20px;
+            top: 7px;
+        }
+        .mobile{
+            position: relative;
+            top: 70px;
+        }
+        .mobile1{
+            position: relative;
+            left: 75px;
+            top: 7px;
+        }
+        .mail{
+            position: relative;
+            top: 80px;
+        }
+        .mail1{
+            position: relative;
+            left: 107px;
+            top: 7px;x;
+        }
+        .submit{
+            position: absolute;
+            top: 350px;
+            left: 230px;
+            margin:auto;
+            background-color:white;
+            border: 1px solid;
+            padding: 7px;
+        }
+        </style>
+   </head>
+<body class="background">
+    <div class="header">
+        <span class="sitename"><a href="Homepage.html" class="link">amazon</a></span>
+    </div>
+    <div class="signup">
+        <div class="uname">
+            Username
+            <span class="uname1">
+                <input style="font-size: 16px; border-radius: 5px; width: 300px; padding: 7px;"  type="text" placeholder="Enter Name">
+            </span>
+        </div>
+        <div class="password">
+            Password
+            <span class="password1">
+                 <input style="font-size: 16px; border-radius: 5px; width: 300px; padding: 5px;" type="text" placeholder="Enter password">
+            </span>
+        </div>
+        <div class="cpassword">
+            Confirm Password
+            <span class="cpassword1">
+                 <input style="font-size: 16px; border-radius: 5px; width: 300px; padding: 5px;" type="text" placeholder=" Confirm password">
+            </span>
+        </div>
+        <div class="mobile">
+            Mobile no
+            <span class="mobile1">
+                 <input style="font-size: 16px; border-radius: 5px; width: 300px; padding: 5px;" type="text" placeholder=" Enter mobile no">
+            </span>
+        </div>
+        <div class="mail">
+            Emial
+            <span class="mail1">
+                 <input style="font-size: 16px; border-radius: 5px; width: 300px; padding: 5px;" type="text" placeholder=" Enter mail id">
+            </span>
+        </div>
+        <button class="submit">
+            <a href="Homepage.html" class="link">submit</a>
+        </button>
+    </div>
+    <div class="footer">@Copy rights 2023</div>
+</body>
+</html>

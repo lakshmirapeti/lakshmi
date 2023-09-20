@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var sum = 0;
+            var startpoint = prompt("enter start range");
+            startpoint = parseInt(startpoint);
+            var endpoint = prompt("enter End range");
+            endpoint = parseInt(endpoint);
+
+            for (var j = startpoint; j <= endpoint; j++) {
+                var n = j;
+                var count  = 0;
+                for (var i = 2; i < n; i++) {
+                    var rem = n % i;
+                    if (rem == 0) {
+                        count++;
+                        break;
+                    }
+                }
+                if (count == 0) {
+                    console.log("Prime - " + n);
+                    // sum = sum + n;
+                    sum += n;
+                } else {
+                    console.log("NOT Prime - " + n);
+                }
+            }
+
+            console.log("sum is " + sum)
+        </script> 
+    </body>
+</html>

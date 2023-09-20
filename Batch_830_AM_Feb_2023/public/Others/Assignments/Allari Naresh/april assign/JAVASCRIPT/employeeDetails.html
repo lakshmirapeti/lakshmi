@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3> Employee Detials </h3>
+
+    <script>
+
+        // employeee details //
+
+        var empName, empAge, empGender, department, basicSalary, HRA, pf, totalTax, totalSalary, salaryAfterTax,taxpercent; 
+        empName = prompt("Enter The Name");
+        empAge = prompt("Enter The Age");
+        empGender = prompt("Enter The Gender");
+        department = prompt("Enter The Department");
+        basicSalary = prompt("Enter The basicSalary");
+        basicSalary = parseInt(basicSalary);
+        console.log("Employee Name " + empName);
+        console.log("Employee Age " +empAge);
+        console.log("Employee Gender " +empGender);
+        console.log("Employee Department " +department);
+        console.log("Employee Basic Salary " +basicSalary);
+
+        // employee total salary//
+        HRA = (basicSalary*24)/100;
+        pf = (basicSalary*14)/100;
+        totalSalary = basicSalary+HRA+pf;
+
+        // console.log("Employee Total Salary " +totalSalary);
+
+
+        empGender=empGender.toLowerCase();
+
+        if(empGender==="male"){
+            if(totalSalary>500000){
+                taxpercent = 15;
+            }
+            else if(totalSalary>300000 && totalSalary<500000){
+                taxpercent = 10;
+            }
+            else if(totalSalary>200000 && totalSalary<300000){
+                taxpercent=HRA = 5;
+            }else{
+                totalTax=0;
+                totalSalary=0;
+            }
+        }
+        
+        else{
+            if(totalSalary>500000){
+                taxpercent = 10;
+            }
+            else if(totalSalary>300000 && totalSalary<500000){
+                taxpercent = 5;
+            }
+            else{
+                totalTax=0;
+                totalSalary=0;
+            }
+        }
+
+        totalTax = (totalSalary*taxpercent)/100;
+        salaryAfterTax = totalSalary-totalTax;
+
+        console.log("Employee TaxPercent "+taxpercent);
+        console.log("Employee TotalSalary "+totalSalary);
+        console.log("Employee TotalTax "+totalTax);
+        console.log("Employee SalaryAfterTax "+salaryAfterTax);
+
+
+
+
+
+
+    </script>
+</body>
+</html>

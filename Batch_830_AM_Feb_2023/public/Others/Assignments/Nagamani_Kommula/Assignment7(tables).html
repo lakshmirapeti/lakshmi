@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Assignment7-Tables </title>
+    <style>
+        h3{
+            border: 2px solid black;
+            background-color: rgb(64, 10, 95);
+            color: brown;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+        .container{
+            height:450px;
+            width: 97%;
+            margin: 20px auto;
+            overflow: auto;
+            
+        }
+        .maintable{
+            text-align:center;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .odd{
+            background-color:rgb(46, 204, 252);
+        }
+        .even{
+            background-color:rgb(49, 189, 231);
+        }
+        .subtable{
+            background-color: rgb(168, 49, 162);
+            text-align: center;
+            border-collapse:collapse;
+            width: 100%;
+            margin: 10px auto;
+            max-width: 500px;
+            
+        }
+        .maintable thead{
+            background-color: rgb(53, 9, 110);
+        }
+        .subtable thead{
+            background-color: rgb(153, 23, 45);
+        }
+        
+        .image{
+            width:100px;
+            height:100px;
+        }
+    </style>
+</head>
+<body bgcolor="lightblue">
+    <h3> STUDENT DETAILS </h3>
+    <div class="container">
+    <table border="4px solid black" cellpadding="10px" cellspacing="10px" class="maintable">
+          <thead>
+            <tr>
+                <th> SN0 </th>
+                <th> Name </th>
+                <th> Picture </th>
+                <th> Age </th>
+                <th> Class </th>
+                <th> Marks</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="odd">
+                <td> 1</td>
+                <td> Raj</td>
+                <td> <img src="Images/student1.PNG" class="image"> </td>
+                <td> 20 </td>
+                <td> 9th class </td>
+                <td>
+                    <table border="1px solid" cellpadding="5px" cellspacing="5px" class="subtable">
+                        <thead>
+                            <tr>
+                                <th> Subject </th>
+                                <th> Max </th>
+                                <th> Min </th>
+                                <th> Obtained </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> Maths </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 78 </td>
+                            </tr>
+                            <tr>
+                                <td> Science </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 99 </td>
+                            </tr>
+                            <tr>
+                                <td> Hindi </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 80 </td>
+                            </tr>
+                            <tr>
+                                <td> social </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 75 </td>
+                            </tr>
+                            <tr>
+                                <td> English </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 89 </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+
+            </tr>
+         
+            <tr class="even">
+                <td> 2</td>
+                <td> Raji</td>
+                <td> <img src="Images/student2.PNG" class="image"> </td>
+                <td> 19 </td>
+                <td> 9th class </td>
+                <td>
+                    <table border="1px solid" cellpadding="5px" cellspacing="5px" class="subtable">
+                        <thead>
+                            <tr>
+                                <th> Subject </th>
+                                <th> Max </th>
+                                <th> Min </th>
+                                <th> Obtained </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> Maths </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 78 </td>
+                            </tr>
+                            <tr>
+                                <td> Science </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 99 </td>
+                            </tr>
+                            <tr>
+                                <td> Hindi </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 80 </td>
+                            </tr>
+                            <tr>
+                                <td> social </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 75 </td>
+                            </tr>
+                            <tr>
+                                <td> English </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 89 </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+
+            </tr>
+         
+            <tr class="odd">
+                <td> 3</td>
+                <td> Vani</td>
+                <td> <img src="Images/student3.PNG" class="image"> </td>
+                <td> 18 </td>
+                <td> 8th class </td>
+                <td>
+                    <table border="1px solid" cellpadding="5px" cellspacing="5px" class="subtable">
+                        <thead>
+                            <tr>
+                                <th> Subject </th>
+                                <th> Max </th>
+                                <th> Min </th>
+                                <th> Obtained </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> Maths </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 78 </td>
+                            </tr>
+                            <tr>
+                                <td> Science </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 99 </td>
+                            </tr>
+                            <tr>
+                                <td> Hindi </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 80 </td>
+                            </tr>
+                            <tr>
+                                <td> social </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 75 </td>
+                            </tr>
+                            <tr>
+                                <td> English </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 89 </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+
+            </tr>
+         
+            <tr class="even">
+                <td> 4</td>
+                <td> Renu</td>
+                <td> <img src="Images/student4.PNG" class="image"> </td>
+                <td> 20 </td>
+                <td> 10th class </td>
+                <td>
+                    <table border="1px solid" cellpadding="5px" cellspacing="5px" class="subtable">
+                        <thead>
+                            <tr>
+                                <th> Subject </th>
+                                <th> Max </th>
+                                <th> Min </th>
+                                <th> Obtained </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> Maths </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 78 </td>
+                            </tr>
+                            <tr>
+                                <td> Science </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 99 </td>
+                            </tr>
+                            <tr>
+                                <td> Hindi </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 80 </td>
+                            </tr>
+                            <tr>
+                                <td> social </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 75 </td>
+                            </tr>
+                            <tr>
+                                <td> English </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 89 </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+
+            </tr>
+          
+            <tr class="odd">
+                <td> 5</td>
+                <td> Ammu</td>
+                <td> <img src="Images/student5.PNG" class="image"> </td>
+                <td> 20 </td>
+                <td> 9th class </td>
+                <td>
+                    <table border="1px solid" cellpadding="5px" cellspacing="5px" class="subtable">
+                        <thead>
+                            <tr>
+                                <th> Subject </th>
+                                <th> Max </th>
+                                <th> Min </th>
+                                <th> Obtained </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> Maths </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 78 </td>
+                            </tr>
+                            <tr>
+                                <td> Science </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 99 </td>
+                            </tr>
+                            <tr>
+                                <td> Hindi </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 80 </td>
+                            </tr>
+                            <tr>
+                                <td> social </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 75 </td>
+                            </tr>
+                            <tr>
+                                <td> English </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 89 </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+
+            </tr>
+         
+            <tr class="even">
+                <td> 6</td>
+                <td> Aasri</td>
+                <td> <img src="Images/student6.PNG" class="image"> </td>
+                <td> 17 </td>
+                <td> 7th class </td>
+                <td>
+                    <table border="1px solid" cellpadding="5px" cellspacing="5px" class="subtable">
+                        <thead>
+                            <tr>
+                                <th> Subject </th>
+                                <th> Max </th>
+                                <th> Min </th>
+                                <th> Obtained </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> Maths </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 78 </td>
+                            </tr>
+                            <tr>
+                                <td> Science </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 99 </td>
+                            </tr>
+                            <tr>
+                                <td> Hindi </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 80 </td>
+                            </tr>
+                            <tr>
+                                <td> social </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 75 </td>
+                            </tr>
+                            <tr>
+                                <td> English </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 89 </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+
+            </tr>
+          
+            <tr class="odd">
+                <td> 7</td>
+                <td> Hema</td>
+                <td> <img src="Images/student7.PNG" class="image"> </td>
+                <td> 22 </td>
+                <td> 8th class </td>
+                <td>
+                    <table border="1px solid" cellpadding="5px" cellspacing="5px" class="subtable">
+                        <thead>
+                            <tr>
+                                <th> Subject </th>
+                                <th> Max </th>
+                                <th> Min </th>
+                                <th> Obtained </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> Maths </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 78 </td>
+                            </tr>
+                            <tr>
+                                <td> Science </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 99 </td>
+                            </tr>
+                            <tr>
+                                <td> Hindi </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 80 </td>
+                            </tr>
+                            <tr>
+                                <td> social </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 75 </td>
+                            </tr>
+                            <tr>
+                                <td> English </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 89 </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+
+            </tr>
+         
+            <tr class="even">
+                <td> 8</td>
+                <td> Rajesh</td>
+                <td> <img src="Images/student8.PNG" class="image"> </td>
+                <td> 19 </td>
+                <td> 9th class </td>
+                <td>
+                    <table border="1px solid" cellpadding="5px" cellspacing="5px" class="subtable">
+                        <thead>
+                            <tr>
+                                <th> Subject </th>
+                                <th> Max </th>
+                                <th> Min </th>
+                                <th> Obtained </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> Maths </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 78 </td>
+                            </tr>
+                            <tr>
+                                <td> Science </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 99 </td>
+                            </tr>
+                            <tr>
+                                <td> Hindi </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 80 </td>
+                            </tr>
+                            <tr>
+                                <td> social </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 75 </td>
+                            </tr>
+                            <tr>
+                                <td> English </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 89 </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+
+            </tr>
+          
+            <tr class="odd">
+                <td> 9</td>
+                <td> Rocky</td>
+                <td> <img src="Images/student11.PNG" class="image"> </td>
+                <td> 20 </td>
+                <td> 9th class </td>
+                <td>
+                    <table border="1px solid" cellpadding="5px" cellspacing="5px" class="subtable">
+                        <thead>
+                            <tr>
+                                <th> Subject </th>
+                                <th> Max </th>
+                                <th> Min </th>
+                                <th> Obtained </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> Maths </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 78 </td>
+                            </tr>
+                            <tr>
+                                <td> Science </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 99 </td>
+                            </tr>
+                            <tr>
+                                <td> Hindi </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 80 </td>
+                            </tr>
+                            <tr>
+                                <td> social </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 75 </td>
+                            </tr>
+                            <tr>
+                                <td> English </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 89 </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+
+            </tr>
+         
+            <tr class="even">
+                <td> 10</td>
+                <td> Ram</td>
+                <td> <img src="Images/student10.PNG" class="image"> </td>
+                <td> 20 </td>
+                <td> 9th class </td>
+                <td>
+                    <table border="1px solid" cellpadding="5px" cellspacing="5px" class="subtable">
+                        <thead>
+                            <tr>
+                                <th> Subject </th>
+                                <th> Max </th>
+                                <th> Min </th>
+                                <th> Obtained </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> Maths </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 78 </td>
+                            </tr>
+                            <tr>
+                                <td> Science </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 99 </td>
+                            </tr>
+                            <tr>
+                                <td> Hindi </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 80 </td>
+                            </tr>
+                            <tr>
+                                <td> social </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 75 </td>
+                            </tr>
+                            <tr>
+                                <td> English </td>
+                                <td> 100 </td>
+                                <td> 60</td>
+                                <td> 89 </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+
+            </tr>
+          </tbody>
+    </table>
+    </div>
+    <h3> @Copyrights 2023 </h3>
+</body>
+</html>
+    
+    

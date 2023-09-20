@@ -1,0 +1,16 @@
+table {
+    border-collapse: collapse;
+    margin: auto; 
+}
+
+td {
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.highlight {
+    background-color: rgb(95, 77, 143);
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Student Prgress Card Generator
+        </title>
+        <link rel="stylesheet" href="mainblock.css">
+        <script src="student.js"></script>
+    </head>
+    <body>
+        <h3 class="title">
+            STUDENT DETAILS
+        </h3>
+        <div class="container">
+            <ul>
+                <li>
+                  student name: 
+                    <input type="text" id="sname" placeholder="enter name">
+                </li>
+                <li>
+                    Age: <input type="text" id="sage" placeholder="enter age">
+                </li>
+                <li>
+                    Gender: 
+                    <input type="radio" name="gender" value="Male" checked> Male
+                    <input type="radio" name="gender" value="Female"> Female
+                </li>
+                <li>
+                    Class:
+                    <select name="" id="sclass">
+                        <option value="Class I">--enter class--</option>
+                        <option value="Class II">Class I</option>
+                        <option value="Class III"> Class II</option>
+                        <option value="Class IV">Class III</option>
+                        <option value="Class V">Class V</option>
+                        <option value="Class VI">Class VI</option>
+                    </select>
+                </li>
+                <li class="marksContainer">
+                    Marks:
+                    <input type="text" id="m1" placeholder="sub1">
+                    <input type="text" id="m2" placeholder="sub2">
+                    <input type="text" id="m3" placeholder="sub3">
+                    <input type="text" id="m4" placeholder="sub4">
+                    <input type="text" id="m5" placeholder="sub5">
+                </li>
+                <li>
+                    <input type="button" value="Generate Progress Card" onclick="ProgressCard()">
+                </li>
+            </ul>
+        </div>
+
+        <div class="progressCard">
+              <div id="foot">HERE IS RESULT</div>
+            <ul>
+                <li>Student name : <span id="rname"></span></li>
+                <li>Student Age : <span id="rage"></span></li>
+                <li>Total: <span id="rtotal"></span></li>
+                <li>Average : <span id="ravg"></span></li>
+                <li>Grade : <span id="rgrade"></span></li>
+            </ul>
+        </div>
+    </body>
+</html>

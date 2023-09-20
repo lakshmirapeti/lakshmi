@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <style>
+        h3 {
+            text-align: center;
+            border: 2px solid;
+        }
+        .personalContainer {
+            border: 2px solid;
+            height: 100%;
+        }
+        .country {
+            position: absolute;
+            left: 74%;
+            top: 80px;
+        }
+        .class {
+            position: absolute;
+            left: 74%;
+            top: 120px;
+        }
+        .personal {
+            border: 2px solid;
+            text-align: center;
+            position: absolute;
+            left: 9%;
+            top: 4%;
+            background-color: white;
+        }
+        .eduContainer {
+            margin-top: 3%;
+            border: 2px solid;
+            height: 100%;
+        }
+        .education {
+            border: 2px solid;
+            text-align: center;
+            position: absolute;
+            left: 9%;
+            top: 210px;
+            background-color: white;
+        }
+        .courseCont {
+            margin-top: 3%;
+            border: 2px solid;
+            height: 100%;
+        }
+        .course {
+            border: 2px solid;
+            text-align: center;
+            position: absolute;
+            left: 9%;
+            top: 350px;
+            background-color: white;
+        }
+        .aboutyour {
+            margin-top: 3%;
+            border: 2px solid;
+            height: 100%;
+        }
+        .about {
+            border: 2px solid;
+            text-align: center;
+            position: absolute;
+            left: 9%;
+            top: 484px;
+            background-color: white;
+        }
+        .button {
+            position: relative;
+            bottom: 10%;
+            right: -94%;
+        }
+    </style>
+    <h4 class="personal">Personal Details</h4>
+    <h4 class="education">Educational Details</h4>
+    <h4 class="course">Course Details</h4>
+    <h4 class="about">About YourSelf</h4>
+    <h3>Student Registration page</h3>
+    <div class="personalContainer">
+        <form>
+            <ul>
+                <li>
+                    <lable>
+                        <b>Name:</b>
+                    </lable>
+                    <input type="text" placeholder="Enter Student Name">
+                </li>
+                <br>
+                <li>
+                    <label>
+                        <b>Age:</b>
+                    </label>
+                    <input type="number" placeholder="Enter Age">
+                </li>
+                <br>
+                <li>
+                    <label>
+                        <b>Gender:</b>
+                    </label>
+                    <input type="radio">Male
+                    <input type="radio">FeMale
+                    <input type="radio">Others
+                </li>
+                <li class="country">
+                    <label>
+                        <b>Country Name:</b>
+                    </label>
+                    <select title="Click to get Country Name">
+                        <option></option>
+                        <option>India</option>
+                        <option>Austrelia</option>
+                        <option>Pakistan</option>
+                        <option>Japan</option>
+                        <option>Afganisthan</option>
+                    </select>
+                </li>
+                <li class="class">
+                    <label>
+                        <b>Class:</b>
+                    </label>
+                    <input type="text" "number">
+                </li>
+            </ul> 
+        </form>
+    </div>
+    <div class="eduContainer">
+        <form>
+            <ul>
+                <li>
+                    <label>
+                        <b>Languages Known:</b>
+                    </label>
+                    <input type="checkbox">Hindi
+                    <input type="checkbox">English
+                    <input type="checkbox">Marathi
+                </li>
+                <br>
+                <li>
+                    <label>
+                        <b>Qualification:</b>
+                    </label>
+                    <input type="checkbox">MBA
+                    <input type="checkbox">MCA
+                    <input type="checkbox">Btech
+                    <input type="checkbox">Graduation
+                </li>
+            </ul>
+        </form>
+    </div>
+    <div class="courseCont">
+        <form>
+            <ul>
+                <li>
+                    <label>
+                        <b>Course Option Select:</b>
+                    </label>
+                    <select title="Click to get Course Name">
+                        <option></option>
+                        <option>FrontEnd</option>
+                        <option>BackEnd</option>
+                        <option>FullStack</option>
+                        <option>Germen</option>
+                        <option>English</option>
+                    </select>
+                </li>
+                <br>
+                <li>
+                    <label>
+                        <b>Select Language:</b>
+                    </label>
+                    <select>
+                        <option></option>
+                        <option>C</option>
+                        <option>C++</option>
+                        <option>Java</option>
+                        <option>English</option>
+                        <option>Telgu</option>
+                    </select>
+                </li>
+            </ul>
+        </form>
+    </div>
+    <div class="aboutyour">
+        <form>
+            <ul>
+                <li>
+                    <label>
+                        <b>Few Words about Yourself:</b>
+                    </label>
+                    <br>
+                    <textarea rows="4" cols="50"></textarea>
+                </li>
+            </ul>
+        </form>
+    </div>
+    <br>
+    <div class="button">
+        <form>
+            <button>
+                Save Details
+            </button>
+        </form>
+    </div>
+    <h3>@Copyrights 2023</h3>
+</body>
+</html>

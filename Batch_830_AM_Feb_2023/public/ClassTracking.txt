@@ -1,0 +1,430 @@
+
+  -UI FULL STACK WEB DEVELOPMENT COURSE by Mr.Durga prasad (@ 8:30AM)Batch
+
+   Front end
+	HTML 4
+	CSS 2
+	JAVA SCRIPT (JSON,XML,DHTML,DS,Control Structure)
+	ADV J5
+	JQUERRY
+	HTML 5
+	CSS 3
+	ECMA 6
+	BOOTSTRAP latest
+
+	Server End
+	NODE JS
+	EXPRESS JS
+	WEB SERVICES/REST API/END POINTS
+	CLUSTING
+	SOCKETING
+	SESSIONS,POST/GET communications
+
+	Data base
+	MONGO DB
+
+  Tools
+	DEBUGGING TOOL
+	MONGO COMPASS TOOL
+	GIT HUB
+	POSTMAN
+
+  Editors
+	VisualStudeo CODE
+	SUBLINE TEXT EDITOR
+
+
+===========================================================================================================
+
+ class-1 (15-02-23)
+ -UI General Questions Listed (Why, Who, How and Training Details) 
+ -UI/UX- Role & Responbilities, Difference
+ -Github Signup
+
+ class-2 (16-02-23)
+ -Mean,Mern developer topic and Listed Technologies used with an Overview
+
+ class-3 (17-02-23)
+ -Difference b/w static & Dynamic Webpages
+ -Discussion of Who is Full Stack Web devloper
+
+ class-4 (20-02-23)
+ -Overview of Full Stack Webdevelopment
+ -Installation of VS Code Editor & Github Signup
+
+ class-5 (21-02-23)
+ -Markup Language- using Tags
+ -HTML page structure with each attribute explaination
+ -<br> tag
+
+ class-6 (22-02-23)
+ -p, h1, h2, h3 ... h6 tags
+ -Pre-Defined HTML attributes with syntax like name, id, title...
+ -inline css - using style attribute 
+ -color,font-size,background-color
+
+ class-7 (23-02-23)
+ -DOM Structure, different ways of defining CSS Classes attribute and applying colors
+ -CSS properties(color, border,..)
+ -code repository from github
+
+ class-8 (24-02-23)
+ -5 Types of colors: direct color name, RGB, RGBA, Hashcode, HSLA
+
+ class-9 (27-02-23)
+ -Git desktop setup
+ -cloning the github & collabration access
+ -Debugging Tool-HTML & CSS (Element)
+
+ class-10 (01-03-23)
+ -CSS priority concepts, Assignment-1(debugging tool)
+
+ class-11 (02-03-23)
+ -Exploring more tag:anchor tag(a), href tag, image tag, alternate tag, hr tag 
+ -Path of images:Relative path, Absolute path
+ -css properties: text align, height, width
+
+ class-12 (03-03-23)
+ -Blocklevel Elements and its features: div and p tag explained
+ -inline Elements and its features: span and a (anchor) tag explained
+ -Assignment-2(student details)
+
+ class-13 (04-03-23)
+ -css Float property
+ -Assignment-3(Block Game)
+
+ class-14 (06-03-23)
+ -margin, padding,Css box model, pseudo classes
+
+ class-15 (07-03-23)
+ -pseudo elements, Css overflow, <ol>,<ul>,<li> tags
+ -Assignment-4(Student Details)
+
+ class-16 (09-03-23)
+ -Steps to create node-js server, node js install, node_modules(npm install)
+
+ class-17 (10-03-23)
+ -updated nodejs server
+ -how inheritance we can apply and css properties: list-style-position,list-style type
+ -Assignment-4 Solution
+
+ class-18 (13-03-23)
+ -Adding Background image for containers
+ -Image Spriting using snipping tools
+ -Debugging Tool_Network
+ -Assignment-5_ImageSpriting
+
+ class-19 (14-03-23)
+ -CSS Display Properties (Display:none,inline,block,inline-block etc)
+ -Difference between display:none and visibility hidden properties
+ -CSS Positions
+	1. Element with position Static
+	2. Element with position Relative
+
+
+ class-20 (15-03-23)
+ -Css positions
+	3. Element with position absolute
+	4. Element with position fixed
+	5. Element with CSS-position Sticky
+ -Css Z-Index property
+
+ class-21(16-03-23)
+ -Making DOM Element to center
+ -Making Content(Text) to center
+ -HTML Tables(table,thead,tbody,th,tr,td,tfoot)
+ -Structure of Basic table in HTML
+ -Row span and col span
+
+ class-22(17-03-2023)
+ -Css opacity Property
+ -Various types of Pre-defined HTML Input Element
+
+ class-23(23-03-2023)
+ -Different ways we can send data to the server
+    1. through the form tag (Action, Method) (((only explained)))
+    2. through the API/webservice
+
+----------------------------------------------------------------------------------------------------------------
+                                 Javascript has started
+
+ class-24(24-03-2023)
+ -Basic introduction of Javascript
+ -Difference between static and dynamic webpage
+
+ class-25(25-03-2023)
+ -predefined method/function
+ -alert(".....")
+ -Difference between string, boolean, variablevalues
+ -basic Addition and subtraction using alert (to get result)
+
+ class-26(27-03-2023)
+ -Javascript display properties [alert(),console.log()]
+ -Datatypes in Javascript (Number,String,Boolean,Undefined)
+ -basic Addition, subtraction, Multiplication and Division
+ -Dynamic type casting
+
+ 
+ class-27(28-03-2023)
+ -Questions related to calculate total and average
+ -Explained undefined
+ -Variable Hoisting
+
+  class-28(29-03-2023)
+ -Prompt and parseint explained with examples
+ -control structures and its types
+ -if condition explained
+
+  class-29(30-03-2023)
+ -Conditional control Structures(if, if else, else if, nested if, nested if else)
+ -Looping control Structures(for)
+ -Difference between "=" , "==" and "==="
+
+  class-30(31-03-2023)
+ -For loop
+ -Break and continue 
+ -For while loop
+
+  class-31(01-04-2023)
+ -Examples of for and while loops
+ -Reading values through prompt
+
+  class-32(04-04-2023)
+ -While loop control structure
+ -Do while 
+
+  class-33(05-04-2023)
+ -Case control structure (Switch)
+ -Difference between while and do while
+
+  class-34(06-04-2023)
+ -Function defination and syntax
+ -how to call a function and its uses
+ -Different ways of defining a function
+
+  class-35(07-04-2023)
+ -Three scope of variables
+ -Global and local variable
+ -let keyword and block scope
+ -Difference between parameter and argument
+
+ class-36(10-04-2023)
+ -Doubt clarification related to theory
+
+ class-37(12-04-2023)
+ -Ways to use private data of one function to other
+ -DataStructures
+ -basic defination and syntax of array
+ -return statement
+ -Memory allocation and index values
+
+ class-38(13-04-2023)
+ -Array with examples
+ -Dynamic and static array
+ -Various Array predefined methods
+
+ class-39(14-04-2023)
+ -Various Array predefined methods
+ -Various String predefined methods
+ 
+ class-40(15-04-2023)
+ -Date Object
+ -Assignment questions
+
+ class-41(17-04-2023)
+ -Limitations of Array
+ -Arguments Keyword
+ -Json Data Structures
+ -Anonymous function
+ -Memory Allocation of Json Object
+
+ class-42(19-04-2023)
+ -Different ways to access values in Json
+ -Json using function (ex- Student Details)
+ -for in loop control structures
+ -Predefined Methods in Json = delete
+
+ class-43(20-04-2023)
+ -Recursive function
+ -Settimeout and Setinterval
+ -for in loop control structure
+ -Anonymous function
+ -Javascript is asynchronous / synchronous
+
+ class-44(21-04-2023)
+ -this keyword
+ -Types of JSON applied in programming
+
+ class-45(24-04-2023)
+ -Basic DHTML
+ -Events and its attributes
+ -How to get Output in webpage (Not in inspect"console")
+
+ class-46(25-04-2023)
+ -By dhtml creating elements
+ -CRUD-Js
+ -Progress card generator static and dynamically
+ -How to apply external css and js
+
+ class-47(26-04-2023)
+ -Eventobject
+ -Event handling and its types
+ -Static and dynamic Event Handling
+ -Validation(Password)
+
+ class-48(27-04-2023)
+ -How to generate OTP 
+ -How to Generate Random number
+ -How to Genearte Captcha
+ -Finding random value b/w range
+
+ class-49(28-04-2023)
+ -Products details and build up
+
+ class-50(01-05-2023)
+ -Event Bubbling and Capturing
+ -Assignment problems hint
+
+ class-51(03-05-2023)
+ -Introduction about Advanced Js
+ -Js classes with examples
+
+ class-52(04-05-2023)
+ -Constructor
+ -Inheritance
+ -single level inheritance with examples
+ -multi level inheritance with examples
+ -multiple inheritance (Not supported in js)
+
+ class-53(05-05-2023)
+ -Exception Handling and its types
+ -complier and runtime error with examples
+ -try and catch with examples
+
+ class-54(08-05-2023)
+ -coin picker
+ -user defined Exceptions
+
+ class-55(10-05-2023)
+ -Closures Introduction
+ -closure examples
+
+ class-56(11-05-2023)
+ -jquery demo- js lib.
+ -Accessing closure Data outside
+ -Syntax, Function and steps in closure
+
+ class-57(12-05-2023)
+ -Minified and non-modified code
+ -jQuery selectors and methods
+ -Steps the minify the JS code
+ -jQuery Predefined methods
+ -$.ready()
+ -Ajax Introduction
+
+ class-58(13-05-2023)
+ -Webservices
+ -Synchronous and asynchronous communication
+ -Creating a AJAX call through jQuery AJAX method
+ -Limitations of ajax call
+ -2 ways to implement communication between cross origin
+ -CORS setup
+
+ class-59(15-05-2023)
+ -jQuery selectors and methods
+ -readyMethod
+
+ class-60(16-05-2023)
+ -Templates
+ -HTML5 Introduction
+ -Local storage amd session storage
+ -Predefined methods
+ 
+ class-61(18-05-2023)
+ -Json conversion
+ -html5 Semantic Tags
+ -Methods to convert an object to string, and string back to object
+
+ class-62(19-05-2023)
+ -Audio and video Tags support
+ -All semantic tags
+ -Image Mapping
+ -Image Mapping
+
+ class-63(20-05-2023)
+ -ECMA 
+ -Import and Export
+ -Difference between Let and Const Keyword
+ -JS template
+ -Rest parameter
+
+ class-64(22-05-2023)
+ -Application Cache
+ -cache management, network and fallback
+ -canvas tag
+ -Navigator object
+ -context and svg tag
+ -GeoLocation
+
+ class-65(23-05-2023)
+ -Web Workers
+ -Drag and drop Events
+
+ class-66(24-05-2023)
+ -CSS3 Border-Radius
+ -css Box-shadow
+ -multibackground Images
+ -CSS3 transition and transformation
+ -css linear Gradient
+
+ Class-67(25-05-2023)
+ -Multi column content
+ -css Keyframes
+ 
+ Class-68(26-05-2023)
+ -css3 Flex
+ -css3 Media Queries
+
+ class-69(29-05-2023)
+ -Media Queries
+ -Media icon
+
+ class-70(31-05-2023)
+ -Grid columns and rows
+ -Grid Templates
+ -Bootstrap page
+ -Bootstrap slideshow
+
+ class-71(01-06-2023)
+ -Bootstrap Grid
+ -Bootstrap Tables
+
+----------------------Node-Js----------------------
+
+ class-72(02-06-2023)
+ -Node-js introduction and uses
+ -creating local server by using CMD(server environment)
+ -Getting output using html in server
+
+ class-73(03-06-2023)
+ -Node-Js creating first server
+
+ class-74(05-06-2023)
+ -BootStrap Dialog
+
+ class-75(06-06-2023)
+ -Difference between xml and json
+ -json stringify
+
+ class-76(07-06-2023)
+ -gitignore
+ -web developement.js
+ 
+ class-77(10-06-2023)
+ -shopping app creation
+ -mongodb installation
+
+ class-78(12-06-2023)
+ -mongodb basic connection between json and database
+ -mongodb basic connection between nodejs and mongodb
+ - use of mongodb compass

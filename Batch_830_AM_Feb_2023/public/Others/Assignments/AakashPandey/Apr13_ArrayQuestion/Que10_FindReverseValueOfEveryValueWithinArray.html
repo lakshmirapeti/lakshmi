@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindReverseValueArray</title>
+</head>
+
+<body>
+    <script>
+        var readUserArray = () => {
+            var userArray = [], size;
+
+            size = prompt("Size Of Array");
+            size = parseInt(size);
+
+            for (i = 0; i < size; i++) {
+                userArray[i] = prompt("Enter " + i + " Value");
+                userArray[i] = parseInt(userArray[i]);
+            }
+
+            console.log(userArray);
+            var mainArray = userArray;
+
+            var revers = reverseEveryElement(userArray, size);
+            console.log(revers);
+        }
+
+        var reverseEveryElement = (userArray, size) => {
+
+            // var size = userArray.length;
+
+            var outPut = [];
+
+            for (i = 0; i < size; i++) {
+                var rem = 0, result = 0;
+
+                while (userArray[i] > 0) {
+
+                    rem = userArray[i] % 10;
+                    result = (result * 10) + rem;
+                    userArray[i] = userArray[i] / 10;
+                    userArray[i] = parseInt(userArray[i])
+                }
+
+                outPut[i] = result;
+            }
+
+            return outPut;
+        }
+
+        readUserArray();
+
+    </script>
+</body>
+
+</html>

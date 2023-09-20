@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total Salary and Tax Calculator</title>
+    <style>
+      h2{
+        text-align: center;
+        font-size: 34px;
+      }
+      p{
+        text-align: center;
+        font-size: 30px;
+      }
+      .hint{
+        font-size: 22px;
+      }
+    </style>
+</head>
+<body>
+    <h2>Total Salary and Tax Calculator</h2>
+    <i><p>! See Console for results</p></i>
+    <p class="hint">Right click on Webpage then Inspect and then Console</p>
+    <p class="hint">OR</p>
+    <p class="hint">Ctrl + Shift + i and then Console</p>
+    <script>
+        var empName, empAge, department, basicSalary, empGender , HRA, PF, totalTax, totalSalary, salaryAfterTax;
+        empName = prompt("Enter Name of employee");
+        empAge = prompt("Enter Age of employee");
+        empGender = prompt("Enter Gender of employee");
+        department = prompt("Enter Department of employee");
+        basicSalary = prompt("Enter Basic Salary of employee");
+        basicSalary = parseInt(basicSalary);
+        HRA = (basicSalary * 24) / 100;
+        PF = (basicSalary * 14) / 100;
+        totalSalary = basicSalary + HRA + PF;
+
+        console.log('Name of Employee is '+ empName);
+        console.log('Age of Employee is '+ empAge);
+        console.log('Gender of Employee is '+ empGender);
+        console.log('Department of employee is '+ department);
+
+            empGender = empGender.toLowerCase();
+
+        if(empGender === "male")
+        {
+            if(totalSalary >500000){
+                taxPercent = 15;
+            }
+
+            else if(totalSalary >=300000 && totalSalary < 500000){
+                taxPercent = 10;
+            }
+
+            else if(totalSalary >=200000 && totalSalary < 300000){
+                taxPercent = 5;
+            }
+
+            else{
+                totalTax = 0;
+                taxPercent = 0;
+            }
+        }
+        else{
+
+            //For Female
+            if(totalSalary > 500000){
+                taxPercent = 10;
+            }
+
+            else if(totalSalary >= 300000 && totalSalary < 500000){
+                taxPercent = 5;
+              
+            }
+
+            else{
+                totalTax = 0;
+                taxPercent = 0;
+            }
+        }
+        totalTax = (totalSalary * taxPercent)/100;
+        salaryAfterTax = totalSalary - totalTax;
+        console.log('Tax Slab of Employee is ' + taxPercent + '%');
+        console.log('Total salary before tax is ' + totalSalary);
+        console.log('Total tax is ' + totalTax);
+        console.log('Total salary after tax is ' + salaryAfterTax);
+
+    </script>
+</body>
+</html>

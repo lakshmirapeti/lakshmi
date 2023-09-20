@@ -1,0 +1,252 @@
+<html>
+    <head>
+        <title>
+           Student Registration form
+        </title>
+        <style>
+            .header{
+                border: 3px solid darkslategray;
+                font-size: 30px;
+                text-align: center;
+                background-color: rgb(114, 181, 239);
+            }
+            .container{
+                border: 3px solid darkslategray;
+                height: 1200px;
+                width: auto;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                background-color: rgb(114, 181, 239);
+            }
+            .footer{
+                border: 3px solid darkslategray;
+                font-size: 20px;
+                text-align: center;
+                background-color: rgb(114, 181, 239);
+            }
+            li{
+                list-style-type: none;
+            }
+            .box1{
+                border: 2px solid;
+                text-align: center;
+                font-size: 21px;
+                background-color: rgb(114, 181, 239);
+                height: 35px;
+                width: 170px;
+                left: 140px;
+                top: 70px;
+                position: absolute;
+                z-index: 1;
+            }
+            .box2{
+                border: 2px solid;
+                text-align: center;
+                font-size: 21px;
+                background-color: rgb(114, 181, 239);
+                height: 35px;
+                width: 170px;
+                left: 140px;
+                top: 352px;
+                position: absolute;
+                z-index: 1;
+            }
+            .box3{
+                border: 2px solid;
+                text-align: center;
+                font-size: 21px;
+                background-color: rgb(114, 181, 239);
+                height: 35px;
+                width: 170px;
+                left: 140px;
+                top: 634px;
+                position: absolute;
+                z-index: 1;
+            }
+            .box4{
+                border: 2px solid;
+                text-align: center;
+                font-size: 21px;
+                background-color: rgb(114, 181, 239);
+                height: 35px;
+                width: 170px;
+                left: 140px;
+                top: 916px;
+                position: absolute;
+                z-index: 1;
+            }
+            .box{
+                border: 2px solid;
+                height: 250px;
+                width: 1300px;
+                margin-top: 30px;
+                margin-bottom: 30px;
+                background-color: rgb(186, 242, 223);
+            }
+            .save{
+                font-size: 18px;
+                margin: 10px;
+                right: 50px;
+                top: 1200px;
+                position: absolute;
+            }
+            #box1{
+                /*border: 1px solid;*/
+                font-size: 18px;
+                margin: 20px;
+                padding: 20px;
+                list-style: none;
+            }
+            #country{
+                font-size: 19px;
+                margin: 15px;
+                padding: 15px;
+                list-style: none;
+                right: 300px;
+                top: 100px;
+                position: absolute;
+            }
+            #selection{
+                font-size: 16px;
+            }
+            #class{
+                font-size: 19px;
+                margin: 15px;
+                padding: 15px;
+                list-style: none;
+                right: 405px;
+                top: 180px;
+                position: absolute;
+            }
+            #course{
+                font-size: 19px;
+                margin: 15px;
+                padding: 15px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="header">STUDENT REGISTRATION FORM</div>
+        <div class="container">
+            <ul>
+                <li>
+                    <div class="box1"><u>Personal Details</u></div>
+                    <div class="box">
+                        <ul>
+                            <li id="box1">
+                                <label for="username"> <b>Name :</b></label>
+                                <input type="text" name="username">
+                            </li>
+                            <li id="box1">
+                                <label for="username"><b>Age :</b></label>
+                                <input type="text" name="username">
+                            </li>
+                            <li id="box1">
+                                <label for="gender"><b>Gender :</b></label>
+                                <input type="radio" name="gender" checked>Male
+                                <input type="radio" name="gender">Female
+                                <input type="radio" name="gender">Other
+                            </li>
+                            <li id="country">
+                                <b>Country Name :</b>
+                                <select id="selection"> 
+                                    <option>India</option>
+                                    <option>China</option>
+                                    <option>Russia</option>
+                                    <option>USA</option>
+                                    <option>Germany</option>
+                                </select>
+                             </li>
+                             <li id="class">
+                                <b>Class :</b>
+                                <select id="selection">
+                                    <option>1st</option>
+                                    <option>2nd</option>
+                                    <option>3rd</option>
+                                    <option>4th</option>
+                                    <option>5th</option>
+                                    <option>6th</option>
+                                    <option>7th</option>
+                                    <option>8th</option>
+                                    <option>9th</option>
+                                    <option>10th</option>
+                                    <option>11th</option>
+                                    <option>12th</option>
+                                </select>
+                             </li>
+                        </ul>
+                        
+                    </div>
+                </li>
+                <li>
+                    <div class="box2"><u>Education Details</u></div>
+                    <div class="box">
+                        <ul>
+                            <li id="box1">
+                                <label for="edu"> <b>Languages Known :</b></label>
+                                <input type="checkbox" name="edu">English
+                                <input type="checkbox" name="edu">Hindi
+                                <input type="checkbox" name="edu">Sanskrit
+                                <input type="checkbox" name="edu"> Other
+                            </li>
+                            <li id="box1">
+                                <label for="edu"> <b>Qualification :</b></label>
+                                <input type="checkbox" name="edu">MCA
+                                <input type="checkbox" name="edu">MBA
+                                <input type="checkbox" name="edu">Btech
+                                <input type="checkbox" name="edu">Graduation
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="box3"><u>Course Details</u></div>
+                    <div class="box">
+                        <ul>
+                            <li id="course">
+                                <b>Course Option For :</b>
+                                <select id="selection">
+                                    <option>UI Full Stack Web Devlopment Course</option>
+                                    <option>Data Science</option>
+                                    <option>Adv. Java</option>
+                                    <option>C++</option>
+                                    <option>React JS</option>
+                                    <option>AI</option>
+                                    <option>Angular JS</option>
+                                </select>
+                            </li>
+                            <li id="course">
+                                <b>Language :</b>
+                                <select id="selection">
+                                    <option>English</option>
+                                    <option>Hindi</option>
+                                    <option>Sanskrit</option>
+                                    <option>Tamil</option>
+                                    <option>Gujrati</option>
+                                    <option>Marathi</option>
+                                    <option>Spanish</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="box4"><u>About Yourself</u></div>
+                    <div class="box">
+                        <ul>
+                            <li  id="box1">
+                                <label for="about"><b>Few Words About Yourself :</b></label>
+                                <textarea rows="10" cols="100" maxlength="200"   name="about"></textarea>
+                            </li>    
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <input type="button" value="Save Details" class="save">
+                </li>
+            </ul>
+        </div>
+        <div class="footer">@Copyrights 2023</div>
+    </body>
+</html>

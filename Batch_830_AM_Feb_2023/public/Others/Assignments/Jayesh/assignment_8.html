@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        header, footer {
+            border: 2px solid black;
+            border-radius: 5px;
+            color: #fff;
+            text-align: center;
+            width: 100%;
+            background-color: #333;
+        }
+        li {
+                list-style: none;
+                margin: 10px;
+                padding: 10px;
+            }
+            .form {
+                border: 4px solid black;
+                margin: 10px;
+                height: 1100px;
+            }
+        #pDetails {
+            border: 2px solid black;
+            height: 200px;
+            margin: 20px;
+        }
+        #eDetails {
+            border: 2px solid black;
+            height: 200px;
+            margin: 20px;
+        }
+        #cDetails {
+            border: 2px solid black;
+            height: 200px;
+            margin: 20px;
+        }
+        #aDetails {
+            border: 2px solid black;
+            height: 300px;
+            margin: 20px;
+        }
+        .head {
+            border: 2px solid black;
+            color: #fff;
+            background-color: #333;
+            text-align: center;
+            width: 160px;
+            height: 30px;
+            margin-left: 60px;
+            margin-top: -15px;
+        }
+        
+        .country{
+            float: right;
+            margin-right: 180px;
+        }
+        .pContent {
+            margin-left: 60px;
+        }
+        .eContent {
+            margin-left: 60px;
+        }
+        .cContent {
+            margin-left: 60px;
+        }
+        .cContent li {
+            padding-bottom: 30px;
+        }
+        .aContent {
+            margin-left: 100px;
+        }
+        .classes {
+            float: right;
+            margin-right: 180px;
+        }
+        .eContent .box {
+            margin-left: 100px;
+        }
+        button {
+            float: right;
+            background-color: rgb(75, 75, 223);
+            border: 1px solid black;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 200px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h3>Student Registration Form</h3>
+    </header>
+    <div class="form">
+        <div id="pDetails">
+            <h3 class="head">Personal Details</h3>
+             <ul class="pContent">
+                <li>
+                    <label for="username">Name:</label>
+                    <input type="text" name="username">
+                    <div class="country">
+                        Country Name:
+                        <select>
+                            <option selected>India</option>
+                            <option>China</option>
+                            <option>Pakistan</option>
+                            <option>Japan</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <label for="age">Age:</label>
+                    <input type="number" name="age" min="18" max="22">
+                    <div class="classes">
+                        Class:
+                        <select name="class">
+                            <option>1st Year</option>
+                            <option>2nd Year</option>
+                            <option>3rd Year</option>
+                            <option>4th Year</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    Gender :
+                    <input type="radio" name="gender" checked>Male
+                    <input type="radio" name="gender">Female
+                </li>
+            </ul>
+        </div>
+        <div id="eDetails">
+            <h3 class="head">Education Details</h3>
+            <ul class="eContent">
+                <li>
+                    Languages Known :
+                    <input class="box" type="checkbox">English
+                    <input class="box" type="checkbox">Hindi
+                    <input class="box" type="checkbox">Marathi
+                </li>
+                <li>
+                    Qalifications :
+                    <input class="box" type="checkbox">12th(GS)
+                    <input class="box" type="checkbox">12th(CS)
+                    <input class="box" type="checkbox">Poly
+                    <input class="box" type="checkbox">graduation
+                </li>
+            </ul>
+        </div>
+        <div id="cDetails">
+            <h3 class="head">Course Details</h3>
+            <ul class="cContent">
+                <li>
+                    Course Option For :
+                    <select>
+                        <option>Electronics & Telecommunication Engineering</option>
+                        <option>Electrical Engineering</option>
+                        <option>Computer Science Engineering</option>
+                        <option>Civil Engineering</option>
+                    </select>
+                </li>
+                <li>
+                    Language :
+                    <select>
+                        <option>English</option>
+                        <option>Japanese</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+        <div id="aDetails">
+            <h3 class="head">About Yourself</h3>
+            <div class="aContent">
+                Few Words About Yourself :
+                <textarea cols="90" rows="10" maxlength="300"></textarea>
+            </div>
+        </div>
+        <button>
+            <h3>Save Details</h3>
+        </button>
+    </div>
+    <footer>
+        <h3>@CopyRight 2023</h3>
+    </footer>
+</body>
+</html>

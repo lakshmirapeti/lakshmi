@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if else condition</title>
+</head>
+<body>
+    <script>
+        var studentName,sage,sgender;
+         studentName=prompt("Enter Student Name");
+         sage=prompt("Enter Student Age");
+         sgender=prompt("Enter gender").toLowerCase();
+
+         var math=parseInt(prompt("Enter the marks"));
+         var eng=parseInt(prompt("enter the marks"));
+         var hindi=parseInt(prompt("enter the marks"));
+
+         var total = math + eng + hindi;
+         var avg = total/3;
+
+         if(avg>50){
+            console.log("student is pass");
+            if(avg>90){
+                console.log("distinction");
+            }
+        else if(avg>60){
+            console.log("1st div");
+
+        }
+         }else{
+            console.log("fail");
+         }
+
+         console.log(avg);
+         console.log(sgender);
+         
+    </script>
+</body>
+</html>

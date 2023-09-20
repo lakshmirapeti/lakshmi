@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>printing 99 to 60</title>
+         <script>
+            function bodyload(){
+            var ul = document.getElementById("oddNumber");
+            for(var i = 200; i>=90;  i--){
+                if((i %2 ) == 0){
+                var li = document.createElement("li");
+                li.innerHTML = i;
+                ul.appendChild(li);
+                }               
+            }
+            }
+         </script>
+    </head>
+    <body onload="bodyload()">
+        <h1 style="color: blue; text-align: center;">even number between 1 to 100</h1>
+        <ul id="oddNumber">
+        </ul>
+    </body>
+</html>

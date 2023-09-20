@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>global nd local nd block variables</title>
+</head>
+<body>
+   <script>
+  var r=100 ;  // global variable
+    function showdata(){
+        console.log(r);
+    }
+        showdata();
+        showdata2 = function(){ 
+        var j=199; //local variable
+        console.log(j);
+    }
+      showdata2();
+  showdata1 = function(){ 
+            var i=9;
+        console.log(i);
+    }
+     showdata1();
+       var showdata5 =()=>{ 
+        var n=99;
+        console.log(n);
+    if(true){  //block variable
+        var n=90;
+    }
+    console.log(n);
+}
+//showdata();
+//showdata2();
+//showdata1();
+       showdata5();
+  
+   </script> 
+</body>
+</html>

@@ -1,0 +1,15 @@
+var variblename = [];
+
+(or)
+
+var variblename = new Array();
+
+var a = [23, 44,56, ,66,6,]; 
+
+var studentData = ["Raj", 20, 'male', true];
+
+------------
+
+Predefined methods can be applied on arrays :
+
+    var data = [44,4,4,4,44];

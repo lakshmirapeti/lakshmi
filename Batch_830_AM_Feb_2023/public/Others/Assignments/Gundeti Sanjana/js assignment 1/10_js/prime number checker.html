@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+
+      //create var for input
+      var input = parseInt(prompt("enter a number:"));
+
+      //prime number should not be 1 but can be 2
+      if (input == 1) {
+        console.log("not prime number");
+      } else if (input == 2) {
+        console.log(" prime number");
+      } 
+      else {
+        //create boolean var called isPrime and set to true
+        var isPrime =true;
+
+        //for loop will start from 2, will run until n is lesser than square root of input and will increment by 1
+        //n should be lesser than squareroot of number
+        for (var n = 2; n <= Math.sqrt(input); n++) {
+          //if input can de divided by any number then it is not a prime number
+          if (input % n == 0) {
+            //set isPrime to false and break the loop as it does not matter anymore since there is already 1 number that is divisible by n
+            isPrime = false;
+            break;
+          }
+        }
+      }
+
+      if (isPrime) {
+        console.log("prime number");
+      } else {
+        console.log("mot prime number");
+      }
+    </script>
+  </body>
+</html>

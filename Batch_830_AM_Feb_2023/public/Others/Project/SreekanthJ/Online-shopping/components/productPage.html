@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" type="text/css" href="../css/productPage.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="../components/productPage.html"><img src="../assets/logo.jpg" alt="Logo" width="50" height="80"></a>
+
+            <h1>Products Page</h1>
+
+            <button class="logout-btn"><a href="../components/login.html">Logout</a></button>
+        </div>
+
+        <div class="content">
+            <div class="nav">
+                <ul>
+                    <li>
+                        <span class="menu-name">Clothing</span>
+                        <ul class="menu-item">
+                            <li><a href="#" onclick="showMenuContent('Men')">Men</a></li>
+                            <li><a href="#" onclick="showMenuContent('jewelery')">Women</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="menu-name">Electronics</span>
+                        <ul class="menu-item">
+                            <li><a href="#" onclick="showMenuContent('electronics')">Mobiles</a></li>
+                            <li><a href="#" onclick="showMenuContent('laptop')">Laptops</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="content-area">
+                <div id="menu-content">
+                    <ul class="product-list">
+                        <li>
+                            <img src="${product.image}" alt="${product.title}" class="product-img">
+                            <h3 class="product-name">${product.title}</h3>
+                            <p class="product-price">$${product.price}</p>
+                            <p class="product-description">${product.description}</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>CopyRights &copy; 2023</p>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/productPage.js"></script>
+</body>
+
+</html>

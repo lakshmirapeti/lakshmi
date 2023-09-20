@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Student details
+        </title>
+    </head>
+    <body>
+        <script>
+            console.log("Demonstrating if condiiton")
+           var sname, sage, sgender;
+           sname = prompt("Etner student name");
+           sage = prompt("Etner student age");
+           sgender = prompt("Gender");
+
+           var m1 = prompt("Sub 1 marks");
+           m1 = parseInt(m1);
+           var m2 = prompt("Sub 1 marks");
+           m2 = parseInt(m2);
+           var m3 = prompt("Sub 1 marks");
+           m3 = parseInt(m3);
+
+
+           var total = m1 + m2 + m3;
+           var avg = total / 3;
+
+           console.log("Student details");
+           console.log("Student name " + sname);
+           console.log("Age is " + sage);
+           console.log("Total is " + total);
+           console.log('Avg is ' + avg);
+
+            // if (avg >= 40) {
+            //     console.log("Student got Passed");
+            // }
+            // if (avg < 40) {
+            //     console.log("Student got failed");
+            // }
+            if (avg >= 40) {
+                console.log("Student got Passed");
+                if (avg >= 90) {
+                    console.log("Student got Distinction");
+                } else if (avg >= 60) {
+                    console.log("Student got first class");
+                } else {
+                    console.log("Student got Second class");
+                }
+            } else {
+                console.log("Student got failed");
+            }
+            console.log("END")
+           
+           
+        </script>
+    </body>
+</html>

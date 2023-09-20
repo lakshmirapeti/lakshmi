@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating inheritance
+        </title>
+    </head>
+    <body>
+        <script>
+            class SellerInfo { // Parent class, base class 
+                constructor(data) {
+                    this.sellerName = data.sname;
+                    this.sellerRating = data.srating;
+                    this.sellerLocation = data.slocation;
+                }
+                displaySellerInfo() {
+                    console.log("Seller name " + this.sellerName);
+                    console.log("Seller Rating " + this.sellerRating);
+                    console.log("Seller Location " + this.sellerLocation);
+                }
+                sample() {
+                    
+                }
+            }
+
+            class ProductDetails extends SellerInfo  { // Child class, derived class 
+                constructor(data, sdata) {
+                    super(data.sellerDetails);
+                    this.sellerName = 'Indian electronics';
+                    this.pid = data.pid;
+                    this.productName = data.pname;
+                    this.productPrice = data.pprice;
+                }
+                displayProductData() {
+                    console.log("Name " + this.productName);
+                    console.log("Produt Id " + this.pid);
+                    console.log("Price " + this.productPrice);
+                    this.displaySellerInfo();
+
+                    console.log("Selle name is " + this.sellerName);
+                }
+            }
+
+            var pdata = {
+                pid: 'product_A_3456',
+                pname: 'Laptop',
+                pprice: 68768,
+                sellerDetails: {
+                    sname: 'ABC Electronics',
+                    slocation: 'Hyderabad',
+                    srating: 4.5
+                }
+            };
+            var sellerData = {}
+            var p1 = new ProductDetails(pdata, sellerData);
+            p1.displayProductData();
+        </script>
+    </body>
+</html>

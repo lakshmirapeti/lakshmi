@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Lucky Numbers in an array and add it to different array</title>
+</head>
+
+<body>
+    <h3>Find Lucky Numbers in an array and add it to different array</h3>
+    <script>
+        var readFromUser = () => {
+            var userArray = [];
+
+            //User Input
+
+            var size = prompt("Enter size of array");
+            size = parseInt(size);
+
+            for (var i = 0; i < size; i++) {
+                userArray[i] = prompt("Enter numbers");
+                userArray[i] = parseInt(userArray[i])
+            }
+            console.log('Before Calculation ' + userArray);
+            var resultArray = findLuckyAddInArray(userArray, size);
+            console.log('After Calculation ' + resultArray);
+        }
+
+        var findLuckyAddInArray = (userArray, size) => {
+            var outputArray = [];
+            // Iteration for checking every number
+            for (var j = 0; j < size; j++) {
+                var userNumber = userArray[j], sum = 0;
+                while (userNumber > 0 || sum > 9) {
+                    if (userNumber == 0) {
+                        userNumber = sum;
+                        sum = 0;
+                    }
+                    var rem = userNumber % 10;
+                    sum = sum + rem;
+                    userNumber = userNumber / 10;
+                    userNumber = parseInt(userNumber)
+                }
+                outputArray[j] = sum;
+            }
+            return outputArray;
+        }
+
+        readFromUser();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primenumber</title>
+</head>
+<body>
+    <script>
+    
+    var no=[];
+    for(var i=0 ; i<3 ; i++){
+        no[i]=prompt("enter the no");
+        no[i]=parseInt(no[i]);
+    }
+    var nl=no.length
+    for(var i=0 ; i<nl ; i++){
+        var count=0;
+        for(var j=2 ;j<no[i]; j++){
+            if(no[i]%j==0){
+                count++;
+                break;
+            }
+        
+        }
+        if(count==0){
+                console.log("prime no " + no[i])
+            }
+            else{
+                console.log(" not a prime " + no[i])
+            }
+    }
+       
+   
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+Float property
+
+
+
+margin and padding 
+
+Box model
+
+eg:
+
+#abc, div, span, .pqr {
+    ... 
+    .... 
+    ..... 
+}
+
+---\\
+
+CSS Float :
+
+    float: left / right 
+    1. left/right it renders accordingly 
+    2. multiple continues dom elments, change there defulat rendering direction through float (either left or right) they all will fall under same line, irrelavent of inline or block level
+
+
+    clear -> left / right / both 

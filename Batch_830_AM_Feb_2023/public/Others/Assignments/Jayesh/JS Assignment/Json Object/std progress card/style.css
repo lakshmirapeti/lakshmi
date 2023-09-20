@@ -1,0 +1,41 @@
+.heading {
+    text-align: center;
+    text-decoration: underline;
+    padding: 5px;
+    margin: 5px;
+}
+.container {
+    width: 600px;
+    margin: 20px auto;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: #ddd;
+}
+ul {
+    padding: 5px;
+    margin: 5px;
+}
+li {
+    list-style: none;
+    padding: 7px;
+    margin: 5px;
+    border: 1px solid #333;
+    background-color: #fff;
+}
+.marks input {
+    width: 50px;
+}
+#sage { 
+        width: 40px;
+    }
+
+.progressCard {
+    width: 600px;
+    margin: 20px auto;
+    border: 1px solid black;
+    background-color: #ccc;
+    background-color: aquamarine;
+    min-height: 200px;
+    display: none;
+
+}

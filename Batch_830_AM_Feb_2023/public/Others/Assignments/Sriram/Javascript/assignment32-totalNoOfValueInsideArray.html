@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total Number of values inside an array</title>
+</head>
+
+<body>
+    <h3>Total Number of values inside an array</h3>
+    <script>
+        var readFromArray = () => {
+            var userArray = [10, 20, 30, 40, 50];
+            var len = sizeOfArray(userArray);
+            console.log('Length of array is ' + len);
+        }
+
+        var sizeOfArray = (userArray) => {
+            var length = 0;
+            while (userArray[length] !== undefined) {
+                length = length + 1;
+            }
+            return length;
+        }
+
+        readFromArray();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>check the number is palindrome or not</title>
+    </head>
+    <body>
+        <h2>check whether the number is palindrome or Not</h2>
+        <script>
+            n= prompt("Enter the number");
+            n= parseInt(n);
+            var temp= n;
+            console.log("the Enter number is "+ n);
+            var results=0;
+            var rem;
+            while(n>0){
+                rem= n%10;
+                results=(results * 10)+ rem;
+                n= n/10;
+                n= parseInt(n);
+            }
+            if(temp==results){
+                console.log("the number is palindrome");
+            }else{
+                console.log("the number is not palindrome");
+            }
+        </script>
+    </body>
+</html>

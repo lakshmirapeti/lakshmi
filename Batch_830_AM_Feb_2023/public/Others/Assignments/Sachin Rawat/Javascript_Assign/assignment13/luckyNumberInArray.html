@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Number In Array</title>
+</head>
+<body>
+    <script>
+        var toCheckLuckyNumber = (n) =>{
+            var sum = 0;
+        while( n != 0 ){
+            var rem = n % 10;
+            sum = sum + rem;
+            n = parseInt (n/10);
+            
+            if(n==0 && sum > 9){
+                n = sum; 
+                sum = 0;
+            }
+            //return sum ;
+        }
+        console.log( "lucky number is " + sum)
+        }
+          
+
+       var totalLength = prompt("length of array") ;
+        totalLength= parseInt(totalLength) ;
+
+        var number = [] ;
+    
+        for(var i = 0 ; i < totalLength ; i++){
+        number[i] = prompt(" enter numbers ");
+        number[i] = parseInt(number[i]);
+        
+        }
+       
+        var luckyNumber = [] ;
+ 
+        for(var i = 0 ; i < number.length ; i++){
+            var result = toCheckLuckyNumber(number[i]) ;
+
+            //luckyNumber.push(result);
+
+
+        }
+       // console.log (luckyNumber) ;*/
+    </script>
+    
+</body>
+</html>

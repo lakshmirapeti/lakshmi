@@ -1,0 +1,24 @@
+.container {
+    margin: 20px auto;
+    padding: 20px;
+}
+.taskContainer {
+    width: 450px;
+    height: 290px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: yellowgreen;
+    color: brown;
+}
+.wlcmBlock {
+    width: 500px;
+    border: 1px solid;
+    text-align: center;
+    margin: 20px;
+    position: absolute;
+    padding: 30px;
+    bottom: 100px;
+    background-color: antiquewhite;
+    left: 30%;
+    display: none;
+}

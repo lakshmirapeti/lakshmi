@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of even number in array</title>
+    <style>
+        body{
+            background-color: teal;
+        }
+    </style>
+</head>
+<body>
+    <p>To read a dynamic array and find sum of even number with in it</p>
+
+<script>
+
+    var a = [];
+    sum = 0;
+    var n = [];
+
+    for(let x = 0; x < 5; x++){
+        a[x] = parseInt(prompt('Enter Number'));
+    }
+
+    for(let i = 0; i < a.length; i++){
+        var s = a[i] % 2;
+
+        if(s == 0){
+            sum = sum + a[i];
+            n.push(a[i]);
+        }
+    }
+console.log(a);
+console.log('Even numbers in array ' + n);
+console.log('The sum of all even number present in array is '+ sum);
+
+
+
+</script>
+</body>
+</html>

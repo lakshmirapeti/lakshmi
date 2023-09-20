@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Tax calculation</title>
+    </head>
+    <body>
+        <script>
+            var ename, eage, edept, gender, basicsal, href, pf, totalsal, totaltax;
+            ename=prompt("Enter Employee's name:");
+            eage=parseInt(prompt("Enter Employee's age:"));
+            edept=prompt("Enter Employee's department:");
+            gender=prompt("Enter Employee's gender:")
+            basicsal=parseInt(prompt("Enter Employee's basic salary:"));
+            console.log("Employee's name:"+ename);
+            console.log("Employee's age:"+eage);
+            console.log("Employee's gender:"+gender);
+            console.log("Employee's department:"+edept);
+            console.log("Employee's basic salary:"+basicsal);
+            hra=(24*basicsal)/100;
+            pf=(14*basicsal)/100;
+            totalsal=basicsal+hra+pf;
+            console.log("TotalSalary of "+ename+" is "+totalsal);
+            if(Gender="Male")
+            {
+                if(totalsal>=500000)
+                {
+                    totaltax=(15*totalsal)/100;
+                }
+                else if(totalsal>=300000)
+                {
+                    totaltax=(10*totalsal)/100;
+                }
+                else if(totalsal>=200000)
+                {
+                    totaltax=(5*totalsal)/100;
+                }
+                else{
+                    totaltax=totalsal;
+                }
+            }
+            else if(gender="Female")
+            {
+                if(totalsal>=500000)
+                {
+                    totaltax=(10*totalsal)/100;
+                }
+                else if(totalsal>=300000)
+                {
+                    totaltax=(5*totalsal)/100;
+                }
+                else if(totalsal>=200000)
+                {
+                    totaltax=totalsal;
+                }
+            }
+            console.log("Total Tax of "+ename+" is:"+totaltax);
+        </script>
+    </body>
+</html>

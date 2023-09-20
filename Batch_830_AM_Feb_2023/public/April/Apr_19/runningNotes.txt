@@ -1,0 +1,18 @@
+var empInfo = [
+    "Krish",
+    20,
+    'male' ,
+    'hyderabad'
+];
+
+for (var i = 0 ; i < empInfo.length; i++) {
+    console.log(empInfo[i]);
+}
+
+
+var empinfo = {
+    "name" : "Krish",
+    age: 20,
+    gender: 'male' ,
+    location: 'hyderabad'
+}

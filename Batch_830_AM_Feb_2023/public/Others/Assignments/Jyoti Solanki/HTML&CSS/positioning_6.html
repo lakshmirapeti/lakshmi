@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>positioning</title>
+            <style>
+                .header, .footer{
+                    padding : 3px;
+                    text-align: center;
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    margin-bottom: 1px;
+                    background-color: black;
+                    color: white;
+                }
+                .header{
+                    position: sticky;
+                    top: 0.1px;                  
+                    z-index: 2;
+                }
+                .block{
+                    height: 100px;
+                    width: 100px;
+                    border: 1px solid black;
+                }
+               /* topBlocks content */
+                .block1{
+                 background-color: blue;
+                }
+                .block2{
+                    position: relative;
+                    left: 92%;
+                    bottom: 101px;
+                    background-color: brown;
+                }
+                .block3{
+                    position: absolute;
+                    top: 78px;
+                    left: 32px;
+                    background-color: blueviolet;
+                }
+                .block4{
+                    position: absolute;
+                    top: 78px;
+                    right: 32px;
+                    background-color: #b5e22b;
+                }
+                .block5{
+                    position: relative;
+                    left: 37%;
+                    right: 50%;
+                    top: 76px;
+                    background-color: aqua;
+                    z-index: 1;
+                }
+
+                 /* middleBlocks content */
+                .middleBlocks{
+                    position: relative;
+                    width: 400px;
+                    margin: auto;
+                    height: 260px;
+                    bottom: 20px;
+                }
+                .block6{
+                    position: absolute;
+                    top: 6px;
+                    left: 79px;
+                    background-color: crimson;
+                }
+                .block7{
+                    position: absolute;
+                    top: 6px;
+                    right: 79px;
+                    background-color: rgb(37, 180, 137);
+                }
+                .block8{
+                    position: absolute;
+                    left: 79px;
+                    top: 138px;
+                    background-color: rgb(207, 125, 32);
+                   
+                                }
+                .block9{
+                    position: absolute;
+                    bottom: 19px;
+                    right: 79px;
+                    background-color: rgb(204, 32, 158);
+                }
+                 /* bottomBlocksn content */
+
+                .bottomBlocks{
+                    width: 100%;
+                    height: 150px;
+                    position: relative;
+                }
+                .block10{
+                    background-color: black;
+                    position: relative;
+                    left: 73px;
+                    color: wheat;
+                }
+                .block11{
+                   background-color: rosybrown;
+                   position: absolute;
+                   bottom: 15px;
+                   
+                }
+                .block12{
+                    position: relative;
+                    left: 86%;
+                    bottom: 100px;
+                    background-color: #566e6c;
+                }
+                .block13{
+                    position: absolute;
+                    right: 5px;
+                    bottom: 3px;
+                    background-color: red;
+                }
+                /* footer */
+                .footer{
+                    position: relative;
+                    top: 1px;
+                }
+            </style>            
+        </head>
+        <body>
+            <div class="header">Block Game</div>
+            <div class="container">
+                <div class="topBlocks">
+                    <div class="block block1">block1</div>
+                    <div class="block block2">block2</div>
+                    <div class="block block3">block3</div>
+                    <div class="block block4">block4</div>
+                </div>                
+                <div class="middleBlocks">
+                    <div class="block block5">block5</div>
+                    <div class="block block6">block6</div>
+                    <div class="block block7">block7</div>
+                    <div class="block block8">block8</div>
+                    <div class="block block9">block9</div>
+                </div>
+                <div class="bottomBlocks">
+                    <div class="block block10">block10</div>
+                    <div class="block block11">block11</div>
+                    <div class="block block12">block12</div>
+                    <div class="block block13">block13</div>
+                </div>
+                
+            </div>
+            <div class="footer">&copy; copy rights 2023</div>
+        </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Employee details with if</title>
+        <script>
+            var empName, empBasicSalary, empAge, empDepart ,empTax;
+              empName = prompt("Please Enter youir name.");
+              empAge = prompt("Enter Your age");
+              empGender = prompt("Enter your gender");
+              empDepart = prompt("Enter your department");
+              empBasicSalary = prompt("Enter your salary");
+              empBasicSalary = parseInt(empBasicSalary);
+              
+            var pf =  (empBasicSalary * 14) / 100;
+            var hra = (empBasicSalary * 24) / 100;
+            var empTsalary = empBasicSalary + pf + hra;
+            
+          //male tax part
+           if(empGender == 'male'){
+             if(empTsalary >= 500000){
+                empTax = (empTsalary * 15) / 100;
+                console.log(`Dear ${empName} your  tax is ${empTax}`);
+             }
+             if(empTsalary >= 300000 && empTsalary <= 500000){
+                empTax = (empTsalary * 10) / 100;
+                console.log(`Dear ${empName} your  tax is ${empTax}`);
+             }
+             if(empTsalary <= 300000){
+                console.log(`Dear ${empName} your  tax is 0`);
+             }
+           }
+           
+           //female tax part
+           if(empGender == 'female'){
+             if(empTsalary >= 500000){
+                empTax = (empTsalary * 10) / 100;
+                console.log(`Dear ${empName} your  tax is ${empTax}`);
+             }
+             if(empTsalary >= 300000 && empTsalary <= 500000){
+                empTax = (empTsalary * 5) / 100;
+                console.log(`Dear ${empName} your  tax is ${empTax}`);
+             }
+             if(empTsalary <= 300000){
+                console.log(`Dear ${empName} your  tax is 0`);
+           }
+        }
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

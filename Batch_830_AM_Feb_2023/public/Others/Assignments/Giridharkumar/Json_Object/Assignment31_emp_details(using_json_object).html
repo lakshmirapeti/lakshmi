@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment - 31</title>
+    </head>
+    <body>
+        <script>
+          /*  var EmployeeDetails = {
+                name : '',
+                age : 0,
+                gender : '',
+                basicsal : 0,
+                pf : 0,
+                hra : 0,
+                totalsal : 0,
+                taxtobepaid : 0
+
+            }
+            EmployeeDetails.name = prompt("Enter the name : " + EmployeeDetails.name)
+            EmployeeDetails.age = prompt("Enter the age : " + EmployeeDetails.age)
+            EmployeeDetails.gender = prompt("Enter the gender : " + EmployeeDetails.gender)             // Dynamic Json_Object
+            EmployeeDetails.basicsal = parseInt(prompt("Enter the basicsal : "))
+
+            EmployeeDetails.pf = (EmployeeDetails.basicsal * 14 ) / 100;
+            EmployeeDetails.hra = (EmployeeDetails.basicsal * 24) / 100;
+            EmployeeDetails.totalsal = EmployeeDetails.basicsal + EmployeeDetails.pf + EmployeeDetails.hra;
+
+            var taxpercent = 0;
+            if (EmployeeDetails.gender == 'male') {
+                if (EmployeeDetails.totalsal >= 500000) {
+                    taxpercent = 15;
+
+                } else if (EmployeeDetails.totalsal >= 400000) {
+                    taxpercent = 10;
+
+                } else if (EmployeeDetails.totalsal > 300000) {
+                    taxpercent = 5;
+
+                }
+            } else if (EmployeeDetails.totalsal > 400000) {
+                taxpercent = 10;
+
+            } else if (EmployeeDetails.totalsal > 300000) {
+                taxpercent = 5;
+
+            }
+            EmployeeDetails.taxtobepaid = (EmployeeDetails.totalsal * taxpercent) / 100
+
+            console.log(EmployeeDetails)  
+            --------------------------------------------------------------------------------------- */
+
+            var EmployeeDetails = {};
+
+            var data_from_user = () => {
+                
+                EmployeeDetails.name = prompt("Enter the name : ")
+                EmployeeDetails.age = prompt("Enter the age : " )
+                EmployeeDetails.gender = prompt("Enter the gender : ")                          // Dynamic function 
+                EmployeeDetails.basicsal = parseInt(prompt("Enter the basicsal : "))
+                find_pfAnd_hra()
+            }
+
+            var find_pfAnd_hra = () => { 
+                EmployeeDetails.pf = (EmployeeDetails.basicsal * 14 ) / 100;
+                EmployeeDetails.hra = (EmployeeDetails.basicsal * 24) / 100;
+                EmployeeDetails.totalsal = EmployeeDetails.basicsal + EmployeeDetails.pf + EmployeeDetails.hra;
+                get_taxpercent(EmployeeDetails.gender, EmployeeDetails.totalsal);
+            }
+
+            var get_taxpercent = () => {
+                var taxpercent = 0;
+                if (EmployeeDetails.gender == 'male') {
+                    if (EmployeeDetails.totalsal >= 500000) {
+                        taxpercent = 15;
+
+                    } else if (EmployeeDetails.totalsal >= 400000) {
+                        taxpercent = 10;
+
+                    } else if (EmployeeDetails.totalsal > 300000) {
+                        taxpercent = 5;
+
+                    }
+                } else if (EmployeeDetails.totalsal > 400000) {
+                    taxpercent = 10;
+
+                } else if (EmployeeDetails.totalsal > 300000) {
+                    taxpercent = 5;
+
+                }
+                EmployeeDetails.taxtobepaid = (EmployeeDetails.totalsal * taxpercent) / 100
+            }
+            var displayEmpdetails = () => {
+                data_from_user()
+                console.log("Employee name is " + EmployeeDetails.name)
+                console.log("Employee age is " + EmployeeDetails.age)
+                console.log("Employee gender is " + EmployeeDetails.gender)
+                console.log("Employee basicsalary is " + EmployeeDetails.basicsal)
+                console.log("Employee pf is " + EmployeeDetails.pf)
+                console.log("Employee hra is " + EmployeeDetails.hra)
+                console.log("Employee totalsal is " + EmployeeDetails.totalsal)
+                console.log("Employee taxtobepaid is " + EmployeeDetails.taxtobepaid)
+
+                console.log(EmployeeDetails)
+            }
+            displayEmpdetails()
+              
+
+            
+        </script>
+    </body>
+</html>

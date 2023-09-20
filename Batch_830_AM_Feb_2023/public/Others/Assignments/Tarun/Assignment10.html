@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Employee Details
+        </title>
+    </head>
+    <body>
+        <script>
+         var   Employeename = prompt("Enter your name");
+         var    Employeeage = prompt("Enter your age");
+           var Employeegender = prompt("Enter your gender");
+           var  Employeesal = prompt("Enter your sal");
+           var Employeetotal, Employeehra, Employeepf;
+
+            console.log("Enter your name"+Employeename);
+            console.log("Enter your age"+Employeeage);
+            console.log("Enter your gender"+Employeegender);
+            console.log("Enter your sal"+Employeesal);
+            console.log("Employeetotal");
+            console.log("Employeehra");
+            console.log("Employeepf");
+            
+           
+            Employeehra = 24/100*Employeesal
+            Employeepf = 14/100*Employeesal
+            Employeetotal = Employeesal + Employeehra + Employeepf
+             
+
+           if(Employeegender=="male"){
+            if(Employeetotal >= 500000){
+                console.log("taxpercent is 15%");
+            }
+
+            if(Employeetotal >= 300000){
+                console.log("taxpercent is 10%");
+            }
+
+            if(Employeetotal >= 2000000){
+                console.log("taxpercent is 5%");
+            }
+           }
+           if(Employeegender=="female"){
+            if(Employeetotal >= 600000){
+                console.log("taxpercent is 25%");
+            }
+
+            if(Employeetotal >= 500000){
+                console.log("taxpercent is 20%");
+            }
+
+            if(Employeetotal >= 1000000){
+                console.log("taxpercent is 10%");
+            }
+           }
+
+           console.log(Employeepf)
+           console.log(Employeehra)
+           console.log(Employeetotal)
+
+
+            console.log("End"); 
+
+        </script>
+    </body>
+</html>

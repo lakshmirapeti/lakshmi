@@ -1,0 +1,23 @@
+Functions:
+
+
+    Syntax:
+
+        Function definition:
+
+        function userdefinedane() {
+            ....
+            /////
+            ////
+
+        }
+
+        userdefinedane(); // calling of function 
+
+----------------------------
+
+Different ways of defning a function 
+
+function sample() {
+    ....
+}

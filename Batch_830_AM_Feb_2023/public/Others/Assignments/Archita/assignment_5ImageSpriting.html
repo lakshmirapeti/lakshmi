@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details Image Spriting</title>
+
+    <style>
+        .header{
+            text-align: center;
+            border: 2px Solid rgb(8, 8, 8);
+            color: rgb(252, 251, 251);
+            margin: 5px;
+            background-color: blue;
+        }
+        .container{
+            border: 2px solid;
+            margin: 5px;
+            height: 550px;
+        }
+        .left, .right{
+            border: 1px solid;
+            height: 500px;
+            float: left;
+            margin: 5px;
+            padding: 5px;
+            overflow: auto;
+        }
+        .left{
+            width: 29%;
+        }
+        .right{
+            width: 68%;
+        }
+        ol, ul{
+            margin: 0;
+            padding: 0;
+        }
+        ol li {
+            border: 1px solid;
+            list-style-position: inside;
+            padding: 7px;
+            margin: 5px;
+            text-align: center;
+        }
+
+        .footer{
+            text-align: center;
+            border: 2px Solid rgb(8, 8, 8);
+            color: rgb(254, 253, 253);
+            margin: 5px;
+            background-color: blue;
+        }
+        .imgblock, .details{
+            border: 1px solid;
+            float: left;
+            height: 150px;
+            padding: 5px;
+            margin: 5px;
+        }
+        .imgblock{
+            width: 150px;
+        }
+        .details{
+            width: 770px;
+        }
+        .details li{
+            list-style: none;
+            padding: 9px;
+            font-size: 17px;
+        }
+       
+        
+        .box > li{
+            list-style: none;
+            padding: 10px;
+            margin: 10px;
+            height: 175px;
+            border: 1px solid;
+        }
+        .imgblock{
+            border: 1px solid;
+            width: 150px;
+            height: 150px;
+            background-image: url("images/first.png");
+        }
+        .b0{
+            background-position: -27px -13px;
+        }
+        .b1{
+            background-position: -214px -34px;
+        }
+        .b2{
+            background-position: -94px -229px;
+        }
+        .b3{
+            background-position: -481px -229px;
+        }
+        .b4{
+            background-position: -426px -20px;
+        }
+        .b5{
+            background-position: -292px -231px;
+        }
+        .b6{
+            background-position: -623px -19px;
+        }
+        .b7{
+            background-position: -681px -236px;
+        }
+        .b8{
+            background-position: -1019px -18px;
+        }
+        .b9{
+            background-position: -924px -234px;
+        }
+        .b10{
+            background-position: -819px -12px;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <div class="header">
+        <h2>Image Spriting</h2>
+    </div>
+
+    <div class="container">
+        <div class="left">
+            <ol>
+                <li>Archu</li>
+                <li>Babita</li>
+                <li>Deena</li>
+                <li>Sumit</li>
+                <li>Aaru</li>
+                <li>Vipin</li>
+                <li>Kajal</li>
+                <li>Ram</li>
+                <li>Samita</li>
+                <li>Krish</li>
+                <li>Neha</li>
+            </ol>
+        </div>
+        <div class="right">
+            <ul class="box">
+                <li>
+                    <div class="imgblock b0"></div>
+                    <div class="details">
+                        <ul>
+                            <li>Name: Archu</li>
+                            <li>Age: 20</li>
+                            <li>Location: MP</li>
+                            <li>Gender: Female</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgblock b1"></div>
+                    <div class="details">
+                        <ul>
+                            <li>Name: Babita</li>
+                            <li>Age: 30</li>
+                            <li>Location: Chhatteesgrah</li>
+                            <li>Gender: Female</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgblock b2"></div>
+                    <div class="details">
+                        <ul>
+                            <li>Name: Deena</li>
+                            <li>Age: 23</li>
+                            <li>Location: Sitpura</li>
+                            <li>Gender: Male</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgblock b3"></div>
+                    <div class="details">
+                        <ul>
+                            <li>Name: Sumit</li>
+                            <li>Age: 28</li>
+                            <li>Location: Bhopal</li>
+                            <li>Gender: Male</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgblock b4"></div>
+                    <div class="details">
+                        <ul>
+                            <li>Name: Aaru</li>
+                            <li>Age: 21</li>
+                            <li>Location: UP</li>
+                            <li>Gender: Female</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgblock b5"></div>
+                    <div class="details">
+                        <ul>
+                            <li>Name: Vipin</li>
+                            <li>Age: 32</li>
+                            <li>Location: Nagod</li>
+                            <li>Gender: Male</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgblock b6"></div>
+                    <div class="details">
+                        <ul>
+                            <li>Name: Kajal</li>
+                            <li>Age: 23</li>
+                            <li>Location: Dali Baba</li>
+                            <li>Gender: Female</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgblock b7"></div>
+                    <div class="details">
+                        <ul>
+                            <li>Name: Ram</li>
+                            <li>Age: 28</li>
+                            <li>Location: Chitrakoot</li>
+                            <li>Gender: Male</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgblock b8"></div>
+                    <div class="details">
+                        <ul>
+                            <li>Name: Samita</li>
+                            <li>Age: 26</li>
+                            <li>Location: Nyaganv</li>
+                            <li>Gender: Female</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgblock b9"></div>
+                    <div class="details">
+                        <ul>
+                            <li>Name: Krish</li>
+                            <li>Age: 30</li>
+                            <li>Location: Indore</li>
+                            <li>Gender: Male</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgblock b10"></div>
+                    <div class="details">
+                        <ul>
+                            <li>Name: Neha</li>
+                            <li>Age: 28</li>
+                            <li>Location: Rewa</li>
+                            <li>Gender: Female</li>
+                        </ul>
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h3>@Copyright 2023</h3>
+    </div>
+</body>
+</html>

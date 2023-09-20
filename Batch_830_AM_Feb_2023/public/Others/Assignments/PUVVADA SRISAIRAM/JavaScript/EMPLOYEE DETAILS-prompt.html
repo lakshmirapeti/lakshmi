@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>employee details</title>
+</head>
+<body>
+        <script>
+                    var eName, eAge, eGender, eDept, basic, hra, pf; 
+
+            eName = prompt("Enter Employee Name");
+            eAge = prompt("Enter Employee Age");
+            eGender =prompt ("Enter Employee Gender");
+            eDept = prompt ("Enter Employee Department");
+            basic = prompt ("Enter Employee Basic Salary");
+            basic = parseInt (basic);
+            hra = (basic * 24)/100;
+            pf = (basic * 15)/100;
+                
+            var total = basic + hra + pf;
+
+            console.log ("empDetails" + "\nName :"  + eName + "\nAge :"  +eAge  +"\nGender :"  +eGender +"\nDept : " + eDept  +"\nbasic :"  + basic  +"\nhra :" +hra  + "\npf :"  +pf + "\nTotal Salary : " + total);
+        </script>
+</body>
+</html>

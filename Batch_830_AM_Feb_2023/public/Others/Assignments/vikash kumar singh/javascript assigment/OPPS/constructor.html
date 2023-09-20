@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <h3>CONSTRUCTOR</h3>
+  <body>
+    <script>
+
+
+
+
+      class Railwayform {
+        constructor(givenname, trainNo,address) {
+          this.name = givenname;
+          this.trainNo = trainNo;
+           this.address=address
+
+        }
+        prev(){
+            alert(this.name+": your form is prev for train number:"+this.trainNo+":and your address is "+ this.address)
+        }
+        submit() {
+          alert(   this.name +":your form is submitted for train number:" + this.trainNo );
+        }
+        cancel() {
+          alert(   this.name + ": your form is cacelled for train number" +this.trainNo);
+        }
+      }
+      const Roshuform = new Railwayform("Shishu", "857478","Saudi DUBAI");
+    //   console.log(Roshuform);
+    
+      Roshuform.submit();
+      Roshuform.cancel();
+     Roshuform.prev();
+
+
+
+
+
+
+
+
+
+
+
+      //    class person{
+      //     constructor(name,age){
+      //         this.name=name;
+      //         this.age=age;
+      //         this.greet=function(){
+      //             console.log("Good Morning")
+      //         }
+      //     }
+      //    }
+      //    const person1= new person('rohit',22)
+      //    console.log(person1)
+      //    person1.greet()
+
+      //   class student{
+      //         constructor(){
+      //             let name;
+      //             console.log('constructor called !')
+      //         }
+      //         hello(){
+      //            console.log(this.name +name)
+      //         }
+      //   }
+
+      //  let a=new student();
+
+      // a.name='roshu'
+      //   a.hello();
+
+      // class student{
+      //     constructor(name,age){
+      //         this.sname=name;
+      //         this.sage=age;
+      //         console.log('cpnstructor called !')
+      //     }
+      //  hello(){
+      //     console.log('hello' +  this.sname + 'your age is '+ this.sage)
+      //  }
+
+      // }
+
+      // let details=new student('rohit singh',25)
+
+      //  details.hello();
+
+      // function stddetails(fname,lname,age,clas,department){
+      //  this.fname=fname;
+      //  this.lname=lname;
+      //  this.stdage=age;
+      //   this.stdclas=clas;
+      // this.stddepartment=department;
+      // }
+
+      // var std2details= new stddetails('vikash','singh','22','12','it')
+      //     std2details.nationality="indian";
+      // // var std3detils= new stddetails('vikash','22','12','it')
+
+      //   std2details.sname=function (){
+      //         return this.fname + " "+ this.lname;
+      //   }
+
+      // console.log(std2details.sname())
+
+      //    function Mobile(){
+      //     this.model='3310';
+      //     this.price='50000'
+      //    }
+
+      //    var samsung= new Mobile();
+      //    console.log(samsung)
+
+      //  function student(studentName, roll=0){
+
+      //     this.studentName=studentName;
+      //       this.roll=roll;
+
+      //  }
+
+      //  const newstudent=new student('ROSHU',35)
+      // const newstudent2=new student('VIKASH',50)
+
+      //  console.log(newstudent,newstudent2)
+
+      //  function Bankaccount(CoustumerName,Blance=0){
+      //     this.CoustumerName=CoustumerName;
+      //     this.Blance=Blance;
+
+      //     this.desposit=(amount)=>{
+
+      //         this.Blance=Blance+amount;
+      //     }
+
+      //     this.withdraw =(amount)=>{
+      //        this.Blance-=amount;
+      //     }
+      //  }
+
+      //  const mybankacout= new Bankaccount('ROHIT',5000)
+
+      //  mybankacout.desposit(1000)
+
+      //  mybankacout.withdraw(2000)
+
+      //  console.log(mybankacout)
+    </script>
+  </body>
+</html>

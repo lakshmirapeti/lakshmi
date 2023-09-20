@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>print number one to 100</title>
+         <script>
+            function bodyload(){
+            var ul = document.getElementById("printNumber");
+            for(var i = 1; i<=100; i++){
+                var li = document.createElement("li");
+                li.innerHTML = i;
+                ul.appendChild(li);
+            }
+            }
+         </script>
+    </head>
+    <body onload="bodyload()">
+        <h1 style="color: blue; text-align: center;">Number counting  1 to 100</h1>
+        <ul id="printNumber">
+        </ul>
+    </body>
+</html>

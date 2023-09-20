@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstrating of Spriting</title>
+    <style>
+        *{
+            width: 100%;
+            margin: 10px;
+            padding: 5px;
+        }
+        h3{
+            border: 2px solid blue;
+            text-align: center;
+            width: 1000px;
+            height: 20px;
+        }
+        .main{
+            border: 2px solid black;
+            height: 500px;
+            width: 1000px;
+        }
+        .left{
+            border: 2px solid red;
+            width: 300px;
+            float: left;
+            margin: 10px;
+            height: 460px;
+            overflow-y: auto;
+        }
+        .right{
+            border: 2px solid green;
+            width: 600px;
+            float: left;
+            margin: 10px;
+            height: 460px;
+            overflow-y: auto;
+        }
+        .parent{
+            border: 2px solid black;
+            width: 550px;
+            height: 160px;
+        }
+        .image{
+            border: 2px solid yellowgreen;
+            width: 120px;
+            height: 100px;
+            float: left;
+            padding: 5px;
+            margin: 10px;
+            background: url("img.png");
+            background-position: 100px -660px;
+        }
+        .details{
+            width: 120px;
+            float: left;
+            height: 90px;
+
+        }
+        .border{
+            border: 2px solid orangered;
+            width: 100px;
+            list-style-position: inside;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Student Details</h3>
+    <div class="main">
+        <div class="left">
+            <div>
+                <ol>
+                    <li class="border">Ramesh</li>
+                    <li class="border">Naresh</li>
+                    <li class="border">Krishna</li>
+                    <li class="border">Raj</li>
+                    <li class="border">Heena</li>
+                    <li class="border">Dev</li>
+                    <li class="border">Teena</li>
+                    <li class="border">Dhruv</li>
+                    <li class="border">Sachin</li>
+                    <li class="border">Krish</li>
+                </ol>
+            </div>
+        </div>
+        <div class="right">
+            <div class="parent">
+                <div class="image" style="background-position: -1188px -15px">
+    
+                </div>
+                <div class="details">
+                    <ul>
+                        <li>Name: Ramesh</li>
+                        <li>Roll: 1</li>
+                        <li>Age: 17</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="parent">
+                <div class="image" style="background-position: -849px -55px;"> 
+                </div>
+                <div class="details">
+                    <ul>
+                        <li>Name: Naresh</li>
+                        <li>Roll: 2</li>
+                        <li>Age: 17</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="parent">
+                <div class="image" style="background-position: -1562px -16px;"></div>
+                <div class="details">
+                    <ul>
+                        <li>Name: Krishna</li>
+                        <li>Roll: 3</li>
+                        <li>Age: 18</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="parent">
+                <div class="image" style="background-position: -124px -396px;"> 
+                </div>
+                <div class="details">
+                    <ul>
+                        <li>Name: Raj</li>
+                        <li>Roll: 4</li>
+                        <li>Age: 15</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="parent">
+                <div class="image" style="background-position: -149px -21px;">
+                </div>
+                <div class="details">
+                    <ul>
+                        <li>Name: Heena</li>
+                        <li>Roll: 5</li>
+                        <li>Age: 20</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="parent">
+                <div class="image" style="background-position: -428px -385px;">
+                    <img src=""> 
+                </div>
+                <div class="details">
+                    <ul>
+                        <li>Name: Dev</li>
+                        <li>Roll: 6</li>
+                        <li>Age: 14</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="parent">
+                <div class="image" style="background-position: -478px -44px;">
+                    <img src=""> 
+                </div>
+                <div class="details">
+                    <ul>
+                        <li>Name: Teena</li>
+                        <li>Roll: 7</li>
+                        <li>Age: 17</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="parent">
+                <div class="image" style="background-position: -834px -380px;">
+                    <img src=""> 
+                </div>
+                <div class="details">
+                    <ul>
+                        <li>Name: Dhruv</li>
+                        <li>Roll: 8</li>
+                        <li>Age: 21</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="parent">
+                <div class="image" style="background-position: -1196px -387px;">
+                    <img src=""> 
+                </div>
+                <div class="details">
+                    <ul>
+                        <li>Name: Sachin</li>
+                        <li>Roll: 9</li>
+                        <li>Age: 22</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="parent">
+                <div class="image" style="background-position: -1603px -373px;">
+                    <img src=""> 
+                </div>
+                <div class="details">
+                    <ul>
+                        <li>Name: Krishna</li>
+                        <li>Roll: 10</li>
+                        <li>Age: 17</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

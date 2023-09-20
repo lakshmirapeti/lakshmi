@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            margin: 10px auto;
+            padding: 0px 70px;
+            text-align: center;
+        }
+        li{
+            list-style: none;
+            padding: 10px;
+            margin: 10px;
+            border: 2px solid black;
+        }
+        input{
+            margin: 5px;
+        }
+        h3{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h3>Student Progress Card</h3>
+    <ul>
+        <li>
+            Enter student name:
+            <input type="text" id = "sname">
+        </li>
+        <li>
+            Enter student age:
+            <input type="text" id = "sage">
+        </li>
+        <li>
+            Enter student class:
+            <input type="text" id = "sclass">
+        </li>
+        <li>
+            Enter subject1 marks:
+            <input type="text" id = "marks1">
+            Enter subject2 marks:
+            <input type="text" id = "marks2">
+            Enter subject3 marks:
+            <input type="text" id = "marks3">
+            Enter subject4 marks:
+            <input type="text" id = "marks4">
+            Enter subject5 marks:
+            <input type="text" id = "marks5">
+        </li>
+        <li>
+            <input type="button" value="Generate progress" onclick="readProgress()">
+        </li>
+        <li>
+            <span>Total marks </span>
+            <span id="reportMarks">=</span>
+            <span>Grade </span>
+            <span id="reportGrade">=</span>
+        </li>
+    </ul>
+    <script>
+        var readProgress = () => {
+            var marks = {};
+            var total = 0;
+            marks.marksArray = [];
+            for(var i = 1; i <= 5; i++)
+            {
+                var cuur = "#marks" + i;
+                marks.marksArray.push(parseInt(document.querySelector(cuur).value));
+            }
+            generateProgress(marks.marksArray);
+        }
+        var generateProgress = (array) =>{
+            var totalMarks = 0;
+            for(var i = 0; i < 5; i++)
+            {
+                totalMarks += array[i];
+            }
+            document.querySelector("#reportMarks").innerText = totalMarks;
+            var grade = checkGrade(totalMarks);
+            document.querySelector("#reportGrade").innerText = grade;
+            setTimeout(() => {
+                displayData();
+            }, 3000);
+        }
+        var checkGrade = (totalMarks) => {
+            if(totalMarks > 400)
+            return 'A';
+            else if(totalMarks > 300)
+            return 'B';
+            else if(totalMarks > 200)
+            return 'C';
+            else
+            return 'F'
+        }
+        var displayData = () => {
+            document.write("Student name: " + document.querySelector("#sname").value + " " + 
+            "Student age: " + document.querySelector("#sage").value + " " + 
+            "Student class: " + document.querySelector("#sclass").value);
+        }
+    </script>
+</body>
+</html>

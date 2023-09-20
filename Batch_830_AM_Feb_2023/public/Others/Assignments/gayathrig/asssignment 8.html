@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>using input elements and all</title>
+    <style>
+        h3{
+            text-align: center;
+            color: black;
+            background-color: rgb(238, 156, 14);
+            padding: 5px;
+        }
+        .container{
+            border: 1px solid black;
+            background-color: chartreuse;
+            background-image: url("D:\images (4).jpg");
+            height: 1130px;
+            width: 100%;
+        }
+        .block{
+            margin: 25px;
+            padding: 25px;
+
+        }
+        .blockg{
+            left: 100px;
+            margin: 10px;
+            padding:10px;
+            text-align: center;
+            position: relative;
+            border: 1px solid brown;
+            background-color: aquamarine;
+            width: 150px;
+            bottom: 10px;
+        }
+        li{
+            list-style: none;
+            margin: 20px;
+        }
+        .block1{
+            background-color: rgba(252, 28, 147, 0.652);
+        }
+        .block2{
+            background-color:rgba(255, 255, 0, 0.697);
+        }
+        .block3{
+            background-color: rgba(255, 0, 0, 0.682);
+        }
+        .block4{
+            background-color: rgba(68, 255, 0, 0.777);
+        }
+        .save details{
+            position: relative;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <h3>Student Registration Form</h3>
+    <div class="container">
+        <div class="block1 block">
+        <div class="blockg">personal details</div>
+            <li>                                                                                         
+              <label for="uname">Name:</label>                                                                
+              <input type="input" name="uname">                                                                                                                                                                          
+            </li>                                                                                             
+            <li>                                                                                          
+                <label for="uage">Age:</label>
+                <input type="input" name="uage">
+            </li>
+            <li>
+                Gender:
+                <input type="radio" name="gender">male
+                <input type="radio" name="gender">female
+            </li>
+            <li>
+                country Name:
+                  <select>
+                    <option selected>India</option>
+                    <option>China</option>
+                    <option>Tamilnadu</option>
+                    <option>Maharastra</option>
+                    <option>Usa</option>
+                  </select>
+            </li>
+            <li>
+                Class:
+                <select>
+                    <option>8th class</option>
+                    <option>9th class</option>
+                    <option>10th class</option>
+                </select>
+            </li>
+    </div>
+    <div class="contain">
+        <div class="block2 block">
+            <div class="blockg">Education Details</div>
+            <li>
+                Languages Known:
+                <input type="checkbox">English
+                <input type="checkbox">Telugu
+                <input type="checkbox">hindi
+            </li>
+            <li>
+                Qualification:
+                <input type="checkbox">M.C.A
+                <input type="checkbox">M.B.A
+                <input type="checkbox">B.tech
+                <input type="checkbox">Graduation
+            </li>
+        </div>
+    </div>
+    <div class="details">
+        <div class="block3 block">
+            <div class="blockg">Course Details</div>
+            <li>
+                Course option for:
+                <select>
+                    <option>oracle</option>
+                    <option>Front End</option>
+                    <option>Digital Marketing</option>
+                    <option>Back END</option>
+                    <option>Cloud Computing</option>
+                    <option>FULL STACK</option>
+                </select>
+            </li>
+            <li>
+                Languages:
+                
+               <select>
+                <option>python</option>
+                <option>sQL</option>
+                <OPTION>C</OPTION>
+               </select>
+            </li>
+        </div>
+    </div>
+        <div class="block4 block">
+            <div class="blockg">About urself</div>
+            <li>
+                Few Words About yourself:
+                <textarea maxlength="300" rows="5" coloums="5"></textarea>
+            </li>
+            </div>
+               <li>
+                  <input type="button" value="save details">
+               </li>
+    </div>
+    <h3>@copyrights 2023</h3>
+</body>
+</html>

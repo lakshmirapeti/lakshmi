@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Salary Slip Details</title> 
+
+    <link rel="stylesheet" href="empStyle.css">
+    <script src="empAction.js"></script>
+</head>
+<body>
+    <h3 class="h3">Employee Payslip Generator</h3>
+    <div class="contain">
+        <ul>
+            <li>
+                Enter Name of Employee :
+                <input type="text" id="ename">
+            </li>
+            <li>
+                Enter Age of Employee :
+                <input type="number" id="eage">
+            </li>
+            <li>
+                Select Gender of Employee
+                <input type="radio" name="gender" value="Male" checked>Male
+                <input type="radio" name="gender" value="Female">Female
+            </li>
+            <li>
+                Enter Month :
+                <select id="emonth">
+                    <option value="Jan" selected>Jan</option>
+                    <option value="Feb">Feb</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="Aug">Agu</option>
+                    <option value="Sep">Sep</option>
+                    <option value="Oct">Octomber</option>
+                    <option value="Nov">November</option>
+                    <option value="Dec">December</option>
+                </select>
+            </li>
+            <li>
+                Enter Department of Employee :
+                <select id="eDept">
+                    <option value="HR" selected>Web Developer</option>
+                    <option value="Jr Developer">Java Developer</option>
+                    <option value="Sr Developer">Sr Developer</option>
+                    <option value="Dy Manager">Tester</option>
+                    <option value="General Manager">General Manager</option>
+                    <option value="Asst. Manager">Asst. Manager</option>
+                </select>
+            </li>
+            <li>
+                Enter Basic Salary of Employee :
+                <input type="number" id="esal">
+            </li>
+            <li>
+                <div>
+                    <center><input type="button" value="Generate Payslip" id="generatePayslip" onclick="generatePayslip()"></center>
+                    
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="resultContainer">
+        <h4 class="h4">Calculated Salary slip</h4>
+        <ul>
+            <li>
+                Employee Name: <span id="rName"></span>
+            </li>
+            <li>
+                Employee Age: <span id="rAge"></span>
+            </li>
+            <li>
+                Employee Gender: <span id="rGender"></span>
+            </li>
+            <li>
+                Employee Month: <span id="rMonth"></span>
+            </li>
+            <li>
+                Department : <span id="rDept"></span>
+            </li>
+            <li>
+                Basic Salary: <span id="rBasicSal"></span>
+            </li>
+            <li>
+                PF : <span id="rPF"></span>
+            </li>
+            <li>
+                HRA : <span id="rHRA"></span>
+            </li>
+            <li>
+                Total Tax : <span id="rTotalTax"></span>
+            </li>
+            <li>
+                Tax Slab : <span id="rTaxSlab"></span><span>%</span>
+            </li>
+            <li>
+                Total Salary After Tax : <span id="rSalAftTax"></span>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

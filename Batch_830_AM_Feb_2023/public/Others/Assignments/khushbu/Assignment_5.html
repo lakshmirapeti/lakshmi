@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment4</title>
+    <style>
+        #navbar {
+            height: 50px;
+            border: 2px solid black;
+            background-color: lightgrey;
+            text-align: center;
+            margin: 10px;
+        }
+        body {
+            background-color:  pink;
+        }
+        #container {
+            margin: auto;
+            height: 2320px;
+            border: 4px  black;
+        }
+        .names {
+            background-color: lightsalmon ;
+            width: 35%;
+            display: inline-block;
+            float: left;
+            margin: 10px;
+            border: 4px solid black;
+        }
+        .names .block {
+            background-color: lightskyblue ;
+            width: 55%;
+            text-align: center;
+            border: 3px solid black;
+            border-radius: 4px;
+            margin-bottom: 30px;
+            height: 105px;
+        }
+        .names li{
+            align-items: center;
+            padding-top: 75px;
+        }
+        .details {
+            background-color: rosybrown;
+            display: inline-block;
+            width: 59%;
+            float: right;
+            border: 4px solid black;
+            margin: 10px;
+        }
+        .details .box {
+            background-color: lightgreen ;
+            width: 95%;
+            list-style: none;
+            border: 3px solid black;
+            border-radius: 4px;
+            margin-bottom: 30px;
+            height: 180px;
+        }
+        .details .img {
+            padding: 10px;
+            width: 30%;
+            height: 150px;
+            float: left;
+        }
+        .box .box_content {
+            padding-left: 100px;
+        }
+        #footer  {
+            clear: both;
+            /* width: 100%; */
+            text-align: center;
+            border:3px solid black;
+            background-color: grey;
+            height: 50px;
+        }
+        #footer h3 {
+            padding-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+    <nav id="navbar">
+        <h2>Student Details</h2>
+    </nav>
+        <div class="names">
+                <ol>
+                    <li class="block">khushbu Chaudhari</li>
+                    <li class="block">Bharti Rahangdale</li>
+                    <li class="block">Ragini Pardhi</li>
+                    <li class="block">Veera Rane</li>
+                    <li class="block">Simran Santani</li>
+                    <li class="block">Abhi Tathe</li>
+                    <li class="block">Ritesh Unhale</li>
+                    <li class="block">Kunj Thakre</li>
+                    <li class="block">Raj Parihar</li>
+                    <li class="block">Mohal Rane</li>
+                </ol>
+        </div>
+        <div class="details">
+            <ul>
+                <li class="box"><img class="img" src="C:\UI Full Stack\gettyimages-511353109-612x612.jpg" alt="">
+                    <div class="box_content"> 
+                    <h4>Name: Khushbu Chaudhari</h4>
+                    <h4>Age: 22</h4>
+                    <h4>Gender: Female</h4>
+                    <h4>Location: Hydrabad</h4>
+                    </div> 
+                </li>
+                <li class="box"><img class="img" src="C:\UI Full Stack\gettyimages-1190367451-612x612.jpg" alt="">
+                    <div class="box_content"> 
+                    <h4>Name: Bharti Rahangdale</h4>
+                    <h4>Age: 23</h4>
+                    <h4>Gender: Female</h4>
+                    <h4>Location: Gondia</h4>
+                    </div>
+                </li>
+                <li class="box"><img class="img" src="C:\UI Full Stack\gettyimages-1272815911-612x612.jpg" alt=""> 
+                    <div class="box_content"> 
+                        <h4>Name: Ragini Pardhi</h4>
+                        <h4>Age: 21</h4>
+                        <h4>Gender: Female</h4>
+                        <h4>Location: Nagpur</h4>
+                    </div>
+                </li>
+                <li class="box"><img class="img" src="C:\UI Full Stack\gettyimages-1359499268-612x612.jpg" alt=""> 
+                    <div class="box_content"> 
+                        <h4>Name: Simran Santani </h4>
+                        <h4>Age: 23</h4>
+                        <h4>Gender: Female</h4>
+                        <h4>Location: Delhi</h4></div></li>
+                <li class="box"><img class="img" src="C:\UI Full Stack\istockphoto-1365601848-170667a.jpg" alt=""> 
+                    <div class="box_content"> 
+                        <h4>Name: Veera Rane</h4>
+                        <h4>Age: 22</h4>
+                        <h4>Gender: Female</h4>
+                        <h4>Location: Amravati</h4>
+                    </div>
+                </li>
+                <li class="box"><img class="img" src="C:\UI Full Stack\gettyimages-1336832604-612x612.jpg" alt="">
+                    <div class="box_content"> 
+                        <h4>Name: Abhi Tathe</h4>
+                        <h4>Age: 22</h4>
+                        <h4>Gender: Male</h4>
+                        <h4>Location: Akola</h4>
+                    </div>
+                </li>
+                <li class="box"><img class="img" src="C:\UI Full Stack\6bc750d620107239e86bb332a7c82612.jpg" alt="">
+                    <div class="box_content"> 
+                        <h4>Name: Ritesh Unhale</h4>
+                        <h4>Age: 22</h4>
+                        <h4>Gender: Male</h4>
+                        <h4>Location: Pune</h4>
+                    </div>
+                </li>
+                <li class="box"><img class="img" src="C:\UI Full Stack\istockphoto-1152086681-612x612.jpg" alt="">
+                    <div class="box_content">
+                        <h4>Name: Kunj Thakre</h4>
+                        <h4>Age: 23</h4>
+                        <h4>Gender: Male</h4>
+                        <h4>Location: Delhi</h4>
+                    </div>
+                </li>
+                <li class="box"><img class="img" src="C:\UI Full Stack\8f0fa1b4ce924611c84b1043bfccf6fc--students-royalty-free-image.jpg" alt="">
+                    <div class="box_content"> 
+                        <h4>Name: Raj Parihar</h4>
+                        <h4>Age: 20</h4>
+                        <h4>Gender: Female</h4>
+                        <h4>Location: munbai</h4>
+                    </div>
+                </li>
+                <li class="box"><img class="img" src="C:\UI Full Stack\depositphotos_184127388-stock-photo-a-male-student-with-a.jpg" alt="">
+                    <div class="box_content"> 
+                        <h4>Name: Mohal Rane</h4>
+                        <h4>Age: 21</h4>
+                        <h4>Gender: Male</h4>
+                        <h4>Location: Delhi</h4>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="footer"><h2> @Copy Rights 2023</h2></div>
+    </div>
+</body>
+</html>

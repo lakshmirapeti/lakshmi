@@ -1,0 +1,16 @@
+Javascript:
+    1. dynamic webpages
+    2. Arithmatic
+
+    core js 
+
+    Adv js 
+
+    ECMA
+
+    Programming languages comes with predefined methods/keywords/objects classes etc...
+
+
+    TC  - 
+
+        

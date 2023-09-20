@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>April 16th 2023</title>
+</head>
+<body>
+    <script>
+        var day = ['sun','mon','tues','wed','thurs','fri','sat']
+        var month = ['jan','feb','mar','April','may','jun','jul','aug','sept','oct','nov','dec']
+        
+        var mydate = new Date();
+
+        var dayIndex = mydate.getDay();
+        var monthIndex = mydate.getMonth();
+
+
+        var customDate = (month[monthIndex])+" "+mydate.getDate()+"th"+" "+mydate.getFullYear();
+        console.log(customDate);
+    </script>
+</body>
+</html>

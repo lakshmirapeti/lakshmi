@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+
+            var empDetails = {};
+
+            var readEmployeeDetails = () => {
+                empDetails.name = prompt("Enter value of name");
+                empDetails['age'] = prompt("Enter value of age");
+                empDetails.gender = prompt("Enter value of gender");
+                empDetails.basicSal = prompt("Enter value of sal");
+                empDetails.basicSal = parseInt(empDetails.basicSal);
+                getPfAndHra();
+            }
+ 
+            var getPfAndHra  = () => {
+                empDetails.pf = ( empDetails.basicSal * 14 ) / 100;
+                empDetails.hra = ( empDetails.basicSal * 24 ) / 100;
+                empDetails.totalSal = empDetails.basicSal + empDetails.pf + empDetails.hra ;
+                getTotalTax();
+            }
+
+            var getTotalTax = () => {
+                var taxPercent = 0
+                if (empDetails.gender == 'male') {
+                    if (empDetails.totalSal >= 500000)     {
+                        taxPercent = 15;
+                    }
+                } else { // female
+                    if (empDetails.totalSal >= 500000)     {
+                        taxPercent = 10;
+                    }
+                }
+                empDetails.taxTobePaid = (empDetails.basicSal * taxPercent ) / 100;
+            }
+            var displayEmployeeDetails = () => {
+                readEmployeeDetails();
+                console.log("name " + empDetails.name);
+                console.log("age " + empDetails.age);
+                console.log("Gender " + empDetails.gender);
+                console.log("Total Sal " + empDetails.totalSal);
+                console.log("Tax " + empDetails.taxTobePaid);
+
+                console.log(empDetails)
+            }
+    </script>
+</body>
+</html>

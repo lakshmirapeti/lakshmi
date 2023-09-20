@@ -1,0 +1,63 @@
+.input {
+    width: 500px;
+    margin: 10px auto;
+    padding: 10px;
+    border: 2px solid;
+}
+
+.input>li {
+    list-style: none;
+    border: 2px solid;
+    padding: 10px;
+    margin: 10px;
+}
+
+.reportTitle {
+    font-size: 25px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid;
+}
+
+.button {
+    text-align: center;
+}
+
+.results {
+    width: 500px;
+    margin: 10px auto;
+    padding: 10px;
+    border: 2px solid;
+}
+
+.percentage {
+    position: relative;
+}
+
+.grade {
+    position: relative;
+}
+
+.grade,
+.percentage {
+    border: 1px solid;
+    height: 20px;
+    width: 120px;
+}
+
+.results {
+    margin: auto
+}
+
+.resultLi li {
+    list-style: none;
+    border: 2px solid;
+    margin: 10px;
+    padding: 10px;
+}
+
+.resultLi {
+    margin: 10px auto;
+    padding: 10px;
+}

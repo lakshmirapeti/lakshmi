@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: Center;
+            border: 2px solid;
+        }
+        .block1{
+            border: 2px solid;
+            width: 150px;
+            height: 100px;
+            text-align: center;
+            background-color: yellow;
+            float: left;
+        }
+        .block2{
+            border: 2px solid;
+            width: 150px;
+            height: 100px;
+            text-align: center;
+            background-color: green;
+            float:left;
+        }
+        .block3{
+            border: 2px solid;
+            width: 150px;
+            height: 100px;
+            text-align: center;
+            background-color: rgb(0, 128, 85);
+            float:right;
+        }
+        .block4{
+            border: 2px solid;
+            width: 150px;
+            height: 100px;
+            text-align: center;
+            background-color: rgb(6, 0, 128);
+            clear: both;
+            margin: 10;
+            padding: 10;
+        }
+
+        .block5{
+            border: 2px solid;
+            width: 150px;
+            height: 100px;
+            text-align: center;
+            background-color: rgb(128, 0, 53);
+            clear: both;
+            margin: 10;
+            padding: 10;
+        }
+        .block6{
+            border: 2px solid;
+            width: 150px;
+            height: 100px;
+            text-align: center;
+            background-color: rgb(0, 150, 22);
+            float: right;
+            margin: 10;
+            padding: 10;
+        }
+
+        .block7{
+            border: 2px solid;
+            width: 150px;
+            height: 100px;
+            text-align: center;
+            background-color: rgb(150, 0, 62);
+            clear: both;
+            float: left;
+        }
+        .block8{
+            border: 2px solid;
+            width: 150px;
+            height: 100px;
+            text-align: center;
+            background-color: rgb(0, 132, 150);
+            float: left;
+        }
+
+        .block9{
+            border: 2px solid;
+            width: 150px;
+            height: 100px;
+            text-align: center;
+            background-color: rgb(0, 132, 150);
+            float: left;
+        }
+
+        .block10{
+            border: 2px solid;
+            width: 150px;
+            height: 100px;
+            text-align: center;
+            background-color: rgb(0, 132, 150);
+            float: right;
+        }
+
+        .block11{
+            border: 2px solid;
+            width: 150px;
+            height: 100px;
+            text-align: center;
+            background-color: rgb(0, 132, 150);
+            clear: both;
+            float: right;
+            margin: 10px 5px 5px;
+            padding: 10px;
+        }
+        .rights{
+            border: 2px solid;
+            text-align: center;
+            margin: 30px;
+            background-color: rgb(0, 132, 150);
+            clear: both;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1 >Block Game</h1>
+    <div class="block1">1</div>
+    <div class="block2">2</div>
+    <div class="block3">3</div>
+    <div class="block4">4</div>
+    <div class="block5">5</div>
+    <div class="block6">6</div>
+    <div class="block7">7</div>
+    <div class="block8">8</div>
+    <div class="block9">9</div>
+    <div class="block10">10</div>
+    <div class="block11">11</div>
+    <div class="rights">@Copy Rights</div>
+</body>
+</html>

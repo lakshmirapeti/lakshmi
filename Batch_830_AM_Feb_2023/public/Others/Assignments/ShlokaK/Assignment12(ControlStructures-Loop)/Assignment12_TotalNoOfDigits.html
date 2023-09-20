@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Total No. of Digits</title>
+    </head>
+    <body>
+        <script>
+            var num=parseInt(prompt("Enter the number"));
+            var duplicate=num,count=0;
+            do
+            {
+                num=parseInt(num/10);
+                count++;
+            }while(num!=0);
+            console.log("Total number of digits in "+duplicate+" are:"+count);
+        </script>
+    </body>
+</html>

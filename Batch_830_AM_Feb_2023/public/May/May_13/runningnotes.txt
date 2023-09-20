@@ -1,0 +1,43 @@
+Webservice - url / API / API endpoint / DAta URL / REST API / REST API Enpoint
+
+https://fakestoreapi.com/products/1
+
+how to create an ajax Call
+    fetch()
+    jquery - $.ajax()
+
+    Axios - axios()
+
+    Angular js -> $http 
+    Angular TS -> http 
+
+Limitation of ajax call 
+
+    file:///F:/UIClasses/UIClasses/
+    http://localhost:8081/data/getProductDetails
+
+    https://2.rome.api.flipkart.com/api/4/page/fetch
+
+PQR.com 
+
+   apid - http://pqr.com/get/countryinfo?countryname=India - 
+
+
+abc.com
+   http://abc.com/index.html
+        http://pqr.com/get/countryinfo?countryname=India
+
+
+        2 ways to implement communication btwn cross orgin
+            1. JSONP 
+            2. CORS setup 
+
+
+            JSON 
+                {name: 'Raj', age: 20}
+            JSONP
+                parseUSerData({name: 'Raj', age: 20})
+
+
+JSON
+XML

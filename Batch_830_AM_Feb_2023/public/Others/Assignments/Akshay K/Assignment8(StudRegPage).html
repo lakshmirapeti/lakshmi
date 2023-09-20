@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Student Registration Page
+    </title>
+    <style>
+        .header {
+            text-align: center;
+            border: 1px solid;
+            margin: 10px;
+            padding: 10px;
+            background-color: #95c0d7;
+            font-weight: bold;
+        }
+
+        .mainContainer {
+            border: 5px solid;
+            height: 600px;
+            overflow: auto;
+            background-color: #e9d9d9;
+        }
+
+        .container1 {
+            border: 1px solid;
+            width: 95%;
+            height: 300px;
+            padding: 10px;
+            margin: 10px;
+            position: relative;
+            top: 5%;
+        }
+
+        .container1 .block1 {
+            border: 1px solid;
+            width: 200px;
+            height: 48px;
+            text-align: center;
+            padding: 5px 0px;
+            position: absolute;
+            left: 5%;
+            top: -9%;
+            z-index: 1;
+            background-color: white;
+        }
+
+        .container1 .leftDiv,
+        .rightDiv {
+            float: left;
+            position: relative;
+            top: 10%;
+            width: 40%;
+            height: 200px;
+            margin: 20px;
+            padding: 10px;
+        }
+
+        li {
+            list-style: none;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .inpAge {
+            padding: 10px;
+            width: 50px;
+        }
+
+        .container2 {
+            border: 1px solid;
+            width: 95%;
+            height: 170px;
+            padding: 10px;
+            margin: 10px;
+            position: relative;
+            top: 11%;
+            top: 8%;
+        }
+
+        .container2 .block2 {
+            border: 1px solid;
+            width: 200px;
+            height: 48px;
+            text-align: center;
+            padding: 5px 0px;
+            position: absolute;
+            left: 5%;
+            top: -9%;
+            z-index: 1;
+            background-color: white;
+        }
+
+        .container2 .lagKnown {
+            position: absolute;
+            top: 20%;
+        }
+
+        .container2 .quali {
+            position: absolute;
+            top: 50%;
+        }
+
+        .container3 {
+            border: 1px solid;
+            width: 95%;
+            height: 220px;
+            padding: 10px;
+            margin: 10px;
+            position: relative;
+            top: 14%;
+        }
+
+        .container3 .block3 {
+            border: 1px solid;
+            width: 200px;
+            height: 48px;
+            text-align: center;
+            padding: 5px 0px;
+            position: absolute;
+            left: 5%;
+            top: -9%;
+            z-index: 1;
+            background-color: white;
+        }
+
+        .container3 .crsOpt {
+            position: absolute;
+            top: 20%;
+            padding: 10px;
+        }
+
+        .container3 .laguage {
+            position: absolute;
+            top: 50%;
+            padding: 10px;
+
+        }
+
+        .container4 {
+            border: 1px solid;
+            width: 95%;
+            height: 300px;
+            padding: 10px;
+            margin: 10px;
+            position: relative;
+            top: 21%;
+        }
+
+        .container4 .block4 {
+            border: 1px solid;
+            width: 200px;
+            height: 48px;
+            text-align: center;
+            padding: 5px 0px;
+            position: absolute;
+            left: 5%;
+            top: -9%;
+            z-index: 1;
+            background-color: white;
+        }
+
+        .container4 .txtArea {
+            position: absolute;
+            top: 16%;
+        }
+
+        .mainContainer .button {
+            position: relative;
+            top: 25%;
+            left: 45%;
+            padding: 10px;
+        }
+
+        .button .sBtn {
+            padding: 10px;
+            width: 130px;
+            background-color: #7dc9dd;
+            border-radius: 10px;
+        }
+
+        .footer {
+            text-align: center;
+            border: 1px solid;
+            font-weight: 600;
+            background-color: aquamarine;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">Student Registration Page</div>
+    <div class="mainContainer">
+        <div class="container1">
+            <div class="block1">Personal details</div>
+            <div class="leftDiv">
+                <ul>
+                    <li>
+                        <label for="Name">Name :</label>
+                        <input type="text" name="Name">
+                    </li>
+                    <li>
+                        <label for="Age">Age :</label>
+                        <input type="text" class="inpAge" name="Age">
+                    </li>
+                    <li>
+                        <label for="Gender">Gender :</label>
+                        <input type="radio" name="Gender">Male
+                        <input type="radio" name="Gender">Female
+                        <input type="radio" name="Gender">Other
+                    </li>
+                </ul>
+            </div>
+            <div class="rightDiv">
+                <ul>
+                    <li>
+                        <label for="cName">Country Name :</label>
+                        <select name="cName">
+                            <option>Select</option>
+                            <option>India</option>
+                            <option>USA</option>
+                            <option>Chia</option>
+                            <option>Japan</option>
+                            <option>UAE</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="clName">Class :</label>
+                        <select name="clName">
+                            <option>Select</option>
+                            <option>1st Class Distinction</option>
+                            <option>2nd Class</option>
+                            <option>3rd Class</option>
+                            <option>Final Year</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="block2">Education Details</div>
+            <div>
+                <ul>
+                    <li class="lagKnown">
+                        <label for="lKnown">Languages Known :</label>
+                        <input type="checkbox">English
+                        <input type="checkbox">Marathi
+                        <input type="checkbox">Hindi
+                    </li>
+                    <li class="quali">
+                        <label for="qli">Qualification :</label>
+                        <input type="checkbox">MBA
+                        <input type="checkbox">B Tech
+                        <input type="checkbox">BE
+                        <input type="checkbox">MCA
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="container3">
+            <div class="block3">Course Details</div>
+            <div>
+                <ul>
+                    <li class="crsOpt">
+                        <label for="clName">Course Option For :</label>
+                        <select name="clName">
+                            <option>Select</option>
+                            <option>Graduation</option>
+                            <option>Post Graduation</option>
+                        </select>
+                    </li>
+                    <li class="laguage">
+                        <label for="clName">Languages :</label>
+                        <select name="clName">
+                            <option>Select</option>
+                            <option>English</option>
+                            <option>Hindi</option>
+                            <option>Marathi</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container4">
+            <div class="block4">About Yourself</div>
+            <div>
+                <ul>
+                    <li class="txtArea">
+                        <label for="abYour">Few Words About Yourself :</label>
+                        <textarea name="abYour" cols="70" rows="10"></textarea>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="button">
+            <input class="sBtn" type="button" value="Save Details">
+        </div>
+    </div>
+    <div class="footer">@Copy Right 2023</div>
+</body>
+
+</html>s

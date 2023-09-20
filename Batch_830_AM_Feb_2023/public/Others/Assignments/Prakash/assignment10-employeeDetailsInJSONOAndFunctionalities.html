@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmployeeDetailsInJSONOAndFunctionalities</title>
+</head>
+
+<body>
+    <script>
+
+        // readEmplData = () => {
+        //     this.EmpData.empName = prompt("Enter Name of employee")
+        //     this.EmpData.empAge = prompt("Enter  Ageof employee")
+        //     this.EmpData.empGender = prompt("Enter Gender of employee")
+        //     this.EmpData.department = prompt("Enter department of employee")
+        //     this.EmpData.basicsalary = parseInt(prompt("Enter basic salary of employee"));
+        //     this.EmpData.employeeTotalsaiary();
+        // },
+
+        // employeeTotalsaiary = () => {
+        //     this.hra = (basicsalary * 24) / 100;
+        //     var pf = (basicsalary * 14) / 100;
+        //     this.employeeTotalsaiary = basicsalary + hra + pf;
+        //     this.taxDetalis();
+        // } 
+        // taxDetalis = () => {
+        //     var taxpercent = 0;
+
+        //     if(this.empGender === 'male'){
+        //         if(this.employeeTotalsaiary > 500000){
+        //             this.taxpercent = 15;
+        //         }
+        //         else if (this.employeeTotalsaiary >= 300000 && this.employeeTotalsaiary > 500000){
+        //             this.taxpercent = 10;
+        //         }
+        //         else if (this.totalSalary >= 200000 && this.totalSalary < 300000) {
+        //                 this.taxPercent = 5;
+        //             }
+        //             else {
+        //                 this.taxPercent = 0;
+        //             }
+        //     } 
+
+        //     }
+
+
+            var empDetails = {
+
+readEmpData() {
+    this.empName = prompt("Enter Name of employee");
+    this.empAge = prompt("Enter Age of employee");
+    this.empGender = prompt("Enter Gender of employee");
+    this.department = prompt("Enter Department of employee");
+    this.basicSalary = parseInt(prompt("Enter Basic Salary of employee"));
+    this.empTotalSalary();
+},
+
+empTotalSalary() {
+    this.hra = (this.basicSalary * 24) / 100;
+    var PF = (this.basicSalary * 14) / 100;
+    this.totalSalary = this.basicSalary + this.hra + PF;
+    this.taxDetails();
+},
+taxDetails() {
+    var taxPercent = 0;
+
+    if (this.empGender === "male") {
+        if (this.totalSalary > 500000) {
+            this.taxPercent = 15;
+        }
+
+        else if (this.totalSalary >= 300000 && this.totalSalary < 500000) {
+            this.taxPercent = 10;
+        }
+
+        else if (this.totalSalary >= 200000 && this.totalSalary < 300000) {
+            this.taxPercent = 5;
+        }
+
+        else {
+            this.taxPercent = 0;
+        }
+    }
+    else {
+
+        //For Female
+        if (this.totalSalary > 500000) {
+            this.taxPercent = 10;
+        }
+
+        else if (this.totalSalary >= 300000 && this.totalSalary < 500000) {
+            this.taxPercent = 5;
+
+        }
+
+        else {
+            this.taxPercent = 0;
+        }
+    }
+
+    this.totalTax = (this.totalSalary * this.taxPercent) / 100;
+    this.salaryAfterTax = this.totalSalary - this.totalTax;
+    this.showEmpData();
+},
+showEmpData() {
+    console.log('Name of Employee is ' + this.empName);
+    console.log('Age of Employee is ' + this.empAge);
+    console.log('Gender of Employee is ' + this.empGender);
+    console.log('Department of employee is ' + this.department);
+    console.log('Total salary before tax is ' + this.totalSalary);
+    console.log('Tax Slab of Employee is ' + this.taxPercent + '%');
+    console.log('Total tax is ' + this.totalTax);
+    console.log('Total salary after tax is ' + this.salaryAfterTax);
+}
+}
+
+empDetails.readEmpData();
+
+    </script>
+</body>
+
+</html>

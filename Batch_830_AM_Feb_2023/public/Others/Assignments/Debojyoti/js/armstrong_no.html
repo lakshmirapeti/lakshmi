@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checking a number is armstrong or not</title>
+</head>
+<body>
+    <h3>Checking a number is armstrong or not</h3>
+    <script>
+        var userNumber, sum, finalNumber=0, midNumber=1;
+        userNumber = prompt("Enter a number to check armstrong or not");
+        userNumber = parseInt(userNumber);
+        var mainUserNumber = userNumber;
+        var count = userNumber.toString().length;
+        for(var i = 0; i<count; i++){
+            rem = userNumber % 10;
+            userNumber = userNumber / 10;
+            userNumber = parseInt(userNumber);
+            for(var j=1; j<=count; j++){
+                midNumber = midNumber * rem;
+            }
+            finalNumber = finalNumber + midNumber;
+            midNumber = 1;
+        }
+
+        if(mainUserNumber == finalNumber){
+            console.log('The number is armstrong number');
+        }else{
+            console.log('The number is not armstrong');
+        }
+    </script>
+</body>
+</html>

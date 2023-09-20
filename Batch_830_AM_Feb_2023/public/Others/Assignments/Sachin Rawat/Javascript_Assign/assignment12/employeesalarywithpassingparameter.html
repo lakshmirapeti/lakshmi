@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Salary Calculator</title>
+</head>
+<body>
+    <script>
+        var employeeDetail = () =>{
+        var empname , empage , empgender , basesal ;
+        empname = prompt( " Employee Name " ) ;
+        empage = prompt( " Age " ) ;
+        empgender = prompt( " Gender " ) ;
+        basesal = prompt( " Salary " ) ;
+        basesal = parseInt(basesal)
+
+        employeeSalaryCalculation(empname , empage , empgender , basesal);
+    }
+        
+        var employeeSalaryCalculation = (empname , empage , empgender , basesal) =>{
+        var tax15 = (basesal*15)/100 ;
+        var tax10 = (basesal*10)/100 ;
+        var tax05 = (basesal*5)/100 ;
+        
+        var tsalary15 = (basesal - tax15);
+        var tsalary10 = (basesal - tax10);
+        var tsalary05 = (basesal - tax05); 
+
+        showingEmployeeDetail(empname , empage , empgender , basesal , tsalary05 , tsalary10 , tsalary15 );
+    }
+        var showingEmployeeDetail = (empname , empage , empgender , basesal , tsalary05 , tsalary10 , tsalary15) =>{
+        console.log(" Name is " + empname);
+        console.log(" Age is " + empage);
+        console.log(" Gender is " + empgender);
+        console.log( " Base Salary " + basesal)
+
+        empgender = empgender.toLowerCase();
+
+        if (empgender == 'male') {
+                if (basesal >= 500000) {
+                    console.log(" Total Salary is " + tsalary15)
+                    
+                } else if (basesal >= 300000) {
+                    console.log(" Total Salary is " + tsalary10)
+
+                } else if (basesal >= 200000) {
+                    console.log(" Total Salary is " + tsalary05)
+                }
+            } else { 
+                if (basesal >= 500000) {
+                    console.log(" Total Salary is " + tsalary10)
+
+                } else if (basesal >= 300000) {
+                    console.log(" Total Salary is " + tsalary05)
+                } 
+            }
+        }       
+           employeeDetail();
+    </script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Product page</title>
+    <style>
+        body{
+            display: block;
+           color: whitesmoke;
+         /*  background-color:linear- gradient (to right ,#155799,#159957) ;*/
+            
+        }
+        .header,
+        .footer{
+           text-align: center;
+           font-family: 'Times New Roman', Times, serif;
+           width: 100%;
+           margin: 5px;
+           padding: 5px;
+           background-color: rgba(31, 35, 33, 0.582);
+        }
+        .footer{
+            bottom: 0;
+            left: 0;
+        }
+        .maincontainer{
+           width: 100%;
+           margin: auto;
+           color: whitesmoke;
+           background-color:rgba(11, 15, 13, 0.582);
+           border-radius: 12px;
+           border: 1px solid rgba(255, 255, 255, 0.125);
+           padding: 5px 5px;
+       }
+        li{
+            font-size: 20px;
+            background-color: rgb(101, 150, 150);
+            color: white;
+            padding: 5px;
+            width: 200px;
+            border: 2px solid;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+           
+        }
+        ul{
+            list-style: none;
+            margin-left: -30px;
+        }
+         /*.maincontainer{
+            padding:16px;
+        }*/
+         .logout a:link,
+         a:visited{
+            background-color: green;
+            color: #04111b;
+            border-radius: 20px;
+            right: 0;
+            border: 2px solid green;
+            padding: 10px 30px;
+            position: absolute;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+         }
+         .logout a:hover{
+             background-color:green;
+             color: white;
+             cursor: pointer;
+         }
+          .logout{
+              color: white;
+              text-align: center;
+          }
+          .logout{
+              color: white;
+              text-align: center;
+          }
+          section{
+              height: 550px;
+              display: grid;
+              grid-template-columns: 3fr 9fr;
+              margin-top: 10px;
+          }
+           iframe{
+               width: 1140px;
+               height:550px;
+               border: none;
+               background-color: rgb(77, 153, 153);
+               border-radius: 8px;
+           }
+      
+    </style>
+</head>
+<body>
+    <div>
+    <div class="header">
+    <h1>AKRUTHI Collections</h1>
+      <!---logout button--->
+        <p class="logout">
+           <a href="login.html">logout</a> 
+        </p>
+    </div>
+    
+    <ul class ="maincontainer">
+    <section>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="home.html" target="framebody">
+                     <span class="bi bi-house-fill">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Men's wear.html" target="framebody">
+                     <span class="Men's wear">Men's wear</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Women's wear.html" target="framebody">
+                     <span class="Women's wear">Women's wear</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="kid'swear.html" target="framebody">
+                     <span class="Kid'swear">Kid's wear</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Men's watches.html" target="framebody">
+                     <span class="Men's watches">Men's watches</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Women's watches.html" target="framebody">
+                     <span class="Women's watches">Women's watches</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="men's sunglasses.html" target="framebody">
+                     <span class="men's sunglasses">men's sunglasses</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Women's sunglasses.html" target="framebody">
+                     <span class="Women's sunglasses">Women's sunglasses</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="kid's sunglasses.html" target="framebody">
+                     <span class="kid's sunglasses">kid's sunglasses</span>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+        <main>
+            <iframe name="framebody" src="home.html">
+              #document 
+            </iframe>
+        </main>
+    </section>
+</ul>       
+    <div class="footer"> 
+        <p>Copytights@ 2023</p>
+    </div>
+</div>
+</body>
+</html>

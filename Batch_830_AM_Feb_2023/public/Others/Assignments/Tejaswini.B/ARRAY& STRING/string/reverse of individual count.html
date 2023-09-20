@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse of induvidual count</title>
+</head>
+<body>
+    <script>
+        var string=prompt("Enter the str:");
+    function reverseWords(str) {
+        // Split the input string into individual words
+        var words = str.split(" ");
+        var reversedWords = [];
+
+        for (var i = 0; i < words.length; i++) {
+            var word = words[i];
+            var reversedWord = "";
+            for (var j = word.length - 1; j >= 0; j--) {
+                reversedWord += word[j];
+            }
+            reversedWords.push(reversedWord);
+        }
+
+        // Concatenate the reversed words and return the final string
+        return reversedWords.join(" ");
+    }
+
+
+    var str = "hello world";
+    console.log(reverseWords(str)); // Output: "olleh dlrow"
+</script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function isLucky(n) {
+  const digits = n.toString().split('');
+  return new Set(digits).size === digits.length;
+}
+
+function findLuckyNumbers(arr) {
+  var luckyNumbers = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (isLucky(arr[i])) {
+      luckyNumbers.push(arr[i]);
+    }
+  }
+  return luckyNumbers;
+}
+
+var n=parseInt(prompt("enter the size"))
+var arr = [];
+for(let i=0;i<n;i++){
+    arr[i]=parseInt(prompt("enter the value of an array"))
+}
+var luckyNumbers = findLuckyNumbers(arr);
+console.log(luckyNumbers); 
+
+    </script>
+</body>
+</html>

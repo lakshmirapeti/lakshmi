@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header, .mainContainer, .rightBlock, .leftBlock , .footer{
+            border:1px solid black;
+            margin:4px;
+            padding:4px;
+        }
+        .header {
+            color:red;
+            background-color:white;
+            text-align:center;
+            font-size:20px;
+            text-transform:uppercase;
+            margin-bottom:6px;
+        }
+        .footer {
+            color:red;
+            background-color:black;
+            text-align:center;
+            font-size:20px;
+            text-transform:capitalize;
+            margin-top:6px;
+        }
+       
+        .mainContainer {
+            /* width:900px; */
+            height:500px;
+        }
+        .rightBlock{
+            height:480px;
+            width:25%;
+            float:left;
+            overflow: auto;
+        }
+        .leftBlock {
+            height:480px;
+            width:72%;
+            float:left;
+            overflow: auto;
+        }
+        ol li {
+            list-style-type:1;
+            /* background-color:rgb(44, 42, 165); */
+            list-style-position:inside;
+            border:1px solid black;
+            margin:10px;
+            padding:6px;
+            text-align:center;
+            font-weight:bolder;
+        }
+        ol {
+            margin:0px;
+            padding:0px;
+        }
+        a {
+            color:teal;
+            text-decoration:none;
+        }
+        .hover li:hover{
+            /* color:blue; */
+            /* background-color:rgb(42, 165, 73); */
+            /* background-color: aqua; */
+            font-style:italic;
+            background-color:aqua;
+            color:red
+
+        }
+        /* li:hover {
+            background-color:aqua;
+        } */
+        .leftBlock1 {
+            border:1px solid black;
+            height:170px;
+            margin:4px;
+        }
+        ul li {
+            list-style-type:none;
+            /* float:left; */
+        }
+        img {
+            height:150px;
+            width:180px;
+            float:left;
+            margin:3px;
+            padding:2px;
+
+        }
+        .leftBlock1:hover {
+            background-color:green;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">student details </div>
+    <div class="mainContainer">
+        <div class="rightBlock">
+            <ol>
+                <a href="#_1" class="hover"><li>Ramu</li></a>
+                <a href="#_2" class="hover"><li>Reena</li></a>
+                <a href="#_3" class="hover"><li>Teena</li></a>
+                <a href="#_4" class="hover"><li>Reethu</li></a>
+                <a href="#_5" class="hover"><li>Nikhil</li></a>
+                <a href="#_6" class="hover"><li>Praveen</li></a>
+                <a href="#_6" class="hover"><li>Raju</li></a>
+                <a href="#_7" class="hover"><li>Raju</li></a>
+                <a href="#_8" class="hover"><li>Raju</li></a>
+                <a href="#_9" class="hover"><li>Raju</li></a>
+            </ol>
+        </div>
+        <div class="leftBlock">
+            <div class="leftBlock1" id="_1">
+                <img src="C:\Users\sanjay\Desktop\nareshit\march-07\images (2).jfif" alt="student_image1">
+                <ul>
+                    <li>Name : Ramu</li>
+                    <li>Age : 22 </li>
+                    <li>Gender : Male </li>
+                    <li>Location : Hyderabath</li>
+                </ul>
+            </div>
+            <div class="leftBlock1" id="_2">
+                <img src="C:\Users\sanjay\Desktop\nareshit\march-07\images (1).jfif" alt="student_image1">
+                <ul>
+                    <li>Name : Reena</li>
+                    <li>Age : 20 </li>
+                    <li>Gender : Female </li>
+                    <li>Location : Chennai</li>
+                </ul>
+            </div> <div class="leftBlock1" id="_3">
+                <img src="C:\Users\sanjay\Desktop\nareshit\march-07\images (3).jfif" alt="student_image1">
+                <ul>
+                    <li>Name : Teena </li>
+                    <li>Age : 21 </li>
+                    <li>Gender : female </li>
+                    <li>Location : Benguluru</li>
+                </ul>
+            </div> <div class="leftBlock1" id="_4">
+                <img src="C:\Users\sanjay\Desktop\nareshit\march-07\images (4).jfif" alt="student_image1">
+                <ul>
+                    <li>Name : Reethu </li>
+                    <li>Age : 22 </li>
+                    <li>Gender : Female </li>
+                    <li>Location : Hyderabath</li>
+                </ul>
+            </div> <div class="leftBlock1" id="_5">
+                <img src="C:\Users\sanjay\Desktop\nareshit\march-07\images.jfif" alt="student_image1">
+                <ul>
+                    <li>Name : Nikhil</li>
+                    <li>Age : 22 </li>
+                    <li>Gender : Male </li>
+                    <li>Location : Pune </li>
+                </ul>
+            </div> <div class="leftBlock1" id="_6">
+                <img src="C:\Users\sanjay\Desktop\nareshit\march-07\images (2).jfif" alt="student_image1">
+                <ul>
+                    <li>Name : Praveen</li>
+                    <li>Age : 22 </li>
+                    <li>Gender : Male </li>
+                    <li>Location : Hyderabath</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">@Copy Rights2023</div>
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Float Property Assignment
+        </title>
+        <style>
+            .block{
+                border: 1px solid;
+                margin: 6px;
+                padding: 6px;
+                text-align: center;
+                font-size: 25px;
+                background-color: aquamarine;
+                color: rgb(62, 5, 116);
+                font-style: italic;
+            }
+            .new{
+                border: 1px solid;
+                margin: 5px;
+                padding: 5px;
+                width: 1480px;
+                height: 600px;
+                background-color: cadetblue;
+
+            }
+            .lefttop{
+                border: 1px solid;
+                width: 600px;
+                height: 580px;
+                float:left;
+                margin: 6px;
+                padding: 6px;
+                background-color: lightpink;
+                font-style: italic;
+                font-size: 20px;
+                color:brown;
+            }
+            .righttop{
+                border: 1px solid;
+                width: 820px;
+                height: 580px;
+                float: left;
+                margin : 6px;
+                padding: 6px;
+                overflow: auto;
+                background-color: lightpink;
+            }
+            .list li{
+                border: 1px solid;
+                height: 50px;
+                margin:5px;
+                list-style-position: inside;
+                background-color: khaki;
+            }
+            .content > li{
+               list-style: none;
+               height: 180px;
+               border: 1px solid;
+               margin: 5px;
+               padding:5px;
+               background-color: khaki;
+               color:brown;
+               font-style: italic;
+               font-size: 20px;
+            }
+            ol,ul{
+               margin:5px;
+               padding:5px;
+            }
+            .imgblock, .detailblock{
+               float:left;
+            }
+            .imgblock{
+               width:150px;
+            }
+            img{
+               width:150px;
+               height:150px; 
+            }
+            .detailblock li{
+               list-style: none;
+               padding:5px;
+            }
+            h3{
+               border:1px solid;
+                margin: 6px;
+                padding: 6px;
+                text-align: center;
+                font-size: 25px;
+            }
+        </style>
+    </head>
+    <body>
+    <div>
+        <div class="block">Student Details</div>
+            <div class="new">
+                 <div class="lefttop">
+                       <ol class="list">
+                             <li>
+                              <a href="#std_01">Amrutha</a>
+                           </li>
+                             <li>
+                              <a href="#std_02">Arhan</a>
+                           </li>
+                             <li>
+                              <a href="#std_03">Priyanka</a>
+                           </li>
+                             <li>
+                              <a href="#std_04">Dinesh</a>
+                           </li>
+                             <li>
+                              <a href="#std_05">Aruna devi</a>
+                           </li>
+                             <li>
+                              <a href="#std_06">Harish</a>
+                           </li>
+                             <li>
+                              <a href="#std_07">Devika Rani</a>
+                           </li>
+                             <li>
+                              <a href="#std_08">Yashwanth</a>
+                           </li>
+                            <li>
+                              <a href="#std_09">Manjula</a>
+                           </li>
+                            <li>
+                              <a href="#std_10">Harikanth</a>
+                           </li>
+                        </ol>
+                  </div>
+                  <div class="righttop">
+                     <ul class="content">
+                         <li id="std_01">
+                           <div class="imgblock"><img src="C:\Users\devit\Downloads\g6.jpeg"/></div>
+                           <div class="detailblock">
+                              <ul>
+                                 <li>Name:Amrutha</li>
+                                 <li>Age:20</li>
+                                 <li>Gender:Female</li>
+                                 <li>Location:Hyderabad</li>
+                              </ul>
+                           </div>
+                         </li>
+                         <li id="std_02">
+                           <div class="imgblock"><img src="C:\Users\devit\Downloads\b4.jpeg"/></div>
+                           <div class="detailblock">
+                              <ul>
+                                 <li>Name:Arhan</li>
+                                 <li>Age:18</li>
+                                 <li>Gender:Male</li>
+                                 <li>Location:Secunderabad</li>
+                              </ul>
+                           </div>
+                         </li>
+                         <li id="std_03">
+                           <div class="imgblock"><img src="C:\Users\devit\Downloads\girl 1.png"/></div>
+                           <div class="detailblock">
+                              <ul>
+                                 <li>Name:Priyanka</li>
+                                 <li>Age:20</li>
+                                 <li>Gender:Female</li>
+                                 <li>Location:Nizamabad</li>
+                              </ul>
+                           </div>
+                         </li>
+                         <li id="std_04">
+                           <div class="imgblock"><img src="C:\Users\devit\Downloads\b3.jpeg"/></div>
+                           <div class="detailblock">
+                              <ul>
+                                 <li>Name:Dinesh</li>
+                                 <li>Age:20</li>
+                                 <li>Gender:Male</li>
+                                 <li>Location:Vijayawada</li>
+                              </ul>
+                           </div>
+                         </li>
+                         <li id="std_05">
+                           <div class="imgblock"><img src="C:\Users\devit\Downloads\g7.jpeg"/></div>
+                           <div class="detailblock">
+                              <ul>
+                                 <li>Name:Aruna Devi</li>
+                                 <li>Age:20</li>
+                                 <li>Gender:Female</li>
+                                 <li>Location:Vishakapatnam</li>
+                              </ul>
+                           </div>
+                         </li>
+                         <li id="std_06">
+                           <div class="imgblock"><img src="C:\Users\devit\Downloads\b4.jpeg"/></div>
+                           <div class="detailblock">
+                              <ul>
+                                 <li>Name:Harish</li>
+                                 <li>Age:20</li>
+                                 <li>Gender:Male</li>
+                                 <li>Location:Bangalore</li>
+                              </ul>
+                           </div>
+                         </li>
+                         <li id="std_07">
+                           <div class="imgblock"><img src="C:\Users\devit\Downloads\g4.png"/></div>
+                           <div class="detailblock">
+                              <ul>
+                                 <li>Name:Devika Rani</li>
+                                 <li>Age:20</li>
+                                 <li>Gender:Female</li>
+                                 <li>Location:Maharashtra</li>
+                              </ul>
+                           </div>
+                         </li>
+                         <li id="std_08">
+                           <div class="imgblock"><img src="C:\Users\devit\Downloads\b1.png"/></div>
+                           <div class="detailblock">
+                              <ul>
+                                 <li>Name:Yashwanth</li>
+                                 <li>Age:20</li>
+                                 <li>Gender:Male</li>
+                                 <li>Location:Chennai</li>
+                              </ul>
+                           </div>
+                         </li>
+                         <li id="std_09">
+                           <div class="imgblock"><img src="C:\Users\devit\Downloads\g8.jpeg"/></div>
+                           <div class="detailblock">
+                              <ul>
+                                 <li>Name:Manjula</li>
+                                 <li>Age:20</li>
+                                 <li>Gender:Female</li>
+                                 <li>Location:Nandyal</li>
+                              </ul>
+                           </div>
+                         </li>
+                         <li id="std_10">
+                           <div class="imgblock"><img src="C:\Users\devit\Downloads\b2.png"/></div>
+                           <div class="detailblock">
+                              <ul>
+                                 <li>Name:Harikanth</li>
+                                 <li>Age:20</li>
+                                 <li>Gender:Male</li>
+                                 <li>Location:Kakinada</li>
+                              </ul>
+                           </div>
+                         </li>
+                    </ul>
+                  </div>
+               </div>
+           </div>
+         <div class="block">@Copy Rights</div>
+      </div>
+   </body>
+</html>
+                                    

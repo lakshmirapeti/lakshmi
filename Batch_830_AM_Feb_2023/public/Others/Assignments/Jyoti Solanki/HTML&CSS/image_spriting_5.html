@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4</title>
+    <style>
+        .header,.footer{
+            border: 1px solid;
+            text-align: center;
+            padding: 4px;
+            background-color: #38CFCA;
+            
+        }
+        .mainContainer{
+            border: 1px solid;
+            padding:4.5px;
+            width: 99%;
+            height: 500px;
+        }
+        .left,.right{
+            float: left;
+            border: 1px solid;
+            background-color: #6252c7;
+            height: 479px;
+        }
+        .left{
+            width: 30%;
+            margin: 10px;  
+            overflow: auto;         
+        }
+        .right{
+            width: 65%;
+            overflow: auto;
+            margin: 9px;
+            }
+        ol li{
+            border: 1px solid;
+            margin: 2%;
+            width: 55%;
+            padding: 5px;
+            font-weight: bold;            
+            list-style-position: inside;
+        }
+        ol li a{
+            text-decoration: none;
+        }
+        .stuLeft{
+            margin: 2% 0% 0% 2%;
+            float: left;
+            width: 150px;
+            height: 150px;
+            border: 1px solid;
+        }
+        .stuBox{
+            border: 1px solid;
+            height: 180px;
+            margin: 13px;
+            box-shadow: 1px;
+            background-color:  #8383d5;
+        }
+        .stuBox:hover{
+            box-shadow: 5px 10px rgb(113, 39, 177);
+        }
+        .stuRight{
+            margin: 2%;
+            float: left;
+            width: 60%;
+        }
+        .stuRight ul li{
+            text-align: left;
+            list-style: none;
+        }
+        .left ol li:hover{
+            background-color:  #8383d5;
+        }
+        .img{
+            width:150px;
+            height: 150px;
+        }
+        .stu_1{
+            background-image: url("./images/students.PNG");
+            background-position: -35px -41px;
+        }
+        .stu_2{
+            background-image: url("./images/students.PNG");
+            background-position: -243px -32px;
+        }
+        .stu_3{
+            background-image: url("./images/students.PNG");
+            background-position: -486px -17px;
+        }
+        .stu_4{
+            background-image: url("./images/students.PNG");
+            background-position: -734px -16px;
+        }
+        .stu_5{
+            background-image: url("./images/students.PNG");
+            background-position: -967px -3px;
+        }
+        .stu_6{
+            background-image: url("./images/students.PNG");
+            background-position: -29px -313px;
+        }
+        .stu_7{
+            background-image: url("./images/students.PNG");
+            background-position: -1448px -290px;
+        }
+        .stu_8{
+            background-image: url("./images/students.PNG");
+            background-position: -1667px -300px;
+        }
+        .stu_9{
+            background-image: url("./images/students.PNG");
+            background-position: -1882px -297px;
+        }
+        .stu_10{
+            background-image: url("./images/students.PNG");
+            background-position: -2119px -261px;
+        }
+    </style>
+<body style="background-color: #f0f1f2;;">
+    <div class="container">
+        <h3 class="header">Student Details</h3>
+        <div class="mainContainer">
+            <div class="left">
+                <ol>
+                    <li>
+                        <a href="#stu_1">Jyoti</a>
+                    </li>
+                    <li>
+                        <a href="#stu_2">Padmini</a>
+                    </li>
+                    <li>
+                        <a href="#stu_3">Sohan</a>
+                    </li>
+                    <li>
+                        <a href="#stu_4">Rakesh</a>
+                    </li>
+                    <li>
+                        <a href="#stu_5">Rajesh</a>
+                    </li>
+                    <li>
+                        <a href="#stu_6">Roshani</a>
+                    </li>
+                    <li>
+                        <a href="#stu_7">Gunjan</a>
+                    </li>
+                    <li>
+                        <a href="#stu_8">Sivani</a>
+                    </li>
+                    <li>
+                        <a href="#stu_9">Akshay</a>
+                    </li>
+                    <li>
+                        <a href="#stu_10">Rajani</a>
+                    </li>
+                </ol>
+            </div>
+            <div class="right">
+              <div class="stuBox" id="stu_1">
+                <div class="stuLeft stu_1" >
+                   
+                </div>
+                <div class="stuRight" >
+                    <ul>
+                        <li>Name: Jyoti Soalnki</li>
+                        <li>Age:  24</li>
+                        <li>Gender: Female</li>
+                        <li>Location: Hydrabad </li>
+                    </ul>
+              </div>
+              </div>
+              <div class="stuBox" id="stu_2">
+                    <div class="stuLeft stu_2">
+                        
+                    </div>
+                    <div class="stuRight">
+                        <ul>
+                            <li>Name: Padmani</li>
+                            <li>Age:  14</li>
+                            <li>Gender: Female</li>
+                            <li>Location: Indore </li>
+                        </ul>
+                    </div>
+              </div>
+              <div class="stuBox" id="stu_3">
+                <div class="stuLeft stu_3">
+                   
+                </div>
+                <div class="stuRight">
+                    <ul>
+                        <li>Name: Sohan</li>
+                        <li>Age:  22</li>
+                        <li>Gender: Male</li>
+                        <li>Location: Pune </li>
+                    </ul>
+                </div>
+              </div>
+              <div class="stuBox"  id="stu_4">
+                <div class="stuLeft stu_4">
+                   
+                </div>
+                <div class="stuRight">
+                    <ul>
+                        <li>Name: Rakesh Soalnki</li>
+                        <li>Age:  24</li>
+                        <li>Gender: Male</li>
+                        <li>Location: Indore</li>
+                    </ul>
+                </div>
+              </div>
+              <div class="stuBox" id="stu_5">
+                <div class="stuLeft stu_5">
+                   
+                </div>
+                <div class="stuRight">
+                    <ul>
+                        <li>Name: Rajesh</li>
+                        <li>Age:  24</li>
+                        <li>Gender: Male</li>
+                        <li>Location: Hydrabad </li>
+                    </ul>
+                </div>
+              </div>
+              <div class="stuBox" id="stu_6">
+                <div class="stuLeft stu_6">
+                   
+                </div>
+                <div class="stuRight">
+                    <ul>
+                        <li>Name: Roshani</li>
+                        <li>Age:  34</li>
+                        <li>Gender: Female</li>
+                        <li>Location: Khargone</li>
+                    </ul>
+                </div>
+              </div>
+              <div class="stuBox" id="stu_7">
+                <div class="stuLeft stu_7">
+                    
+                </div>
+                <div class="stuRight">
+                    <ul>
+                        <li>Name: Gunjan</li>
+                        <li>Age:  24</li>
+                        <li>Gender: Female</li>
+                        <li>Location: Khargone</li>
+                    </ul>
+                </div>
+              </div>
+              <div class="stuBox" id="stu_8">
+                <div class="stuLeft stu_8">
+                    
+                </div>
+                <div class="stuRight">
+                    <ul>
+                        <li>Name: Sivani</li>
+                        <li>Age:  34</li>
+                        <li>Gender: Female</li>
+                        <li>Location: Khargone</li>
+                    </ul>
+                </div>
+              </div>
+              <div class="stuBox" id="stu_9">
+                <div class="stuLeft stu_9">
+                    
+                </div>
+                <div class="stuRight">
+                    <ul>
+                        <li>Name: Akshay</li>
+                        <li>Age:  34</li>
+                        <li>Gender: Female</li>
+                        <li>Location: Khargone</li>
+                    </ul>
+                </div>
+              </div>
+              <div class="stuBox" id="stu_10">
+                <div class="stuLeft stu_10">
+                    
+                </div>
+                <div class="stuRight">
+                    <ul>
+                        <li>Name: Rajni</li>
+                        <li>Age:  34</li>
+                        <li>Gender: Female</li>
+                        <li>Location: Khargone</li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+        </div>
+        <h3 class="footer">&copy; copy rights 2023</h3>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practicing function examples</title>
+</head>
+<body>
+    <script>
+        // function addValue() {
+        //     console.log("first value");
+        // }
+        // function addValue() {
+        //     console.log("second value");
+        // }
+        // addValue();
+
+        // function addValue(a, b) {
+        //     console.log("first one");
+        // }
+        // function addValue(a, b) {
+        //     console.log("second value");
+        // }
+        // function addValue(a, b) {
+        //     console.log("third value");
+        // }
+        // function addValue(a, b, c) {
+        //     console.log("fourth value");
+        // }
+
+        // addValue(10.5, 10);
+        // addValue(10, 10);
+        // addValue(10.5, 10.5);
+        // addValue(10, 10.5, 11);
+
+        console.log("start point");
+        var readUserData = () => {
+            var a1, a2, userName, isFeePaid;
+            a1 = prompt("enter a value");
+            a1 = parseInt(a1);
+
+            a2 = prompt("enter a value");
+            a2 = parseInt(a2);
+
+            userName = "Sai Teja";
+            isFeePaid = "Yes";
+
+            addValue(a1, a2, userName, isFeePaid)
+        }
+        var addValue = (a1, a2, userName, isFeePaid) => {
+            var result = a1 + a2;
+            console.log("the sum of the value is " +result);
+            console.log("username is " +userName);
+            console.log("is they paid fees " +isFeePaid);
+        }
+        readUserData();
+    </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Random Job Allocator
+        </title>
+        <style>
+            .wlcmBlock {
+                width: 500px;
+                border: 1px solid;
+                text-align: center;
+                margin: 20px;
+                position: absolute;
+                padding: 30px;
+                bottom: 100px;
+                background-color: antiquewhite;
+                left: 30%;
+                display: none;
+            }
+
+            .taskContainer {
+                margin: 20px auto;
+                width: 500px;
+                padding: 130px;
+                color: brown;
+                background-color: yellowgreen;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>
+            JOB Allocator - application
+        </h3>
+        <input type="text" placeholder="Enter user name" id="userName">
+        <input type="button" value="Save" onclick="saveUserName()">
+        <input type="button" value="Create Task Block" onclick="createTaskBlock()"> 
+        <input type="button" value="Show Task" onclick="showTask()"> 
+
+        <div class="wlcmBlock">
+            Thanks for using our page....
+        </div>
+
+        <script>
+
+            var taskList = [
+                "Do the code review of the project",
+                "Lead the team in delivering new project",
+                "Implement and submit the code of new component ",
+                "Finish teh assigned trainings",
+                "Add test cases and code coverage"
+            ];
+            var userName;
+            var saveUserName = () => {
+                userName = document.querySelector("#userName").value;
+                document.querySelector("#userName").value = '';
+            }
+
+            var createTaskBlock = () => {
+                var divTag = document.createElement("div");
+                divTag.setAttribute("id", 'taskBlock')
+                divTag.setAttribute("class", 'taskContainer');
+                document.querySelector('body').append(divTag);
+            }
+
+            var getRandomTask = () => {
+                var randomIndex = Math.floor(Math.random() * (taskList.length));
+                var task = 'Mr.' + userName + ' - ' + taskList[randomIndex];
+                return task;
+            }
+
+            var showTask = () => {
+                var task = getRandomTask();
+                try {
+                                    document.querySelector("#taskBlock").innerHTML = task;
+                } catch(error) {
+                    alert("Make sure u create task block, before get to knw the task")
+                } finally {
+                    setTimeout(() => {
+                        document.querySelector(".wlcmBlock").style.display = 'block';
+                    }, 2000)
+                }
+
+                
+                
+            }
+        </script>
+    </body>
+</html>

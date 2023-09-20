@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var daysList = ['Sun', 'Monday', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+            var monthsList = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'];
+            
+            var mydate = new Date();
+            var date = mydate.getDate();
+            var day  = mydate.getDay();
+            var getFullYear = mydate.getFullYear();
+            var month = mydate.getMonth();
+            console.log(`${daysList[day]}, ${date}/${monthsList[month]}/${getFullYear}`)
+        </script>
+        <h1>date format</h1>
+        <p>Saturday, 15/apr/2024</p>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read a string dynamically from user and return total words in it</title>
+</head>
+
+<body>
+    <h3>Read a string dynamically from user and return total words in it</h3>
+    <script>
+        var readFromUser = () => {
+            var userString;
+            //User Input
+            userString = prompt("Enter a string");
+            console.log(userString);
+            var wordsCount = words(userString);
+            console.log('User given string is ' + wordsCount);
+        }
+
+        var words = (userString) => {
+            var totalWords = userString.split(" ").length;
+            return totalWords;
+        }
+
+        readFromUser();
+    </script>
+</body>
+
+</html>

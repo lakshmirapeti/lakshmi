@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var studentDetail = () => {
+            name = prompt('Enter Student Name :');
+            age = prompt('Enter age :');
+            gender = prompt('Enter Gender :')
+            m1 = prompt('Sub1 Marks :')
+            m1 = parseInt(m1);
+            m2 = prompt('Sub 2 Marks :')
+            m2 = parseInt(m2);
+            m3 = prompt('Sub 3 Marks :')
+            m3 = parseInt(m3);
+            getAvg();
+        }
+        var getAvg = () => {
+             total = m1 + m2 + m3 ;
+             avg = total / 3;
+        }
+        var getGrade = () => {
+            if (avg >= 40)
+            {
+                console.log('Student got passed');
+                if (avg >= 90)
+                {
+                    console.log("Student got Distinction");
+                }
+                else if (avg >= 60)
+                {
+                    console.log("Student got first class");
+                }
+             }
+                else 
+                {
+                    console.log('student got filed');
+                }
+        }
+        var Display = () => {
+            studentDetail();
+            console.log('Student Name :' +name);
+            console.log('Student Age :' +age);
+            console.log('Student Gender :' +gender);
+            console.log('Sub 1 marks :' + m1);
+            console.log('Sub 2 marks :' + m2);
+            console.log('Sub 3 marks :' + m3);
+            console.log('Total marks :' + total);
+            console.log('avg is :' + avg);
+            getGrade();
+        }
+        Display();
+    </script>
+</body>
+</html>

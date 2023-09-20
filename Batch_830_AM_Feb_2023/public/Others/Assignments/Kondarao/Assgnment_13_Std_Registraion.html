@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Std_Registra</title>
+    <style>
+        .Footer, .header{
+            border: 1px solid black;
+            width: auto;
+            height: 25px;
+            background-color: darkgray;
+            text-align: center;
+        }
+        .container
+        {
+            border: 1px solid black;
+            width: auto;
+            height: 500px;
+            background-color: honeydew;
+            margin: 2px;
+            padding: 4px;
+            overflow: auto;
+    
+        }
+        .pdetailsbox{
+            border: 2px solid black;
+            width: auto;
+            height: 200px;
+            background-color: gray;
+            margin: 20px 3px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .edetailsbox{
+            border: 2px solid black;
+            width: auto;
+            height: 200px;
+            background-color: gray;
+            margin: 20px 3px;
+        }
+        .pdetailsbox > div{
+            margin: 20px;
+        }
+        .left{
+            position: absolute;
+            left: 600px;
+            top: 95px;
+            
+        }
+        .left > div{
+            margin: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <h3 class="header">Student_Registration</h3>
+    <div class="container">
+        <div class="pdetailsbox">
+            <div>
+            <lable>Name </lable>
+            <input type="text"  name="Name"/>
+            </div>
+            <div>
+            <lable>Age </lable>
+            <input type="text" name="Age"/>
+            </div>
+            <div>
+            Gender:
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender" checked> Female>
+        </div>
+           <div class="left">
+            <div>
+             country: 
+                <select>
+                    <option>India</option>
+                    <option>China</option>
+                    <option selected>Japan</option>
+                    <option>USA</option>
+                </select>
+            </div>
+
+           <div>
+            Class: 
+                <select>
+                    <option>class 1</option>
+                    <option>class 2</option>
+                    <option selected>class 3</option>
+                    <option>class 4</option>
+                </select>
+           </div>
+        </div>
+
+        </div>
+        
+        <div class="edetailsbox">
+
+        </div>
+        <div class="cdetailsbox">
+
+        </div>
+        <div class="about">
+
+        </div>
+
+    </div>
+
+    <h3 class="Footer">@CopyRight2023</h3>
+</body>
+</html>

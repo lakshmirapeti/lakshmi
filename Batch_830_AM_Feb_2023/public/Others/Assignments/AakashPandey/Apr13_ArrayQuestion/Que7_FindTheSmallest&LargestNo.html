@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Smallest&LargestNumerArray</title>
+    </head>
+    <body>
+        <script>
+            var userArray = [],size;
+            size = prompt("Enter Size Of Array")
+            size = parseInt(size);
+
+            for (i = 0; i < size; i++){ 
+            // var data = [23, 54, 15, 85, 96];
+            userArray[i] = prompt("Enter " + i + " Value");
+            userArray[i] = parseInt(userArray[i]);
+            }
+            console.log(userArray);
+
+             var smallestNo = userArray[0];
+             var largestNo = userArray[0];
+
+             for(i = 1; i < size; i++){
+                if(smallestNo > userArray[i]){
+                    smallestNo = userArray[i];
+                }
+                if(largestNo < userArray[i]){
+                    largestNo = userArray[i];
+                }
+             }
+             console.log("Smallest number is " + smallestNo)
+             console.log("LargestNo number is " + largestNo)
+        </script>
+    </body>
+</html>

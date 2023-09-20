@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Detail using Function</title>
+</head>
+<body>
+    <script>
+        var sname,sage,sclass;
+        var m,c,p;
+        var tm,per;
+        var stdDetails = () =>
+        {
+            sname= prompt("Enter the Student Name");
+            console.log("Student name is "+sname);
+            sage= prompt("Enter the Student age");
+            console.log("Student age is "+sage);
+            sclass=prompt("Class of student");
+            console.log("Class of Student is "+sclass);
+        }
+        var stdMark = () =>
+        {
+            m = prompt("Enter the Math mark");
+            m= parseInt(m);
+            console.log("Mathematics mark="+m);
+            c = prompt("Enter the Chemistry mark");
+            c= parseInt(c);
+            console.log("Chemistry mark="+c);
+            p =prompt("Enter the Physics mark");
+            p= parseInt(p);
+            console.log("Physics mark="+p);
+        }
+        var stdTotal = ()  =>
+        {
+            tm = m + c + p;
+            tm= parseInt(tm);
+            console.log("Total mark="+tm);
+            per = (tm/300)*100;
+            per = parseInt(per);
+            console.log("Percentage="+per);
+        }
+        var statement1 = () =>
+        {
+            if(m<30 && c<30 && p<30)
+        {
+          console.log("Student fail in all Subject");
+        }
+        else if(m<30 && c<30)
+        {
+          console.log("Student fail in math and chemistry");
+          console.log("Student is fail in exam");
+        }
+        else if(c<30 && p<30)
+        {
+          console.log("Student fail in Chemistry and Physics");
+          console.log("Student is fail in exam");
+        }
+        else if(m<30 && p<30)
+        {
+          console.log("Student fail in Math and Physics");
+          console.log("Student is fail in exam");
+        }
+        else if(m<30)
+        {
+          console.log("Student Fail in Math");
+          console.log("Student is fail in exam");
+        }
+        else if(c<30)
+        {
+          console.log("Student fail in Chemistry");
+          console.log("Student is fail in exam");
+        }
+        else if(p<30)
+        {
+          console.log("Student fail in Physics");
+          console.log("Student is fail in exam");
+        }
+        else if(per<30)
+        {
+          console.log("Student is Fail");
+        }
+        else if(per>=60)
+        {
+          console.log("Student got 1st division");
+        }
+        else if(per>=50)
+        {
+          console.log("Student got 2nd division");
+        }
+        else if(per>=30)
+        {
+          console.log("Student got 3rd division");
+        }
+        }
+        var statement2 = () =>
+        {
+            if(m<30 && c<30 && p<30)
+        {
+          console.log("f grade");
+        }
+        else if(m<30 && c<30)
+        {
+          console.log("f grade");
+        }
+        else if(c<30 && p<30)
+        {
+          console.log("f grade")
+        }
+        else if(m<30 && p<30)
+        {
+          console.log("f grade")
+        }
+        else if(m<30)
+        {
+          console.log("f grade");
+        }
+        else if(c<30)
+        {
+          console.log("f grade");
+        }
+        else if(p<30)
+        {
+          console.log("f grade");
+        }
+        else if(per<30)
+        {
+          console.log("f grade");
+        }
+        else if(per>=90)
+        {
+          console.log("Pass with A+ grade")
+        }
+        else if(per>=80)
+        {
+          console.log("Pass with A grade")
+        }
+        else if(per>=70)
+        {
+          console.log("Pass with B+ grade")
+        }
+        else if(per>=60)
+        {
+          console.log("Pass with B grade")
+        }
+        else if(per>=50)
+        {
+          console.log("Pass with C grade")
+        }
+        else if(per>=30)
+        {
+          console.log("Pass with E grade")
+        }
+        }
+        stdDetails();
+        stdMark();
+        stdTotal();
+        statement1();
+        statement2();
+    </script>
+</body>
+</html>

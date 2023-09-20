@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Employee Details
+        </title>
+    </head>
+    <body>
+        <script>
+            var empDetails = {
+
+            empData(){
+                this.empName = prompt("Enter employee name");
+                this.empGender = prompt("Enter emp gender");
+                this.empBasicSal = prompt("Enter employee Basic sal");
+                this.empBasicSal = parseInt(this.empBasicSal)
+                
+            },
+            
+            pfAndHra()
+            {
+            this.pf = (this.empBasicSal * 14) / 100;
+            this.hra = (this.empBasicSal * 25) / 100;
+
+            this.empTotalSal = this.empBasicSal + this.pf + this.hra;
+            
+            },
+
+            comparsion()
+            {
+            this.taxPercent;
+            this.empGender = this.empGender.toLowerCase(); // male
+            if (this.empGender == 'male') {
+                if (this.empTotalSal >= 500000) {
+                    this.taxPercent = 15;
+                } else if (this.empTotalSal >= 400000) {
+                    this.taxPercent = 10;
+                } else if (this.empTotalSal >= 300000) {
+                    this.taxPercent = 5;
+                }
+            } else { // female
+                if (this.empTotalSal >= 500000) {
+                    this.taxPercent = 10;
+                } else if (this.empTotalSal >= 400000) {
+                    this.taxPercent = 5;
+                } 
+            }
+            this.TaxTobePaid = (this.empTotalSal * this.taxPercent) / 100;
+        },
+
+        display()
+        {
+            this.empData();
+            this.pfAndHra();
+            this.comparsion();
+            console.log(empDetails)
+            console.log(this.empName);
+            console.log(this.empGender);
+            console.log(this.empBasicSal);
+            console.log(this.pf);
+            console.log(this.hra);
+            console.log(this.empTotalSal);
+            console.log(this.taxPercent);
+            console.log(this.TaxTobePaid);
+        },
+    };
+
+        empDetails.display();   
+
+        </script>
+    </body>
+</html>

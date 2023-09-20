@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee details using sprite img method</title>
+</head>
+<style> 
+   .header, .footer{
+    text-align: center;
+    border: 1px solid;
+    height: 20px;
+    width: auto;
+   }
+   .header{
+    background-color: aqua;
+    margin: 10px;
+    padding: 10px;
+    }
+    .footer{
+        background-color: aqua;
+        margin: 10px;
+        padding: 10px;
+    }
+    .maincontainer{
+        border: 1px solid red;
+        width: auto;
+        height: 650px;
+        margin: 10px;
+        padding: 10px;
+        background-color: #ccc;
+    }
+    .leftcontainer{
+        border: 1px solid greenyellow;
+        width: 35%;
+        height: 630px;
+        margin: 10px;
+        padding: 5px;
+        float: left;
+        overflow: auto;
+        background-color: bisque;
+    }
+    .rightcontainer{
+        border: 1px solid greenyellow;
+        width: 60%;
+        height: 630px;
+        margin: 10px;
+        padding: 5px;
+        overflow: auto;
+        background-color: bisque;
+    }
+    .leftcontainer li{
+        border: 1px solid;
+        width: auto;
+        height: 50px;
+        font-size: 20px;
+        list-style-position: inside;
+        margin: 10px;
+        padding: 10px;
+        cursor: pointer;
+        text-align: center;
+    }
+    .leftcontainer li:hover{
+        background-color: aqua;
+    }
+    .detailscontainer:hover{
+        background-color: aqua;
+    }
+    .detailscontainer{
+        border: 1px solid;
+        width: auto;
+        height: 200px;
+        margin: 10px;
+        padding: 20px;
+        list-style: none;
+        font-size: 20px;
+    }
+    .imgcontainer{ 
+        float: left;
+        border: 1px solid;
+        width: 150px;
+        height: 180px;
+        margin-right: 20px;
+        background-image: url(file:///C:/UI%20Developer/images/emp_sprite.png);
+        background-repeat: no-repeat;
+    }
+    .emp1{
+        background-position:-5px 10px;
+    }
+    .emp2{
+        background-position: -181px 5px;
+    }
+    .emp3{
+        background-position: -355px 11px;
+    }
+    .emp4{
+        background-position: -546px 2px;
+    }
+    .emp5{
+        background-position: -707px 7px;
+    }
+    .emp6{
+        background-position:-10px -167px;
+    }
+    .emp7{
+        background-position:-178px -166px;
+    }
+    .emp8{
+        background-position: -345px -156px;
+    }
+    .emp9{
+        background-position:-550px -174px;
+    }
+    .emp10{
+        background-position: -694px -158px;
+    }
+</style>
+<body>
+    <h3 class="header">Employee details</h3>
+    <div class="maincontainer">
+        <div class="leftcontainer">
+           <ol>
+            <li>
+                <a href="#20001">Sai Teja</a>
+            </li>
+            <li>
+                <a href="#20002">S Murali</a>
+            </li>
+            <li>
+                <a href="#20003">Vineeth Kumar</a>
+            </li>
+            <li>
+                <a href="#20004">Hari Prasad</a>
+            </li>
+            <li>
+                <a href="#20005">Rakesh Reddy</a>
+            </li>
+            <li>
+                <a href="#20006">Sri Charan</a>
+            </li>
+            <li>
+                <a href="#20007">Shiva Yadav</a>
+            </li>
+            <li>
+                <a href="#20008">M Karthik</a>
+            </li>
+            <li>
+                <a href="#20009">Shiva Teja</a>
+            </li>
+            <li>
+                <a href="#20010">Shyam</a>
+            </li>
+           </ol>
+        </div>
+        <div class="rightcontainer">
+            <ul>
+                <div id="20001">
+            <div class="detailscontainer">
+                <li class="imgcontainer emp1"></li>
+                <li>Name : Sai Teja</li>
+                <li>Age : 21</li>
+                <li>Gender : Male</li>
+                <li> Location : Zamistanpur</li>
+                </div>
+            </div>
+            <div id="20002">
+            <div class="detailscontainer">
+                <li class="imgcontainer emp2"></li>
+                <li>Name : S Murali</li>
+                <li>Age : 21</li>
+                <li>Gender : Male</li>
+                <li> Location : Zamistanpur</li>
+            </div>
+            </div>
+            <div id="20003">
+            <div class="detailscontainer">
+                <li class="imgcontainer emp3"></li>
+                <li>Name : Vineeth Kumar</li>
+                <li>Age : 21</li>
+                <li>Gender : Male</li>
+                <li> Location : Zamistanpur</li>
+            </div>
+            </div>
+            <div id="20004">
+            <div class="detailscontainer">
+                <li class="imgcontainer emp4"></li>
+                <li>Name : Hari Prasad</li>
+                <li>Age : 21</li>
+                <li>Gender : Male</li>
+                <li> Location : Zamistanpur</li>
+            </div>
+            </div>
+            <div id="20005">
+            <div class="detailscontainer">
+                <li class="imgcontainer emp5"></li>
+                <li>Name : Rakesh Reddy</li>
+                <li>Age : 21</li>
+                <li>Gender : Male</li>
+                <li> Location : Zamistanpur</li>
+            </div>
+            </div>
+            <div id="20006">
+            <div class="detailscontainer">
+                <li class="imgcontainer emp6"></li>
+                <li>Name : Sri Charan</li>
+                <li>Age : 21</li>
+                <li>Gender : Male</li>
+                <li> Location : Zamistanpur</li>
+            </div>
+            </div>
+            <div id="20007">
+            <div class="detailscontainer">
+                <li class="imgcontainer emp7"></li>
+                <li>Name : Shiva Yadav</li>
+                <li>Age : 21</li>
+                <li>Gender : Male</li>
+                <li> Location : Zamistanpur</li>
+            </div>
+            </div>
+            <div id="20008">
+            <div class="detailscontainer">
+                <li class="imgcontainer emp8"></li>
+                <li>Name : M Karthik</li>
+                <li>Age : 21</li>
+                <li>Gender : Male</li>
+                <li> Location : Zamistanpur</li>
+            </div>
+            </div>
+            <div id="20009">
+            <div class="detailscontainer">
+                <li class="imgcontainer emp9"></li>
+                <li>Name : Shiva Teja</li>
+                <li>Age : 21</li>
+                <li>Gender : Male</li>
+                <li> Location : Zamistanpur</li>
+            </div>
+            </div>
+            <div id="20010">
+            <div class="detailscontainer">
+                <li class="imgcontainer emp10"></li>
+                <li>Name : Shyam</li>
+                <li>Age : 21</li>
+                <li>Gender : Male</li>
+                <li> Location : Zamistanpur</li>
+            </div>
+            </div>
+        </ul>
+        </div>
+    </div>
+    <h3 class="footer">@copy Rights</h3>
+</body>
+</html>

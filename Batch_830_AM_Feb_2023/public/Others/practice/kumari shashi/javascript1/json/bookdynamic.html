@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var bookDetail={}
+
+        var bookData=()=>
+        {
+            bookDetail.name=prompt("Enter the book name : ")
+            bookDetail.discount=prompt("enter the discount value : ")
+            bookDetail.price=prompt("Enter the price of book : ")
+            bookDetail.author=prompt("Enter the author of book : ")
+            bookDetail.publisher=prompt("enter the publisher : ")
+            bookDetail.category=prompt("Enter the category : ")
+        }
+
+        var display=()=>{
+            bookData();
+            console.log(bookDetail.name)
+            console.log(bookDetail.discount)
+            console.log(bookDetail.price)
+            console.log(bookDetail.author)
+            console.log(bookDetail.publisher)
+            console.log(bookDetail.category)
+            console.log(bookDetail)
+
+        }
+        display();
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+var name,age,gender,dept,basicSal;
+
+name = prompt("Enter Employee Name");
+age = parseInt(prompt("Enter age"));
+gender = prompt("Enter Employee Gender").toLowerCase();
+basicSal = parseInt(prompt("Enter Basic Salary"));
+
+var pf = (basicSal * 14) / 100;
+var hra = (basicSal * 24) / 100;
+var totalSal = basicSal + pf + hra;
+taxPrcent = 0;
+
+if(gender == 'male'){
+    if(totalSal >= 500000){
+        taxPercent = 15;
+    } else if (toatalSal >= 300000){
+        taxPecent = 10;
+    } else if (totalSal >= 200000){
+        taxPercent = 5;
+    }
+} else {
+    if(totalSal >= 500000){
+        taxPercent = 10;
+    } else if(totalSal >= 300000){
+        taxPercent = 5;
+    }
+}
+
+var totalTax = (totalSal * taxPercent) / 100;
+
+console.log(gender);
+console.log("Tax  " + taxPercent + "%")
+console.log ("Your Tax Is " + totalTax);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details with Object</title>
+</head>
+<body>
+    <script>
+        var studentData = {
+            name : 'khushbu',
+            age : 22,
+            gender : 'female',
+            marks : [58, 88, 78, 90, 80],
+            total : 0,
+            avg : 0
+        }
+        for (var i = 0; i <studentData.marks.length; i++)
+        {
+            studentData.total = studentData.total + studentData.marks[i];
+        }
+        studentData.avg = studentData.total / studentData.marks.length;
+        console.log('student name :' + studentData.name);
+        console.log('student age :' + studentData.age);
+        console.log('student gender :' + studentData.gender);
+        console.log('student marks :' + studentData.marks);
+        console.log('total :' + studentData.total);
+        console.log('avg :' + studentData.avg);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+.container{
+    width: 600px;
+    border: 1px solid;
+    margin: 20px auto;
+    background-color: #ccc;
+}
+ul{
+    padding: 5px;
+    margin: 5px;
+
+}
+
+li{
+    list-style: none;
+    border: 1px solid #ddd;
+    padding: 5px;
+    margin: 5px;
+    background-color: #fff;
+}
+.slipCard{
+    width: 600px;
+    border: 1px solid;
+    margin: 20px auto;
+    background-color: #ccc;
+}
+.salaryblock input{
+width: 80px;
+}

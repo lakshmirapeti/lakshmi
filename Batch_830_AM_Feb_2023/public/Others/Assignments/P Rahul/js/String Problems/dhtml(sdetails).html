@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    ul {
+        width: 500px;
+        margin: 10px auto;
+        padding: 20px;
+    }
+    li {
+        list-style: none;
+     border: 1px solid;
+     margin: 10px;
+     padding: 10px;   
+    }
+</style>
+<body>
+    <ul>
+        <li>
+            <label for="1val"> first value is</label>
+            <input type="text" id="fvalue" name="1val">
+        </li>
+        <li>
+            <label for="2val">second value is</label>
+            <input type="text" id="svalue" name="2val">
+        </li>
+        <li>
+            <input type="button" value="get sum" onclick="operation();">
+        </li>
+        <li>
+            the sum of values is
+            <span id="result"></span>
+        </li>
+    </ul>
+
+    <script>
+        var operation = () => {
+            var data = {};
+            data.a1 = document.querySelector("#fvalue").value;
+            data.a1 = parseInt(data.a1);
+            data.a2 = document.querySelector("#svalue").value;
+            data.a2 = parseInt(data.a2);
+            data.sum = data.a1 + data.a2;
+
+            document.querySelector("#result").innerText = data.sum;
+
+        }
+    </script>
+</body>
+</html>

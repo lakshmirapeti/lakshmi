@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Demonstrating setInterval method</title>
+    </head>
+    <body>
+        <script>
+            //set interval
+            // console.log ('Good Morning Guys');
+            // var count = 0;
+            // setInterval(()=>{
+            //     count++
+            //     console.log('Hope all are doing good ' + count)
+                
+            // },3000);
+
+            // clear interval method 
+
+            console.log('HELLO  GUYS');
+            count= 0;
+            var showMsg =()=> {
+                count++;
+                console.log('HOPE ALL ARE DOING GOOD');
+            //     clearInterval(myinterval);
+            // }
+             if(count == 5){
+                clearInterval(myinterval);
+             }
+            }
+            var myinterval = setInterval(showMsg,2000);
+        </script>
+    </body>
+</html>

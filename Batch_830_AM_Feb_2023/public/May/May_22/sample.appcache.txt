@@ -1,0 +1,15 @@
+
+
+CACHE MANAGEMENT:
+    books/data/bookslist.js
+    images/books/*.png
+    styles/*.*
+
+NETWORK:
+    login.js 
+    payment/pages/*.*
+
+
+FALLBACK:
+    page/custompagenotfound.html
+    

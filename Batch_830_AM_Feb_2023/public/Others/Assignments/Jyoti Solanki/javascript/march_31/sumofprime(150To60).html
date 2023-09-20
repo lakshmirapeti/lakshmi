@@ -1,0 +1,41 @@
+<!-- Write a program to display all the prime numbers between 1 to 100 -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>program  for sum of prime number between</title>
+         <script>
+            function bodyload(){
+                
+                var sum  = 0;
+                var p = document.getElementById("prime");
+                for(i = 150; i >= 60; i--) 
+                { 
+                    var count = 0; 
+                    for( j = 2; j < i; j++) 
+                    { 
+                        if(i % j == 0) 
+                        { 
+                            count ++; 
+                            break; 
+                        } 
+
+                    } 
+                    if(count == 0) 
+                    { 
+                        sum = sum + i;
+                    } 
+                    p.innerHTML = sum;
+                } 
+                
+            }
+         </script>
+    </head>
+    <body onload="bodyload()">
+        <h1 style="color: blue; text-align: center;">sum of prime number between 150 to 60</h1>
+        <h3 id="prime" style="text-align: center;">
+        </h3>
+    </body>
+</html>

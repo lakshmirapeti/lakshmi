@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details in JSON Object</title>
+    <style>
+        h2 {
+            text-align: center;
+            font-size: 34px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .hint {
+            font-size: 22px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Total Salary and Tax Calculator</h2>
+    <i>
+        <p>! See Console for results</p>
+    </i>
+    <p class="hint">Right click on Webpage then Inspect and then Console</p>
+    <p class="hint">OR</p>
+    <p class="hint">Ctrl + Shift + i and then Console</p>
+    <script>
+        var readEmpData = () => {
+            // var empName, empAge, department, basicSalary, empGender, HRA, PF, totalTax, totalSalary, salaryAfterTax;
+            var empDetailsMain = {
+                "empName": "",
+                "empAge": "",
+                "department": "",
+                "basicSalary": 0,
+                "empGender": "",
+                "totalTax": 0,
+                "totalSalary": 0,
+                "salaryAfterTax": 0
+            }
+            empDetailsMain.empName = prompt("Enter Name of employee");
+            empDetailsMain.empAge = prompt("Enter Age of employee");
+            empDetailsMain.empGender = prompt("Enter Gender of employee");
+            empDetailsMain.department = prompt("Enter Department of employee");
+            empDetailsMain.basicSalary = prompt("Enter Basic Salary of employee");
+
+
+            empDetailsMain.basicSalary = parseInt(empDetailsMain.basicSalary);
+
+            empDetailsMain.totalSalary = empTotalSalary(empDetailsMain.basicSalary);
+            
+            empDetailsMain.empGender = empDetailsMain.empGender.toLowerCase();
+
+            
+            var tax = taxDetails(empDetailsMain.gender, empDetailsMain.totalSalary);
+            empDetailsMain.taxPercent = tax.taxPercent;
+            empDetailsMain.totalTax = tax.totalTax;
+            empDetailsMain.salaryAfterTax = tax.salaryAfterTax;
+
+            console.log('Name of Employee is ' + empDetailsMain.empName);
+            console.log('Age of Employee is ' + empDetailsMain.empAge);
+            console.log('Gender of Employee is ' + empDetailsMain.empGender);
+            console.log('Department of employee is ' + empDetailsMain.department);
+            console.log('Total salary before tax is ' + empDetailsMain.totalSalary);
+            console.log('Tax Slab of Employee is ' + empDetailsMain.taxPercent + '%');
+            console.log('Total tax is ' + empDetailsMain.totalTax);
+            console.log('Total salary after tax is ' + empDetailsMain.salaryAfterTax);
+        }
+
+        var empTotalSalary = (basicSalary) => {
+            var HRA = (basicSalary * 24) / 100;
+            var PF = (basicSalary * 14) / 100;
+            var totalSalary = basicSalary + HRA + PF;
+            return totalSalary;
+        }
+
+        var taxDetails = (gender, tSalary) => {
+            var empGender = gender;
+            var totalSalary = tSalary;
+            var taxPercent = 0;
+
+            if (empGender === "male") {
+                if (totalSalary > 500000) {
+                    taxPercent = 15;
+                }
+
+                else if (totalSalary >= 300000 && totalSalary < 500000) {
+                    taxPercent = 10;
+                }
+
+                else if (totalSalary >= 200000 && totalSalary < 300000) {
+                    taxPercent = 5;
+                }
+
+                else {
+                    totalTax = 0;
+                    taxPercent = 0;
+                }
+            }
+            else {
+
+                //For Female
+                if (totalSalary > 500000) {
+                    taxPercent = 10;
+                }
+
+                else if (totalSalary >= 300000 && totalSalary < 500000) {
+                    taxPercent = 5;
+
+                }
+
+                else {
+                    totalTax = 0;
+                    taxPercent = 0;
+                }
+            }
+
+            var totalTax = (tSalary * taxPercent) / 100;
+            var salaryAfterTax = totalSalary - totalTax;
+
+            var taxOutput = {
+                "taxPercent" : taxPercent,
+                "totalTax" : totalTax,
+                "salaryAfterTax" : salaryAfterTax
+            }
+            
+            return taxOutput;
+        }
+
+        readEmpData();
+
+    </script>
+</body>
+
+</html>

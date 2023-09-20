@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employes and taxes</title>
+</head>
+<body>
+    
+    <script>
+        var name=prompt("enter name");
+        var age=prompt("enter age");
+        var gen=prompt("enter gender");
+        var dept=prompt("enter department");
+        var basal=parseInt(prompt("enter basicsalery"));
+        var pf,hra,totalsal,tax;
+
+        pf=parseInt(14/100*basal)
+        hra=parseInt(24/100*basal)
+        totalsal=parseInt(basal+pf+hra)
+
+        console.log("the pf is "+ pf);
+        console.log("the hra is "+ hra);
+        console.log("the totalsalery is "+ totalsal);
+
+        if(gen=="male" || gen=="Male" || gen=="MALE"){
+            if(totalsal>=500000)
+            {
+                //console.log(totalsal);
+                console.log("the tax is 15%");
+                tax=15/100*totalsal
+                console.log("the tax is "+ tax);
+            }
+            if(totalsal>=300000 && totalsal<500000)
+            {
+                //console.log(totalsal);
+                console.log("the tax is 10%");
+                tax=10/100*totalsal
+                console.log("the tax is "+ tax);
+            }
+            if(totalsal>=200000 && totalsal<300000)
+            {
+                //console.log(totalsal);
+                console.log("the tax is 5%");
+                tax=5/100*totalsal
+                console.log("the tax is "+ tax);
+            }
+            if(totalsal<200000)
+            {
+                //console.log(totalsal);
+                console.log("the tax is 0%");
+            }
+        }
+        if(gen=="female" || gen=="Female" || gen=="FEMALE"){
+            if(totalsal>=500000)
+            {
+                //console.log(totalsal);
+                console.log("the tax is 10%");
+                tax=10/100*totalsal
+                console.log("the tax is "+ tax);
+            }
+            if(totalsal>=300000 && totalsal<500000)
+            {
+                //console.log(totalsal);
+                console.log("the tax is 5%");
+                tax=5/100*totalsal
+                console.log("the tax is "+ tax);
+            }
+            if(totalsal>=200000 && totalsal<300000)
+            {
+                //console.log(totalsal);
+                console.log("the tax is 0%");
+            }
+        }
+
+    </script>
+
+</body>
+</html>

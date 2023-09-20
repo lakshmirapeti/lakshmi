@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progress Report</title>
+  </head>
+  <style>
+    body{
+        background: url(https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80);
+        background-repeat: no-repeat;
+        background-size: 100%;
+       
+    }
+    h1 {
+      border: 1px solid;
+      text-align: center;
+      border-radius: 10px;
+      padding: 10px;;
+      background-color: antiquewhite;
+    }
+
+    ul {
+      width: 500px;
+      margin: 10px auto;
+      padding: 20px;
+    }
+    li {
+      list-style: none;
+      border: 1px solid;
+      margin: 20px;
+      padding: 10px;
+      font-size: 18px;
+      border-radius: 10px;
+      text-align: center;
+      background-color: #b5e5fb;
+      font-weight: bold;
+    }
+
+    #block1 {
+      position: relative;
+      right: 240px;
+      top: 31px;
+    }
+    #sub1 {
+      position: relative;
+      left: 50%;
+      bottom: 304px;
+    }
+    #submit {
+      position: relative;
+      bottom: 300px;
+    }
+    #percent {
+      position: relative;
+      bottom: 300px;
+    }
+    input {
+      font-size: 18px;
+      border-radius: 6px;
+      border: 1px solid;
+      margin-left: 10px;
+    }
+  </style>
+  <body>
+    <ul>
+      <h1>Progress Result</h1>
+      <li id="block1">Name:<input type="text" name="" id="sName" /></li>
+      <li id="block1">Roll No:<input type="text" name="" id="sRoll" /></li>
+      <li id="block1">
+        Father's Name:<input type="text" name="" id="sParents" />
+      </li>
+      <li id="block1">
+        Enrollment No:<input type="text" name="" id="sEnroll" />
+      </li>
+      <li id="block1">Class:<input type="text" name="" id="sClass" /></li>
+      <li id="sub1">
+        Computer Fundamental:<input type="number" name="" id="sComputer" />
+      </li>
+      <li id="sub1">
+        Informantion System:<input type="number" name="" id="sInformation" />
+      </li>
+      <li id="sub1">Mathematics:<input type="number" name="" id="sMaths" /></li>
+      <li id="sub1">
+        C Programming:<input type="number" name="" id="sPrograme" />
+      </li>
+      <li id="sub1">English:<input type="number" name="" id="sEnglish" /></li>
+      <li id="submit">
+        Submit Details:
+        <input type="button" value="Get Result" onclick="getResultData()" />
+      </li>
+      <li id="percent">Percentage : <span id="percentageResult"></span></li>
+    </ul>
+
+    <script>
+      var getResultData = () => {
+        var sDetails = {};
+        sDetails.name = document.querySelector("#sName").value;
+        sDetails.sRoll = document.querySelector("#sRoll").value;
+        sDetails.sClass = document.querySelector("#sClass").value;
+        sDetails.parent = document.querySelector("#sParents").value;
+        sDetails.enroll = document.querySelector("#sEnroll").value;
+
+        sDetails.computer = document.querySelector("#sComputer").value;
+        sDetails.computer = parseInt(sDetails.computer);
+        sDetails.System = document.querySelector("#sInformation").value;
+        sDetails.System = parseInt(sDetails.System);
+        sDetails.Mathematics = document.querySelector("#sMaths").value;
+        sDetails.Mathematics = parseInt(sDetails.Mathematics);
+        sDetails.Programming = document.querySelector("#sPrograme").value;
+        sDetails.Programming = parseInt(sDetails.Programming);
+        sDetails.English = document.querySelector("#sEnglish").value;
+        sDetails.English = parseInt(sDetails.English);
+
+        sDetails.total =
+          sDetails.computer +
+          sDetails.System +
+          sDetails.Mathematics +
+          sDetails.Programming +
+          sDetails.English;
+
+        sDetails.percent = sDetails.total / 6;
+        document.querySelector("#percentageResult").innerText =
+          sDetails.percent;
+      };
+      getResultData();
+    </script>
+  </body>
+</html>

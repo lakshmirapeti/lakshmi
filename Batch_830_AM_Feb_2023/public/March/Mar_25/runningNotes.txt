@@ -1,0 +1,62 @@
+alert
+
+Predefined method/function 
+    ...()
+
+    alert()
+    prompt()
+    console.log()
+    parseInt()
+    ...
+    ...
+
+    alert(".....")
+    -------------------------
+    Datatype -> int, char, float, long, double,string, boolean,....
+    int a -> a is cabple of storing 2bytes of integer 
+
+        int a;
+        a = 90; fine 
+        a = 'hello' error
+
+        float b; // decimal cabple storing only 4 bytes od ata
+        b = 9.4
+        b = 34 // 34.0 
+        b= true  error 
+
+        boolean isFeepaid; // true, false 
+        isFeepaid = true ;
+        isFeepaid = flase 
+        isFeepaid = 30 error 
+
+
+
+    what is the type of data a can hold, what it the size it can occupy
+    a = 30
+
+    C / C++
+        int a , b;
+        a= 30  fine 
+        a  = 90;
+        a= 9.5
+        b = 40 fine 
+
+        a = 'Raj' // error 
+        a = 234234234 // big no.
+
+    JS :
+
+        var a, b
+        a = 90 // integer  
+        a = 9.4 // decimal 
+        a = true // boolean 
+        a = 'sam' // string 
+
+        var username 
+        username = 'RAj' 
+        username = "TEena"
+        username = "4560"
+        username = 'a'
+        username = 'PRasad'
+        username = 'PRasAD'
+

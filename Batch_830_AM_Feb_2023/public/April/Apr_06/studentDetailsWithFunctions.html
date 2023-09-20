@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student details using functions</title>
+    </head>
+    <body>
+        <script>
+           
+           var sname, sage, sgender, m1, m2, m3, total, avg;
+
+            function readDataFromUser() {
+                sname = prompt("Etner student name");
+                sage = prompt("Etner student age");
+                sgender = prompt("Gender");
+
+                m1 = prompt("Sub 1 marks");
+                m1 = parseInt(m1);
+                m2 = prompt("Sub 1 marks");
+                m2 = parseInt(m2);
+                m3 = prompt("Sub 1 marks");
+                m3 = parseInt(m3);
+                getTotalAndAvg();
+            }
+
+            var  getTotalAndAvg = () => {
+                total = m1 + m2 + m3;
+                avg = total / 3;
+            }
+           
+            function displayStudentDetails() {
+                readDataFromUser();
+                console.log("Student details");
+                console.log("Student name " + sname);
+                console.log("Age is " + sage);
+                console.log("Total is " + total);
+                console.log('Avg is ' + avg);
+                getStudentGrade();
+            }
+
+            var getStudentGrade = () => {                
+                if (avg >= 90) {
+                    console.log("Student got Passed");
+                    if ( avg>= 70 && avg >= 90) {
+                        console.log("Student got Distinction");
+                    }  if  {
+                        console.log("Student got first class");
+                    } else {
+                        console.log("Student got Second class");
+                    }
+                } else {
+                    console.log("Student got failed");
+                }
+            }        
+
+            
+            displayStudentDetails();
+            
+
+            console.log("END")
+           
+           
+        </script>
+    </body>
+</html>

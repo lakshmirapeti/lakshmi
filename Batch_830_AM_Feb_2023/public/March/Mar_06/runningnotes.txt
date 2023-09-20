@@ -1,0 +1,58 @@
+#abc span {
+
+}
+
+div span {
+
+}
+
+#abc .pqr div span {
+
+}
+
+#abc, .pqr {
+
+}
+
+----
+CSS padding and margin property
+
+Css box model - > concept of calculating the actual dimentions of dom element been occupied on the page 
+    margin, border padding actual dimentions been given to that element
+
+    .container {
+        width: 112px;
+        height: 116px;
+        padding: 17px 11px;
+        margin: 5px 11px 7px 9px;
+        border: 3px solid;
+    }
+    <div class="container">test</div>
+
+    9 + 3 + 11 + 112 + 11 + 3 + 11 -> 160
+
+    Width: 
+    143
+    154 
+    137
+    146
+    157
+    149
+    167
+    161 
+    149 
+    157 
+
+
+PseudoClasses :
+    they are not going to be applied by default, but based on teh current state of the element, it will be applied 
+
+        :hover 
+        :active
+        :link
+        :first-child
+        ... ..
+        ... 
+
+
+

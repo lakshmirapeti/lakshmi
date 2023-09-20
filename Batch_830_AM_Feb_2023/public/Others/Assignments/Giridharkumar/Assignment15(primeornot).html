@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>
+            Assignment - 15
+        </title>
+    </head>
+    <body>
+        <script>
+            var n = prompt("Enter the number");
+            n = parseInt(n)
+            var count = 0;
+            
+            for (var i = 1; i <= n; i++) {
+                var rem = n % i;
+                if (rem == 0) {
+                    count++; 
+                    
+                }
+            }
+            if (count == 2) {
+                console.log("It's prime number")
+            } else {
+                console.log("It's not prime number")
+            }
+            console.log(count)
+        </script>
+    </body>
+</html>

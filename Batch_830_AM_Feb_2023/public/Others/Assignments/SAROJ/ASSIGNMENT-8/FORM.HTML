@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        *,ul li{
+            margin: 10px;
+            list-style: none;
+        }
+        .header{
+            border: 2px solid;
+            width: 1200px;
+            text-align: center;
+            margin: 20px;
+        }
+        .main{
+            border: 2px solid;
+            width: 1200px;
+            margin: 20px;
+        }
+        .block-1{
+            border: 2px solid;
+            width: 1135px;
+            height: 300px;
+            margin: 10px;
+            margin-top: 50px;
+            padding: 20PX;
+        }
+        .mini{
+            border: 2px solid;
+            width: 180px;
+            height: 50px;
+            padding:7px;
+            position: relative;
+            left: 10%;
+            bottom: 60px;
+            background-color: white;
+            text-align: center;
+        }
+        .age{
+           margin: 20px;
+        }
+        .country{
+            float: right;
+            position: relative;
+            right: 345px;
+        }
+        .class{
+            float: right;
+        }
+        .button{
+            position: relative;
+            left: 85%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h3>Student Registration Form</h3>
+    </div>
+    <div class="main">
+        <div class="block-1">
+<div class="mini"><h3>Personal Details</h3></div>
+
+<span class="country">
+            COUNTRY NAME:
+            <select>
+                <option>INDIA</option>
+                <option>USA</option>
+                <option>UK</option>
+                <option>CHINA</option>
+            </select>
+        </span> 
+        <ul>
+            <li>
+                <label for="name">NAME :</label>
+                <input type="text" name="name" list="names">
+                <datalist id="names">
+                    <option value="Saroj">Saroj</option>
+                    <option value="Dev">Dev</option>
+                </datalist></li>
+                <span class="class">
+                    CLASS:
+                    <input type="text" name="classes" list="classes">
+                    <datalist id="classes">
+                        <option value="CLASS-IX">CLASS-IX</option>
+            <option value="CLASS-X">CLASS-X</option> 
+            <option value="CLASS-XI">CLASS-XI</option>            
+                    </datalist>
+                </span>      
+<li>
+<div class="age">
+<label for="age">AGE:</label>
+<input type="number" names="age">
+</div>
+</li>
+<li>
+    <div class="gender">
+        GENDER:
+        <input type="raDio" name="gender" checked>MALE
+        <input type="radio" name="gender">FEMALE
+        <input type="radio" name="gender">OTHER
+    </div>
+</li>
+</ul>
+</div>
+          <div class="block-1">
+<div class="mini"><h3>Educational Details</h3></div>
+<ul>
+    <li style="margin: 20px; ">
+<div style="margin: 20px;">
+    Language Known:
+    <input type="checkbox" checked>English
+    <input type="checkbox">Hindi
+    <input type="checkbox">Telugu
+
+</div>
+</li>
+<li style="padding: 20px;">
+    <div>
+    
+        Qualification:
+        <input type="checkbox" >MCA
+        <input type="checkbox">MBA
+        <input type="checkbox" checked>B-Tech
+        <input type="checkbox">Graduation
+
+    </div>
+    </li>
+</ul>
+
+
+        </div>
+        <div class="block-1">
+            <div class="mini"><h3>Course Details</h3></div>
+            <UL>
+                <LI style="padding: 20px; margin: 10px;">
+            <div>
+                Course Option For:
+                <input type="text" name="course" list="course">
+                <datalist id="course">
+                    <option value="UI">UI</option>
+                    <option value="JAVA">JAVA</option>
+                    <option value="PYTHON">PYTHON</option>
+                    <option value=".NET">.NET</option>
+
+                </datalist>
+            </div>
+        </LI>
+        <LI style="padding: 20px; margin: 10px;">
+            <div>
+                Language:
+                <input type="text" name="lang" list="lang">
+                <datalist id="lang">
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JAVA SCRIPT">JAVA SCRIPT</option>
+                    <option value="NODE JS">NODE JS</option>
+
+                </datalist>
+            </div> 
+        </LI>
+        </UL>
+        </div> 
+        <div class="block-1">
+            <div class="mini"><h3>About Yourself</h3></div>
+            <ul>
+                <li>
+            Few words about yourself:
+            <textarea cols="120" rows="8"></textarea>
+        </li>
+        <li>
+            <input type="file">
+        </li>
+    </ul>
+</div>
+       <div class="button">
+       <input type="button" value="Save Details"> 
+    </div>     
+    </div>
+    <div class="header">
+        <h3>@Copyrights 2023</h3>
+    </div>
+</body>
+</html>

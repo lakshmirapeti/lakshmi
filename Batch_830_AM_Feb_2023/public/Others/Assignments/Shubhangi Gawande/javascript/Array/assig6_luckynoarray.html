@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>To find the lucky number of the given array</h2>
+    <script>
+        var readUser = () =>{
+            var userArray = [];
+
+            var size = prompt("Enter size of array ");
+            size = parseInt(size);
+
+            for(i = 0; i < size; i++ ){
+                userArray[i] = prompt("Enter number");
+                userArray[i] = parseInt(userArray[i]);
+            }
+            console.log(userArray);
+            var result = findLuckyAddInArray(userArray, size)
+            console.log(result);
+        }
+
+        var findLuckyAddInArray = (userArray, size) => {
+        
+        var outputArray = [];
+
+        for(j = 0; j < size; j++){
+            var userNumber = userArray[j], sum = 0;
+
+            while(userNumber > 0 || sum > 9){
+                if(userNumber == 0){
+                    userNumber = sum;
+                    sum = 0;
+                }
+                var rem = userNumber % 10;
+                sum = sum + rem;
+                userNumber = userNumber / 10;
+                userNumber = parseInt(userNumber);
+            }
+            outputArray[j] = sum;
+        }
+        return outputArray;
+        }
+        readUser();
+    </script>
+</body>
+</html>
