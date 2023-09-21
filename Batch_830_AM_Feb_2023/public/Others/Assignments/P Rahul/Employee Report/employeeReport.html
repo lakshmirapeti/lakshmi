@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="emp.css">
+    <script src="empApp.js"></script>
+</head>
+<body>
+    <h3 class="hdata">Employee Report</h3>
+    <div class="container">
+        <ul>
+            <li>
+                Employee Name :
+                <input type="text" id="ename">
+            </li>
+            <li>
+                Employee Age :
+                <input type="text" id="eage">
+            </li>
+            <li>
+                Gender :
+                <input type="radio" name="gender" value="Male" checked>Male
+                <input type="radio" name="gender" value="Female">Female
+            </li>
+            <li>
+                Department :
+                <select name="" id="edep">
+                <option value="HR">HR</option>
+                <option value="Manager">Manager</option>
+                <option value="Software Developer">Software Developer</option>
+                <option value="Data Analyst">Data Analyst</option>
+                <option value="Tester">Tester</option>
+                </select>
+            </li>
+            <li>
+                Basic Salary :
+                <input type="text" id="bsal">
+            </li>
+            <li>
+                <input type="button" value="Generate Emp report" onclick="generateEmpReport()">
+            </li>
+        </ul>
+    </div>
+    <div class="empReport">
+        <ul>
+            <li>Employee Name : <span id="rname"></span></li>
+            <li>Age : <span id="rage"></span></li>
+            <li>Gender : <span id="rgender"></span></li>
+            <li>Department : <span id="rdep"></span></li>
+            <li>PF : <span id="rpf"></span></li>
+            <li>HRA : <span id="rhra"></span></li>
+            <li>Total Salary : <span id="rtsal"></span></li>
+            <li>Tax Paid : <span id="rtax"></span></li>
+        </ul>
+    </div>
+</body>
+</html>

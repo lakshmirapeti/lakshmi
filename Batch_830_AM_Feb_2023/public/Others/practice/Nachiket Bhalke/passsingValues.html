@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Passing Values through Parameters
+        </title>
+    </head>
+    <body>
+        <script>
+            console.log("START");
+
+            var readData = () => {
+            var a1,a2;
+
+            a1 = prompt("Enter 1st Value");
+            a1 = parseInt(a1);
+
+            a2 = prompt("Enter 2nd Value");
+            a2 = parseInt(a2);
+
+            getAddition(a1,a2);
+
+            }
+
+            var getAddition = (x,y) => {
+                var addition;
+                addition = x + y;
+                console.log("Addition is "+ addition);
+            }
+            
+            readData();
+        </script>
+    </body>
+</html>

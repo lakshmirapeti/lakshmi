@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-7-TableTags</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            border: 1px aolid;
+            background-color: blue;
+            color: white;
+            text-align: center;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            z-index: 30;
+        }
+        h2{
+            margin: 0;
+            padding: 0;
+        }
+        .footer{
+            border: 1px aolid;
+            background-color: blue;
+            color: white;
+            text-align: center;
+            font-size: 23px;
+            position: relative;
+            top: 40px;
+            margin: 0;
+            padding: 0;
+        }
+        tr, th, td{
+            border: 1px solid;
+            text-align: center;
+            margin: 5px;
+            padding: 3px
+        }
+        td{
+            background-color: rgb(156, 206, 250);
+        }
+        .tab{
+            border: 1px solid;
+            width: 100%;
+            position: relative;
+            top: 32px;
+            padding: 3px;
+            background-color: rgb(248, 92, 103);
+        }
+        .marks{
+            position: relative;
+            right: -130px;
+            width: 130px;
+            height: 130px;
+            background-color: rgb(33, 114, 58);
+        }
+        .h{
+            background-color: rgb(235, 235, 250);
+        }
+        img{
+            width: 130px;
+            height: 130px;
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>   
+</head>
+<body>
+    <h2 class="header">Student Details</h2>
+    <div class="content">
+        <table class="tab" border="1px solid" cellspacing="3px" cellpadding="4px" >
+            <thead>
+                <tr class="h">
+                    <th>S.no</th>
+                    <th>Name</th>
+                    <th>picture</th>
+                    <th>Age</th>
+                    <th>Class</th>
+                    <th>Marks</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Pavan</td>
+                    <td><img src="https://image1.masterfile.com/getImage/NjMwLTAxODczNzgyZW4uMDAwMDAwMDA=AK6qdb/630-01873782en_Masterfile.jpg" alt="Student image"></td>
+                    <td>22</td>
+                    <td>10th</td>
+                    <td>
+                        <table class="marks">
+                            <tr>
+                                <th>Subject</th>
+                                <th>Max</th>
+                                <th>Min</th>
+                                <th>Obtained</th>
+                            </tr>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>70</td>
+                            </tr>
+                            <tr>
+                                <td>Social</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>76</td>
+                            </tr>
+                            <tr>
+                                <td>History</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>77</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>2</td>
+                    <td>Anupama</td>
+                    <td><img src="https://c8.alamy.com/zooms/9/339c608df41e406498729420c71fa861/mmdf7y.jpg" alt="Student image"></td>
+                    <td>20</td>
+                    <td>9th</td>
+                    <td>
+                        <table class="marks">
+                            <tr>
+                                <th>Subject</th>
+                                <th>Max</th>
+                                <th>Min</th>
+                                <th>Obtained</th>
+                            </tr>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>70</td>
+                            </tr>
+                            <tr>
+                                <td>Social</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>76</td>
+                            </tr>
+                            <tr>
+                                <td>History</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>77</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>3</td>
+                    <td>Lakshmi</td>
+                    <td><img src="https://c8.alamy.com/comp/MMDF6C/one-young-school-girl-student-reading-book-study-education-in-class-MMDF6C.jpg" alt="Student image"></td>
+                    <td>22</td>
+                    <td>12th</td>
+                    <td>
+                        <table class="marks">
+                            <tr>
+                                <th>Subject</th>
+                                <th>Max</th>
+                                <th>Min</th>
+                                <th>Obtained</th>
+                            </tr>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>70</td>
+                            </tr>
+                            <tr>
+                                <td>Social</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>76</td>
+                            </tr>
+                            <tr>
+                                <td>History</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>77</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>4</td>
+                    <td>Chandu</td>
+                    <td><img src="https://www.shutterstock.com/image-photo/male-student-working-desk-chinese-260nw-116496178.jpg" alt="Student image"></td>
+                    <td>23</td>
+                    <td>12th</td>
+                    <td>
+                        <table class="marks">
+                            <tr>
+                                <th>Subject</th>
+                                <th>Max</th>
+                                <th>Min</th>
+                                <th>Obtained</th>
+                            </tr>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>70</td>
+                            </tr>
+                            <tr>
+                                <td>Social</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>76</td>
+                            </tr>
+                            <tr>
+                                <td>History</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>77</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>5</td>
+                    <td>Vamsi</td>
+                    <td><img src="https://st.depositphotos.com/1037987/2444/i/600/depositphotos_24442547-stock-photo-group-of-students-working-at.jpg" alt="Student image"></td>
+                    <td>16</td>
+                    <td>8th</td>
+                    <td>
+                        <table class="marks">
+                            <tr>
+                                <th>Subject</th>
+                                <th>Max</th>
+                                <th>Min</th>
+                                <th>Obtained</th>
+                            </tr>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>70</td>
+                            </tr>
+                            <tr>
+                                <td>Social</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>76</td>
+                            </tr>
+                            <tr>
+                                <td>History</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>77</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>6</td>
+                    <td>Radha</td>
+                    <td><img src="https://previews.123rf.com/images/dolgachov/dolgachov2005/dolgachov200500653/146435565-student-girl-writing-to-notebook-at-home.jpg" alt="Student image"></td>
+                    <td>22</td>
+                    <td>10th</td>
+                    <td>
+                        <table class="marks">
+                            <tr>
+                                <th>Subject</th>
+                                <th>Max</th>
+                                <th>Min</th>
+                                <th>Obtained</th>
+                            </tr>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>70</td>
+                            </tr>
+                            <tr>
+                                <td>Social</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>76</td>
+                            </tr>
+                            <tr>
+                                <td>History</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>77</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>7</td>
+                    <td>Madhu</td>
+                    <td><img src="https://media.istockphoto.com/id/1320972143/photo/portrait-of-an-asian-child-girl-student-thinking-and-solving-the-subject-matter-studied-in.jpg?s=170667a&w=0&k=20&c=TQ_gdUJxmgmlnWnx3tXM4agrh0Dh_Y6Io1yEKOUo9jk=" alt="Student image"></td>
+                    <td>22</td>
+                    <td>12th</td>
+                    <td>
+                        <table class="marks">
+                            <tr>
+                                <th>Subject</th>
+                                <th>Max</th>
+                                <th>Min</th>
+                                <th>Obtained</th>
+                            </tr>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>70</td>
+                            </tr>
+                            <tr>
+                                <td>Social</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>76</td>
+                            </tr>
+                            <tr>
+                                <td>History</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>77</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>8</td>
+                    <td>Kumar</td>
+                    <td><img src="https://media.istockphoto.com/id/608003210/photo/happy-boy-at-the-school.jpg?b=1&s=170667a&w=0&k=20&c=zjt2ULgK4N2brQLGpCmYxdqERANvNOLnfk1H_28a2O8=" alt="Student image"></td>
+                    <td>22</td>
+                    <td>11th</td>
+                    <td>
+                        <table class="marks">
+                            <tr>
+                                <th>Subject</th>
+                                <th>Max</th>
+                                <th>Min</th>
+                                <th>Obtained</th>
+                            </tr>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>70</td>
+                            </tr>
+                            <tr>
+                                <td>Social</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>76</td>
+                            </tr>
+                            <tr>
+                                <td>History</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>77</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>9</td>
+                    <td>Chandini</td>
+                    <td><img src="https://media.istockphoto.com/id/1173363595/photo/a-small-school-girl-sitting-at-the-desk-in-classroom-looking-at-camera.jpg?s=612x612&w=0&k=20&c=P8eLmJZ3mWK0Itpcyqz44oIeLkbYcMqSe4IizbCNIgo=" alt="Student image"></td>
+                    <td>22</td>
+                    <td>10th</td>
+                    <td>
+                        <table class="marks">
+                            <tr>
+                                <th>Subject</th>
+                                <th>Max</th>
+                                <th>Min</th>
+                                <th>Obtained</th>
+                            </tr>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>70</td>
+                            </tr>
+                            <tr>
+                                <td>Social</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>76</td>
+                            </tr>
+                            <tr>
+                                <td>History</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>77</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>10</td>
+                    <td>Kajal</td>
+                    <td><img src="https://thumbs.dreamstime.com/b/student-girl-book-writing-school-test-education-learning-people-concept-111112665.jpg" alt="Student image"></td>
+                    <td>22</td>
+                    <td>12th</td>
+                    <td>
+                        <table class="marks">
+                            <tr>
+                                <th>Subject</th>
+                                <th>Max</th>
+                                <th>Min</th>
+                                <th>Obtained</th>
+                            </tr>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>70</td>
+                            </tr>
+                            <tr>
+                                <td>Social</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>76</td>
+                            </tr>
+                            <tr>
+                                <td>History</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>77</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>11</td>
+                    <td>Anu</td>
+                    <td><img src="https://previews.123rf.com/images/dolgachov/dolgachov1503/dolgachov150300125/37092398-happy-student-girl-sitting-at-table-with-books-and-writing-in-notebook-over-green-lights-background.jpg" alt="Student image"></td>
+                    <td>22</td>
+                    <td>10th</td>
+                    <td>
+                        <table class="marks">
+                            <tr>
+                                <th>Subject</th>
+                                <th>Max</th>
+                                <th>Min</th>
+                                <th>Obtained</th>
+                            </tr>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>70</td>
+                            </tr>
+                            <tr>
+                                <td>Social</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>76</td>
+                            </tr>
+                            <tr>
+                                <td>History</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>77</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="footer">&copy Copy Rights 2023</div>
+</body>
+</html>

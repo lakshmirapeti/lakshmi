@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Switchcase
+        </title>
+    </head>
+    <body>
+        <script>
+            var a1 = prompt("Enter a number");
+            var a2 = prompt("Enter second number");
+            a1 = parseInt(a1);
+            a2 = parseInt(a2);
+
+            var userInput = prompt("Choose add/div/sub/mul");
+            var result;
+            // Addition
+
+            // if (userInput == 'add') {
+            //     result = a1 + a2;
+            //     console.log("The sum of values is  " + result);
+            // } else if (userInput == 'sub') {
+            //     // Substraction
+            //     result = a1 - a2;
+            //     console.log("The substraction of values is  " + result);
+            // } else if (userInput == 'mul') {
+            //     // Multipliction
+            //     result = a1 * a2;
+            //     console.log("The Multiplication of values is  " + result);
+            // } else if (userInput == 'div') {
+            //     // Division
+            //     result = a1 / a2;
+            //     console.log("The Division of values is  " + result);
+            // } else {
+            //     console.log("Choosen wrong option")
+            // }
+
+            switch(userInput) {
+                case 'add':
+                    result = a1 + a2;
+                    console.log("The sum of values is  " + result);
+                    break;
+                case 'mul':
+                    result = a1 * a2;
+                    console.log("The Mul of values is  " + result);
+                    break;
+                case 'sub':
+                    result = a1 - a2;
+                    console.log("The Sub of values is  " + result);
+                    break;
+                case 'div':
+                    result = a1 / a2;
+                    console.log("The Division of values is  " + result);
+                    break;
+                default:
+                    console.log("Wron option choosen");
+            }
+
+        </script>
+    </body>
+</html>

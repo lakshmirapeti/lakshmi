@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .block{
+            border: 1px solid;
+            padding: 10px;
+            margin: 5px;
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .personal{
+            top: 89px;
+            position: absolute;
+            left: 98px;
+            /* border: 1px solid; */
+            padding: 4px;
+        }
+        .maincontainer{
+            margin-top: 27px;
+            height: 173px;
+        }
+        .parent{
+            border: 6px solid;
+            margin: 24px auto;
+           overflow:auto;
+        }
+        .leftside{
+            position: absolute;
+           
+            left: 5%;
+        }
+        .rightside{
+            right: 17%;
+            position: absolute;
+            top: 18%;
+        }
+        .unpersonal{
+            border: 1px solid;
+            top: 89px;
+            position: absolute;
+            left: 98px;
+        }
+        .spl,.unspl{
+            position: absolute;
+        }
+        .childparent{
+            position: absolute;
+            left: 10%;
+            top: 48%;
+        }
+        .education{
+            border: 1px solid;
+            padding: 11px 46px;
+        }
+        .demo{
+            border: 1px solid;
+            height: 213px;
+            margin-top: 7%;
+        }
+        .education{
+            border: 1px solid;
+            padding: 5px;
+            margin: 5px;
+            position: absolute;
+            top: 43%;
+            left: 7%;  
+        }
+        .course{
+            border: 1px solid;
+            padding: 5px;
+            margin: 5px;
+            position: absolute;
+            top: 73%;
+            left: 7%;
+        }
+        select{
+            padding: 8px 56px;
+            margin: 10%;
+        }
+        .opt{
+            position: absolute;
+            left: 5%;
+            top: 65%;
+        }
+        .mng{
+            position: absolute;
+            display: contents;
+        }
+        .side{
+            margin-top: 4%;
+        }
+        .footer{
+            border: 1px solid;
+            padding: 10px;
+            margin: 5px;
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;  
+        }
+        .lang{
+           
+            position: absolute;
+            left: 5%;
+            top: 72%;
+        }
+        textarea{
+            position: absolute;
+            left: 20%;
+            top: 113%;
+        }
+        .btn{
+            left: 81%;
+            border-radius: 27px;
+            background-color: blue;
+            padding: 16px;
+            position: relative;
+        }
+        .about{
+            border: 1px solid;
+            padding: 5px;
+            margin: 5px;
+            position: absolute;
+            top: 105%;
+            left: 7%;
+        }
+    </style>
+</head>
+<body>
+    <div class="block header">Student registration page</div>
+    <div class="parent"> 
+    <div class="block maincontainer">
+        <div class="personal unpersonal">personal detailes</div>
+       <div class="leftside">
+        <table cellpadding="5px" cellspacing="5px">
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="uname">Name</label>
+                    </td>
+                    <td>
+                        <input type="text" name="uname">
+                    </td>
+                </tr>
+                <tr> 
+                    <td>
+                        <label for="age">age</label>
+                    </td>
+                    <td>
+                        <input type="text" name="age">
+                    </td>
+                </tr>
+                <tr> 
+                    <td>
+                        <label for="gender">gender</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="gender">male
+                        <input type="radio" name="gender">female
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+       </div>
+       <div class="rightside">
+        <table cellpadding="5px">
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="country">countryName</label>
+                    </td>
+                    <td>
+                        <input type="text" name="country">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="class">className</label>
+                    </td>
+                    <td>
+                        <input type="text" name="class">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+       </div>
+    </div>
+    <div class="block maincontainer">
+        <div class="education">personal detailes</div>
+       <div class="leftside">
+        <table cellpadding="5px" cellspacing="5px">
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="name"> languages knows:</label>
+                        <input type="checkbox" name="name">hindi
+                        <input type="checkbox" name="name">english
+                        <input type="checkbox" name="name">telugu
+                    </td>
+                </tr>
+               
+                <tr> 
+                    <td>
+                        <label for="Qalification">Qalification :</label>
+                        <input type="checkbox" name="Qalification">mca
+                        <input type="checkbox" name="Qalification">mba
+                        <input type="checkbox" name="Qalification">btech
+                        <input type="checkbox" name="Qalification">graduate
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+       </div>
+    </div>
+    <div class="block maincontainer">
+        <div class="course">course detailes</div>
+       <div class="side">
+        <table cellpadding="5px" cellspacing="5px" class="mng">  
+            <tbody>  
+                <tr>
+                    <td>
+                        <label for="course">course option for:</label>
+                    </td>
+                    <td>
+                        <select name="option" id="option" class="opt">
+                            <option>ui</option>
+                            <option>rpa</option>
+                            <option>java</option>
+                            <option>python</option>
+                            <option>data science</option>
+                            <option>sql</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="course">languages:</label>
+                    </td>
+                    <td>
+                        <select name="option" id="option" class="lang">
+                            <option>html</option>
+                            <option>css</option>
+                            <option>java</option>
+                            <option>python</option>
+                            <option>data science</option>
+                            <option>sql</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+       </div>
+       </div>
+       <div class="block maincontainer">
+        <div class="about">about yourself</div>
+       <div class="side">
+        <table cellpadding="5px" cellspacing="5px" class="mng">  
+            <tbody>  
+                <tr>
+                    <td>
+                        <label for="course">Few words about urself:</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea name="skr" id="" cols="100" rows="6"></textarea>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+       </div>
+       </div>
+       <div>
+        <input type="button" value="save detailes" class="btn">
+       </div>
+    </div>
+   <div class="footer">@copy rights 2023</div>
+</body>
+</html>

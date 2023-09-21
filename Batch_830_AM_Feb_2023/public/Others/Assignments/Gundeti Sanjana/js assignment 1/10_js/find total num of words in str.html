@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var word = "Hello World";
+  
+
+      count = 0; //set count to 0
+
+      for (var i = 0; i < word.length; i++) {
+        //checks whether it is a letter using a regular expression (/[a-zA-Z]/) matches any uppercase or lowercase alphabetical character from A to Z
+        //The square brackets [] indicate a character set, and the dash - indicates a range of characters. 
+        //In this case, the character set includes all uppercase and lowercase letters.
+        if (word[i].match(/[a-zA-Z]/)) {
+          count++;//if true then the count increases
+        }
+      }
+      console.log(count);
+    </script>
+  </body>
+</html>

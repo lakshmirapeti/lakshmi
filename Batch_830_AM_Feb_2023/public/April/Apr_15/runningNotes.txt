@@ -1,0 +1,19 @@
+Assignment
+
+    1. Saturday, 15/04/2024
+    2. Sat, 15/04/2024
+    3. Sat, 15/Apr/2024
+    4. April 15th 2023
+    5. 15h April, 2023 09:02:30
+    6. April/15/2023
+    7. 9hrs : 05 min : 21 sec
+
+
+
+
+Assignment 2:
+
+    var user dob <-
+    ur age is 2345days
+
+    ur age is 20 yrs 2 months 4 days

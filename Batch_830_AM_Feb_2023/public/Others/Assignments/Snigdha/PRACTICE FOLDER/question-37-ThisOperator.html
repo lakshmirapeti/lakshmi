@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var bookDetails = {};
+            var getBookDetails= ()=>{
+                this.name = prompt('enter the book name ');
+                this.actualPrice = prompt('enter the cost of the book ');
+                this.actualPrice = parseInt(this.actualPrice);
+                this.author = prompt ('enter the author name');
+                this.discount = prompt('Enter discount value');
+                this.discount= parseInt(this.discount);
+
+                discountValue();
+            }
+
+            var discountValue =()=>{
+                this.bookDiscountPrice = (this.actualPrice*this.discount)/100;
+
+                bookPrice();
+            }
+
+            var bookPrice = ()=>{
+                this.bookValue = this.actualPrice-this.bookDiscountPrice; 
+
+                displayBookData();
+            }
+
+
+            var displayBookData= ()=> {
+                console.log(bookDetails);
+                console.log('Book name is ' + this.name);
+                console .log ('Book Actual price is ' + this.actualPrice);
+                console.log ('Author name is ' + this.author);
+                console.log ( 'discount value is ' + this.bookDiscountPrice);
+                console.log ('book price is ' + this.bookValue)
+                
+            }
+            getBookDetails();
+        </script>
+    </body>
+</html>

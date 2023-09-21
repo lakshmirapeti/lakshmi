@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2 Login page</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .Header, .Content, .footer{
+            border: 2px solid ;
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+
+        }
+        .Header, .footer{
+            background-color: rgb(133, 187, 6);
+            font-size: large;
+        }
+        .Content{
+            height: 405px;
+
+        }
+        .inner_content{
+            border: 1px solid;
+            width: 480px;
+            height: 300px;
+            position: absolute;
+            left: 32%;
+            top: 28%;
+            font-size: 20px;
+            font-style: italic;
+            /* background-color: rgb(210, 247, 124); */
+            background-image: linear-gradient(to right,green,rgb(210, 247, 124));
+            border-radius: 50px;
+            
+
+        }
+        .sp1{
+           position: absolute;
+           left: 13%;
+           top: 39px;
+        }
+        .sp2{
+            position: absolute;
+            left: 13%;
+            top: 101px;
+
+        }
+        .sp3{
+            position: absolute;
+            left: 45%;
+            top: 150px;
+        }
+        .sp4{
+            position: absolute;
+            left: 37%;
+            top: 193px;
+        }
+        .lb1, .lb2{
+            width: 180px;
+            height: 23px;
+            position: absolute;
+            left: 220%;
+            border-radius: 10px;
+        }
+        .lb1{
+            position: absolute;
+            left: 208%;
+
+        }
+    </style>
+</head>
+<body>
+    <Div class="Header">Home page</Div>
+    <Div class="Content">
+        <div class="inner_content">
+            <div class="sp1">
+                <label for="Uname">Username :</label>
+                <input type="text" name="Uname"  class="lb1" required>
+            </div>
+            <br>
+            <div class="sp2">
+                <label for="Psw">Password :</label>
+                <input type="text" name="Psw" class="lb2" required>
+                <br>
+            </div>
+            <div class="sp3">
+              <a href="P4_Product_pg.html"> <input type="submit" value="Login" style="text-align: center; padding: 5px; background-color: rgb(133, 187, 6); background-image:linear-gradient(to right,rgb(210, 247, 124),green) ; width: 300px; height: 40px;border-radius: 50px; position: relative; left: -120px;" ></a>
+            </div>    
+                <br>
+                <div class="sp4">
+                <a href="Project_2_sign_Up.html"> sign Up </a> <br>
+                <a href="P3_forgot_psw.html">Forgot Password?</a>
+                </div>
+        </div>
+    </Div>
+    <Div class="footer">@copyrights 2023</Div>
+
+
+</body>
+</html>

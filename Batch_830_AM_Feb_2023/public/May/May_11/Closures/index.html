@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Closures
+        </title>
+        <link rel="stylesheet" href="app.css">
+        <script src="lib/salaryUtilList.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <div>Payslip Generator - Demonstrating Closures</div>
+        <ul>
+            <li>
+                <input type="text" id="empName" placeholder="Employee Name">
+            </li>
+            <li>
+                GEnder:
+                Male: <input type="radio" value="Male" name="gender" checked>  
+                Female: <input type="radio" value="Female" name="gender">  
+            </li> 
+            <li>
+                <input type="text" id="empAge" placeholder="Employee Age">
+            </li>
+            <li>
+                <input type="text" id="empBSal" placeholder="Basic Salary">
+            </li>
+            <li>
+                <select id="empDep">
+                    <option selected>Select Department</option>
+                    <option value="Software Engnr">Software Engnr</option>
+                    <option value="Sr Software Engnr">Sr Software Engnr</option>
+                    <option value="MAnager">Manager</option>
+                    <option value="HR">HR</option>
+                </select>
+            </li>
+            <li>
+                <input type="button" value="Get Total Tax to be paid" onclick="getTotalTax()">
+                <input type="button" value="Get Total Sal" onclick="getTotalEmpSal()">
+                <input type="button" value="Get PF ">
+                <input type="button" value="Get HRA ">
+            </li>
+            <li id="rblock">
+
+            </li>
+        </ul>
+    </body>
+</html>

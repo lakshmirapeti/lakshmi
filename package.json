@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "express-g": "^1.0.9",
+    "http-errors": "^2.0.0",
+    "morgan": "^1.10.0"
+  }
+}

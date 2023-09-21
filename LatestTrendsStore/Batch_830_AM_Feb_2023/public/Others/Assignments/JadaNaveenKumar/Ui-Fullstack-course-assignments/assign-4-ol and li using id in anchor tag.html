@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+
+        .container{
+            background-color: antiquewhite;
+        }
+        .header:hover{
+            background-color: red;
+        }
+        .header{
+            border: 1px solid;
+            width:96%;
+            margin-bottom: 10px;
+          height: 20px;
+          text-align: center;
+          background-color: darkorange;
+            
+        }
+        .footer{
+            border: 1px solid;
+            width:96%; 
+            margin-top: 10px;
+            height: 20px;
+            text-align: center;
+            background-color:darkorange;
+        }
+
+       .footer:hover{
+        background-color: darkmagenta;
+       }
+        .maincontainer{
+            border: 1px solid;
+            padding: 10PX;
+            width: 94%;
+            height: 540px;
+            background-color:antiquewhite;
+            
+        }
+
+
+         .leftcontainer{
+           float: left; 
+           width: 30%;
+           border: 1px solid;
+           margin: 10px;
+           height: 520px;
+           background-color: rgb(230, 186, 106);
+         }
+         .rightcontainer{
+            width: 64%;
+            border: 1px solid;
+            height: 520px;
+            margin: 10px;
+            float: left;
+            background-color: black;
+           
+              
+         }
+
+          .left_list li{
+            border: 1px solid;
+           list-style-position: inside;
+            margin: 10px;
+            text-align: center;
+            background-color:aqua
+
+         }
+
+         .left_list li:hover{
+            background-color: red;
+         }
+         .left_list  ,.right_containerlist{
+            padding: 5px;
+            margin: 5px;
+        } 
+       
+        .right_containerlist >li{ /* will apply immediate to next block and not applied inside of li to li block*/
+        list-style: none;
+        border: 1px solid;
+        height: 200px;
+        margin: 10px;
+        background-color:pink
+        
+        }
+        .rightcontainer{
+            overflow: auto;
+        }
+        img{
+            width: 190px;
+            height: 190px;
+            margin: 5px;
+        }
+       .imgblock, .detailsblock{
+            float: left;
+        }
+        .detailsblock{
+           margin-left: 10px;
+        }
+
+    </Style>
+</head>
+<body>
+    <div class="container">
+    <div class="header"> student Details</div>
+    <div class="maincontainer">
+        <div class="leftcontainer">
+            <ol class="left_list">
+                <li> 
+                    <a href="#msd">Ms Dhoni</a>
+                <li>
+                    <a href="#sehwag">Sehwag</a>
+                </li>
+                <li> <a href="#yuv">yuvaraj singh</a></li>
+                <li><a href="#roh">Rohith Sharma</a></li>
+                <li><a href="#sub">Shubham gill</a></li>
+                <li><a href="#sac">Sachin Tendulkar</a></li>
+                <li><a href="#gau">Gautam Gambhir</a></li>
+                <li><a href="#ash">Ashis Nehra</a></li>
+                <li><a href="#amb">Ambati Rayudu</a></li>
+                <li><a href="#sur">Suresh Raina</a></li>
+                <li><a href="#ash">Ashwin</a></li>
+                <li><a href="#rav">Ravindra Jadeja</a></li>
+                <li><a href="#axa">Axar Patel</a></li>
+                <li> 
+                  <a href="#Zaher">Zaheer Khan</a>      <!--only id has to give for the anchor tag donot give class   -->
+                </li>
+                <li > <a href="">Hardik Pandya</a></li>
+                <li >
+                    <a href="#Rishab">Rishab Pant
+                    </a>
+                    </li>
+
+                    <li >
+                        <a href="#ish">Ishanth Sharma
+                        </a>
+                        </li>
+            </ol>
+        </div>
+        <div class="rightcontainer">
+           <ol class="right_containerlist">
+
+
+            <li  id="sehwag"> 
+               <div class="imgblock">
+                <img src="https://media.gettyimages.com/id/153246773/photo/virender-sehwag-of-india-bats-during-the-icc-world-twenty20-2012-super-eights-group-2-match.jpg?s=612x612&w=0&k=20&c=2uCCxCFnuZVo7a-kFyrg2GOyNq7fTq8g26v9GInGCvQ=" alt="">
+               </div>
+               <div class="detailsblock">
+              <ol>
+                <li> Name:Sehwag</li>
+                <li>Age:24 </li>
+                <li>Location : delhi </li>
+            </ol>
+           
+               </div>
+            </li>
+
+
+
+
+            <li id="Zaher"> 
+                <div class="imgblock">
+                 <img src="https://media.gettyimages.com/id/98905678/photo/zaheer-khan-of-india-bowls-a-delivery-during-the-icc-world-twenty20-super-eight-match-between.jpg?s=612x612&w=0&k=20&c=0xfYSX5Yu2m_DgSTSMBt69GCJMa_12CFvkabPIMYLr4=" alt="">
+                </div>
+                <div class="detailsblock">
+               <ol>
+                 <li> Name:Zaheer Khan</li>
+                 <li>Age:25 </li>
+                 <li>Location : delhi </li>
+             </ol>
+            
+                </div>
+             </li>
+
+
+
+
+             <li id="Rishab"> 
+                <div class="imgblock">
+                 <img src="https://media.gettyimages.com/id/1305462285/photo/rishabh-pant-of-india-celebrates-reaching-his-century-during-day-two-of-the-4th-test-match.jpg?s=612x612&w=0&k=20&c=dlzBg7Lt_8AHP7_DInXAxDlb56mKLV_Eq0S5JDEHgic=" alt="">
+                </div>
+                <div class="detailsblock">
+               <ol>
+                 <li> Name:RishabPant</li>
+                 <li>Age:24 </li>
+                 <li>Location : delhi </li>
+             </ol>
+            
+                </div>
+             </li>
+
+
+
+
+
+
+             
+             <li id="msd"> 
+                <div class="imgblock">
+                 <img src="https://media.gettyimages.com/id/76982368/photo/indian-captain-mahendra-singh-dhoni-celebrates-with-the-trophy-during-the-twenty20-championship.jpg?s=612x612&w=0&k=20&c=6sGAKPy07e0oNr55PukfmvMnrhdeADb-9PORAIyPTQQ=" alt="">
+                </div>
+                <div class="detailsblock">
+               <ol>
+                 <li> Name:Msdhoni</li>
+                 <li>Age:24 </li>
+                 <li>Location : Ranchi </li>
+             </ol>
+            
+                </div>
+             </li>
+
+        
+
+             <li id="yuv"> 
+                <div class="imgblock">
+                 <img src="https://media.gettyimages.com/id/110789740/photo/yuvraj-singh-of-india-celebrates-hitting-the-winning-runs-during-the-2011-icc-world-cup.jpg?s=612x612&w=0&k=20&c=oN45FX5FJDbUPTRPGX01IcZcHEd5AQA3X91Ji04d53E=" alt="">
+                </div>
+                <div class="detailsblock">
+               <ol>
+                 <li> Name:Yuvaraj singh</li>
+                 <li>Age:24 </li>
+                 <li>Location : Punjab </li>
+             </ol>
+            
+                </div>
+             </li>
+
+
+
+
+
+             <li id="roh"> 
+                <div class="imgblock">
+                 <img src="https://media.gettyimages.com/id/1160407704/photo/rohit-sharma-of-india-bats-during-the-group-stage-match-of-the-icc-cricket-world-cup-2019.jpg?s=612x612&w=0&k=20&c=ibjJ9xcKq7nzK-BraJh3iek4bW8PGUfNJYyzfUC1c2s=" alt="">
+                </div>
+                <div class="detailsblock">
+               <ol>
+                 <li> Name:Rohith sharma</li>
+                 <li>Age:24 </li>
+                 <li>Location : Mumbai </li>
+             </ol>
+            
+                </div>
+             </li>
+
+
+
+
+
+             <li id="sub"> 
+                <div class="imgblock">
+                 <img src="https://media.gettyimages.com/id/911938986/photo/shubman-gill-of-india-celebrates-his-century-during-the-icc-u19-cricket-world-cup-semi-final.jpg?s=612x612&w=0&k=20&c=NfxhE7whqICf2m_c5bTYgVqIjA0YD6eVWkjRO29kqqY=" alt="">
+                </div>
+                <div class="detailsblock">
+               <ol>
+                 <li> Name:Subham Gill</li>
+                 <li>Age:24 </li>
+                 <li>Location : Mumbai </li>
+             </ol>
+            
+                </div>
+             </li>
+
+
+             
+
+
+             <li id="sac"> 
+                <div class="imgblock">
+                 <img src="https://media.gettyimages.com/id/111436654/photo/sachin-tendulkar-of-india-celebrates-his-teams-win-during-the-2011-icc-world-cup-final-between.jpg?s=612x612&w=0&k=20&c=qZ-asspfTLDwoyp18Ol3AFNBhGYCah-TzF1s7jsnvcU=" alt="">
+                </div>
+                <div class="detailsblock">
+               <ol>
+                 <li> Name:Sachin Tendulkar</li>
+                 <li>Age:24 </li>
+                 <li>Location : Mumbai </li>
+             </ol>
+            
+                </div>
+             </li>
+
+
+
+
+             <li id="gau"> 
+                <div class="imgblock">
+                 <img src="https://media.gettyimages.com/id/152624044/photo/gautam-gambhir-of-india-bats-during-the-icc-world-twenty20-2012-group-a-match-between-england.jpg?s=612x612&w=0&k=20&c=K2ysBiZk_GytZNoa9pz23FJAVzInfKa5O04pj7Du3kY=" alt="">
+                </div>
+                <div class="detailsblock">
+               <ol>
+                 <li> Name:Gautam Gambhir</li>
+                 <li>Age:24 </li>
+                 <li>Location : delhi </li>
+             </ol>
+            
+                </div>
+             </li>
+
+
+
+
+
+             <li id="ash"> 
+                <div class="imgblock">
+                 <img src="https://media.gettyimages.com/id/90968073/photo/ashish-nehra-poses-during-the-icc-champions-photocall-session-of-the-indian-cricket-team-at.jpg?s=612x612&w=0&k=20&c=Nqzonh8cjkBymLtUUYdhwuURhLFAYYyOAv7VJr8Ke1k=" alt="">
+                </div>
+                <div class="detailsblock">
+               <ol>
+                 <li> Name:Ashis Nehra</li>
+                 <li>Age:24 </li>
+                 <li>Location : delhi </li>
+             </ol>
+            
+                </div>
+             </li>
+
+
+
+
+
+
+
+
+
+             <li id="amb"> 
+                <div class="imgblock">
+                 <img src="https://media.gettyimages.com/id/1147568077/photo/ambati-rayudu-of-the-chennai-super-kings-bats-during-the-india-premier-league-ipl-qualifier.jpg?s=612x612&w=0&k=20&c=1i2mmayg5mVDLoG5aZsszpPp_2M-zlf6IDphXbxlwks=" alt="">
+                </div>
+                <div class="detailsblock">
+               <ol>
+                 <li> Name:Ambati Rayadu</li>
+                 <li>Age:24 </li>
+                 <li>Location : Andhra Pradesh </li>
+             </ol>
+            
+                </div>
+             </li>
+
+
+
+
+
+             
+
+
+
+
+
+             <li id="sur"> 
+                <div class="imgblock">
+                 <img src="https://media.gettyimages.com/id/992932858/photo/india-batsman-suresh-raina-hits-out-during-the-2nd-vitality-t20-international-between-england.jpg?s=612x612&w=0&k=20&c=FiHvQV7QE-z7MArW-3mX6Z8Acin0YhT_Ajdywcc7YRs=" alt="">
+                </div>
+                <div class="detailsblock">
+               <ol>
+                 <li> Name:Suresh Raina</li>
+                 <li>Age:24 </li>
+                 <li>Location : Mumbai </li>
+             </ol>
+            
+                </div>
+             </li>
+
+
+
+
+
+             
+
+
+
+
+
+             <li id="ash"> 
+                <div class="imgblock">
+                 <img src="https://media.gettyimages.com/id/1464367095/photo/ravichandran-ashwin-of-india-prepares-to-bowl-during-day-one-of-the-first-test-match-in-the.jpg?s=612x612&w=0&k=20&c=ctHGOAmT2yyVUsT_ok4gegUyegxIXHzzXU9XA_tRDBg=" alt="">
+                </div>
+                <div class="detailsblock">
+               <ol>
+                 <li> Name:Ashwin</li>
+                 <li>Age:24 </li>
+                 <li>Location : TamilNadu</li>
+             </ol>
+            
+                </div>
+             </li>
+
+
+
+
+
+
+             
+
+
+
+
+
+             <li id="rav"> 
+                <div class="imgblock">
+                 <img src="https://media.gettyimages.com/id/1406335889/photo/india-batsman-ravindra-jadeja-reaches-his-century-during-day-two-of-the-fifth-test-match.jpg?s=612x612&w=0&k=20&c=AfVeeDAvaPNdIckz5Q3n3QtwSx8zKDYoOtU5ZIXSt7M=" alt="">
+                </div>
+                <div class="detailsblock">
+               <ol>
+                 <li> Name:Ravindra Jadeja</li>
+                 <li>Age:24 </li>
+                 <li>Location : Gujarat </li>
+             </ol>
+            
+                </div>
+             </li>
+
+
+
+
+
+             
+
+
+
+
+
+             <li id="axa"> 
+                <div class="imgblock">
+                 <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1200,q_50/lsci/db/PICTURES/CMS/355400/355491.jpg" alt="">
+                </div>
+                <div class="detailsblock">
+               <ol>
+                 <li> Name:Axar Patel</li>
+                 <li>Age:24 </li>
+                 <li>Location : Delhi </li>
+             </ol>
+            
+                </div>
+             </li>
+
+
+
+
+
+             
+
+
+
+
+
+             <li id="ish"> 
+                <div class="imgblock">
+                 <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1200,q_50/lsci/db/PICTURES/CMS/330600/330672.jpg" alt="">
+                </div>
+                <div class="detailsblock">
+               <ol>
+                 <li> Name:Ishanth sharma</li>
+                 <li>Age:24 </li>
+                 <li>Location : Delhi </li>
+             </ol>
+            
+                </div>
+             </li>
+
+
+
+
+             
+
+
+
+
+
+             <li id="har"> 
+                <div class="imgblock">
+                 <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1200,q_50/lsci/db/PICTURES/CMS/353600/353636.jpg" alt="">
+                </div>
+                <div class="detailsblock">
+               <ol>
+                 <li> Name:Hardik Pandya</li>
+                 <li>Age:24 </li>
+                 <li>Location : Mumbai </li>
+             </ol>
+            
+                </div>
+             </li>
+
+
+
+
+           
+          </ol>
+        </div>
+    </div>
+    <div class="footer">@copyrights2023</div>
+   </div>
+
+</body>
+</html>

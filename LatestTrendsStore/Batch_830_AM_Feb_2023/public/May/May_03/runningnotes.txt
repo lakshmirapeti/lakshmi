@@ -1,0 +1,99 @@
+Javascript 
+    Core js
+        datatypes 
+        fuctions
+        datatypes
+    Adv js 
+        Classes 
+            Objects 
+            Constructors
+            Inheritance 
+            super 
+        Exception handling 
+            user defined exp 
+            runtime exps 
+        Closures    
+
+    ECMA 
+
+
+Classes 
+
+    class StudentDetails {
+        this.name ;
+        this.age ;
+        this.gender ;
+        this.location;
+        this.getdata () {
+            ...
+        }
+        this.gettotalandavg() {
+            ..... 
+            ...
+        }
+    }
+
+    var s1 = new StudentDetails();
+
+    var s2 = new StudentDetails();
+
+    -----------------------
+
+    class ClassName {
+        constructor(<optional parameters>) {
+            this.key = value;
+            this.key2 = value;
+            ...
+        }
+        method1() {
+            ...
+        }
+        method2() {
+            ...
+        }
+        ....
+    }
+
+=====================
+
+var fanObj = {
+    color: 'red',
+    noofWings: 3,
+    motorType: 'Electrical',
+    howItRotates() {
+        .... 
+    }
+    howItstops() {
+        ...
+    }
+}
+
+var fanObj2 = {
+    color: 'gredn',
+    noofWings: 4,
+    motorType: 'Electrical',
+    howItRotates() {
+        .... 
+    }
+    howItstops() {
+        ...
+    }
+}
+------------------------
+
+class Fan {
+    constructor() {
+        this.color = '';
+        this.noofWings = '';
+        this.motorType = '';
+    }
+    howItRotates() {
+        ....
+    }
+    howItstops() {
+
+    }
+}
+
+var fan1 = new Fan();
+var fan2 = new Fan();

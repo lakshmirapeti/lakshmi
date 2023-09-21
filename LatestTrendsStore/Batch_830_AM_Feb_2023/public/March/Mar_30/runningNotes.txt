@@ -1,0 +1,114 @@
+Conditional CS
+    if 
+
+    if else 
+
+    nested if
+
+    nested ifelse 
+
+    else if 
+
+    -------------------
+
+    if (condition) {
+        ....
+    }
+
+    if (condition) {
+        .... 
+    } else {
+
+    }
+
+
+    if sal > 400000
+
+    if gender == male
+        something
+
+        if (condition) {
+            ... 
+           ... 
+           if (condition) {
+                ....
+                ...
+           }
+           ... 
+           ...
+        }
+
+
+        if (avg >= 40) {
+            //passed
+            if (avg >= 90) {
+                ///
+            }
+        }
+
+        if ( condition) {
+            .... 
+            ....
+        } else {
+            ...
+             ././/
+        }
+
+        if (avg >= 40) {
+            ..passed 
+        } else {
+            failed 
+        }
+        --------------------------
+
+        if (avg >= 90) {
+            /// distinction
+        } else if (avg >= 60){
+            ... //first class
+        }
+
+        if (avg >= 90) {
+            //distinction
+        }   
+        if (avg >= 60) {
+            // first class
+        }  
+------------------------------
+
+Looping CS 
+    for 
+    while 
+    do while 
+    for each 
+    for in 
+    for of 
+-----------
+.....
+if (condition) {
+    .... 
+    ...
+}
+....
+
+for loop CS 
+
+    for (intialization ;  condition    ; increment / decrement    ) {
+        ....
+        ....
+        ....
+    }
+
+increment and decrement operators
+
+
+    var a = 10;
+    a = a + 1;
+
+    (or )
+
+    a += 1;
+
+    (or)
+
+    a++;
+    ----------------------

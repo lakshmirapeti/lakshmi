@@ -1,0 +1,53 @@
+#box1{
+    width: 180px;
+    height: 40px;
+    border: 1px solid;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 800;
+    padding: 20px;
+   margin: 40px 40px 20px 120px ;
+   background-color: white;
+}
+#box2{
+    width: 180px;
+    height: 40px;
+    border: 1px solid;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 800;
+    padding: 20px;
+   margin: 40px 40px 20px 120px ;
+   background-color: white;
+}
+#btn1{
+    width: 220px;
+    margin-left: 118px;
+    height: 40px;
+    margin-bottom: 20px;
+    font-size: larger;
+
+}
+#btn2{
+    width: 220px;
+    margin-left: 118px;
+    height: 40px;
+    font-size: larger;
+
+}
+
+#container{
+    background-color: rgba(99, 25, 237, 0.354);
+    border: 2px solid;
+    width: 450px;
+    height: 450px;
+    margin: 80px 200px 120px 520px;
+    padding: 10px;
+}
+h3{
+    text-align: center;
+    text-decoration: underline;
+    margin: 50px;
+    padding: auto;
+    font-size: xx-large;
+}

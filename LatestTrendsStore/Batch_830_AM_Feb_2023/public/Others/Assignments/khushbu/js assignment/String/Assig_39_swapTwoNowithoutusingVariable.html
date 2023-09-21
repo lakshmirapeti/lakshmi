@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swap Two number without using 3rd variable</title>
+</head>
+<body>
+    <h3>Swap Two Numbers</h3>
+    <script>
+        var userInput = () =>{
+            var value1 = parseInt(prompt("Enter value of first number"));
+            var value2 = parseInt(prompt("Enter value of second number"));
+            var swapUserNumber = swap(value1, value2);
+            console.log('First number value is' + swapUserNumber[1]);
+            console.log('second number value is' + swapUserNumber[2]);
+        }
+        var swap = (value1, value2) =>{
+            var swapNumber = [];
+            value1 = value1 + value2;
+            value2 = value1 - value2;
+            value1 = value1 - value2;
+            swapNumber[1] = value1;
+            swapNumber[2] = value2;
+            return swapNumber;
+        }
+        userInput();
+    </script>
+</body>
+</html>

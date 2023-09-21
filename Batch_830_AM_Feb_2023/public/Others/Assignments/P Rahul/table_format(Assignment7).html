@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Format</title>
+    <style>
+        .header, .footer{
+            border: 1px solid;
+            text-align: center;
+            margin: 10px;
+            padding: 10px;
+            background-color: blanchedalmond;
+        }
+        .maincontent{
+            border: 1px solid;
+            margin: 10px;
+            padding: 10px;
+            height: 600px;
+            overflow: auto;
+        }
+        td, th, tr {
+            text-align: center;
+        }
+        .imgcontainer{ 
+        float: left;
+        border: 1px solid;
+        width: 120px;
+        height: 120px;
+        margin-right: 20px;
+        background-image: url(file:///C:/UI%20Developer/images/emp_sprite.png);
+        background-repeat: no-repeat;
+        }
+        .emp1{
+            background-position:-5px 10px;
+        }
+        .emp2{
+            background-position: -181px 5px;
+        }
+        .emp3{
+            background-position: -355px 11px;
+        }
+        .emp4{
+            background-position: -546px 2px;
+        }
+        .emp5{
+            background-position: -707px 7px;
+        }
+        .emp6{
+            background-position:-10px -167px;
+        }
+        .emp7{
+            background-position:-178px -166px;
+        }
+        .emp8{
+            background-position: -345px -156px;
+        }
+        .emp9{
+            background-position:-550px -174px;
+        }
+        .emp10{
+            background-position: -694px -158px;
+        }
+        body {
+            background-color: #ccc;
+        }
+        .maincontent >table {
+            position: relative;
+            left: 24%;
+        }
+        </style>
+</head>
+<body>
+    <div class="header">Student Details</div>
+    <div class="maincontent">
+        <table border="1px solid" cellpadding="10px" cellspacing="10px">
+            <thead>
+                <tr>
+                    <th>Sno</th>
+                    <th>Name</th>
+                    <th>Picture</th>
+                    <th>Age</th>
+                    <th>class</th>
+                    <th>Marks</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Hari Prasad</td>
+                    <td class="imgcontainer emp1"></td>
+                    <td>22</td>
+                    <td rowspan="10">10th</td>
+                    <td>
+                        <div>
+                            <table border="1px solid" cellpadding="10px" cellspacing="10px">
+                                <thead>
+                                    <tr>
+                                        <th>Subject</th>
+                                        <th>Max</th>
+                                        <th>Min</th>
+                                        <th>Obtained</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Maths</td>
+                                        <td rowspan="3">100</td>
+                                        <td rowspan="3">35</td>
+                                        <td>90</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Science</td>
+                                        <td>75</td> 
+                                    </tr>
+                                    <tr>
+                                        <td>Hindi</td>
+                                        <td>80</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td> S Murali</td>
+                    <td class="imgcontainer emp2"></td>
+                    <td>21</td>
+                    <td>
+                        <div>
+                            <table border="1px solid" cellpadding="10px" cellspacing="10px">
+                                <thead>
+                                    <tr>
+                                        <th>Subject</th>
+                                        <th>Max</th>
+                                        <th>Min</th>
+                                        <th>Obtained</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Maths</td>
+                                        <td rowspan="3">100</td>
+                                        <td rowspan="3">35</td>
+                                        <td>85</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Science</td>
+                                        <td>80</td> 
+                                    </tr>
+                                    <tr>
+                                        <td>Hindi</td>
+                                        <td>82</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Sai Teja</td>
+                    <td class="imgcontainer emp3"></td>
+                    <td>22</td>
+                    <td>
+                        <div>
+                            <table border="1px solid" cellpadding="10px" cellspacing="10px">
+                                <thead>
+                                    <tr>
+                                        <th>Subject</th>
+                                        <th>Max</th>
+                                        <th>Min</th>
+                                        <th>Obtained</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Maths</td>
+                                        <td rowspan="3">100</td>
+                                        <td rowspan="3">35</td>
+                                        <td>80</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Science</td>
+                                        <td>80</td> 
+                                    </tr>
+                                    <tr>
+                                        <td>Hindi</td>
+                                        <td>89</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Sri Charan</td>
+                    <td class="imgcontainer emp4"></td>
+                    <td>23</td>
+                    <td>
+                        <div>
+                            <table border="1px solid" cellpadding="10px" cellspacing="10px">
+                                <thead>
+                                    <tr>
+                                        <th>Subject</th>
+                                        <th>Max</th>
+                                        <th>Min</th>
+                                        <th>Obtained</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Maths</td>
+                                        <td rowspan="3">100</td>
+                                        <td rowspan="3">35</td>
+                                        <td>92</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Science</td>
+                                        <td>86</td> 
+                                    </tr>
+                                    <tr>
+                                        <td>Hindi</td>
+                                        <td>80</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Rakesh Reddy</td>
+                    <td class="imgcontainer emp5"></td>
+                    <td>24</td>
+                    <td>
+                        <div>
+                            <table border="1px solid" cellpadding="10px" cellspacing="10px">
+                                <thead>
+                                    <tr>
+                                        <th>Subject</th>
+                                        <th>Max</th>
+                                        <th>Min</th>
+                                        <th>Obtained</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Maths</td>
+                                        <td rowspan="3">100</td>
+                                        <td rowspan="3">35</td>
+                                        <td>90</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Science</td>
+                                        <td>80</td> 
+                                    </tr>
+                                    <tr>
+                                        <td>Hindi</td>
+                                        <td>80</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Madhuri</td>
+                    <td class="imgcontainer emp6"></td>
+                    <td>23</td>
+                    <td>
+                        <div>
+                            <table border="1px solid" cellpadding="10px" cellspacing="10px">
+                                <thead>
+                                    <tr>
+                                        <th>Subject</th>
+                                        <th>Max</th>
+                                        <th>Min</th>
+                                        <th>Obtained</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Maths</td>
+                                        <td rowspan="3">100</td>
+                                        <td rowspan="3">35</td>
+                                        <td>79</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Science</td>
+                                        <td>80</td> 
+                                    </tr>
+                                    <tr>
+                                        <td>Hindi</td>
+                                        <td>80</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Vineeth Kumar</td>
+                    <td class="imgcontainer emp7"></td>
+                    <td>24</td>
+                    <td>
+                        <div>
+                            <table border="1px solid" cellpadding="10px" cellspacing="10px">
+                                <thead>
+                                    <tr>
+                                        <th>Subject</th>
+                                        <th>Max</th>
+                                        <th>Min</th>
+                                        <th>Obtained</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Maths</td>
+                                        <td rowspan="3">100</td>
+                                        <td rowspan="3">35</td>
+                                        <td>70</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Science</td>
+                                        <td>75</td> 
+                                    </tr>
+                                    <tr>
+                                        <td>Hindi</td>
+                                        <td>80</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>N Shyam</td>
+                    <td class="imgcontainer emp8"></td>
+                    <td>23</td>
+                    <td>
+                        <div>
+                            <table border="1px solid" cellpadding="10px" cellspacing="10px">
+                                <thead>
+                                    <tr>
+                                        <th>Subject</th>
+                                        <th>Max</th>
+                                        <th>Min</th>
+                                        <th>Obtained</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Maths</td>
+                                        <td rowspan="3">100</td>
+                                        <td rowspan="3">35</td>
+                                        <td>65</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Science</td>
+                                        <td>80</td> 
+                                    </tr>
+                                    <tr>
+                                        <td>Hindi</td>
+                                        <td>85</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Kranthi Kumar</td>
+                    <td class="imgcontainer emp9"></td>
+                    <td>23</td>
+                    <td>
+                        <div>
+                            <table border="1px solid" cellpadding="10px" cellspacing="10px">
+                                <thead>
+                                    <tr>
+                                        <th>Subject</th>
+                                        <th>Max</th>
+                                        <th>Min</th>
+                                        <th>Obtained</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Maths</td>
+                                        <td rowspan="3">100</td>
+                                        <td rowspan="3">35</td>
+                                        <td>95</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Science</td>
+                                        <td>90</td> 
+                                    </tr>
+                                    <tr>
+                                        <td>Hindi</td>
+                                        <td>90</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>M Karthik</td>
+                    <td class="imgcontainer emp10"></td>
+                    <td>23</td>
+                    <td>
+                        <div>
+                            <table border="1px solid" cellpadding="10px" cellspacing="10px">
+                                <thead>
+                                    <tr>
+                                        <th>Subject</th>
+                                        <th>Max</th>
+                                        <th>Min</th>
+                                        <th>Obtained</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Maths</td>
+                                        <td rowspan="3">100</td>
+                                        <td rowspan="3">35</td>
+                                        <td>65</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Science</td>
+                                        <td>70</td> 
+                                    </tr>
+                                    <tr>
+                                        <td>Hindi</td>
+                                        <td>75</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="footer">@Copy Rights 2023</div>
+</body>
+</html>

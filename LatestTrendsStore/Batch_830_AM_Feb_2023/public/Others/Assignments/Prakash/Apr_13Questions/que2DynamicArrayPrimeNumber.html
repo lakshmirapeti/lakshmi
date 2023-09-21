@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Array all prime Number</title>
+</head>
+<body>
+    <script>
+        var userArray = [];
+        for(var i= 0; i<4; i++){
+            userArray [i] =prompt("enter the number");
+            userArray[i] = parseInt(userArray[i]);
+        
+        }
+        console.log(userArray);
+
+        for(var i=0; i<4;i++){
+            count = 0;
+            var num = userArray[i];
+            for(var j=2; j<4; j++ ){
+                ram = num % j;
+                if(rem  == 0){
+                    count++;
+                    break;
+                }
+            }
+            if(count==0){
+                console.log(num)
+            }
+        }
+    </script>
+</body>
+</html>

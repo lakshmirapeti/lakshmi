@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <title>
+            Home Page
+        </title>
+        <style>
+            .header{
+                color: #01579B;
+                margin-top: 50px;
+                text-align: center;
+                font-size: 40px;
+            }
+            .main{
+                font-family: Arial, Helvetica, sans-serif;
+                background: linear-gradient(to bottom, #26a69a, #01579b);
+            }
+            .container{
+                background-color: #01579B;
+                color: whitesmoke;
+                height: 40%;
+                width: 40%;
+                left: 30%;
+                top: 30%;
+                position: absolute;
+            }
+            .login{
+                font-size: 16px;
+                left: 40%;
+                bottom: 35%;
+                position: absolute;
+            }
+            .uname, .pass{
+                left: 15%;
+                position: relative;
+            }
+            .forget a{
+                color: antiquewhite;
+                right: 10%;
+                bottom: 13%;
+                position: absolute ;
+             }
+             .signup a{
+                color: antiquewhite;
+                left: 10%;
+                bottom: 13%;
+                position: absolute ;
+             }
+             .signup a:hover{
+                color: rgb(244, 232, 13);
+            }
+             .forget a:hover{
+                color: rgb(244, 232, 13);
+            }
+             .login:hover{
+                color: rgba(234, 51, 5, 0.762);
+            }
+           li{
+            padding: 10px;
+            margin: 10px;
+            list-style: none;
+           }
+        </style>
+    </head>
+    <body class="main"> 
+        <div class="header">
+           <b> ONLINE SHOPPING WEBPAGE</b>
+        </div>
+        <div class="container">
+            <ul>
+                <li class="uname">
+                    <label for="uname"><b>User Name :</b></label>
+                    <input type="text" name="uname">
+                </li>
+                <li class="pass">
+                    <label for="pass"><b>Password :</b></label>
+                    <input type="password" name="pass" maxlength="12">
+                    <div class="pass"><br>
+                    <input type="checkbox" onchange="applyChange()" id="showpwdcheckbx">Show Password
+                    </div>
+                </li>
+                <li>
+                    <a href="file:///C:/Users/SAM/UI%20full%20stack/Github/UIClasses/Batch_830_AM_Feb_2023/public/Others/project/Sachin%20Rawat/Online%20Shopping%20App//productpage.htm">
+                    <input type="button" value="Login" class="login">
+                    </a>
+                </li>
+                <li class="signup">
+                    <a href="file:///C:/Users/SAM/UI%20full%20stack/Github/UIClasses/Batch_830_AM_Feb_2023/public/Others/project/Sachin%20Rawat/Online%20Shopping%20App/signuppage.htm">
+                    <b>Sign Up</b>
+                    </a>
+                </li>
+                <li class="forget">
+                    <a href="file:///C:/Users/SAM/UI%20full%20stack/Github/UIClasses/Batch_830_AM_Feb_2023/public/Others/project/Sachin%20Rawat/Online%20Shopping%20App/forgotpass.htm">
+                    <b>Forget Password?</b>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <script >
+
+            var applyChange = () => {
+                var  option = document.querySelector("#showpwdcheckbx").checked;
+                if (option) { // true, show password
+                    document.querySelector("input[name=pass]").setAttribute("type", 'text');
+                } else {
+                    document.querySelector("input[name=pass]").setAttribute("type", 'password');
+                }
+            }
+        </script>
+    </body>
+</html>

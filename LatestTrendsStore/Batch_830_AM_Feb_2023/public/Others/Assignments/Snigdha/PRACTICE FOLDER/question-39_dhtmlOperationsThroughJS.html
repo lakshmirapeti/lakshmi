@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Demonstrating dhtml concepts</title>
+    </head>
+    <body>
+            <b>DEMONSTRATING DHTML METHODS</b>
+            <div id="container"></div>
+        <script>
+            // //.createElement is a predefined method using which we can create any type of html element in JS
+
+            // var element = document.createElement('span');
+            // console.log(element);
+            
+            // var tagElement = document.createElement('a');
+            // console.log(tagElement);
+
+            // //we can write any of the msgs by usig js
+            //  var msg = 'Hello Everyone . hope all are doing good';
+            //  var spanElement = document.createElement('span')
+            //  spanElement.innerHTML= msg;
+
+            //  console.log(spanElement);
+
+             //.setAttribute()- used to create any type of attribute
+
+             var msg = 'Good afternoon all';
+             var spanElement = document.createElement('div')
+             spanElement.innerHTML= msg;
+             spanElement.setAttribute('id','test');
+             spanElement.setAttribute('class','sample');
+             spanElement.setAttribute('name','abc');
+
+             spanElement.style.color = 'red';
+
+             spanElement.style.border= '3px solid';
+             
+             console.log(spanElement);
+
+             document.querySelector('#container').append(spanElement); 
+            
+             //.append ()-used to add it as a children 
+        </script>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating JS Classes
+        </title>
+        <script src="app.js"></script>
+        <link rel="stylesheet" href="app.css">
+    </head>
+    <body>
+        <h3>Student Prgress Card Generation using classes</h3>
+        <div class="container">
+            <ul>
+                <li>
+                    <input type="text" placeholder="Enter Student Name" id="sname">
+                </li>
+                <li>
+                    <input type="text" placeholder="Age" id="sage"> 
+                </li>
+                <li>
+                    Male <input type="radio" value="Male" checked name="gender">
+                    Female <input type="radio" value="Female" name="gender">
+                </li>
+                <li class="marksContainer">
+                    <input type="text" id="m1" placeholder="Science"> 
+                    <input type="text" id="m2" placeholder="Language"> 
+                    <input type="text" id="m3" placeholder="Computers"> 
+                    <input type="text" id="m4" placeholder="Maths"> 
+                    <input type="text" id="m5" placeholder="Social"> 
+                </li>
+                <li>
+                    <input type="button" value="Generate Progress Card" onclick="generateProgressCard()">
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>

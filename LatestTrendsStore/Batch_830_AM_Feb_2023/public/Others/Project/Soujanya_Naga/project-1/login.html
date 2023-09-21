@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background: linear-gradient(to right, #99156d, #159957);
+            color: #faf7f7;
+        }
+
+        .header{
+            text-align: center ;
+            font-family: 'Trebuchet MS';
+            color: hsl(0, 60%, 98%);
+        }
+        .footer {
+            text-align: center;
+            font-family: 'Trebuchet MS';
+            margin: 5px;
+            padding: 5px;
+            background-color: rgba(31, 35, 33, 0.582);
+        }
+
+        .form {
+            width: 35rem;
+            margin: auto;
+            color: rgb(251, 248, 248);
+            background-color: rgba(11, 15, 13, 0.582);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.125);
+            padding: 20px 25px;
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            margin: 10px 0;
+            border-radius: 5px;
+            padding: 15px 18px;
+            box-sizing: border-box;
+        }
+
+
+        .headingsContainer {
+            text-align: center;
+        }
+
+        .headingsContainer p {
+            color: #faf6f6;
+        }
+
+        .mainContainer {
+            padding: 16px;
+        }
+
+        .subcontainer {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            color: #eaedea;
+        }
+
+        .subcontainer a {
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+
+        span.forgotpsd a {
+            float: right;
+            color: whitesmoke;
+            padding-top: 16px;
+        }
+
+        .forgotpsd a {
+            color: #f8f8fa;
+        }
+
+        .forgotpsd a:link {
+            text-decoration: none;
+        }
+
+        .submit a:link,
+        a:visited {
+            background-color: rgb(11, 10, 10);
+            color: hsl(0, 21%, 95%);
+            border: 2px solid hwb(0 95% 3%);
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+         
+        .submit a:hover,
+        a:active {
+            background-color: #050505;
+            color: #f9f5f5;
+            cursor: pointer;
+        }
+
+        .register,
+        .submit {
+            color: rgb(248, 245, 245);
+            text-align: center;
+        }
+
+        .register a {
+            color: hsl(180, 67%, 98%);
+        }
+
+        .register a:link {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="header">
+            <h1>Kids World</h1>
+        </div>
+        <div class="form">
+
+            <div class="headingsContainer">
+                <h3>LOGIN</h3>
+               
+            </div>
+            <div class="mainContainer">
+        
+                <label for="username">Username</label>
+                <input type="text" placeholder="Enter Username" name="username">
+
+                <br><br>
+
+            
+                <label for="pswrd">Password</label>
+                <input type="password" placeholder="Enter Password" name="pswrd">
+
+                
+                <div class="subcontainer">
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                    <p class="forgotpsd"> <a href="./forgotPassword.html">Forgot Password?</a></p>
+                </div>
+
+
+                <p class="submit"><a href="./product.html">Submit</a></p>
+
+
+                <p class="register"><a href="./registration.html">Register here!</a></p>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

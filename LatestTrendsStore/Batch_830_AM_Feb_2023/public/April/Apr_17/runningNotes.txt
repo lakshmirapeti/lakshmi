@@ -1,0 +1,41 @@
+Arrays
+
+    ["Teena", 'female', [56, 90, 99, 100], 0, 0]
+
+         0       1            2            3  4
+
+         data[0]
+JSON - 
+
+
+
+    var data = []; // array
+
+    var data = {
+        key : value,
+        key2 : value2,
+        key3 : value 3
+    }; // Object/json
+
+    key -> alwys a string
+    value -> any datatype what js supports
+
+
+
+-----------------
+
+    var studentData = {
+        "name" : 'Teena',
+        "age: 20,
+        "isFeepaid": true,
+        'marks': [4, 89, 90]
+    }
+
+    studentData.name
+-----------
+
+
+var name = 'Raj';
+var age = 20;
+var isfeepaid = true;
+

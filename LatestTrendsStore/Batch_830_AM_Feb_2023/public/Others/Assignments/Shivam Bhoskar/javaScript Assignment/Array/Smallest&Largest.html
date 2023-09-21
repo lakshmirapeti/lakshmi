@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smallest & largest number</title>
+    <style>
+        body{
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <p>To find smallest and largest number of array</p>
+    <script>
+        var smallValue = data[0];
+        var largestValue = data[0];
+        for (var i = 1; i < data.length; i++){
+            if (smallValue > data[i]){
+                smallValue = data[i];
+            }
+            if (largestValue < data[i]){
+                largestValue = data[i];
+            }
+        }
+
+        console.log("The smalles value is " + smallValue)
+        console.log("The largestValue value is " + largestValue)
+    </script>
+</body>
+</html>

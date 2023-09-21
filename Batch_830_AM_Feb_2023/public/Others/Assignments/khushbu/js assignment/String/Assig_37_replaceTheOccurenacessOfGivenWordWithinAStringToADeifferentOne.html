@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var userInput = () => {
+            var userString;
+            userString = prompt("Enter a string")
+            console.log('User given string is  = ' + userString);
+            var whichWord = prompt("Enter word do you want to be replaced")
+            var replWord = prompt("Enter word to replace with");
+            var replaceOccurrence = replOcc(userString, whichWord, replWord);
+            console.log(replaceOccurrence);    
+        }
+
+        var replOcc = (userString, whichWord, replWord) => {
+            var strCount = userString.length;
+            var strArr = userString.split(" ");
+            var arrSize = strArr.length;
+            var newString = new String();
+
+            for (var i = 0; i < arrSize; i++) {
+                if (strArr[i] == whichWord) {
+                    strArr[i] = replWord;
+                }
+            }
+
+            userString = strArr.toString();
+            userString = userString.replaceAll(",", " ");
+
+            return userString;
+        }
+        userInput();
+    </script>
+</body>
+</html>

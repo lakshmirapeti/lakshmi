@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: linear-gradient(to right, #155799, #159957);
+  color: whitesmoke;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header,
+.footer {
+  text-align: center;
+  font-family: 'Trebuchet MS';
+  margin: 1px;
+  padding: 1px;
+  background: linear-gradient(to right, #072542, #87e1b4);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.header h1 {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.header img {
+  width: 50px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+.logout-btn {
+  background-color: white;
+  color: #1375d6;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: #1375d6;
+  color: white;
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+}
+
+.nav {
+  width: 200px;
+  padding: 20px;
+}
+
+.menu-name {
+  font-weight: bold;
+}
+
+.menu-item li a{
+  color:#ccc
+}
+
+.nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav ul li {
+  margin-bottom: 10px;
+}
+
+.nav ul li ul {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.content-area {
+  flex-grow: 1;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.product-description {
+  height: 300px;
+  overflow: auto;
+}
+
+.product-img {
+  width: 130px;
+  height: 130px;
+}
+
+#menu-content li {
+  list-style: none;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  background-color: #fff;
+  color: #072542;
+}
+
+#menu-content ul {
+  border: 1px solid #ddd;
+  width: 300px;
+  padding: 5px;
+  margin: 5px;
+  background-color: #ccc;
+}
+
+.content-area {
+  flex-grow: 1;
+  display: flex;
+}
+
+
+/* Additional CSS for responsive layout */
+@media (max-width: 768px) {
+  .product-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .product-list {
+    grid-template-columns: 1fr;
+  }
+}

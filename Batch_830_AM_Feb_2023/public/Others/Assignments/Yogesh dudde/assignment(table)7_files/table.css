@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width:100%;
+}
+h1{
+    margin: 1%;
+    border: solid black 2px;
+    text-align: center;
+    background-color: brown;
+    color: blanchedalmond;
+}
+.table{
+    margin: 1%;
+    border: solid black 2px;
+    width: 98%;
+}
+table,th,td{
+    border: solid black 2px;
+    text-align: center;
+    border-collapse: collapse;
+}
+tr{
+    height: 40px;
+}
+.main_table{
+    width: 98%;
+    margin: 1%;
+}
+.inside_table{
+    width: 98%;
+    margin: 1%;
+}
+.img{
+    width:px;
+    height: 200px;
+}
+.footer{
+    border: solid black 2px;
+    text-align: center;
+    color: aliceblue;
+    background-color: brown;
+    margin: 1%;
+    width: 98%;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      /*  //type 1;
+
+        var name = "Raj";
+        var age = 20;
+        var m1 = 55;
+        var m2 = 65;
+        var m3 = 56;
+        var total = 0;
+        var avg;
+
+        var getData = () => {
+            console.log("name is " +name);
+            console.log("age is " +age);
+            console.log("total is " +total);
+            console.log("avg is " +avg);
+
+        }
+        var getTotal = () => {
+            total = m1 + m2 + m3;
+            avg = total / 3;
+        }
+        getTotal();
+        getData(); */
+
+      /*  //type 2;
+
+        var name = "Raj";
+        var age = 20;
+        var marks = [55, 60, 56];
+        var total = 0;
+        var avg;
+
+        var getData = () => {
+            console.log("name is " +name);
+            console.log("age is " +age);
+            console.log("total is " +total);
+            console.log("avg is " +avg);
+
+        }
+
+        var getTotal = () => {
+            for(var i =0; i < marks.length; i++) {
+                total += marks[i];
+            }
+            avg = total / marks.length;
+        }
+        getTotal();
+        getData(); */
+
+        /* //type 3 ;
+
+        var sDetails = ["Raj", 20, [55, 60, 56], 0, 0];
+
+        var getData = () => {
+            console.log("name is " +sDetails[0]);
+            console.log("age is " +sDetails[1]);
+            console.log("total is " +sDetails[3]);
+            console.log("avg is " +sDetails[4]);
+        }
+
+        var getTotal = () => {
+            for(var i = 0; i < sDetails[2].length; i++) {
+                sDetails[3] += sDetails[2][i];
+            }
+            sDetails[4] = sDetails[3] / sDetails[2].length;
+        }
+
+        getTotal();
+        getData(); */
+
+        //type 4;
+
+        var sDetails = {
+            name : "Raj",
+            age : 20,
+            marks : [55, 65, 56],
+            total : 0,
+            
+            getData : () => {
+                sDetails.getTotal();
+                console,log("name is " +sDetails.name);
+                console.log("age is " +sDetails.age);
+                console.log("total is " +sDetails.total);
+                console.log("avg is " +sDetails.avg);
+            },
+            getTotal : () => {
+                for (var i = 0; i < sDetails.marks.length; i++) {
+                    sDetails.total += sDetails.marks[i];
+                }
+                sDetails.avg = sDetails.total / sDetails.marks.length;
+            }
+        }
+        sDetails.getData();
+
+    </script>
+</body>
+</html>

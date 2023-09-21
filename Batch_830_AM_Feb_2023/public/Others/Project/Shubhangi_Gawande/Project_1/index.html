@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping</title>
+    <style>
+    body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("https://wallpapercave.com/wp/wp1877579.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+header{
+    position: fixed;
+    top:0;
+    left: 870px;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+.navi a{
+    position: relative;
+    font-size: 1.3m;
+    color: blue ;
+    text-decoration: none;
+    font-weight: 400;
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+.navi a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navi">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Service</a>
+            <a href="#">Contact</a>
+
+            <a href="sign_in.html">SigIn</a>
+           
+        </nav>
+    </header>
+</body>
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tables Assignment</title>
+        <style>
+            .header, .footer {
+                font-size: 22px;
+                text-align: center;
+                border: 1px solid;
+                padding: 10px;
+                margin: 10px;
+            }
+            .MainContent {
+                border: 1px solid;
+                padding: 10px;
+                margin: 10px;
+                height: 550px;
+                width: auto auto; 
+                overflow: auto;
+            }
+            .MainTable {
+                width: 100%;
+            }
+            .MarksTable {
+                align-items: center;
+                width: 100%;
+            }
+            table, td, tr, th {
+                text-align: center;
+                border: 1px solid;
+            }
+            img {
+                height: 100px;
+                width: 80px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header"><b>Student Details</b></div>
+        <div class="MainContent">
+            <table class="MainTable">
+                <thead>
+                    <tr>
+                        <th>S.No.</th>
+                        <th>Name</th>
+                        <th>Picture</th>
+                        <th>Age</th>
+                        <th>Class</th>
+                        <th>Marks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.</td>
+                        <td>Raj</td>
+                        <td>
+                            <img src="data:image/jpeg;base64,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" alt="">
+                        </td>
+                        <td>12</td>
+                        <td>7</td>
+                        <td>
+                            <table class="MarksTable">
+                                <thead>
+                                    <tr>
+                                        <th>Subject</th>
+                                        <th>Max</th>
+                                        <th>Min</th>
+                                        <th>Obtained</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Maths</td>
+                                        <td>100</td>
+                                        <td>40</td>
+                                        <td>99</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Science</td>
+                                        <td>100</td>
+                                        <td>40</td>
+                                        <td>89</td>
+                                    </tr><tr>
+                                        <td>Social</td>
+                                        <td>100</td>
+                                        <td>40</td>
+                                        <td>75</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>Prakash</td>
+                        <td>
+                            <img src="https://previews.123rf.com/images/memedozaslan/memedozaslan1802/memedozaslan180200003/94699961-one-casual-boy-student-ready-to-go-school.jpg" alt="">
+                        </td>
+                        <td>13</td>
+                        <td>8</td>
+                        <td>
+                            <table class="MarksTable">
+                                <thead>
+                                    <tr>
+                                        <th>Subject</th>
+                                        <th>Max</th>
+                                        <th>Min</th>
+                                        <th>Obtained</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Maths</td>
+                                        <td>100</td>
+                                        <td>40</td>
+                                        <td>99</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Science</td>
+                                        <td>100</td>
+                                        <td>40</td>
+                                        <td>89</td>
+                                    </tr><tr>
+                                        <td>Social</td>
+                                        <td>100</td>
+                                        <td>40</td>
+                                        <td>75</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>Jhanvi</td>
+                        <td>
+                            <img src="data:image/jpeg;base64,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" alt="">
+                        </td>
+                        <td>15</td>
+                        <td>10</td>
+                        <td>
+                            <table class="MarksTable">
+                                <thead>
+                                    <tr>
+                                        <th>Subject</th>
+                                        <th>Max</th>
+                                        <th>Min</th>
+                                        <th>Obtained</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Maths</td>
+                                        <td>100</td>
+                                        <td>40</td>
+                                        <td>99</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Science</td>
+                                        <td>100</td>
+                                        <td>40</td>
+                                        <td>89</td>
+                                    </tr><tr>
+                                        <td>Social</td>
+                                        <td>100</td>
+                                        <td>40</td>
+                                        <td>75</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td>Satvik</td>
+                        <td>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2RMatIZ4PPCs823S90TGxPGUdWqW-Q-SdSA&usqp=CAU" alt="">
+                        </td>
+                        <td>11</td>
+                        <td>6</td>
+                        <td>
+                            <table class="MarksTable">
+                                <thead>
+                                    <tr>
+                                        <th>Subject</th>
+                                        <th>Max</th>
+                                        <th>Min</th>
+                                        <th>Obtained</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Maths</td>
+                                        <td>100</td>
+                                        <td>40</td>
+                                        <td>99</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Science</td>
+                                        <td>100</td>
+                                        <td>40</td>
+                                        <td>89</td>
+                                    </tr><tr>
+                                        <td>Social</td>
+                                        <td>100</td>
+                                        <td>40</td>
+                                        <td>75</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td>Ritvik</td>
+                        <td>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLrjNvB3Rt1Mev_tPRvhLlIvysPX6y5Fu3Rg&usqp=CAU" alt="">
+                        </td>
+                        <td>7</td>
+                        <td>2</td>
+                        <td>
+                            <table class="MarksTable">
+                                <thead>
+                                    <tr>
+                                        <th>Subject</th>
+                                        <th>Max</th>
+                                        <th>Min</th>
+                                        <th>Obtained</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>English</td>
+                                        <td>100</td>
+                                        <td>40</td>
+                                        <td>91</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Drawing</td>
+                                        <td>100</td>
+                                        <td>40</td>
+                                        <td>95</td>
+                                    </tr><tr>
+                                        <td>Drama</td>
+                                        <td>100</td>
+                                        <td>40</td>
+                                        <td>87</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6.</td>
+                        <td>Hari</td>
+                        <td>
+                            <img src="https://greenfieldchennai.com/wp-content/uploads/2021/10/Pic.png" alt="">
+                        </td>
+                        <td>16</td>
+                        <td>11</td>
+                        <td>
+                            <table class="MarksTable">
+                                <thead>
+                                    <tr>
+                                        <th>Subject</th>
+                                        <th>Max</th>
+                                        <th>Min</th>
+                                        <th>Obtained</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Maths</td>
+                                        <td>75</td>
+                                        <td>32</td>
+                                        <td>73</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Physics</td>
+                                        <td>60</td>
+                                        <td>40</td>
+                                        <td>59</td>
+                                    </tr><tr>
+                                        <td>Chemistry</td>
+                                        <td>60</td>
+                                        <td>40</td>
+                                        <td>54</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>7.</td>
+                        <td>Hritika</td>
+                        <td>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTknkpvaMofoem9OZv0toFmWNDgfeHliHMY1A&usqp=CAU" alt="">    
+                        </td>
+                        <td>6</td>
+                        <td>1</td>
+                        <td>
+                            <table class="MarksTable">
+                                <thead>
+                                    <tr>
+                                        <th>Subject</th>
+                                        <th>Max</th>
+                                        <th>Min</th>
+                                        <th>Obtained</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Arts</td>
+                                        <td>100</td>
+                                        <td>40</td>
+                                        <td>83</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Maths</td>
+                                        <td>100</td>
+                                        <td>40</td>
+                                        <td>94</td>
+                                    </tr><tr>
+                                        <td>English</td>
+                                        <td>100</td>
+                                        <td>40</td>
+                                        <td>66</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot></tfoot>
+            </table>
+        </div>
+        <div class="footer">@copyrights 2023</div>
+    </body>
+</html>

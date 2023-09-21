@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Drag and Drop events
+        </title>
+        <style>
+            .productsContainer {
+                border: 1px solid;
+                height: 400px;
+                width: 400px;
+                margin: 10px auto;
+            }
+            img {
+                width: 130px;
+                height: 130px;
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+       
+        <div class="productsContainer" ondrop="elementGotDropped(event)" ondragover="elementDragIsOver(event)">
+
+        </div>
+        <div class="productsList">
+            <img ondragstart="productDragStarted(event)" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjGxz7PsSkuPICHbhfyo3VWPzqRkmQ6lI5fg&usqp=CAU" id="product1" >
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ7rKQmLDZX0v3I5Ff2eqYvIPUOFwxgO9kgQ&usqp=CAU"  ondragstart="productDragStarted(event)"  alt="" id="product2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7saDC54-H8FmZNS4fERFFk5FDJGwxinOwEA&usqp=CAU"  ondragstart="productDragStarted(event)"  alt="" id="product3">
+        </div>
+        <script>
+            var elementId;
+
+            var elementGotDropped = (event) => {
+                event.preventDefault();
+                var productImage = document.querySelector(elementId);
+                event.target.append(productImage);
+            }
+
+
+            var elementDragIsOver = (event) => {
+                event.preventDefault();
+                console.log("element drag is over");
+                
+            }
+
+            var productDragStarted = (event) => {
+                console.log("element drag  started")
+                
+                elementId = '#' + event.target.getAttribute("id");
+                console.log(elementId)
+            }
+
+          
+        </script>
+    </body>
+</html>

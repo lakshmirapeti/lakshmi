@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repeate</title>
+</head>
+<body>
+    <script>
+      
+
+      var inputString = prompt("Enter a string: ");
+       var repeatedChars = [];
+
+for (var i = 0; i < inputString.length; i++) {
+    var currentChar = inputString[i];
+
+    // Check if the current character occurs more than once in the string
+    if (inputString.indexOf(currentChar) !== inputString.lastIndexOf(currentChar) && !repeatedChars.includes(currentChar)) {
+        repeatedChars.push(currentChar);
+    }
+}
+
+
+console.log("The following characters are repeated more than once: " + repeatedChars.join(", "));
+
+
+
+    </script>
+</body>
+</html>

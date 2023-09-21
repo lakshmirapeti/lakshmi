@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop</title>
+    <style>
+    #mancontainer{
+        border: 1px solid black;
+        height: 400px;
+        width: 400px;
+        margin: 10px auto;
+        position: relative;
+        right: 450px;
+        color: rgb(76, 73, 230);
+    }
+    #womancontainer{
+        border: 1px solid black;
+        height: 400px;
+        width: 400px;
+        margin: 10px auto;
+        position: relative;
+        top: -412px;
+        color: rgb(76, 73, 230);
+    }
+    #kidcontainer{
+        border: 1px solid black;
+        height: 400px;
+        width: 400px;
+        margin: 10px auto;
+        position: relative;
+        top: -825px;
+        right: -440px;
+        color: rgb(76, 73, 230);
+    }
+    .products{
+        position: relative;
+        top: -800px;
+    }
+    img{
+        width: 130px;
+        height: 130px;
+        margin: 10px;
+    }
+    #m{
+        font-size: 20px;
+        opacity: 0.5;
+    }
+    </style>
+</head>
+<body>
+    <h2>Shopping Cart:</h2>
+    <div class="mans" id="mancontainer" ondrop="elementGotDropped(event)" ondragover="elementDragIsOver(event)" >
+        <div id="m">Men Container</div>
+    </div>
+    <div class="womans" id="womancontainer" ondrop="elementGotDropped(event)" ondragover="elementDragIsOver(event)" >
+        <div id="m">Women Container</div>
+    </div>
+    <div class="kids" id="kidcontainer"ondrop="elementGotDropped(event)" ondragover="elementDragIsOver(event)" >
+        <div id="m">Kid Container</div>
+    </div>
+    <div class="products">
+    <h3>Man Products</h3>
+    <div class="man">
+        <div class="manpic">
+            <img ondragstart="productDragStarted(event)" id="manproduct1" class="mans" alt="" src="https://images.mamaearth.in/catalog/product/m/g/mg_4215-min_u0rla1thsxvllnxd.jpg">
+            <img ondragstart="productDragStarted(event)" id="manproduct2" class="mans" alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVokne2TNnNnFlarYosspuTLg3tCOjvbEatQ&usqp=CAU">
+            <img ondragstart="productDragStarted(event)" id="manproduct3" class="mans" alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEoWWdrPE1bDybUfeceucY00B3LSRprdhHvA&usqp=CAU">
+        </div>
+    </div>
+    <h3>Woman Products</h3>
+    <div class="woman">
+        <div class="womanpic">
+            <img ondragstart="productDragStarted(event)" id="womanproduct1" alt="" class="womans" src="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,dpr-2/static/img/product/314183/the-woman-s-company-20-funnels-disposable-female-urination-device-for-women-portable-leak-proof-stand-and-pee-funnels-for-women-girls-public-toilets-travel-camping-hiking-and-outdoor-activities_1_display_1658555956_10f84330.jpg">
+            <img ondragstart="productDragStarted(event)" id="womanproduct2" alt="" class="womans" src="https://media.theeverygirl.com/wp-content/uploads/2020/12/fff-sponsered-the-everygirl-5.jpg">
+            <img ondragstart="productDragStarted(event)" id="womanproduct3" alt="" class="womans" src="https://s3.r29static.com/bin/entry/6d4/x,80/2236929/image.jpg">
+        </div>
+    </div>
+    <h3>Kid Products</h3>
+        <div class="kid">
+            <div class="kipic">
+                <img ondragstart="productDragStarted(event)" id="kidproduct1" class="kids" alt="" src="https://m.media-amazon.com/images/I/515nnVOoGQL._SL1000_.jpg">
+                <img ondragstart="productDragStarted(event)" id="kidproduct2" class="kids" alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV1CCUpaj0c57Z91W8GFscpZpRTC4oFUNS5Q&usqp=CAU">
+                <img ondragstart="productDragStarted(event)" id="kidproduct3" class="kids" alt="" src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-720w,f_auto,q_auto:best/newscms/2021_23/1729206/9c70761d-c4ef-437c-bab3-d8636f966b5c-04f021c4cdbfbd0d62650bd5a3b43126-60bf9e8eb5b64.jpeg">
+            </div>
+        </div>
+    </div>
+    <script>
+        var elementId, pClass, cClass;
+
+            var productDragStarted = (event) => {
+                elementId = '#' + event.target.getAttribute("id");
+                pClass = event.target.getAttribute("class");
+            }
+
+            var elementDragIsOver = (event) => {
+                cClass = event.target.getAttribute("class");
+                // console.log(cClass);
+                event.preventDefault();
+            }
+
+            var elementGotDropped = (event) => {
+                if (cClass == pClass) {
+                    event.preventDefault();
+                    var productImage = document.querySelector(elementId);
+                    event.target.append(productImage);
+                } 
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span id="rrra">Hello</span>
+    <input type="button" value="Delete" onclick="deleteElment();">
+    
+    <div id="container">
+
+    </div>
+    <script>
+        var createAElement = () => {
+
+            var tagname = prompt("enter tagname");
+            var msg = prompt("enter msg");
+            var id = prompt("enter id");
+
+            var myElement = document.createElement(tagname);
+            myElement.innerText = msg;
+            myElement.setAttribute("name", 'test');
+            myElement.setAttribute("id", id);
+            myElement.setAttribute("class", 'watch');
+
+            myElement.style.color = 'green';
+            console.log(myElement);
+
+            document.querySelector('#container').append(myElement);
+        }
+        var deleteElment = () => {
+            // document.querySelector('span').remove();
+            // document.querySelector("#rrra").remove();
+
+            document.querySelector('#rrra').style.display = 'none';
+        }
+        createAElement()
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+ul {
+    border: 1px solid;
+    width: 500px;
+    margin: 20px auto;
+}
+
+li {
+    list-style: none;
+    border: 1px solid;
+    margin: 10px;
+    padding: 10px;
+}
+
+.astric {
+    color: red;
+    font-size: 11px;
+    position: relative;
+    top: -6px;
+}
+
+.errorStatus {
+    color: red;
+    font-size: 11px;
+    position: relative;
+    left: 10px;
+    top: 2px;
+    display: none;
+}

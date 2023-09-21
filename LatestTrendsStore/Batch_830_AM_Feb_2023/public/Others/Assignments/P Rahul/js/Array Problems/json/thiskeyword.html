@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* var sDetails = {
+            name : 'kerish',
+            age : 20,
+            marks : [56, 67, 45],
+            total : 0,
+
+            displayData () {
+                this.getAvgAndTotal();
+                console.log('name is ' +this.name);
+                console.log('age is ' +this.age);
+                console.log('marks is ' +this.marks);
+                console.log('avg is ' +this.avg);
+                console.log('total is ' +this.total);
+            },
+            getAvgAndTotal () {
+                for (var i = 0; i <this.marks.length; i++) {
+                    this.total += this.marks[i];
+                }
+                this.avg = this.total / this.marks.length;
+            }
+        }
+        sDetails.displayData(); */
+
+        var sDetails = {
+        total : 0,
+        readData () {
+            this.name = prompt("enter student name");
+            this.age = prompt("enter age");
+            this.n = prompt("Enter marks size");
+            this.n = parseInt(this.n);
+            this.marks = [];
+            for (var i = 0; i < this.n; i++) {
+                this.marks[i] = prompt("enter marks " +i);
+                this.marks[i] = parseInt(this.marks[i]);
+            }
+        },
+        displayData () {
+            this.readData ();
+            this.getAvgAndTotal ();
+            console.log("Name is " +this.name);
+            console.log("age is " +this.age);
+            console.log("marks " +this.marks);
+            console.log("total is " +this.total);
+            console.log("avg is " +this.avg);
+        },
+        getAvgAndTotal () {
+            for (var i = 0; i < this.marks.length; i++) {
+                this.total += this.marks[i];
+            }
+            this.avg = this.total / this.marks.length;
+        }
+        }
+
+        sDetails.displayData ();
+    </script>
+</body>
+</html>

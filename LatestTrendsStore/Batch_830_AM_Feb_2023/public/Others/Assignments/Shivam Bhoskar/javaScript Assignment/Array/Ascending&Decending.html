@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascending & Decending </title>
+    <style>
+        body{
+            background-color: peru;
+        }
+    </style>
+</head>
+<body>
+    <p>To read a dynamic array & listout the values in Ascending & Decending order</p>
+
+<script>
+    var data = [];
+
+    for(let s = 0; s < 5; s++){
+        data[s] = parseInt(prompt('Enter a number'));
+    }
+
+    console.log('Real value -> '+ data);
+
+// decending order
+    for (var i = 0; i < data.length; i++){
+        for (var j = i+1; j < data.length; j++){
+            if (data[i] < data[j]){
+                // swapping.
+                var temp = data[i];
+                data[i] = data[j];
+                data[j] = temp;
+            }
+        }
+    }
+    console.log('Decending order -> ' + data);
+
+    //Ascending order
+
+    for(let x = 0; x < data.length; x++){
+       for(let i = x + 1; i < data.length; i++){
+            if(data[x] > data[i]){
+                var elm  = data[i];
+                data[i] = data[x];
+                data[x] = elm;
+
+            }
+        }
+    }
+console.log('Ascending order -> ' + data);
+
+
+   
+    
+</script>
+</body>
+</html>

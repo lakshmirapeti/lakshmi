@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstrating Switch Case</title>
+</head>
+<body>
+      <script>
+        
+           var a1 = prompt("Enter a Number");
+           var a2 = prompt("Enter a Number");
+               a1 = parseInt(a1);
+               a2 = parseInt(a2);
+
+           var userInput = prompt("choose add/sub/mul/div");    
+           var Result;
+           
+            
+            switch(userInput)
+            { 
+                case 'add':
+                    Result = a1 + a2;
+                    console.log("The sum of value is" + Result);
+                    break;
+            
+                case 'sub':
+                    Result = a1 - a2;
+                    console.log("The Subtraction of value is" + Result);
+                    break;
+            
+                case 'mul':
+                    Result = a1 *a2;
+                    console.log("The multiplication of value is" + Result);
+                    break;
+
+                case 'div':
+                    Result = a1 / a2;
+                    console.log("The Division of value is" + Result);
+                    break;
+               
+                default:
+                    console.log("chooseing the wrong option")
+           
+            }
+
+</script>   
+</body>
+</html>

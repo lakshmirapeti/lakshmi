@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emply </title>
+</head>
+
+<body>
+    <script>
+        var ename, eage, eGen;
+        ename = prompt("Enter a emply name");
+        eage = prompt("Enter a emply age");
+        eGen = prompt("Enter a emply Gender");
+
+        var marks = prompt("sub 1 marks");
+        marks = parseInt(marks);
+        var eng = prompt("sbu 1 marks");
+        eng = parseInt(eng);
+        var phy = prompt("sbu 1 marks");
+        phy = parseInt(phy);
+        var total = marks + eng + phy;
+        var avg = total / 3;
+
+        console.log("emply name " + ename);
+        console.log("emply age " + eage);
+        console.log("emply Gender " + eGen);
+        console.log("the total marks " + total);
+        console.log("the total avg " + avg);
+
+
+         if (marks>30){
+            console.log("your are pass");
+         }
+         else{
+             console.log("your are fall");
+         }
+         
+
+    </script>
+</body>
+
+</html>

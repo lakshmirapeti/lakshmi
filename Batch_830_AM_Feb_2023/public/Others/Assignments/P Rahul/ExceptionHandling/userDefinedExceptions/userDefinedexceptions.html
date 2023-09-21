@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <ul>
+        <li>
+            <span class="astric">*</span>
+            <input type="text" placeholder="Enter User Name" id="uname">
+            <div class="errorStatus nameErr">Name is Required</div>
+        </li>
+        <li>
+            <span class="astric">*</span>
+            <input type="text" placeholder="Enter Email ID" id="umail">
+            <div class="errorStatus mailErr">Name is Required</div>
+        </li>
+        <li>
+            Gender :
+            Male<input type="radio" value="Male" checked name="gender">
+            Female<input type="radio" value="Female" name="gender">
+        </li>
+        <li>
+            <span class="astric">*</span>
+            <input type="text" placeholder="Enter Age" id="uage">
+            <div class="errorStatus ageErr">Name is Required</div>
+        </li>
+        <li>
+            <input type="button" value="Register Details" onclick="readUserDetails()">
+        </li>
+    </ul>
+</body>
+</html>

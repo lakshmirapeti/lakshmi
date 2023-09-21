@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
+</head>
+<body>
+    <div>
+        <div class="header">
+            <a href="../components/login.html">
+            <img src="../assets/logo.jpg" alt="Amazon Logo" width="50" height="80">
+        </a>
+            <h1>StyleLife</h1>
+        </div>
+        <div class="form">
+            <!-- Headings for the form -->
+            <div class="headingsContainer">
+                <h3>LOGIN</h3>
+                <p>Sign in with your username and password</p>
+            </div>
+
+            <!-- Main container for all inputs -->
+            <div class="mainContainer">
+                <!-- Username -->
+                <label for="username">Username</label>
+                <input type="text" placeholder="Enter Username" name="username">
+
+                <br><br>
+
+                <!-- Password -->
+                <label for="pswrd">Password</label>
+                <input type="password" placeholder="Enter Password" name="pswrd">
+
+                <!-- sub container for the checkbox and forgot password link -->
+                <div class="subcontainer">
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                    <p class="forgotpsd"> <a href="./forgotPassword.html">Forgot Password?</a></p>
+                </div>
+
+
+                <!-- Submit button -->
+                <button class="submit">Submit</button>
+
+                <!-- Sign up link -->
+                <p class="register">Not a member? <a href="./registration.html">Register here!</a></p>
+
+            </div>
+
+        </div>
+        <div class="footer">
+            <p>Copyrights@2023</p>
+        </div>
+    </div>
+    <script src="../js/login.js"></script>
+</body>
+</html>

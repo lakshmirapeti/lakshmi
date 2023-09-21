@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>sum of all even numbers in array </h3>
+    <script>
+        var a = [];
+        for(var i=0;i<10;i++){
+            a[i]=prompt("enter"+ i +"element of array");
+            a[i]=parseInt(a[i]);
+        }
+        var sum=0;
+        for(var i=0;i<10;i++){
+            if((a[i]%2)==0){
+                sum+=a[i];
+            }
+        }
+        console.log(sum);
+    </script>
+</body>
+</html>

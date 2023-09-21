@@ -1,0 +1,26 @@
+Exception Handling: 
+    Error
+
+    Exception 
+    Runtime
+
+    Compile time 
+        1. Syntactical error check 
+        2. convert to syteme understbl language
+
+    Runtime Exceptions
+
+    compileTime Exceptions
+
+    User Defined exceptions
+---------------------
+
+Exception handling - try , catch, finally, throw, throws
+
+try block :
+
+    try {
+        .... 
+        ....
+        ..... // set of instructions in which there is  a chance of getting runtime error, has to be placed within the try block
+    }

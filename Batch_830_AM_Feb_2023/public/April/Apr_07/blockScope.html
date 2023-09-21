@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating let keyword and block scope
+        </title>
+    </head>
+    <body>
+        <script>
+            var maxCount = 100;
+            var userName;
+            let test = 100;
+            function showMsg() { // Module
+                let temp = 'Hello';
+                userName = "Prasad";
+                console.log("Max count " + maxCount);
+                
+            }
+
+            if (true) { // Block
+                let a = 100;
+                console.log("Value of a is " + a);
+                
+
+
+            }
+
+            //console.log("Value of a is " + a);
+        </script>
+    </body>
+</html>

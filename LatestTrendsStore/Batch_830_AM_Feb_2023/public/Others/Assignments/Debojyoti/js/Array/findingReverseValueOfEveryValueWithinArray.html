@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding Reverse Value of every element within array</title>
+</head>
+
+<body>
+    <h3>Finding Reverse Value of every element within array</h3>
+    <script>
+        var readFromUser = () => {
+            var userArray = [];
+
+            //User Input
+
+            var size = prompt("Enter size of array");
+            size = parseInt(size);
+            for (var i = 0; i < size; i++) {
+                userArray[i] = prompt("Enter numbers");
+                userArray[i] = parseInt(userArray[i])
+            }
+
+            console.log('User given array is ' + userArray);
+
+            var revArr = reverseOfEveryElement(userArray, size);
+
+            console.log('Reversed array is ' + revArr);
+        }
+
+        var reverseOfEveryElement = (userArray, size) => {
+            for (var i = 0; i < size; i++) {
+                var rem = 0, result = 0, mainNum;
+                mainNum = userArray[i];
+
+                while (userArray[i] > 0) {
+                    rem = userArray[i] % 10;
+                    result = (result * 10) + rem;
+                    userArray[i] = userArray[i] / 10;
+                    userArray[i] = parseInt(userArray[i]);
+                }
+                userArray[i] = result;
+            }
+            return userArray;
+        }
+
+        readFromUser();
+    </script>
+</body>
+
+</html>

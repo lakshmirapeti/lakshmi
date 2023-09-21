@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Student Details progressCardGenerator
+        </title>
+        <link rel="stylesheet" href="app.css">
+        <script src ="app.js"></script>
+    </head>
+    <body>
+        <h3 class="title">
+            Student Progress Card Genretor
+        </h3>
+        <div class="container">
+            <ul>
+                <li>
+                    Enter Name :
+                    <input type="text" id="sname">
+                </li>
+                <li>
+                    Enter Age :
+                    <input type="text" id="sage">
+                </li>
+                <li>
+                    Gender :
+                    <input type="radio" value="male" name="gender" checked>Male
+                    <input type="radio" value="female" name="gender">Female
+                </li>
+                <li>
+                    Class
+                    <select name="" id="sclass">
+                        <option value="class I">class I</option>
+                        <option value="class II">class II</option>
+                        <option value="class III">class III</option>
+                        <option value="class IV">class IV</option>
+                        <option value="class V">class V</option>
+                        <option value="class VI">class VI</option>
+                        <option value="class VII">class VII</option>
+                    </select>
+                </li>
+                <li id="smarks">
+                    Marks :
+                    <input type="text" id="m1">
+                    <input type="text" id="m2">
+                    <input type="text" id="m3">
+                    <input type="text" id="m4">
+                    <input type="text" id="m5">
+                    <input type="text" id="m6">
+                    <input type="text" id="m7">
+                </li>
+                <li class="gbutton">
+                    <input type="button" value="Genrate Progree Card" onclick="generateProgressCard()">
+                </li>
+            </ul>
+        </div>
+        <div class="Progresscard">
+            <ul>
+                <li>Student Name : <span id="rname"></span></li>
+                <li>Student Age : <span id="rage"></span></li>
+                <li>Class : <span id="rclass"></span></li>
+                <li>Total : <span id="rtotal"></span></li>
+                <li>Average : <span id="ravg"></span></li>
+                <li>Grade : <span id="rgrade"></span></li>
+            </ul>
+        </div>
+    </body>
+</html>

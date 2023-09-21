@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var name=prompt("enter the name of employ")
+        // var age=parseInt(prompt("Enter the age of employ"))
+        // var gen=prompt("ente the gen of employe").toLocaleLowerCase()
+        // var dept=prompt("enter the dept of employe")
+        // var basical=parseInt(prompt("enter the basic salery of employe "))
+        var EmployDetails={
+            "Emp1": {
+                      "Name":"Gaurav Tripathi",
+                      "Dept":"It",
+                       "Age":23,
+                       "gen":"male",
+                       "Basical":30000 
+                    },
+                    "Emp2": {
+                      "Name":"Arun Rajpoot",
+                      "Dept":"It",
+                       "age":23,
+                       "gen":"male",
+                       "Basical":25000 
+                    },
+                    "Emp3": {
+                      "Name":"Prachi Tiwari",
+                      "Dept":"Pta Nahi Dept",
+                       "age":22,
+                       "gen":"female",
+                       "Basical":300000 
+                    },
+                    "Emp4": {
+                      "Name":"Priya Pandey",
+                      "Dept":"Govt",
+                       "age":21,
+                       "gen":"female",
+                       "Basical":40000 
+                    },
+                    "Emp5": {
+                      "Name":"Akid Khan",
+                      "Dept":"It",
+                       "age":25,
+                       "gen":"male",
+                       "Basical":30000 
+                    }
+
+           }
+
+           console.log(EmployDetails.Emp3)
+           EmployDetails.Emp3.hra=15/100*EmployDetails.Emp3.Basical
+           console.log(EmployDetails.Emp3.hra)
+            EmployDetails.Emp3.pf=25/100*EmployDetails.Emp3.Basical
+            console.log(EmployDetails.Emp3.pf)
+            EmployDetails.Emp3.total=EmployDetails.Emp3.hra+EmployDetails.Emp3.pf+EmployDetails.Emp3.Basical
+            console.log(EmployDetails.Emp3.total)
+
+
+            if(EmployDetails.Emp3.gen=="male"){
+        if(EmployDetails.Emp3.total>=500000)  
+        {
+            console.log(EmployDetails.Emp3.total)
+            console.log("taxpercent is 15%" )
+            EmployDetails.Emp3.taxpercent=15/100*EmployDetails.Emp3.total
+            console.log(EmployDetails.Emp3.taxpercent)
+        }
+        if(EmployDetails.Emp3.total>=300000 && EmployDetails.Emp3.total<500000){
+            console.log(EmployDetails.Emp3.total)
+            console.log("taxpercent is 10%")
+            taxpercent=10/100*EmployDetails.Emp3.total
+            console.log(EmployDetails.Emp3.total)
+        }
+        if(EmployDetails.Emp3.total>=200000 && EmployDetails.Emp3.total<300000)  
+        {
+            console.log(EmployDetails.Emp3.total)
+            console.log("taxpercent is 5%" )
+            taxpercent=5/100*EmployDetails.Emp3.total
+            console.log(EmployDetails.Emp3.total)
+        }
+        if(EmployDetails.Emp3.total<200000){
+            console.log(EmployDetails.Emp3.total)
+            console.log("taxpercent is 0%")
+        }
+        
+    }
+    if(EmployDetails.Emp3.gen=="female"){
+        if(EmployDetails.Emp3.total>=500000)  
+        {
+            console.log(EmployDetails.Emp3.total)
+            console.log("taxpercent is 10%" )
+            taxpercent=10/100*EmployDetails.Emp3.total
+            console.log(EmployDetails.Emp3.total)
+
+        }
+        if(EmployDetails.Emp3.total>=300000 && EmployDetails.Emp3.total<500000){
+            console.log(EmployDetails.Emp3.total)
+            console.log("taxpercent is 5%")
+            taxpercent=5/100*EmployDetails.Emp3.total
+            console.log(EmployDetails.Emp3.total)
+        }
+        if(EmployDetails.Emp3.total>=200000 && EmployDetails.Emp3.total<300000)  
+        {
+            console.log(EmployDetails.Emp3.total)
+            console.log("taxpercent is 0%" )
+        }
+        
+    }
+
+    </script>
+</body>
+</html>

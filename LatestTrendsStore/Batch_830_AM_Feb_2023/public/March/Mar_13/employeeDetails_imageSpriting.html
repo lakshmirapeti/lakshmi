@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating ImageSpriting 
+        </title>
+        <style>
+            li {
+                list-style: none;
+                border: 1px solid;
+                margin: 10px;
+                padding: 5px;
+            }
+            h3 {
+                text-align: center;
+                border: 1px solid;
+                padding: 5px;
+                margin: 10px;
+            }
+            img {
+                width: 120px;
+                height: 120px;
+            }
+            .imgContainer {
+                border: 1px solid;
+                width: 120px;
+                height: 120px;
+                background-image: url("images/emp_sprite.png");
+            }
+            .emp2 {
+                background-position: 273px 2px;
+            }
+            .emp3 {
+                background-position: -165px 123px;
+            }
+            .emp4 {
+                background-position: 125px 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>
+            Employee Details
+        </h3>
+        <ul>
+            <li>
+                <div>Name : Raj</div>
+                <div>Age: 20</div>
+                <div>Gender: Male</div>
+                <div>Department: Finance</div>
+                <div class="imgContainer"></div>
+            </li>
+            <li>
+                <div>Name : Teena</div>
+                <div>Age: 20</div>
+                <div>Gender: Male</div>
+                <div>Department: Finance</div>
+                <div class="imgContainer emp2"></div>
+            </li>
+            <li>
+                <div>Name : Meena</div>
+                <div>Age: 25</div>
+                <div>Gender: HR</div>
+                <div>Department: Finance</div>
+                <div class="imgContainer emp3"></div>
+            </li>
+            <li>
+                <div>Name : Krish</div>
+                <div>Age: 33</div>
+                <div>Gender: Male</div>
+                <div>Department: It</div>
+                <div class="imgContainer emp4"></div>
+            </li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>sum of all prime number within array</title>
+    </head>
+    <script>
+        function pelindromeNum(){
+            var sum = 0;
+           
+            var pelindromeNum = [121,232,45,13,466,15];
+           for(var i = 0; i<pelindromeNum.length;i++){
+                var pen = 0;
+                var value = pelindromeNum[i];
+                    while(pelindromeNum[i]){
+                        var rem = pelindromeNum[i] % 10;
+                        pen = (pen*10) + rem;
+                        pelindromeNum[i] = Math.floor(pelindromeNum[i] / 10);
+                    }
+                    if(value == pen){
+                        console.log(`${value} is pelindrome number`);
+                    }
+           }
+        }
+        pelindromeNum();
+    </script>
+    <body>
+        
+    </body>
+</html>

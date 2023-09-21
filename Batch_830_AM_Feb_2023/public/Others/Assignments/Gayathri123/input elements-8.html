@@ -1,0 +1,238 @@
+<html>
+<head>
+<title>
+demonstrting inputelements
+</title>
+<style>
+    h2{
+        border:2px solid rgb(224, 69, 95);
+        text-align: center;
+    }
+    h3{
+        border:2px dotted rgb(224, 69, 121);
+        text-align: center;
+    }
+    .maincontainer{
+        border:2px solid;
+        height:1400px;
+        width:1000px;
+    margin:20px;
+background-color: bisque;}
+        .container{
+        border:2px solid;
+        height: 200px;
+        width:800px;
+        margin: 30px;
+        padding: 30px;
+        background-color: rgb(172, 127, 255);
+    }
+    .block1{
+        border:2px solid;
+        width:130px;
+        height:30px;
+        margin:10px;
+        padding: 10px;
+        position:relative;
+        top: -250;
+        right:-50px;
+        text-align: center;
+      font-size: 20px;
+      background-color: aqua;
+
+    }
+    li{
+                list-style: none;
+                font-size: 20px;
+                position: relative;
+                margin: 20px;
+                top:20px;
+                left:20px ;
+            }
+            ul li{
+                list-style: none;
+                margin: 10px;
+                position: relative;
+              top:-20px;
+                left: 400px;;
+            }
+            ol{
+                position:relative;
+                bottom:40px;
+                right:400px;
+            }
+            .gender{ position:relative;
+                bottom:40px;
+                left:400px;
+
+            }
+            .contenent{
+                border:2px solid;
+                height: 250px;
+                width:860px;
+                margin:30px;
+                font-size: 20px;
+                padding: 20px;
+                background-color: gold;
+            }
+            .block2{
+        border:2px solid;
+        width:130px;
+        height:30px;
+        margin:10px;
+        padding: 15px;
+        position:relative;
+        top: -150;
+        right:-100px;
+        text-align: center;
+      font-size: 20px;
+      background-color: aqua;
+
+    }
+    .block3{
+        border:2px solid;
+        width:130px;
+        height:30px;
+        margin:10px;
+        padding: 15px;
+        position:relative;
+        top: -160;
+        right:-70px;
+        text-align: center;
+      font-size: 20px;
+      background-color: aqua;
+    }
+    .box{
+                border:2px solid;
+                height: 250px;
+                width:860px;
+                margin:30px;
+                font-size: 20px;
+                padding: 20px;
+                background-color: greenyellow;
+            }
+            .box2{
+                border:2px solid;
+                height: 250px;
+                width:860px;
+                margin:30px;
+                font-size: 40px;
+                padding: 20px;
+                background-color:royalblue ;
+            }
+            .block4{
+        border:2px solid;
+        width:130px;
+        height:30px;
+        margin:10px;
+        padding: 15px;
+        position:relative;
+        top: -80;
+        right:-100px;
+        text-align: center;
+      font-size: 20px;
+      background-color: aqua;
+    }
+</style>
+</head>
+<body>
+    <h2>student Registration page</h2>
+    <div class="maincontainer">
+    <div  class="container">
+       
+            <li>
+                <label for="uname"><b>Enter user name:</b></label>                
+                <input type="text" name="uname">
+            </li>
+        <ul>
+            <li>
+                <label for ="cname"><b>select country name :</b></label>
+                <select>
+                <option></option>
+                <option>austrial</option>
+                <option selected>india</option>
+                <option>srilanka</option>
+                <option>canada</option>
+            </select>
+            </li>
+        <li>
+            <label for="date"><b>Enter date of birth</b></label>
+            <input type="date" name="date">
+        </li>
+        <ol>
+        <li>
+            <label for="class"><b>select class</b></label>
+            <select>
+                <option></option>
+                <option>6th</option>
+                <option>7th</option>
+                <option>8th</option>
+                <option>9th</option>
+            </select>
+        </li>
+    </ol>
+    <li >
+        <li>
+        <label for="gender"><b>Select gender:</b></label>
+        <input type="radio" name="gender">male
+        <input type="radio" name="gender">female
+        <input type="radio" name="gender">others
+    </li>
+
+        <div class="block1">
+            personal details
+        </div>
+        </div>
+        <div class="contenent">
+            <li>
+                <b>Languagues known:</b>
+                <input type="checkbox">english
+                <input type="checkbox">hindi
+                <input type="checkbox">telugu
+            </li>
+            <li>
+                <b>Qualification:</b>
+                <input type="checkbox">MBA
+                <input type="checkbox">MCA
+                <input type="checkbox">MSC
+
+            </li>
+
+            <div class="block2">Educational details</div>
+        </div>
+        <div class="box">
+            <li>
+                <label for="course"><b>Select course:</b></label>
+                <select>
+                    <option></option>
+                    <option>ui fullstack</option>
+                    <option>java fullstack</option>
+                    <option>python fullstack </option>
+                    <option>salseforce</option>
+                </select>
+            </li>
+            <li>
+                <label for="language"><b>select language</b></label>
+                <select>
+                    <option></option>
+                    <option>c</option>
+                    <option>c++</option>
+                    <option>java</option>
+                    <option>python</option>
+                </select>
+                
+                <div class="block3">course details</div>
+        </div>
+        <div class="box2">
+            <li>
+            <div class="block4">about yourself</div>
+            <label for="text">Write aboutyourself</label><br>
+            <textarea name="text" rows="5"cols="50"></textarea>
+        </li>
+            </div>
+            <div style="text-align: center;"><input type="submit" name="submit" value="submit Registration"></div>
+            <h3>copyright@2023</h3>
+        </div>
+    </div>
+</div>
+</body>
+</html>

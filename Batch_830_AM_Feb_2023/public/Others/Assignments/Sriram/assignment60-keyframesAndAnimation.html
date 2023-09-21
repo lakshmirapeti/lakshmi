@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 KeyFrames</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+        .container {
+            border: 1px solid;
+            width: 150px;
+            height: 150px;
+            /* background-color: yellow; */
+            background-image: url('https://i.pinimg.com/236x/81/53/84/815384bff424fa0a05c8a61dd58b737f.jpg');
+            background-size: 100%;
+            text-align: center;
+            position: absolute;
+            left: 2%;
+            top: 2%;
+            animation: myStyles2 15s;
+
+        }
+
+
+        @keyframes myStyles2 {
+            1% {
+                left: 2%;  
+                top: 2%;              
+                transform: rotate(0deg);
+            }
+
+            25% { 
+                top: 2%;   
+                left: 85%;
+                transform: rotate(360deg);
+                transition: transform 2s;
+                background-image: url('https://www.japan-academy.in/blog/wp-content/uploads/2022/06/Doremon-Character.jpg');
+                background-size: 100% 100%; 
+
+            }
+
+            50% {
+                top: 75%;
+                left: 85%;
+                transition: transform 2s;
+                transform: scale3d(0.4, 0.4, 0.4);
+                background-image: url('https://play-lh.googleusercontent.com/tClRyXWXhxfz_8vnVdORR0TvzRk2SdLhBm1-JsTFhfaZvlrrgU-K9wF3bgB_xiiP5p8v');
+                background-size: 100% 100%;
+            }
+
+            75% {
+                top: 75%;
+                left: 2%;
+                transform: scale3d(1, 1, 1);    
+                background-image: url('https://i0.wp.com/is3-ssl.mzstatic.com/image/thumb/Purple123/v4/e6/c9/08/e6c908ca-52a8-2642-52b1-ce219f536d33/AppIcon-0-1x_U007emarketing-0-85-220-0-7.png/512x512bb.jpg?w=1200&ssl=1');     
+                background-size: 100% 100%;       
+                transform: translate(100px);
+            }
+
+            99% {
+                top: 2%;
+                left: 2%;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+</body>
+</html>

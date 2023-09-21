@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Image spriting</title>
+    </head>
+    <style>
+        li{
+            list-style: none;
+            border: 2px solid;
+            border-color: black;
+            margin: 10px;
+            padding: 5px;
+        }
+        h3{
+            text-align: center;
+            border: 2px solid;
+            margin: 10px;
+            padding: 5px;
+            border-color: black;
+        }
+     img{
+        width: 250px;
+        height: 250px;
+     }
+     .imageContainer{
+        border: 2px solid;
+        width: 200px;
+        height: 200px;
+        background-image: url(image/image\ spriting.jpg);
+     }
+     .emp2{
+        background-position: -214px -7px;
+     }
+     .emp3{
+        background-position: -425px -10px;
+     }
+     .emp4{
+        background-position: -214px -203px;;
+     }
+
+    </style>
+    <body>
+        <h3>Employee Details</h3>
+        <ul>
+            <li>
+                <div>Name:Reshma</div>
+                <div>Age:26</div>
+                <div>Gender:Female</div>
+                <div>Department:IT</div>
+                <div class="imageContainer"></div>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <div>Name:Rahul</div>
+                <div>Age:26</div>
+                <div>Gender:Male</div>
+                <div>Department:IT</div>
+                <div class="imageContainer emp2"></div>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <div>Name:Reshma</div>
+                <div>Age:26</div>
+                <div>Gender:Female</div>
+                <div>Department:IT</div>
+                <div class="imageContainer emp3"></div>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <div>Name:Reshma</div>
+                <div>Age:26</div>
+                <div>Gender:Female</div>
+                <div>Department:IT</div>
+                <div class="imageContainer emp4"></div>
+            </li>
+        </ul>
+    </body>
+</html>

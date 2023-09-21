@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReadDynamicArrayListOutAllPalindromeNo</title>
+</head>
+
+<body>
+    <script>
+        var readFromUser = () => {
+            var userArray = [];
+
+            var size = prompt("Eneter the size of array");
+            size = parseInt(size);
+
+            for (var i = 0; i < size; i++) {
+                userArray[i] = prompt("Enter the value");
+                userArray[i] = parseInt(userArray[i]);
+            }
+          
+            console.log(userArray);
+
+            istOfPalindrome(userArray, size);
+
+        }
+
+        var istOfPalindrome = (userArray, size) => {
+            for (var j = 0; j < size; j++) {
+                var userNumber, reverseNumber = 0, rem;
+                userNumber = userArray[j];
+                duplicate = userNumber;
+
+                for (var i = 0; userNumber !=0; i++) {
+                    rem = userNumber % 10;
+                    reverseNumber = (reverseNumber * 10) + rem;
+                    userNumber = userNumber / 10;
+                    userNumber = parseInt(userNumber);
+                }
+                if (duplicate == reverseNumber) {
+                    // console.log(duplicate);
+                    outputArray = [];
+                    outputArray = duplicate;
+                    console.log(outputArray); 
+                }
+            }
+        }
+
+        readFromUser();
+    </script>
+</body>
+
+</html>

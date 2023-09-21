@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>
+            Symbol Count in a String
+        </title>
+    </head>
+    <body>
+        <script>
+            var readData = () => {
+                var data=prompt("Enter a string:");
+                // var count=(data.match(/is/g) || []).length;
+                // console.log(count);
+                symbolCount(data);
+            }
+            var symbolCount = (data) => {
+                console.log(data.match(/[,./<>?;':"[{}\|=-_+)(*&^%$#@!]/g).length);
+            }
+            readData();
+        </script>
+    </body>
+</html>

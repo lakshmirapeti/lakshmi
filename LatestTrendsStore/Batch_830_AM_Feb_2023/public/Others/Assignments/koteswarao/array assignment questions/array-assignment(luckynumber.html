@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array-lukky number</title>
+</head>
+<body>
+    <script>
+       var a=[];
+       for(i=0;i<6;i++){
+        a[i]=prompt('enter number');
+        a[i]=parseInt(a[i]);
+       }
+       console.log(a);
+       for(i=0;i<a.length;i++){
+        n=a[i];
+        var sum=0;
+        while(n!=0){
+            var rem=n%10;
+            sum=sum+rem;
+            n=parseInt(n/10);
+        
+        if(n==0&&sum>10){
+            n=sum;
+            sum=0;
+        }
+    }
+        console.log('sum='+sum);
+}
+    </script>
+</body>
+</html>

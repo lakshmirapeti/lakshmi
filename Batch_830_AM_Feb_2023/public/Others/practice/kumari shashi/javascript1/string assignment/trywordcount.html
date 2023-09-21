@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>totalwordsinstr</title>
+</head>
+<body>
+    <script>
+       
+    var n, splitted=0, count=0;
+    var userInput=()=>{
+    n = prompt("Enter the string")
+    console.log(n)
+    }
+
+    var wordCount=()=>{
+    for(var i=0; i<n.length; n++)
+    {
+        splitted = n.split(/\S+/)
+    }
+
+    for(var i=0; i<splitted.length; i++)
+    {
+        count++;    
+    }
+}
+
+    var displayResult=()=>{
+    console.log(count)
+    }
+
+    userInput();
+    wordCount();
+    displayResult();
+
+   // console.log(splitted)
+    
+
+
+    </script>
+</body>
+</html>

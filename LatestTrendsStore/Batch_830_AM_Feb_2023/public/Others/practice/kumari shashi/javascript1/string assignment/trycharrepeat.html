@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //selected letter repeated
+        /*var str, count=0;
+        var letter;
+
+        str = prompt("enter the String :")
+        letter = prompt("Enter the letter :")
+
+        for(var i=0; i<str.length; i++)
+        {
+            if(str[i]==letter)
+            {
+                count++;
+            }
+        }
+        console.log(count)*/
+
+        var str, count={};
+        var ans, temp=0;
+        
+
+        str = prompt("enter the String :")
+        console.log(str)
+        ans = str.split(" ").join("")
+        console.log(ans)
+
+        temp = ans.split('')
+        console.log(temp)
+
+        for(var i=0; i<temp.length; i++)
+        {
+           st = temp[i];
+           count[st] = count[st] ? count[st] +1 : 1;
+            
+           
+        }
+        console.log(count)
+
+        
+    </script>
+
+</body>
+</html>

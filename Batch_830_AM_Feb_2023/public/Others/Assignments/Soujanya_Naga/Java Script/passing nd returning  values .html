@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>passing nd returning values</title>
+</head>
+<body>
+    <script>
+   function readDataFromUser() {
+        var empname,empage,empgender,empsalary,empdepartment,emph,empp;
+        empname=prompt("enter name");
+       // empname=parseInt(empname);
+        empage=prompt("enter empage");
+       // empage=parseInt(empage);
+        empgendar=prompt("enter empgender");
+       // empgendar=parseInt(empgendar);
+        empsalary=prompt("enter empsalary");
+       // empsalary=parseInt(empsalary);
+      //  empdepartment=prompt("enter empdepartment");
+       // eempdepartment=parseInt(empdepartmente);
+       empp=14;
+       emph=24;
+ var totalsalary=showdata(empp,emph, empsalary);
+ displayStudentDetails(empname,empage,empgender,empsalary,empdepartment,totalsalary);
+   }
+var showdata=(empp,emph,empsalary)=>{
+//var hrc,pf, totalsalary;
+var hrc=(empsalary*emph)/100;
+var pf=(empsalary*empp)/100;
+var totalsalary=empsalary+pf+hrc;
+return totalsalary;
+    }
+    function displayStudentDetails(empname,empage,empgender,empsalary,empdepartment,totalsalary){
+        console.log("empolyee name is  :" + "" + empname);
+        console.log("empolyee age is  :" + "" + empage);
+        console.log("empolyee gender is  :" + "" + empgender);
+        console.log("empolyee salary is  :" + "" + empsalary);
+       // console.log("empolyee department is  :" + "" + empdepartment);
+        console.log("empolyee totalsalary is  :" + "" + totalsalary);
+employeepost(totalsalary);
+    }
+var employeepost=(totalsalary)=>{
+if(totalsalary>=10000){
+    console.log("house keeping");
+}else if(totalsalary>=20000){
+    console.log("whatch man");  
+}else if(totalsalary<=30000){
+    console.log("tem manager"); 
+}else{
+    console.log("not the employee");
+} 
+}
+    readDataFromUser();
+    </script>
+</body>
+</html>

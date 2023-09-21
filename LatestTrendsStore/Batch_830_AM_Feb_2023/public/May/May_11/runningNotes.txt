@@ -1,0 +1,43 @@
+Closure
+    Self invoved function 
+    can hold set of js instructions (including, variables, classes, obj, method etc)
+
+
+    Syntax:
+
+        function addvalues() {
+            .. 
+            ....
+            /.//// 
+        }
+
+        addvalues();
+
+        ------------
+
+        (() => {
+
+        })();
+
+        (function()`{
+
+        })();
+    ----------------
+
+Steps to be followed to get clourser data to be accessable outside of Closure
+    1. assign a varaible to clourser
+    2. Return an object from the closure 
+    3. Add all the methods, classes, varibles ,objs which need to be accessable outside of closuer, under the return object.
+    4. Access the clouser data through the clouser name.
+
+--------------------------------------------------------------------
+
+Jquery - JS lib - 
+    To make DOM operations in js  simplified
+
+    documnt.createelemet("div')
+
+
+Salutils - js lib - 
+
+    $, jQuery 

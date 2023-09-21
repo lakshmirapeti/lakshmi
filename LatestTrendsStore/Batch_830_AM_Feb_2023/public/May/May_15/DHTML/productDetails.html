@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Generating Product Details - Dynamically
+        </title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+        <link rel="stylesheet" href="app.css">
+        <script src="../../jqueryMini.js"></script>
+        <script src="app_ajax_data.js"></script>
+    </head>
+    <body>
+        <div class="loadingBlock">
+            <img src="https://cdn.pixabay.com/animation/2022/10/11/03/16/03-16-39-160_512.gif" alt="">
+        </div>
+        <div class="errorBlock">Error while getting product data</div>
+        <h3>
+            Online Product Detials
+        </h3>
+        <input type="button" value="Load Products" onclick="getProductDetails()">
+        <div class="productDetailsContainer">
+            
+        </div>
+
+        <div class="productStaticTemplate">
+            <ul class="pultag">
+                <li>Name: {{title}}</li>
+                <li>Price: {{price}}</li>
+                <li>{{category}}</li>
+                <li class="productDescription"> 
+                    {{description}}                   
+                </li>
+                <li>
+                    <img class="productImg" src="{{image}}">
+                </li>
+                <li class="ratingImgContainer">
+                    {{{ratingContent}}}
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>

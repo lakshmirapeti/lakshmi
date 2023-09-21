@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Age Calculator</title>
+    </head>
+<body>
+    <script>
+        var yourDob = prompt(" Mention DOB in MM/DD/YYYY Format") ;
+        
+        var dob = new Date(yourDob) ;
+        console.log("Your Date of birth is " + dob);
+
+        var currentDate = new Date() ;
+        console.log( "Today's date is " + currentDate);
+
+        var numberOfDays = (currentDate.getTime() - dob.getTime())/ (1000 * 60 * 60 * 24) ;
+        numberOfDays= parseInt(numberOfDays)
+
+        console.log("Your age is " + numberOfDays + " days") ;
+
+        var d1 = dob.getDate();
+        var m1 = 1 + dob.getMonth();
+        var y1 = dob.getFullYear();
+
+        var d2 = currentDate.getDate();
+        var m2 = 1 + currentDate.getMonth();
+        var y2 = currentDate.getFullYear();
+        var month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+
+        if(d1 > d2){
+            d2 = d2 + month[m2 - 1];
+            m2 = m2 - 1;
+        }
+        if(m1 > m2){
+            m2 = m2 + 12;
+            y2 = y2 - 1;
+        }
+        var d = d2 - d1;
+        var m = m2 - m1;
+        var y = y2 - y1;
+
+        console.log("Your age is " + y + " Years " + m + " Months " + d + " days ")
+
+    </script>
+    
+</body>
+</html>

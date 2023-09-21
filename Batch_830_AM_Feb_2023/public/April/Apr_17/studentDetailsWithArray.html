@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            /*
+            var empsal = 2000;
+            var sname = 'Teena';
+            var gender = 'female';
+            // var m1 = 56;
+            // var m2 = 90;
+            // var m3 = 99;
+            // var m4 = 100;
+            var marks = [56, 90, 99, 100];
+            // var total = m1 + m2 + m3 + m4;
+            var total = 0 ; 
+
+            for (var i = 0 ; i < marks.length; i++) {
+                total += marks[i];
+            }
+            var avg = total / 4;
+             
+            console.log("Name is " + sname)
+            console.log("Gender is " + gender);
+            console.log("Total is " + total);
+            console.log("Avg is " + avg); */
+
+
+            var empsal = 2000;
+            var studentData = ["Teena", 'female', [56, 90, 99, 100], 0, 0];
+          
+            var total = 0 ; 
+
+            for (var i = 0 ; i < studentData[2].length; i++) {
+                studentData[3] += studentData[2][i];
+            }
+            studentData[4] = studentData[3] / studentData[2].length;
+             
+            console.log("Name is " + studentData[0])
+            console.log("Gender is " + studentData[1]);
+            console.log("Total is " + studentData[3]);
+            console.log("Avg is " + studentData[4]);
+        </script>
+    </body>
+</html>

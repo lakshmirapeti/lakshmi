@@ -1,0 +1,160 @@
+if (condition) {
+    ... 
+    ... 
+}
+
+while loop 
+
+Syntax for "for":
+        for ( intialization; condition check; increment/decrement) {
+              ... 
+              ...
+              ...
+        }
+
+Syntax for while :
+        ....
+        while (condition check ) {
+             ...
+             ... 
+             ....
+        }
+        .............
+        ================================================
+
+
+var classfullofstudent = ''..' 
+
+while (classisnot empty) {
+    pick a student 
+    take him to next clss 
+    make him sit there 
+    come back 
+}
+
+-----------------
+
+for (var totalStudents = 0; classisnot empty; totalStudents++) {
+    pick a student 
+    take him to next clss 
+    make him sit there 
+    come back 
+    if (totalStudents%5 == 0) {
+        change row
+    }
+}
+
+
+
+        ================================================
+----------------------------------
+
+        for (var i = 1; i <= 10; i++) {
+            console.log(i)
+        }
+
+        var i = 1;
+        while (i <= 10) {
+            console.log(i);
+            i++;
+        }
+        ---------------------
+
+        var plateoffood =',,,,'
+
+        while (plateoffood != empty) {
+               take a spoon
+               lift the food 
+               put in mouth
+               chew it.
+        }
+        -----------------
+        var plateoffood =',,,,'
+
+        for (var spponCount = 1; plateoffood != empty; spoonCount++) {
+            take a spoon
+               lift the food 
+               put in mouth
+               chew it.
+               if (spponCount == 5) [
+                have some water
+               ]
+               if (spoonCount == 10) {
+                take a small walk
+               }
+        }
+
+        // spoonCount
+----------------
+
+armstrong 
+
+n = 153 -> 3 digits 
+
+1 power 3 + 5 power 3 + 3 power 3 -> 153
+---------
+
+n = 34
+
+3 power 2 + 4 power 2 -> 25
+-----------
+n = 2347
+------------------------------------------------------------
+
+n  = 247;
+
+n % 10 -> 247 % 10 -> 7
+n = n / 10 - > 24.234 -> 24
+
+
+n % 10 -> 24 % 10 - > 4 
+n = n / 10 - > 24 / 10 - > 2.2342 -> 2 
+
+n % 10- > 2 % 10 - > 2 
+n = n / 10 - > 2 / 10 -> 0.23423 -> 0 
+----------------
+
+var n = 247;
+while (n > 0) {
+   var rem = n % 10; 
+   n = n / 10;
+   n = parseInt(n);
+   
+}
+-----------------
+
+var n = 99991 -> 37 -> 10 -> 1 
+
+153 -> 
+----------------------
+var i = 0
+
+while (i <= 10) {
+    console.log(i);
+    if (i == 5) {
+        break;
+    }
+    i++;
+}
+------------------------------
+
+...
+a = 90;
+while(a < 10) {
+     .............
+     .............
+     ....
+}
+...
+====================
+
+n = 90
+...
+do {
+     .............
+     .............
+     ....
+} while(n < 10);
+...
+-----------------------------------------------
+

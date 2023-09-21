@@ -1,0 +1,40 @@
+h3{
+    text-align: center;
+    text-decoration: underline;
+
+}
+h4{
+    text-align: center;
+    text-decoration: underline;
+    padding: 2px;
+    margin: 2px;
+
+}
+.contain{
+    width: 500px;
+    border: 1px solid #ddd;
+    margin: 20px auto;
+    background-color: antiquewhite;
+}
+li{
+    list-style: none;
+    border: 1px solid #ddd;
+    background-color: burlywood;
+    padding: 5px;
+    margin: 5px;
+}
+ul{
+    margin: 5px;
+    padding: 5px;
+
+}
+.resultContainer {
+    border: 1px solid;
+    width: 600px;
+    margin: 20px auto;
+    background-color: fff;
+    background-color: aquamarine;
+    min-height: 200px;
+    display: none;
+    
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: white;
+        }
+        .card{
+            position: relative;
+            background: white;
+            width: 300px;
+            height: 400px;
+            overflow: hidden;
+        }
+        .card span:nth-child(1){
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(to right,transparent,red);
+            animation: animate_one 2s linear infinite;
+        }
+        @keyframes animate_one{
+            0%{
+                transform:translateX(-100%)
+            }
+            100%{
+                transform: translateX(100%);
+            }
+        }
+        .card span:nth-child(2){
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 3px;
+            height: 100%;
+            background: linear-gradient(to bottom,transparent,red);
+            animation: animate_two 2s linear infinite;
+            animation-delay: 1s;
+        }
+        @keyframes animate_two{
+            0%{
+                transform: translateY(-100%);
+            }
+            100%{
+                transform: translateY(100%);
+            }
+        }
+        .card span:nth-child(3){
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(to left,transparent,red);
+            animation: animate_three 2s linear infinite;
+        }
+        @keyframes animate_three{
+            0%{
+                transform: translateX(100%);
+            }
+            100%{
+                transform: translateX(-100%);
+            }
+        }
+        .card span:nth-child(4){
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            background: linear-gradient(to top,transparent,red);
+            animation: animation_four 2s linear infinite;
+            animation-delay: 1s;
+        }
+        @keyframes animate_four{
+            0%{
+                transform: translateY(100%);
+            }
+            100%{
+                transform: translateY(-100%);
+            }
+        }
+       h1{
+        text-align: center;
+        color: rgba(17, 202, 20, 0.662);
+       }
+        .login-form{
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        @keyframes slide-up{
+            from{
+                transform: translateY(50%);
+            }
+            to{
+                transform: translateY(0%);
+            }
+        }
+        input,button{
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+            transition: box-shadow 0.3s ;
+            border: 1px solid black;
+        }
+        input:focus;
+        button:focus{
+            outline: none;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+        }
+        button{
+            background-color: #008080;
+            padding: 10px;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ;
+        }
+        button:hover{
+            background-color: #006666;
+        }
+        #rblock{
+            text-align: center;
+            width: 100px;
+            border: 1px solid;
+            font-weight: bold;
+            padding: 10px;
+            margin: 10px;
+            color:black 2px;
+        }
+        .a{
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+            <form class="login-form">
+                <h1>LOGIN</h1>
+                <input type="text" placeholder="username">
+                <input type="password" placeholder="password">
+                <div id="rblock"></div><input type="text" placeholder="Enter captcha">
+                <input type="button" value="Generate captcha" onclick="generateCaptcha()">
+                <script>
+                    var upperCaseChar = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
+                    var lowerCaseChar = ['a', 'b', 'c', 'd', 'e', 'f',];
+                    var getRandomUpperCaseChar = () => {
+                        var randomIndex =Math.floor(Math.random() * upperCaseChar.length);
+                        return upperCaseChar[randomIndex];
+                    }
+                    var generateCaptcha = () => {
+                        //uppercase char - lowercase - lower case - number - upper case 
+                        var Captchavalue = getRandomUpperCaseChar() + getRandomLowerCaseChar() + getRandomLowerCaseChar() + getRandomNumber() + getRandomUpperCaseChar();
+
+                        document.querySelector("#rblock").innerText = Captchavalue;
+                    }
+                   
+                    var getRandomLowerCaseChar = () => {
+                        var randomIndex =Math.floor(Math.random() * lowerCaseChar.length);
+                        return lowerCaseChar[randomIndex];
+                    }
+                    var getRandomNumber = () => { // return random no. between 0 - 10
+                        var maxCount =10;
+                        var randomNum = Math.floor(Math.random() * maxCount);
+                        return randomNum;
+                    }
+                    generateCaptcha();
+                </script>
+                <button type="submit">Login</button>
+                     <a href=""target="_blank">Register now</a>
+            </form>
+
+       
+         
+    </div>
+</body>
+</html>

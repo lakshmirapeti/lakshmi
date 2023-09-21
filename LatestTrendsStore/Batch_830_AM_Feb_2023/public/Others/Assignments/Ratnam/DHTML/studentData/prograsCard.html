@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrograsCard</title>
+    <link rel="stylesheet" href="studentdata.css">
+    <script src="studentData.js"></script>
+</head>
+<body>
+    <h3 class="title"> Student Progras Card    </h3>
+    <div class="container">
+        <ul>
+            <li>
+                Student Name: <input type="text" id="sname">
+            </li>
+            <li>
+                Age: <input type="text" id="sage">
+            </li>
+            <li>
+                Gender:        
+                <input type="radio" name="gender" value="male" checked>Male
+                <input type="radio" name="gender" value="female">Female
+            </li>
+            <li>
+                class:
+                <select id="sclass">
+                    <option value="class I">class I</option>
+                    <option value="class II">class II</option>
+                    <option value="class III">class III</option>
+                    <option value="class IV">class IV</option>
+                    <option value="class V">class V</option>
+                    <option value="class VI">class VI</option>
+                    <option value="class VII">class VII</option>
+                </select>
+            </li>
+            <li class="marksContainer">
+                marks:
+                <input type="text" id="m1">
+                <input type="text" id="m2">
+                <input type="text" id="m3">
+                <input type="text" id="m4">
+                <input type="text" id="m5">
+            </li>
+            <li>
+                <input type="button" value="GeneratePragresscard" onclick="studentProgressCard()">
+            </li>
+        </ul>
+    </div>
+    <div class="sResult">
+       <ul>
+           <li>
+                StudentName:<span id="rname"></span>
+           </li>
+           <li>
+               Age:<span id="rage"></span>
+           </li>
+           <li>
+            Gender:<span id="rgen"></span>
+           </li>
+           <li>
+            Class:<span id="rclass"></span>
+           </li>
+           <li>
+            Total:<span id="rtotal"></span>
+           </li>
+         <li>
+            Average:<span id="ravg"></span>
+         </li>
+       <li>
+            Result:<span id="rresult"></span>
+        </li>
+    </ul>
+    </div>
+     
+    
+
+</body>
+</html>

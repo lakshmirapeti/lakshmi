@@ -1,0 +1,35 @@
+.title {
+    text-align: center;
+    text-decoration: underline;
+    margin: 10px;
+    padding: 10px;
+}
+.container {
+    border: 1px solid;
+    background-color: #ccc;
+    width: 600px;
+    margin: 10px auto;
+    padding: 20px;
+}
+li {
+    list-style: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 5px;
+    padding: 5px;
+}
+ul {
+    margin: 5px;
+    padding: 5px;
+}
+.smar input {
+    width: 30px;
+}
+.progressCard {
+    border: 1px solid;
+    background-color: aqua;
+    margin: 10px auto;
+    width: 600px;
+    min-height: 200px;
+    display: none;
+}

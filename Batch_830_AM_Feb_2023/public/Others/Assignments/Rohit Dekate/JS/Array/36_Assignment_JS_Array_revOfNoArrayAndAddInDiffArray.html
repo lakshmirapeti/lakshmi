@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse of even no</title>
+</head>
+<body>
+    <script>
+            //37. w a p reverse value of an array and add to diff array
+             
+            var no=[]
+            var no2=[];
+            for(var i=0 ; i<5 ; i++){
+                no[i]=prompt("enter the value");
+                no[i]=parseInt(no[i]);
+            }
+            console.log(no);
+
+            var nl=no.length;
+            for(var i=0 ; i<nl ; i++){
+                var sum=0;
+                   while(no[i]>0){
+                  
+                    var rem=no[i]%10;
+                     sum=sum*10+rem;
+                    no[i]=no[i]/10;
+                    no[i]=parseInt(no[i]);
+
+                   }
+                   no2[i]=sum;
+                
+            }
+            console.log(no2)
+
+    </script>
+</body>
+</html>

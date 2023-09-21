@@ -1,0 +1,32 @@
+h3 {
+    text-align: center;
+    border: 1px solid;
+    margin: 10px;
+    padding: 10px;
+    color: greenyellow;
+}
+ul {
+    margin: 10px;
+    padding: 10px;
+}
+li {
+    list-style: none;
+    border: 1px solid;
+    margin: 5px;
+    padding: 5px;
+}
+.marksContainer input {
+    width: 80px;
+}
+.container {
+    width: 500px;
+    margin: 10px auto;
+    padding: 10px;
+}
+.progressCard {
+    width: 500px;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid;
+    display: none;
+}

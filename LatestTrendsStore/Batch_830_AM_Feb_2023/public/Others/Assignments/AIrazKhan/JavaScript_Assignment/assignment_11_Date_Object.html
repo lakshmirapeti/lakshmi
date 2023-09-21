@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Object</title>
+</head>
+<body>
+    <script>
+        var myDate = new Date()
+        var UserInput = prompt("Enter number 1 to 7")
+        
+        var daysList1 = ["Mon", 'Tue', 'Wed', 'Thur', 'Fri', 'Sat']
+        var daysList2 = ["Monday", 'Tuesday', 'Wednesday', 'Thurday', 'Friday', 'Saturday']
+        var monthsList = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June']
+        var monthsList2 = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', "December"]
+
+        var dayIndex = myDate.getDay();
+        var monthsIndex = myDate.getMonth();
+        var result;
+        
+           // Mon, 17/04/2023 DD/MM/YYYY
+
+           var customDate1 = daysList1[dayIndex] + ", " + myDate.getDate() + "/" + (myDate.getMonth() + 1) + "/" + myDate.getFullYear()
+      
+
+        // Saturday, 17/04/2023 DD/MM/YYYY
+           var customDate2 = daysList2[dayIndex] + ", " + myDate.getDate() + "/" + (myDate.getMonth() + 1) + "/" + myDate.getFullYear()
+      
+        // Saturday, 17/Apr/2023
+
+        var customDate3 = daysList1[dayIndex] + ", " + myDate.getDate() + '/' + (monthsList[monthsIndex]) + '/' + myDate.getFullYear();
+
+        // april 15th 2023
+
+        var customDate4 = monthsList2[monthsIndex] + ' ' + myDate.getDate()+ 'th' + " " + myDate.getFullYear()
+       
+        // 15th April, 2023 03:17;07
+
+        var customDate5 = myDate.getDate() + 'th' + " " + monthsList2[monthsIndex] + ", " + myDate.getFullYear() + " " + myDate.getHours() + ":" + myDate.getMinutes() + ':' + myDate.getSeconds()
+        
+        // April/15/2023
+
+        var customDate6 = monthsList2[monthsIndex] + '/' + myDate.getDate() + '/' + myDate.getFullYear();
+       
+        // 9hrs : 05 min : 21 sec
+        var customDate7 = myDate.getHours() + 'hrs ' + " : " + myDate.getMinutes() + " Min " + " : "+ myDate.getSeconds() + " Sec " ;
+      
+
+      switch (UserInput) {
+        case "1":
+          result = daysList1[dayIndex] + ", " + myDate.getDate() + "/" + (myDate.getMonth() + 1) + "/" + myDate.getFullYear();
+        console.log(result)
+          break;
+
+          case "2":
+          result = daysList2[dayIndex] + ", " + myDate.getDate() + "/" + (myDate.getMonth() + 1) + "/" + myDate.getFullYear()
+          console.log(result)
+          break;
+
+          case '3':
+            result = daysList1[dayIndex] + ", " + myDate.getDate() + '/' + (monthsList[monthsIndex]) + '/' + myDate.getFullYear();
+            console.log(result)
+            break;
+
+            case '4':
+                result = monthsList2[monthsIndex]  + ' ' + myDate.getDate() + " " + myDate.getFullYear()
+                console.log(result)
+                break;
+
+                case '5':
+                    result = myDate.getDate() + 'th' + " " + monthsList2[monthsIndex] + ", " + myDate.getFullYear() + " " + myDate.getHours() + ":" + myDate.getMinutes() + ':' + myDate.getSeconds()
+                    console.log(result)
+                    break;
+
+                    case '6':
+                        result = monthsList2[monthsIndex] + '/' + myDate.getDate() + '/' + myDate.getFullYear()
+                        console.log(result)
+                        break;
+
+                        case "7":
+                            result = myDate.getHours() + 'hrs ' + " : " + myDate.getMinutes() + " Min " + " : "+ myDate.getSeconds() + " Sec " ;
+                            console.log(result)
+                            break;
+            default:
+        }
+
+
+    </script>
+</body>
+</html>

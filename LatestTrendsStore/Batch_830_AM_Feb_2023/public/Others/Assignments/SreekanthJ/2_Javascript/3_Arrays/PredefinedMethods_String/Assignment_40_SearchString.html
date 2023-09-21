@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search For String</title>
+</head>
+
+<body>
+    <script>
+
+        var inputString = prompt("Enter a string: ");
+
+        var searchWord = prompt("Enter a word to search for: ");
+
+        // Convert both the input string and search word to lowercase to make the search case-insensitive
+        inputString = inputString.toLowerCase();
+        searchWord = searchWord.toLowerCase();
+
+        // Use the includes method to check if the search word is present within the input string
+        if (inputString.includes(searchWord)) {
+            console.log("The word '" + searchWord + "' is present within the string.");
+        } else {
+            console.log("The word '" + searchWord + "' is not present within the string.");
+        }
+
+    </script>
+</body>
+
+</html>

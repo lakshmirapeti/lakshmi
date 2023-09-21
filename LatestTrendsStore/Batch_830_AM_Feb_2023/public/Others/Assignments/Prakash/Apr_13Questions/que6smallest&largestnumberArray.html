@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to find the smallest &largest number Array</title>
+</head>
+<body>
+    <script>
+        // var data = [12,34,45,456,76,];
+        // console.log(data);
+
+        // for(var i=0; i<data.length; i++){
+        //     for(var j=1; j< data.length; j++){
+        //         if(data[i] < data[j]){
+        //             var temp =data[i];
+        //             data[i] = data[j];
+        //             data[j] = temp;
+        //         }
+
+        //     }
+
+        // }
+        // console.log(data)
+        // var largest = data[0];
+        // var samllvalue = data[0];
+        // for(var i=1; i<data.length; i++){
+        //     if(samllvalue > data[i]){
+        //         var samllvalue = data[i];
+        //     }
+        //     if(largest < data[i]){
+        //         var largest = data[i];
+        //     }
+        // }
+        // console.log("the samll valueis"+samllvalue);
+        // console.log("the largest number is "+largest)
+
+        var data = [12,32,45,66,776,89,];
+        console.log(data);
+
+        for(var i=1; i<data.length; i++){
+            for(j=0; j< data.length; j++){
+                if(data[i] < data[j]){
+                    var temp = data[i];
+                    data[i] = data[j];
+                    data[j] = temp;
+                }
+            }
+        }
+        console.log(data);
+    
+        var largest = data[0];
+        var samllvalue = data[0];
+        for(i= 1; i<data.length; i++){
+            if(samllvalue > data[i]){
+              var  samllvalue = data[i];
+            }
+            if(largest < data[i]){
+                largest = data[i];
+            }
+        }
+        console.log('the samllvalue is'+samllvalue);
+        console.log('the largest value is'+largest);
+    </script>
+</body>
+</html>

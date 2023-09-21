@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Tags</title>
+    <Style>
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        h3{
+            padding: 5px;
+            border: 3px solid;
+            text-align: center;
+            border-radius: 15px;
+            text-shadow: 2px rgb(167, 164, 164) ;
+            background-color: rgb(130, 84, 190);
+        }
+        h3:hover{
+            background-color: pink;
+        }
+        li::selection{
+            background-color: greenyellow;
+        }
+        li::first-letter{
+            font-size: large;
+        }
+        ol
+        {
+            margin:1px;
+            padding: 1px;
+        }
+        ol li:hover{
+            border: 3px solid yellow;
+            background-color: yellow;
+        }
+        ol li{
+            
+            border: 2px solid;
+            border-radius: 10px;
+            padding: 7px;
+            margin: 7px;
+            list-style-position: inside;
+            text-align: center;
+            font-weight: bold;
+            background-color: coral;
+        }
+        ul li{
+            background-color: rgb(236, 192, 215);
+            border: 1px;
+            border-radius: 10px;
+            list-style-type: none;
+            padding: 3px;
+            margin: 5px;
+            font-weight: bold;
+        }
+        ul li:hover{
+            background-color: greenyellow;
+        }
+        ul li::selection{
+            background-color: rgb(164, 189, 56);
+        }
+        img{
+            width: 140px;
+            height: 140px;
+        }
+        .left1{
+            background-color: rgb(192, 223, 192);
+            float: left;
+            width: 30%;
+            height: 475px;
+            border: 2px solid;
+            padding: 20px;
+            margin: 10px;
+            overflow: auto;
+        }
+        .right1{
+            float: right;
+            width:60%;
+            height: 480px;
+            border: 2px solid;
+            padding: 15px;
+            margin: 10px;
+            overflow: auto;
+            background-color: rgb(205, 223, 240);
+        }
+        .image1{
+            background-size: auto;
+            float: left;
+            border-radius: 5px;
+            padding: 2px;
+            margin: 15px;
+            width:16%;
+            height: 150px;
+            background-color: rgb(4, 26, 85);
+            background-image: url("Images/EmpImages/Allemps.png");
+        }
+        .image1:hover{
+            border: 2px solid yellow;
+        }
+        .Details{
+            position: sticky;
+            float:left;
+            border: 2px solid;
+            border-radius: 5px;
+            padding: 2px;
+            margin: 13px;
+            width:60%;
+            height: auto;
+            background-color: rgb(235, 216, 191);
+        }
+        .image1.img1{
+            width: 15%;
+            height: 148px;
+            background-position: 601px -608px;
+        }
+        .image1.img2{
+            width: 14.5%;
+            background-position: -12px -604px;
+        }
+        .image1.img3{
+            background-position: 752px -388px;
+        }
+        .image1.img4{
+            background-position: 1068px -605px;
+        }
+        .image1.img5{
+            background-position: 601px -400px;
+        }
+        .image1.img6{
+            width: 15%;
+            background-position: 1211px -608px;
+        }
+        .image1.img7{
+            height: 148px;
+            background-position: 916px -403px;
+        }
+        .image1.img8{
+            width:15%;
+            background-position: 1944px -398px;
+        }
+        .image1.img9{
+            background-position: 1813px -404px;
+        }
+        .image1.img10{
+            background-position: 934px -597px;
+        }
+    </Style>
+</head>
+<body style="background-color: rgb(206, 203, 203);">
+    <h3 >Student Details</h3>
+    <div class="left1">
+        <ol>
+            <li>
+                <a href="#s1">Raju</a>
+            </li>
+            <li>
+                <a href="#s2">Teena</a>
+            </li>
+            <li>
+                <a href="#s3">Krish</a>
+            </li>
+            <li>
+                <a href="#s4">Smriti</a>
+            </li>
+            <li>
+                <a href="#s5">Virat</a>
+            </li>
+            <li>
+                <a href="#s6">Anushka</a>
+            </li>
+            <li>
+                <a href="#s7">Jaddu</a>
+            </li>
+            <li>
+                <a href="#s8">Jeeva</a>
+            </li>
+            <li>
+                <a href="#s9">Surya</a>
+            </li>
+            <li>
+                <a href="#s10">Jaggu</a>
+            </li>
+        </ol>
+    </div>
+        <div class="right1">
+            <div class="block">
+                <div class="image1 img1"> 
+                </div>
+                <div class="Details">
+                    <ul id="s1">
+                        <li>Name: Raju</li>
+                        <li>Age: 21</li>
+                        <li>Gender: Male</li>
+                        <li>Location: Hyderabad</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="block">
+                <div class="image1 img2"> 
+                </div>
+                <div class="Details">
+                    <ul id="s2">
+                        <li>Name: Teena</li>
+                        <li>Age: 22</li>
+                        <li>Gender: Female</li>
+                        <li>Location: Bangalore</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="block">
+                <div class="image1 img10"> 
+                    </div>
+                <div class="Details">
+                    <ul id="s3">
+                        <li>Name: Krish</li>
+                        <li>Age: 22</li>
+                        <li>Gender: Male</li>
+                        <li>Location: Karimnagar</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="block">
+                <div class="image1 img3"> 
+                    </div>
+                <div class="Details">
+                    <ul id="s4">
+                        <li>Name: Smriti</li>
+                        <li>Age: 24</li>
+                        <li>Gender: Female</li>
+                        <li>Location: Bangalore</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="block">
+                <div class="image1 img4"> 
+                    </div>
+                <div class="Details">
+                    <ul id="s5">
+                        <li>Name: Virat</li>
+                        <li>Age: 31</li>
+                        <li>Gender: Male</li>
+                        <li>Location: Delhi</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="block">
+                <div class="image1 img5"> 
+                    </div>
+                <div class="Details">
+                    <ul id="s6">
+                        <li>Name: Anushka</li>
+                        <li>Age: 29</li>
+                        <li>Gender: Female</li>
+                        <li>Location: Delhi</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="block">
+                <div class="image1 img6"> 
+                    </div>
+                <div class="Details">
+                    <ul id="s7">
+                        <li>Name: Jaddu</li>
+                        <li>Age: 28</li>
+                        <li>Gender: Male</li>
+                        <li>Location: Chennai</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="block">
+                <div class="image1 img7"> 
+                    </div>
+                <div class="Details">
+                    <ul id="s8">
+                        <li>Name: Jeeva</li>
+                        <li>Age: 12</li>
+                        <li>Gender: Female</li>
+                        <li>Location: Ranchi</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="block">
+                <div class="image1 img8"> 
+                    </div>
+                <div class="Details">
+                    <ul id="s9">
+                        <li>Name: Surya</li>
+                        <li>Age: 27</li>
+                        <li>Gender: Male</li>
+                        <li>Location: Mumbai</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="block">
+                <div class="image1 img9"> 
+                    </div>
+                <div class="Details">
+                    <ul id="s10">
+                        <li>Name: Jaggu</li>
+                        <li>Age: 28</li>
+                        <li>Gender: Male</li>
+                        <li>Location: Pune</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div style="clear:both;"> 
+        <h3>@Copy Rights 2023</h3>
+    </div>
+</body>
+</html>

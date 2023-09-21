@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <style>
+        .heading{
+            border: 2px solid;
+            text-align: center;
+        }
+        .box{
+            border: 1px solid;
+            width: 100px;
+            position: absolute;
+            top: 55px;
+            left: 45px;
+            background-color: white;
+            text-align: center;
+
+        }
+        .container{
+            border: 2px solid;
+            margin: 5px;
+            height: 200px;
+            width: 50%
+        }
+        .container1{
+            position: absolute;
+            top: 125px;
+            left: 25px;
+        }
+        .cname{
+            position: absolute;
+            top: 125px;
+            left: 300px;
+        }
+        .age{
+            position: absolute;
+            top: 175px;
+            left: 25px;
+        }
+        #class{
+            position: absolute;
+            top: 175px;
+            left: 300px;
+        }
+        .gender{
+            position: absolute;
+            top: 215px;
+            left: 25px;
+        }
+        .box2{
+            border: 1px solid;
+            width: 100px;
+            position: relative;
+            top: 25px;
+            left: 45px;
+            background-color: white;
+            text-align: center;
+        }
+        .container2{
+            border: 2px solid;
+            margin: 5px;
+            height: 150px;
+            width: 50%
+        }
+        .lang{
+            position: relative;
+            top: 42px;
+            left: 15px;
+        }
+        .qualification{
+            position: relative;
+            top: 55px;
+            left: 15px;
+        }
+        .container3{
+            border: 2px solid;
+            margin: 5px;
+            height: 100px;
+            width: 50%
+        }
+        .box3{
+            border: 1px solid;
+            width: 100px;
+            position: relative;
+            top: 15px;
+            left: 45px;
+            background-color: white;
+            text-align: center;
+        }
+        .courseopt{
+            position: relative;
+            top: 20px;
+            left: 15px;
+        }
+        .courselang{
+            position:relative;
+            top: 30px;
+            left: 15px;
+        }
+        .container4{
+            border: 2px solid;
+            margin: 5px;
+            height: 200px;
+            width: 50%
+        }
+        .box4{
+            border: 1px solid;
+            width: 105px;
+            position: relative;
+            top: 15px;
+            left: 45px;
+            background-color: white;
+            text-align: center;
+        }
+        .few{
+            position: relative;
+            top: 15px;
+            left: 15px;
+        }
+        .fewWords{
+            position: relative;
+            border: 1px solid;
+            width: 400px;
+            height: 150px;
+            left: 200px;
+        }
+        .savedetails{
+            position: absolute;
+            left: 35%;
+        }
+        .foot{
+            position: relative;
+            top: 30px;
+            border: 2px solid;
+            text-align: center;
+            width: 100%;
+            height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="heading">Student Details</h2>
+    <div class="box">Personal Details</div>
+    <div class="container">
+    <span class="container1">Name: <input type="text"></span>
+    <span class="cname">Country:
+        <select>
+        <option>India</option>
+        <option>Austrailla</option>
+        <option>China</option>
+        <option>Japan</option>
+    </select>
+    </span>
+    <span class="age">Age: <input type="number"></span>
+    <span id="class">Class:
+    <select>
+        <option>1st-10th</option>
+        <option>11th</option>
+        <option>12th</option>
+        <option>Graduation</option>
+        <option>Post-Graduation</option>
+    </select>
+    </span>
+    <span class="gender">Gender: 
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+    </span> 
+</div>
+<div class="box2">Education Details</div>
+<div class="container2">
+    <div class="lang">Languages Known: <input type="checkbox"> English
+        <input type="checkbox"> Hindi
+        <input type="checkbox"> Marathi
+    </div>
+    <div class="qualification">Qualification: <input type="checkbox"> High-school
+        <input type="checkbox"> Post-graduation
+        <input type="checkbox"> Graduation
+    </div>
+</div>
+<div class="box3">Course Details</div>
+<div class="container3">
+    <div class="courseopt">Course opt for:
+        <select>
+        <option>Full-Stack UI</option>
+        <option>Java Devloper</option>
+        <option>C/C++</option>
+        <option>Android Devloper</option>
+    </select>
+</div>
+<div class="courselang">
+    Language selected for course:
+    <select>
+        <option>English</option>
+        <option>Hindi</option>
+    </select>
+</div>
+</div>
+<div class="box4">About Yourself</div>
+<div class="container4">
+    <span class="few">Few words about yourself: 
+        <textarea rows="10" coloums="10" maxlength="300"></textarea>
+    </span>
+    </div>
+    <span class="savedetails"><input type="button" value="save details"></span>
+<footer class="foot">Copyrights@2023</footer>
+</body>
+</html>

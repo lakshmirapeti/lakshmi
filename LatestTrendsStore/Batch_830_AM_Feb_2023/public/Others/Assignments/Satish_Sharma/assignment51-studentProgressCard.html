@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Card</title>
+    <style>
+        .input {
+            width: 500px;
+            margin: 10px auto;
+            padding: 10px;
+            border: 2px solid;
+        }
+
+        .input>li {
+            list-style: none;
+            border: 2px solid;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .reportTitle {
+            font-size: 25px;
+            text-align: center;
+            margin: 0px;
+            padding: 0px;
+            border: 1px solid;
+        }
+
+        .button {
+            text-align: center;
+        }
+
+        .results {
+            width: 500px;
+            margin: 10px auto;
+            padding: 10px;
+            border: 2px solid;
+        }
+
+        .percentage {
+            position: relative;
+        }
+
+        .grade {
+            position: relative;
+        }
+
+        .grade,
+        .percentage {
+            border: 1px solid;
+            height: 20px;
+            width: 120px;
+        }
+
+        .results{
+            margin: auto
+        }
+
+        .resultLi li{
+            list-style: none;
+            border: 2px solid;
+            margin: 10px;
+            padding: 10px; 
+        }
+        .resultLi {
+            margin: 10px auto;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="inputDetails">
+        <ul class="input">
+            <p class="reportTitle">Enter Student Details</p>
+            <li>
+                Enter Name of Student
+                <input type="text" id="nameBox">
+            </li>
+            <li>
+                Enter English Marks
+                <input type="text" id="sub1">
+            </li>
+            <li>
+                Enter Maths Marks
+                <input type="text" id="sub2">
+            </li>
+            <li>
+                Enter History Marks
+                <input type="text" id="sub3">
+            </li>
+            <li>
+                Enter Geography Marks
+                <input type="text" id="sub4">
+            </li>
+            <li>
+                Enter Social Science Marks
+                <input type="text" id="sub5">
+            </li>
+            <li>
+                <div class="button">
+                    <input type="button" value="Submit" id="submit" onclick="studentReportGenerate();">
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="results">
+        <p class="reportTitle">Student Report Card</p>
+        <ul class="resultLi">
+            <li>
+                Name of Student is : <span id="nameOutput"></span>
+            </li>
+            <li>
+                English Marks : <span id="eng"></span>
+            </li>
+            <li>
+                Maths Marks : <span id="math"></span>
+            </li>
+            <li>
+                History Marks : <span id="his"></span>
+            </li>
+            <li>
+                Geography Marks : <span id="geo"></span>
+            </li>
+            <li>
+                Social Science Marks :  <span id="ss"></span>
+            </li>
+            <li>
+                Total Marks is : <span id="totalMarks"></span>
+            </li>
+            <li>
+                Percentage of Marks is : <span id="percentage"></span>
+            </li>
+            <li>
+                Grade is : <span id="grade"></span> 
+            </li>
+        </ul>
+
+    </div>
+    <script>
+        var studentReportGenerate = () => {
+
+            var studentDetails = {
+
+                readStudentData() {
+                    studentDetails.name = document.querySelector("#nameBox").value;
+                    studentDetails.english = parseInt(document.querySelector("#sub1").value);
+                    studentDetails.maths = parseInt(document.querySelector("#sub2").value);
+                    studentDetails.history = parseInt(document.querySelector("#sub3").value);
+                    studentDetails.geography = parseInt(document.querySelector("#sub4").value);
+                    studentDetails.socialScience = parseInt(document.querySelector("#sub5").value);
+                    studentDetails.calculateTotalAndPercentAndDivision();
+                },
+
+                calculateTotalAndPercentAndDivision() {
+                    studentDetails.total = studentDetails.english + studentDetails.maths + studentDetails.history + studentDetails.geography + studentDetails.socialScience;
+
+                    studentDetails.percentage = studentDetails.total / 5;
+
+                    if (studentDetails.total >= 300) {
+                        studentDetails.division = '1st';
+                    } else if (studentDetails.total > 200) {
+                        studentDetails.division = '2nd';
+                    } else if (studentDetails.total >= 150) {
+                        studentDetails.division = '3rd'
+                    } else {
+                        studentDetails.division = 'Failed'
+                    }
+                    studentDetails.showData();
+                },
+
+                showData() {
+                    document.querySelector("#nameOutput").innerHTML = studentDetails.name;
+                    document.querySelector("#eng").innerHTML = studentDetails.english;
+                    document.querySelector("#math").innerHTML = studentDetails.maths;
+                    document.querySelector("#his").innerHTML = studentDetails.history;
+                    document.querySelector("#geo").innerHTML = studentDetails.geography;
+                    document.querySelector("#ss").innerHTML = studentDetails.socialScience;
+                    document.querySelector("#totalMarks").innerHTML = studentDetails.total;
+                    document.querySelector("#percentage").innerHTML = studentDetails.percentage;
+                    document.querySelector("#grade").innerHTML = studentDetails.division;
+                }
+            }
+            studentDetails.readStudentData();
+        }
+    </script>
+</body>
+
+</html>

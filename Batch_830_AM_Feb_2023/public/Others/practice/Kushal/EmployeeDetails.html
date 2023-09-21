@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmployeeDetails</title>
+</head>
+<body>
+    <script>
+        var ename,eage,edpt,basicsal;
+        ename = "krish";
+        eage = 20;
+        edpt = "developer";
+        basicsal = 25000;
+        var hra = (24/100)*basicsal;
+        var pf = (basicsal*14)/100;
+        var totalsal = pf + hra + basicsal;
+
+        console.log ("Name is "+ename);
+        console.log ("Age is "+eage);
+        console.log ("Dept. is "+edpt);
+        console.log ("Basic Sal is "+basicsal);
+        console.log ("hra is "+hra);
+        console.log ("pf is "+pf);
+        console.log ("Total Salary is "+totalsal);
+    </script>
+    <!--
+        ------------------------------------------------------------------------------
+        Why This is wrong?
+        <script>
+        var ename, eage, edept, ebasics;
+        ename = "Prasad";
+        eage= 25;
+        edept = "testing";
+        ebasics = "25000";
+        
+        var hra = (ebasics*24)/100;
+        var pf = (ebasics *14)/100;
+        var total; 
+        total = ebasics + hra + pf;
+        console.log("hra is " + hra);
+        console.log("pf is " + pf);
+        console.log("Total Salary is " +total);
+        </script>-->
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+        
+
+
+            var empsal = 2000;
+            // var studentData = ["Teena", 'female', [56, 90, 99, 100], 0, 0];
+            var studentData = {
+                name: 'Teena',
+                'gender': 'female',
+                marks: [56, 90, 99, 100],
+                'total': 0,
+                avg: 0
+            }
+          
+            var total = 0 ; 
+
+            for (var i = 0 ; i < studentData.marks.length; i++) {
+                studentData.total += studentData.marks[i];
+            }
+            studentData.avg = studentData.total / studentData.marks.length;
+             
+            console.log("Name is " + studentData.name)
+            console.log("Gender is " + studentData.gender);
+            console.log("Total is " + studentData.total);
+            console.log("Avg is " + studentData.avg);
+
+            console.log(studentData);
+        </script>
+    </body>
+</html>

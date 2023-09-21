@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Card</title>
+    <link rel="stylesheet" href="assignment53-studentProgressCardValidation.css">
+    <script src="assignment53-studentProgressCardValidation.js"></script>
+</head>
+
+<body>
+    <div class="inputDetails">
+        <ul class="input">
+            <p class="reportTitle">Enter Student Details</p>
+            <li>
+                Enter Name of Student
+                <input type="text" id="nameBox" onkeypress="return validateName(event)">
+            </li>
+            <li>
+                Enter English Marks
+                <input type="text" id="sub1" maxlength="2" onkeypress="return validateNumber(event)">
+            </li>
+            <li>
+                Enter Maths Marks
+                <input type="text" id="sub2" maxlength="2" onkeypress="return validateNumber(event)">
+            </li>
+            <li>
+                Enter History Marks
+                <input type="text" id="sub3" maxlength="2" onkeypress="return validateNumber(event)">
+            </li>
+            <li>
+                Enter Geography Marks
+                <input type="text" id="sub4" maxlength="2" onkeypress="return validateNumber(event)">
+            </li>
+            <li>
+                Enter Social Science Marks
+                <input type="text" id="sub5" maxlength="2" onkeypress="return validateNumber(event)">
+            </li>
+            <li>
+                <div class="button">
+                    <input type="button" value="Submit" id="submit" onclick="studentReportGenerate();">
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="results">
+        <p class="reportTitle">Student Report Card</p>
+        <ul class="resultLi">
+            <li>
+                Name of Student is : <span id="nameOutput"></span>
+            </li>
+            <li>
+                English Marks : <span id="eng"></span>
+            </li>
+            <li>
+                Maths Marks : <span id="math"></span>
+            </li>
+            <li>
+                History Marks : <span id="his"></span>
+            </li>
+            <li>
+                Geography Marks : <span id="geo"></span>
+            </li>
+            <li>
+                Social Science Marks : <span id="ss"></span>
+            </li>
+            <li>
+                Total Marks is : <span id="totalMarks"></span>
+            </li>
+            <li>
+                Percentage of Marks is : <span id="percentage"></span>
+            </li>
+            <li>
+                Grade is : <span id="grade"></span>
+            </li>
+        </ul>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer>div {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid blue;
+        }
+
+        .header {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            background-color:antiquewhite
+        }
+
+        .maincontent {
+            height: 640px;
+            background-color: lavender;
+
+        }
+        .footer{
+            text-align: center;
+            font-size: 20px;
+            border: 1px solid;
+            font-weight: bold;
+            background-color: antiquewhite;
+        }
+        
+
+        .lblock,
+        .rblock {
+            border: 1px solid blueviolet;
+            margin: 5px;
+            padding: 5px;
+            float: left;
+            height: 620px;
+            overflow: auto;
+        }
+
+        .lblock {
+            width: 30%;
+            background-color:azure
+        }
+
+        .rblock {
+            width: 66%;
+            background-color:lightcyan
+          
+        }
+
+        .lblock li {
+            border: 1px solid red;
+            margin: 5px;
+            padding: 10px;
+            list-style-position: inside;
+        }
+
+        ul,
+        ol {
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .alldetails > li {
+            border: 1px solid;
+            margin: 10px;
+            padding: 10px;
+            height: 160px;
+            list-style: none;
+        }
+
+        .imgb,.detail, .imgc {
+            float: left;
+            
+        }
+
+        .imgb {
+            height: 150px;
+            border: 1px solid;
+            width: 150px;
+        }
+
+        img {
+            height: 150px;
+            width: 150px;
+        }
+        .detail li{
+            list-style:none;
+            padding: 5px;
+            
+        }
+        .alldetails{
+            background-color: azure;
+        }
+
+       .imgc{
+            height: 150px;
+            border: 1px solid;
+            width: 150px;
+            background-image: url("images/image\ spiriting1.png");
+       }
+       .c07{
+        background-position: -364px 616px;
+       }
+
+       .c08{
+        background-position: -414px 827px;
+       }
+
+       .c09{
+        background-position: -200px 819px;
+       }
+        
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="header">Indian Cricketers</div>
+        <div class="maincontent">
+            <div class="lblock">
+                <ol>
+                    <li>
+                        <a href="#c01">Mahendra Singh Dhoni</a>
+                    </li>
+                    <li>Virat Kohli</li>
+                    <li>Sachin Tendulkar</li>
+                    <li>Suresh Raina</li>
+                    <li>Bhuvaneshwar Kumar</li>
+                    <li>
+                        <a href="#c06">Rohit Sharma</a>
+                    </li>
+                    <li>Surya Kumar Yadav</li>
+                    <li>
+                        <a href="#ck08">Rishabh Rajendra Pant</a>
+                    </li>
+                    <li>Rahul Dravid</li>
+                </ol>
+            </div>
+            <div class="rblock">
+                <ul class="alldetails">
+                    <li id="c01">
+                        <div class="imgb">
+                            <img src="https://cdn.britannica.com/25/222725-050-170F622A/Indian-cricketer-Mahendra-Singh-Dhoni-2011.jpg"
+                                alt="">
+                        </div>
+                        <div class="detail">
+                            <ul >
+                                <li>Name: Mahendra Singh Dhoni</li>
+                                <li>Age: 41 years</li>
+                                <li>Gender: Male</li>
+                                <li>Location: Ranchi</li>     
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgb">
+                            <img src="https://nationaltoday.com/wp-content/uploads/2022/09/Virat-Kohli.jpg"
+                                alt="">
+                        </div>
+                        <div class="detail">
+                            <ul>
+                                <li>Name: Virat Kohli</li>
+                                <li>Age: 36 years</li>
+                                <li>Gender: Male</li>
+                                <li>Location: Mumbai</li>     
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgb">
+                            <img src="https://keepingscore.blogs.time.com/wp-content/uploads/sites/6/2012/05/sachin-tendulkar.jpg?w=600"
+                                alt="">
+                        </div>
+                        <div class="detail">
+                            <ul>
+                                <li>Name: Sachin Tendulkar</li>
+                                <li>Age: 49 years</li>
+                                <li>Gender: Male</li>
+                                <li>Location: Pune</li>     
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgb">
+                            <img src="https://staticg.sportskeeda.com/editor/2023/01/ac967-16742092926010.png" alt="">
+                        </div>
+                        <div class="detail">
+                            <ul>
+                                <li>Name: Suresh Raina</li>
+                                <li>Age: 36 years</li>
+                                <li>Gender: Male</li>
+                                <li>Location: Mumbai</li>     
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgb">
+                            <img src="https://img1.hscicdn.com/image/upload/f_auto/lsci/db/PICTURES/CMS/295200/295207.6.jpg"
+                                alt="">
+                        </div>
+                        <div class="detail">
+                            <ul>
+                                <li>Name: Bhuvneshwar Kumar Singh</li>
+                                <li>Age: 33 years</li>
+                                <li>Gender: Male</li>
+                                <li>Location: Uttar Pradesh</li>     
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="c06">
+                        <div class="imgb">
+                            <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2022-03/15/full/1647365891-7103.jpg"
+                                alt="">
+                        </div>
+                        <div class="detail">
+                            <ul>
+                                <li>Name: Rohit Sharma</li>
+                                <li>Age: 35 years</li>
+                                <li>Gender: Male</li>
+                                <li>Location: Delhi</li>     
+                            </ul>
+                        </div>
+                    </li>
+                    <li >
+                        <div class="imgc c07">
+                            
+                        </div>
+                        <div class="detail">
+                            <ul>
+                                <li>Name: Surya Kumar Yadav</li>
+                                <li>Age: 32 years</li>
+                                <li>Gender: Male</li>
+                                <li>Location: Mumbai</li>     
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="ck08">
+                        <div class="imgc c08" >
+                          
+                        </div>
+                        <div class="detail">
+                            <ul>
+                                <li>Name: Rishabh Rajendra Pant</li>
+                                <li>Age: 25 years</li>
+                                <li>Gender: Male</li>
+                                <li>Location: Delhi</li>     
+                            </ul>
+                        </div>
+                    </li>
+                    <li >
+                        <div class="imgc c09">
+                            
+                        </div>
+                        <div class="detail">
+                            <ul>
+                                <li>Name: Rahul Dravid</li>
+                                <li>Age: 50 years</li>
+                                <li>Gender: Male</li>
+                                <li>Location: Delhi</li>     
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+
+            </div>
+       
+        </div>
+
+</body>
+<div class="footer"> @copyrights</div>
+
+</html>

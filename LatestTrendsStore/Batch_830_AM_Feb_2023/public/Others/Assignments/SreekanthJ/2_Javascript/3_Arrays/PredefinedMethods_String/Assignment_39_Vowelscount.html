@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VowelsCount</title>
+</head>
+
+<body>
+    <script>
+        var inputString = prompt("Enter a string: ");
+
+        const vowels = ['a', 'e', 'i', 'o', 'u'];
+
+        var vowelCount = 0;
+
+        // Loop through each character in the string
+        for (var i = 0; i < inputString.length; i++) {
+            var currentChar = inputString[i];
+
+            // Check if the current character is a vowel
+            if (vowels.includes(currentChar.toLowerCase())) {
+                vowelCount++;
+            }
+        }
+
+        console.log("The number of vowels in the string is: " + vowelCount);
+
+    </script>
+</body>
+
+</html>

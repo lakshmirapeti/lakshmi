@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Student Details WithFunctions
+        </title>
+    </head>
+    <body>
+        <script>
+            var readDataFromstudent = () => {
+                var sname, sage, gender, m1, m2, m3, total, avg
+                sname = prompt("Enter Name");
+                sage = prompt("Enter Age");
+                gender = prompt("Enter Gender");
+
+                m1 = prompt("Subject 1 Marks");
+                m1 = parseInt(m1);
+                m2 = prompt("Subject 2 Marks");
+                m2 = parseInt(m2);
+                m3 = prompt("Subject 3 Marks");
+                m3 = parseInt(m3);
+                DisplayStudentDetails(sname, sage, gender);
+                getavg_Total(m1, m2, m3, total, avg);
+            }
+
+            var getavg_Total = (m1, m2, m3, total, avg) => {
+                total = m1 + m2 + m3;
+                avg = total / 3;
+                console.log("Total is " +total);
+                console.log("Avg is " + avg);
+                getGrade(avg);    
+            }
+
+            var DisplayStudentDetails = (sname, sage, gender) => {
+                console.log("Name is " +sname);
+                console.log("Age is " +sage);
+                console.log("Gender " +gender);
+            }
+            
+            var getGrade = (avg) => {
+                if (avg >= 90) {
+                    console.log("Student got Distinction");
+                } else if (avg >= 70) {
+                    console.log("Student got First class");
+                } else if (avg >= 50) {
+                    console.log("Student Passed");
+                } else {
+                    console.log("Student failed");
+                }
+            }
+            readDataFromstudent();
+        </script>
+    </body>
+</html>

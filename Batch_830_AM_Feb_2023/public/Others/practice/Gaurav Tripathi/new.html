@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin AND padding</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+         .container {
+            background-color: aqua;
+            text-align: center;
+            width: 130px;
+            height: 130px;
+            margin: 2px 12px 15px 15px;
+            padding: 12px 13px;
+            border: 2px solid;
+           
+         }
+         .main{
+            background-color: aqua;
+            width: 130px;
+            height: 130px;
+            border: 2px solid;
+           margin-left: 15px;
+            padding: 12px 10px;
+         }
+         .gau, .gau1, .gau2, .gau3, .gau4 {
+            width: 130px;
+            height: 130px;
+            border: 2px solid;
+            /* background-color: aqua; */
+           margin-left: 15px;
+            padding: 12px 10px;
+         }
+         .gau:hover{
+          background-color: aqua;
+         }
+         .gau1:focus{
+            color: red;
+            background-color: bisque;
+         }
+         a{
+           
+            color: blue;
+            border: 12px solid;
+         }
+         a:focus{
+            color: red;
+            background-color: aqua;
+         }
+
+    </style>
+</head>
+<body>
+        <div class="container">Block1</div>
+        <div class="main"> block2</div>
+        <div class="gau"> container</div>
+        <div class="gau1"> container</div>
+        <div class="gau2"> container</div>
+        <div class="gau3"> container</div>
+        <div class="gau4"> container</div>
+        <a href="https://youtube.com/">click me</a>
+</body>
+</html>

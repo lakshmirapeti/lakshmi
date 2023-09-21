@@ -1,0 +1,49 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.container{
+    background-color: blanchedalmond;
+    width: 50%;
+    height: auto;
+    border: 1px solid ;
+    margin: auto;
+    padding: auto;
+    font-size: 20px;
+    color: chocolate;
+    border-radius: 10px;
+}
+.container ul li{
+    list-style: none;
+    margin: 20px 20px;
+    padding: 10px 10px;
+}
+.container ul li input{
+    background-color: blanchedalmond;
+    color: chocolate;
+}
+.container ul li #Eage{
+    width: 40px;
+    margin: 15px 15px;
+}
+.container ul li .gen{
+    margin: 5px 5px;
+}
+.block{
+    background-color: blanchedalmond;
+    width: 50%;
+    height: auto;
+    border: 1px solid ;
+    margin: auto;
+    padding: auto;
+    margin-top: 50px;
+    display: none;
+    border-radius: 10px;
+    color: chocolate;
+    font-size: 20px;
+}
+.block ul li{
+    list-style: none;
+    margin: 20px 20px;
+    padding: 10px 10px;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>reverse</title>
+    </head>
+    <script>
+        function pelindromeNum(){
+            var sum = 0;
+            var reverse = [];
+            var sample = [12,25,45,13,466,15];
+           for(var i = 0; i<sample.length;i++){
+                var pen = 0;
+                var value = sample[i];
+                    while(sample[i]){
+                        var rem = sample[i] % 10;
+                        pen = (pen*10) + rem;
+                        sample[i] = Math.floor(sample[i] / 10);
+                    }
+                reverse.push(pen);
+           }
+           console.log(`and the reverse ${reverse}`);
+        }
+        pelindromeNum();
+    </script>
+    <body>
+        <h1>find out reverse of every value of an array</h1>
+    </body>
+</html>

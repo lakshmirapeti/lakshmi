@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice5</title>
+    <style>
+        body {
+            margin: 10px;
+            padding: 0px;
+            background: url('img/gym.jpeg') no-repeat center center/cover; 
+            opacity: 0.8; 
+        }
+        .header {
+            display: flex;
+            background-color: silver;
+            position: sticky;
+        }
+        .logo {
+            display: inline-block;
+            border: 0px solid;
+            position: absolute;
+            top: 9px;
+            left: 30px;
+        }
+        img {
+            width: 100px;
+            height: 70px;
+        }
+        .center {
+            border: 0px solid;
+            display: block;
+            margin: auto;
+            width: 39%;
+        }
+        .center ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 20px;
+        }
+        .center li a {
+            text-decoration: none;
+            color: darkblue;
+            font-size: 18px;
+        }
+        .center li a:hover {
+            font-size: 20px;
+            color: blue;
+        }
+        .head {
+            border: 0px solid;
+            border-radius: 9px;
+            margin: 30px 70px;
+            padding: 20px 80px;
+            width: 30%;
+            font-size: 50px;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        .join {
+            border: 0px solid;
+            border-radius: 10px;
+            width: 35%;
+            margin: 10px 150px;
+            padding: 20px 40px;
+            font-size: 30px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .btn {
+            width: 130px;
+            height: 40px;
+            font-size: 20px;
+            border-radius: 8px;
+            color: blue;
+            margin-left: 30px;
+        }
+        .btn:hover {
+            background-color: wheat;
+            font-size: 25px;
+        }
+        .join input {
+            font-family: initial;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo"><img src="img/glogo.jpg" alt="logo"></div>
+        <div class="center">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Fitness calculator</a></li>
+                <li><a href="">Contact us</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="head">
+        WEL COME
+    </div>
+    <div class="join">
+        Join Now 
+        <div>Name:
+            <input type="text" placeholder="Enter your name">
+        </div>
+        <div>Gender:
+            <input type="text" placeholder="Enter gender">
+        </div> 
+        <div>Age:
+            <input type="text" placeholder="Enter age">
+        </div> 
+        <div>Mobile no:
+            <input type="text" placeholder="Enter mobile no">
+        </div>
+        
+            <input type="button" value="Submit" class="btn">
+    </div>
+
+</body>
+</html>

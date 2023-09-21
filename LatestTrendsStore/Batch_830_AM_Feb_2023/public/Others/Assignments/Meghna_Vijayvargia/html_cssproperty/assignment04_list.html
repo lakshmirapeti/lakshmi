@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=A, initial-scale=1.0">
+    <title>Assignment 04 demonstrating lists</title>
+    <style>
+        .mainblock
+        {
+            border: 5px solid;
+            margin: 10px;
+            padding: 5px;
+        }
+
+        .header
+        {
+            border: 5px solid;
+            margin: 5px;
+            padding: 5px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration-line: underline;
+        }
+
+        .midbox
+        {
+            height: 560px;
+        }
+
+        .leftbox
+        {
+            height: 540px;
+            border : 3px solid;
+            margin: 5px;
+            padding: 5px;
+            width: 30%;
+            float: left;
+        }
+
+        .rightbox
+        {
+            height: 540px;
+            border : 3px solid;
+            margin: 5px;
+            padding: 5px;
+            width: 65%;
+            float: right;
+            overflow:auto;
+        }
+
+        .leftbox li 
+        {
+            border: 1px solid;
+            margin: 5px;
+            padding: 10px;
+            list-style-position: inside
+        }
+        ol, ul
+        {
+            margin: 5px;
+            padding: 5px;
+        }
+        .innerblock >li 
+        {
+            list-style: none;
+            height: 160px;
+            border: 1px solid;
+            margin: 10px;
+            padding: 10px;
+        }
+        .image
+        {
+            float: left;
+            width: 30%
+        }
+
+        img 
+        {
+            height: 120px;
+        }
+
+        .details
+        {
+            float: left;
+
+        }
+
+        .details li
+        {
+            list-style: none;
+            padding: 10px;
+        }
+        .footer 
+        {
+            border: 3px solid;
+            text-align: center;
+            font-size: 11px;
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainblock"> 
+        <h3 class="header"> Student Details</h3>
+        <div class="midbox">
+            <div class="leftbox">
+                <ol>
+                    <li> 
+                        <a href = "#S01">Shijin Varghese</a>
+                    </li>
+                    <li> 
+                        <a href = "#S02">Parth Sharma</a>
+                    </li>
+                    <li> 
+                        <a href = "#S03">Pranjali Soley</a>
+                    </li>
+                    <li> 
+                        <a href = "#S04">Ashwin R</a>
+                    </li>
+                    <li> 
+                        <a href = "#S05">Shivani Sharma</a>
+                    </li>
+                </ol>
+            </div>
+            <div class="rightbox">
+                <ul>
+                    <div class="innerblock">
+                        <li id="S01">
+                            <div class="image">
+                                <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2jOd8EzJa2yBpNmy8o5Umo_wbCsNCA3gM2g&usqp=CAU" alt="">
+                            </div>
+                            <div class="details">
+                             <ul>
+                                <li>Name: Shijin Varghese</li>
+                                <li>Gender: Male</li>
+                                <li>Division: Economics</li>
+                                <li>Location: Bhopal</li>
+                              </ul>
+                             </div>
+                        </li>
+                        <li id="S02">
+                            <div class="image">
+                                <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgHuR7PjxEJBefPiLN3i60Hpc3ubFq5jsvNw&usqp=CAU" alt="">
+                            </div>
+                            <div class="details">
+                             <ul>
+                                <li>Name: Parth Sharma</li>
+                                <li>Gender: Male</li>
+                                <li>Division: Astronomy</li>
+                                <li>Location: Bangalore</li>
+                              </ul>
+                             </div>
+                        </li>
+                        <li id="S03">
+                            <div class="image">
+                                <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7gRzj_8KKXfCYDSGRDiOj4uAEgj7bWVPT5g&usqp=CAU" alt="">
+                            </div>
+                            <div class="details">
+                             <ul>
+                                <li>Name: Pranjali Soley</li>
+                                <li>Gender: Female</li>
+                                <li>Division: Physics</li>
+                                <li>Location: Maharashtra</li>
+                              </ul>
+                             </div>
+                        </li>
+                        <li id="S04">
+                            <div class="image">
+                                <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrwTmYgyRDQ5_MNM-aY1Y__L8Mymds8pXmzg&usqp=CAU" alt="">
+                            </div>
+                            <div class="details">
+                             <ul>
+                                <li>Name: Ashwin Saitya</li>
+                                <li>Gender: Male</li>
+                                <li>Division: Computer Science</li>
+                                <li>Location: Patna</li>
+                              </ul>
+                             </div>
+                        </li>
+                        <li id="S05">
+                            <div class="image">
+                                <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHZTeR9njmiWjNylhhfCeaH2a7kUemTbCbMg&usqp=CAU" alt="">
+                            </div>
+                            <div class="details">
+                             <ul>
+                                <li>Name: Shivani Sharma</li>
+                                <li>Gender: Female</li>
+                                <li>Division: Mathematics</li>
+                                <li>Location: Hyderabad</li>
+                              </ul>
+                             </div>
+                        </li>
+
+
+
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="footer">@copyright</div>
+    </div>
+</body>
+</html>

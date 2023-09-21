@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Diffferent ways of accessing data from json object
+        </title>
+    </head>
+    <body>
+        <script>
+            var data = ["Teena", 30, 'Female'];
+
+            var studentData = {
+                name: 'Krish',
+                age: 20,
+                gender: 'Male',
+                tempvalue: 'hello'
+            };
+
+            console.log(studentData);
+
+            // console.log(studentData.age);
+            // console.log(studentData['age']);
+            
+            //console.log(data[2])
+
+            var tempvalue = prompt("enter keyname"); //gender
+
+            studentData[tempvalue] = "hello";
+
+            console.log(studentData[tempvalue]); // studentData['gender']
+            console.log(studentData.name);
+
+            
+
+        </script>
+    </body>
+</html>

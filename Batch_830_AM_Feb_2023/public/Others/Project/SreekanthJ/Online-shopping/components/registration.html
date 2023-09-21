@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" type="text/css" href="../css/registration.css">
+</head>
+
+<body>
+    <div>
+        <div class="header">
+            <a href="../components/login.html">
+                <img src="../assets/logo.jpg" alt="Amazon Logo" width="50" height="80">
+            </a>
+            <h1>Registration</h1>
+        </div>
+        <div class="form">
+            <!-- Main container for all inputs -->
+            <ul class="mainContainer">
+                <!-- Username -->
+                <li><label for="username">Username</label></li>
+                <li><input type="text" placeholder="Enter Username" name="username"></li>
+                <br><br>
+                <!-- Password -->
+                <li><label for="pswrd">Password</label></li>
+                <li>
+                    <input type="password" placeholder="Enter Password" name="pswrd">
+                    <span class="password-validation-message" style="display: none;"></span>
+                </li>
+                <br><br>
+                <li><label for="confirmpswrd">Confirm Password</label></li>
+                <li><input type="password" placeholder="Confirm Password" name="confirmpswrd"></li>
+                <br><br>
+                <!-- Mobile -->
+                <li><label for="mobile">Mobile Number</label></li>
+                <li><input type="number" placeholder="Enter Mobile Number" name="mobile"></li>
+                <br><br>
+                <!-- Email -->
+                <li><label for="email">Email-ID</label></li>
+                <li><input type="email" placeholder="Enter Email-ID" name="email"></li>
+                <br><br>
+                <!-- Submit button -->
+                <li>
+                    <p class="register"><a href="./login.html">Submit</a></p>
+                </li>
+            </ul>
+        </div>
+        <div class="footer">
+            <p>© 2023 Amazon Shopping</p>
+        </div>
+    </div>
+    <script src="../js/registration.js"></script>
+</body>
+
+</html>

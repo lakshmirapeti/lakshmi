@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Project Login Page </title>
+    <style>
+        body {
+            background-color: #35bfc2e7;
+        }
+
+        .navbar {
+            border: 1px solid;
+            background-color: rgb(54, 61, 61);
+            margin: 10px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .logo {
+            font-weight: bolder;
+            border: 1px solid #fffcfc;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: #6a79b9;
+
+        }
+
+        a {
+            position: relative;
+            right: -70%;
+            padding: 10px;
+        }
+
+        .mainContainer {
+            border: 1px solid;
+            height: 600px;
+            background-color: #3e3333;
+        }
+
+        .loginCont {
+            border: 1px solid;
+            width: 500px;
+            height: 410px;
+            position: relative;
+            background-color: #d7d0d0ee;
+            left: 32%;
+            top: 15%;
+            border-radius: 10px;
+        }
+
+        .lhead {
+            text-align: center;
+        }
+
+        li {
+            list-style: none;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .userN {
+            width: 400px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .passW {
+            width: 400px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .butn {
+            position: absolute;
+            right: 50%;
+            right: 43%;
+            bottom: 25%;
+        }
+
+        .btL {
+            padding: 10px;
+            width: 90px;
+            background-color: #4cbbb3;
+            border-radius: 5px;
+        }
+
+        .fpass {
+            position: absolute;
+            bottom: -85%;
+            left: -48%;
+        }
+
+        .sup {
+            position: absolute;
+            bottom: -85%;
+            right: -57%;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <span class="logo">Login Page Logo</span>
+        <a href="#">Home</a>
+        <a href="#">Contact</a>
+        <a href="#">About US</a>
+    </div>
+    <div class="mainContainer">
+        <div class="loginCont">
+            <h3 class="lhead">Login Page</h3>
+            <ul>
+
+                <li><label for="uname">Username :</label></li>
+                <li><input type="text" class="userN" placeholder="Enter User name" name="uname"></li>
+                <li><label for="pass">Password :</label></li>
+                <li><input type="password" class="passW" placeholder="password" name="pass"></li>
+
+            </ul>
+            <div class="butn">
+                <input class="btL" type="button" value="Login">
+                <li><a href="" class="fpass">Forgot password?</a><a href="" class="sup">Signup</a></li>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

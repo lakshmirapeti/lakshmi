@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var contactDetails = {
+            fname : 'Raj',
+            lname : 'kumar',
+            mobileno : {
+                officeno : '0409988775',
+                persnlno : [7032210913, 9849810738],
+            },
+            emailid : {
+                officeid : 'office@office.com',
+                persnlid : ['raj@gmail.com', 'raj@yahoo.com'],
+            },
+            address : {
+                office : {
+                    buildingno : '23',
+                    state : 'ts',
+                    country : 'india',
+                },
+                personl : {
+                    houseno : '1-3-222',
+                    stateInfo : {
+                        state : 'ts',
+                        code : '5000004',
+                    },
+                    countryinfo : {
+                        country : 'India',
+                        code : 'IND',
+                    }
+                }
+            },
+            dod : {
+                month : 'Nov',
+                date : 25,
+            },
+            group : 'personal',
+            socialId : {
+                linkdinId : 'abc',
+                fbId : 'pqr',
+            }
+        }
+
+        var data = {
+            name : "raj",
+            age : 20,
+            gender : 'male',
+            isFeePaid : true,
+            addrress : {
+                dno : '123',
+                state : 'ts',
+                countryDetails : {
+                    country : "India",
+                    code : 'IND'
+                }
+            }
+        }
+
+        /*function iterateOverObject(data) {
+            for(var tempkey in data) {
+                // console.log(data[tempkey]);
+                // console.log(typeof(data[tempkey]));
+                if(data[tempkey] == 'object') {
+                    console.log(tempkey)
+                for(var temp in data[tempkey]){
+                console.log(tempkey+ "->" +data[tempkey][temp]);
+                if(typeof(data[tempkey][temp]) == 'object'){
+                    console.log(temp)
+                    for (var samkey in data[tempkey][temp]) {
+                        console.log(samKey + " -> " + data[tempKey][temp][samKey]);
+                        if(typeof(data[tempkey][temp][samkey]) == 'object'){
+                            console.log(sampkey)
+                        }
+                    }
+                }
+                
+                }
+            }else {
+                    console.log(typeof(data[tempkey]));
+                    console.log(tempkey+ "->" +data[tempkey]);
+                }
+                
+            }
+            
+        }*/
+        function iterateOverObject(data) {
+            for(var tempkey in data) {
+                // console.log(data[tempkey]);
+                // console.log(typeof(data[tempkey]));
+                if(typeof(data[tempkey]) == 'object') {
+                    iterateOverObject(data[tempkey]) 
+                }else {
+                    console.log(tempkey+ '->' +data[tempkey]);
+                }
+            }
+        }
+
+        iterateOverObject(data)
+    </script>
+</body>
+</html>

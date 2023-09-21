@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main_page {
+            width: 98.5%;
+            height: 1150px;
+            position: relative;
+            top: 5px;
+            left: 5px;
+            margin-top: 5px;
+            margin-left: 5px;
+            border: 2px solid;
+        }
+
+        .heading {
+            border: 2px solid;
+            width: 98%;
+            margin: 1%;
+            text-align: center;
+        }
+
+        .box-1 {
+            border: 2px solid;
+            width: 98%;
+            position: relative;
+            top: 60px;
+            left: 20px;
+        }
+
+        .small_box-1 {
+            position: absolute;
+            top: -25px;
+            left: 60px;
+            width: 180px;
+            height: 40px;
+            border: 2px solid;
+            border-radius: 20px;
+            background-color: aliceblue;
+        }
+
+        .box-1 .small_box-1 h3 {
+            text-align: center;
+            position: relative;
+            top: 10px;
+
+        }
+
+        .box-1 .personal_details {
+            margin-left: 40px;
+            padding: 50px;
+        }
+
+        .main .box-1 .personal_details .c_name {
+            position: absolute;
+            top: 60px;
+            left: 600px;
+        }
+
+        .box-2 {
+            border: 2px solid;
+            width: 98%;
+            height: 200px;
+            margin-top: 40px;
+            position: relative;
+            top: 60px;
+            left: 20px;
+        }
+
+        .small_box-2 {
+            position: absolute;
+            top: -20px;
+            left: 60px;
+            width: 180px;
+            height: 40px;
+            border: 2px solid;
+            border-radius: 20px;
+            background-color: aliceblue;
+        }
+
+        .box-2 .small_box-2 h3 {
+            text-align: center;
+            position: relative;
+            top: 10px;
+        }
+
+        .box-2 .lang {
+            padding: 10px;
+            position: relative;
+            top: 20px;
+            left: 100px;
+
+        }
+        .box-2 .lang h3{
+            position: relative;
+            top: 20px;
+        }
+
+        .box-2 .check-1 {
+            position: absolute;
+            top: 50px;
+            left: 200px;
+        }
+
+        .box-2 .quali {
+            padding: 10px;
+            position: relative;
+            top: 10px;
+            left: 100px;
+        }
+        .box-2 .quali h3{
+            position: relative;
+            top: 50px;
+        }
+
+        .box-2 .check-2 {
+            position: absolute;
+            top: 120px;
+            left: 200px;
+        }
+
+        .box-2 input {
+            margin-left: 80px;
+        }
+
+        .box-3 {
+            border: 2px solid;
+            width: 98%;
+            height: 200px;
+            margin-top: 40px;
+            position: relative;
+            top: 60px;
+            left: 20px;
+        }
+
+        .small_box-3 {
+            position: absolute;
+            top: -25px;
+            left: 60px;
+            width: 180px;
+            height: 40px;
+            border: 2px solid;
+            border-radius: 20px;
+            background-color: aliceblue;
+        }
+
+        .small_box-3 h3 {
+            text-align: center;
+            position: relative;
+            top: 10px;
+        }
+
+        .c_detail .select_option {
+            position: relative;
+            top: 60px;
+            left: 100px;
+        }
+
+        .c_detail .language {
+            position: relative;
+            top: 80px;
+            left: 100px;
+        }
+
+        .box-4 {
+            border: 2px solid;
+            width: 98%;
+            height: 200px;
+            margin-top: 40px;
+            position: relative;
+            top: 60px;
+            left: 20px;
+        }
+
+        .small_box-4 {
+            position: relative;
+            top: -25px;
+            left: 60px;
+            width: 180px;
+            height: 40px;
+            border: 2px solid;
+            border-radius: 20px;
+            background-color: aliceblue;
+        }
+
+        .small_box-4 h3 {
+            text-align: center;
+            position: relative;
+            top: 10px;
+
+        }
+        .box-4 .c_detail{
+            position: relative;
+            top: 20px;
+            left: 60px;
+        }
+        .box-4 .c_detail textarea{
+            position: relative;
+            top: -30px;
+            left: 250px;
+        }
+        .save{
+            border: 2px solid;
+            width: 120px;
+            height: 25px;
+            position: relative;
+            top: -50px;
+            left: 1000px;
+            text-align: center;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main_page">
+        <div class="heading">
+            <h2>Student Registration Page</h2>
+        </div>
+        <div class="main">
+            <div class="box-1">
+                <div class="small_box-1">
+                    <h3>Personal Details</h3>
+                </div>
+                <div class="personal_details">
+                    <label for="name">Name :</label>
+                    <input type="text" name="name"><br><br>
+                    <label for="age">Age :</label>
+                    <input type="text" name="age"> <br><br>
+                    <label for="Gender">Gender :</label>
+                    <label for="Gender">Male</label>
+                    <input type="radio" name="gender">
+                    <label for="Gender">Female</label>
+                    <input type="radio" name="gender">
+                    <div class="c_name">
+                        <label for="name">Country Name :</label>
+                        <select name="Country Name">
+                            <option value="India">India</option>
+                            <option value="UAE">UAE</option>
+                            <option value="USA">USA</option>
+                            <option value="UK">UK</option>
+                            <option value="NEPAL">NEPAL</option>
+                        </select> <br><br>
+                        <label for="name">Class :</label>
+                        <select name="Country Name">
+                            <option value="India">India</option>
+                            <option value="UAE">UAE</option>
+                            <option value="USA">USA</option>
+                            <option value="UK">UK</option>
+                            <option value="NEPAL">NEPAL</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="box-2">
+                <div class="small_box-2">
+                    <h3>Education Details</h3>
+                </div>
+                <div class="education_details">
+                    <div class="lang">
+                        <h3>Language Known :</h3>
+                    </div>
+                    <div class="check-1">
+                        <input type="checkbox" name="Lang">&nbsp; English
+                        <input type="checkbox" name="Lang">&nbsp;Hindi
+                        <input type="checkbox" name="Lang">&nbsp;Odia
+                    </div>
+                    <div class="quali">
+                        <h3>Qualification:</h3>
+                    </div>
+                    <div class="check-2">
+                        <input type="checkbox" name="Quali">&nbsp; MCA
+                        <input type="checkbox" name="Quali">&nbsp; MBA
+                        <input type="checkbox" name="Quali">&nbsp; B.Tech
+                        <input type="checkbox" name="Quali">&nbsp; Graduation
+                    </div>
+                </div>
+            </div>
+            <div class="box-3">
+                <div class="small_box-3">
+                    <h3>Course Details</h3>
+                </div>
+                <div class="c_detail">
+                    <div class="select_option">
+                        <label for="name">Course Option For :</label>
+                        <select name="Course">
+                            <option value="CHOOSE ONE">CHOOSE ONE</option>
+                            <option value="DATA SCIENCE">DATA SCIENCE</option>
+                            <option value="JAVA FULLSTACK">JAVA FULLSTACK</option>
+                            <option value="PYTHON FULLSTACK">PYTHON FULLSTACK</option>
+                            <option value=".NET FULLSTACK">.NET FULLSTACK</option>
+                            <option value="UI FULLSTACK">UI FULLSTACK</option>
+                            <option value="DEVOPS">DEVOPS</option>
+                        </select><br><br>
+                    </div>
+                    <div class="language">
+                        <label for="name">Language :</label>
+                        <select name="Course">
+                            <option value="CHOOSE ONE">CHOOSE ONE</option>
+                            <option value="English">English</option>
+                            <option value="Hindi">Hindi</option>
+                            <option value="Odia">Odia</option>
+                            <option value="Telugu">Telugu</option>
+                        </select>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="box-4">
+            <div class="small_box-4">
+                <h3>About Yourself</h3>
+            </div>
+            <div class="c_detail">
+                <h3>Few word about yourself :</h3>
+                <textarea name=""  cols="100" rows="8"></textarea>
+            </div>
+        </div>
+    </div>
+     
+    <div class="save">
+        <h3>Save Details</h3>
+    </div>
+    </div>
+</body>
+
+</html>

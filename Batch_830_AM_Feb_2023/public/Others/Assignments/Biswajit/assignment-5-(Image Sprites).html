@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Sprites</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgba(236, 165, 165, 0.578);
+        }
+
+        .heading {
+            border: 3px solid black;
+            text-align: center;
+            height: 40px;
+            background-color: rgba(247, 150, 150, 0.833);
+            flex: left;
+        }
+
+        .list {
+            width: 400px;
+            height: 600px;
+            margin-left: 20px;
+            margin-top: 15px;
+            border: 2px solid black;
+            background-color: rgb(149, 182, 245)
+        }
+
+        .list ol li {
+            margin-left: 50px;
+            margin-top: 20px;
+            font-size: 30px;
+
+        }
+
+        .list ol li a {
+            text-decoration: none;
+        }
+
+        .total .list {
+            float: left;
+            height: 550px;
+            border: 2px solid;
+            border-radius: 20px;
+        }
+
+        .total {
+            width: 95%;
+            height: 80%;
+            margin: 20px;
+            border: 2px solid;
+            border-radius: 20px;
+            background-color: rgb(133, 171, 241);
+        }
+
+        .total .all_details {
+            height: 570px;
+            width: 1000px;
+            margin: 10px;
+            overflow-y: auto;
+        }
+
+        .total .all_details .player_details .MS_Dhoni {
+            height: 150px;
+            width: 130px;
+            float: left;
+            background-image: url(Image/All.jpg);
+            background-position: -622px -14px;
+        }
+
+        .total .all_details .player_details .Virat_Kohli {
+            height: 150px;
+            width: 130px;
+            float: left;
+            background-image: url(Image/All.jpg);
+            background-position: -622px -200px;
+        }
+        .total .all_details .player_details .Rohit_Sharma {
+            height: 150px;
+            width: 130px;
+            float: left;
+            background-image: url(Image/All.jpg);
+            background-position: -332px -200px;
+        }
+        .total .all_details .player_details .Rishabh_Pant {
+            height: 150px;
+            width: 130px;
+            float: left;
+            background-image: url(Image/All.jpg);
+            background-position: -57px -200px;
+        }
+        .total .all_details .player_details .KL_Rahul {
+            height: 150px;
+            width: 130px;
+            float: left;
+            background-image: url(Image/All.jpg);
+            background-position: -3163px -14px;
+        }
+        .total .all_details .player_details .Hardik_Pandiya {
+            height: 150px;
+            width: 130px;
+            float: left;
+            background-image: url(Image/All.jpg);
+            background-position: -2600px -14px;
+        }
+        .total .all_details .player_details .Ravindra_Jadeja {
+            height: 150px;
+            width: 130px;
+            float: left;
+            background-image: url(Image/All.jpg);
+            background-position: -2870px -14px;
+        }
+        .total .all_details .player_details .Jasprit_Bumrah {
+            height: 150px;
+            width: 130px;
+            float: left;
+            background-image: url(Image/All.jpg);
+            background-position: -342px -14px;
+        }
+        .total .all_details .player_details .Yuzvenrdra_Chahal {
+            height: 150px;
+            width: 130px;
+            float: left;
+            background-image: url(Image/All.jpg);
+            background-position: -2600px -200px;
+        }
+        .total .all_details .player_details .Bhuvneswar_Kumar {
+            height: 150px;
+            width: 130px;
+            float: left;
+            background-image: url(Image/All.jpg);
+            background-position: -50px -14px;
+        }
+
+        .total .all_details .player_details {
+            border: 2px solid;
+            height: 150px;
+            margin: 10px;
+            overflow-y: auto;
+            border-radius: 20px;
+            background-color: rgb(140, 176, 241);
+        }
+
+        .total .all_details .player_details .details {
+            margin-left: 180px;
+            margin-top: 30px;
+        }
+
+        .footer {
+            height: 30px;
+            border: 2px solid;
+            text-align: center;
+            background-color: rgba(247, 150, 150, 0.833);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        <h1>Student Details</h1>
+    </div>
+    <div class="total">
+        <div class="list">
+            <ol>
+                <li><a href="#MS_Dhoni">MS Dhoni</a></li>
+                <li><a href="#Virat_Kohli">Virat kohli</a></li>
+                <li><a href="#Rohit_Sharma">Rohit Sharma</a></li>
+                <li><a href="#Rishabh_Pant">Rishabh Pant</a></li>
+                <li><a href="#KL_Rahul">KL Rahul</a></li>
+                <li><a href="#Hardik_Pandiya">Hardik Pandiya</a></li>
+                <li><a href="#Ravindra_Jadeja">Ravindra Jadeja</a></li>
+                <li><a href="#Jasprit_Bumrah">Jasprit Bumrah</a></li>
+                <li><a href="#Yuzvenrdra_Chahal">Yuzvenrdra Chahal</a></li>
+                <li><a href="#Bhuvneswar_Kumar">Bhuvneswar Kumar</a></li>
+            </ol>
+        </div>
+        <div class="all_details">
+            <div class="player_details" id="MS_Dhoni">
+                <div class="MS_Dhoni">
+                </div>
+                <div class="details">
+                    <h3>Name: MS Dhoni</h3>
+                    <h3>Gender: Male</h3>
+                    <h3>Age: 41</h3>
+                    <h3>Location: Bihar</h3>
+                </div>
+            </div>
+            <div class="player_details" id="Virat_Kohli">
+                <div class="Virat_Kohli">
+                </div>
+                <div class="details">
+                    <h3>Name: Virat kohli</h3>
+                    <h3>Gender: Male</h3>
+                    <h3>Age: 34</h3>
+                    <h3>Location: New Delhi</h3>
+                </div>
+            </div>
+            <div class="player_details" id="Rohit_Sharma">
+                <div class="Rohit_Sharma">
+                </div>
+                <div class="details">
+                    <h3>Name: Rohit Sharma</h3>
+                    <h3>Gender: Male</h3>
+                    <h3>Age: 35</h3>
+                    <h3>Location: Maharastra</h3>
+                </div>
+            </div>
+            <div class="player_details" id="Rishabh_Pant">
+                <div class="Rishabh_Pant">
+                </div>
+                <div class="details">
+                    <h3>Name: Rishabh Pant</h3>
+                    <h3>Gender: Male</h3>
+                    <h3>Age: 25</h3>
+                    <h3>Location: Uttarakhand</h3>
+                </div>
+            </div>
+            <div class="player_details" id="KL_Rahul">
+                <div class="KL_Rahul">
+                </div>
+                <div class="details">
+                    <h3>Name: KL Rahul</h3>
+                    <h3>Gender: Male</h3>
+                    <h3>Age: 30</h3>
+                    <h3>Location: Karnataka</h3>
+                </div>
+            </div>
+            <div class="player_details" id="Hardik_Pandiya">
+                <div class="Hardik_Pandiya">
+                </div>
+                <div class="details">
+                    <h3>Name: Hardik Pandiya</h3>
+                    <h3>Gender: Male</h3>
+                    <h3>Age: 29</h3>
+                    <h3>Location: Gujarat</h3>
+                </div>
+            </div>
+            <div class="player_details" id="Ravindra_Jadeja">
+                <div class="Ravindra_Jadeja">
+                </div>
+                <div class="details">
+                    <h3>Name: Ravindra Jadeja</h3>
+                    <h3>Gender: Male</h3>
+                    <h3>Age: 34</h3>
+                    <h3>Location: Gujarat</h3>
+                </div>
+            </div>
+            <div class="player_details" id="Jasprit_Bumrah">
+                <div class="Jasprit_Bumrah">
+                </div>
+                <div class="details">
+                    <h3>Name: Jasprit Bumrah</h3>
+                    <h3>Gender: Male</h3>
+                    <h3>Age: 29</h3>
+                    <h3>Location: Gujarat</h3>
+                </div>
+            </div>
+            <div class="player_details" id="Yuzvenrdra_Chahal">
+                <div class="Yuzvenrdra_Chahal">
+                </div>
+                <div class="details">
+                    <h3>Name: Yuzvenrdra Chahal</h3>
+                    <h3>Gender: Male</h3>
+                    <h3>Age: 32</h3>
+                    <h3>Location: Haryana</h3>
+                </div>
+            </div>
+            <div class="player_details" id="Bhuvneswar_Kumar">
+                <div class="Bhuvneswar_Kumar">
+                </div>
+                <div class="details">
+                    <h3>Name: Bhuvneswar Kumar</h3>
+                    <h3>Gender: Male</h3>
+                    <h3>Age: 33</h3>
+                    <h3>Location: Uttar Pradesh</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <h3>@copy rights 2023</h3>
+    </div>
+</body>
+
+</html>

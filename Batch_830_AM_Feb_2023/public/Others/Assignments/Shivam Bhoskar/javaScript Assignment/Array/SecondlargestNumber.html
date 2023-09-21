@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secondlargest number</title>
+    <style>
+        body{
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <p>To find second largest number from array</p>
+    <script>
+        var data = [];
+
+        for(let s = 0; s < 5; s++){
+            data[s] = parseInt(prompt('Enter a number'));
+        }
+
+        console.log('Real value -> '+ data);
+
+
+       for (var i = 0; i < data.length; i++){
+            for (var j = i+1; j < data.length; j++){
+                if (data[i] < data[j]){
+                    // swapping.
+                    var temp = data[i];
+                    data[i] = data[j];
+                    data[j] = temp;
+                }
+            }
+        }
+    // console.log('Decending order -> ' + data);
+    console.log('SecondLargest value is -> ' + data[1]); 
+    </script>
+</body>
+</html>

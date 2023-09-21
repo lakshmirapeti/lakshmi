@@ -1,0 +1,31 @@
+.heading {
+    text-align: center;
+    text-decoration: underline;
+    padding: 10px;
+    margin: 10px;
+}
+.container {
+    margin: 20px auto;
+    width: 600px;
+    background-color: #ddd;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+ul {
+    padding: 5px;
+    margin: 5px;
+}
+li {
+    list-style: none;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #333;
+}
+.salarySlip {
+    width: 600px;
+    margin: 20px auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: azure;
+    display: none;
+}

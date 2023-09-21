@@ -1,0 +1,13 @@
+Inline and Block level elements:
+
+    Block level elemtns features:
+        div tag -> <div> ....  </div>
+        1. automatically comes and renders in a new line 
+        2. the element which is following a block level elements, also comes to a new line
+        3. by default while rendering on the page, it occupies 100% width of the container
+        4. we could control the dimenstions of any block level element.
+
+    Inine elements:
+        1. Span tag -> <span> ..... </span>
+        2. Ints getting renred only within the same line 
+

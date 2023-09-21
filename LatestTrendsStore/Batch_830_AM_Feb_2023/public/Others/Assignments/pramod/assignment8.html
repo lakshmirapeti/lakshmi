@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3{
+            border: 2px solid;
+            text-align: center;
+            padding: 3px;
+        }
+        .maincontainer{
+            border: 2px solid;
+            margin: 2px;
+            height:800px;
+            overflow: auto;
+        }
+        .block1{
+            border: 1px solid;
+            height: 200px;
+            margin:20px;
+
+        }
+        .block2{
+            border: 1px solid;
+            height: 200px;
+            /* list-style: none; */
+            margin: 20px;
+        }
+        .block3{
+            border: 1px solid;
+            height: 200px;
+            margin: 20px;
+        }
+        .block4{
+            border: 1px solid;
+            margin: 20px;
+            height: 200px;
+        }
+        .lil{
+            border: 1px solid;
+            height:30px;
+            width:250px;
+            position: relative;
+            left:40px;
+            bottom:15px;
+            z-index: 3;
+            background-color:white;
+            text-align: center;
+            padding-top: 5px;
+        }
+        .li{
+            list-style: none;
+            position: relative;
+            left:50px;
+        }
+        .ul li{
+            margin-right: 50px;
+            float: right;
+            position:relative;
+            bottom:100px;
+            right:300px;
+            clear: both;
+            margin:10px;
+        }
+        .save{
+            text-rendering: auto;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>student registration page</h3>
+    <div class="maincontainer">
+        <div class="block1">
+            <div class="lil">Personal Details  </div>
+            <ul class="li">
+                <li>
+                    <label for="uname">Name:</label>
+                    <input type="text" name="uname">
+                </li>
+                <br>
+                <li>
+                    <label for="age">Age:</label>
+                    <input type="text" name="age">
+                </li>
+                <br>
+                <li>
+                    Gender:
+                    <input type="radio" name="gender" checked>
+                    Male
+                    <input type="radio" name="gender" >
+                    Female
+                </li>
+                <ul class="ul li">
+                    <li>
+                        Country Name:
+                        
+                        <select>
+                            <option selected>india</option>
+                            <option>china</option>
+                            <option>japan</option>
+                            <option>usa</option>
+                        </select>
+                    </li>
+                   
+                    <li>
+                        Class:
+                        <select>
+                            <option selected>X</option>
+                            <option>Y</option>
+                            <option>Z</option>
+                           
+                        </select>
+                    </li>
+                   
+                </ul>
+            </ul>
+
+
+        </div>
+        <div class="block2">
+            <div class="lil">Education Details</div>
+            <ul class="li" >
+                <li>
+                    Languages know:
+                    <input type="checkbox" >
+                    English 
+                    <input type="checkbox">
+                    Hindi
+                    <input type="checkbox">
+                    Odia
+                </li>
+                <br>
+                <br>
+                <li>
+                    Qualification:
+                    <input type="checkbox">
+                    Btech
+                    <input type="checkbox">
+                    MBA
+                    <input type="checkbox">
+                    MCA
+                    <input type="checkbox">
+                    Mtech
+                </li>
+            </ul>
+        </div>
+        <div class="block3">
+            <div class="lil">Course Details</div>
+            <ul class="li">
+                <li>
+                    Course Option For:
+                    <select>
+                        <option selected>ABC</option>
+                        <option>XTZ</option>
+                        <option>XYZ</option>
+                    </select>
+                </li>
+                <br>
+                <li>
+                Language:
+                <select>
+                    <option selected>HINDI</option>
+                    <option>ENGLISH</option>
+                    <option>ODIA</option>
+                </select>
+                </li>
+            </ul>
+
+        </div>
+        <div class="block4">
+            <div class="lil">About urself</div>
+            <ul>
+                <li>
+                    Few words about urself:
+                    <textarea rows="8" columns="60" maxlength="900"></textarea>
+                </li>
+            </ul>
+
+        </div>
+        <div class="save">
+            <input type="button" value="Save Details">
+        </div>
+    </div>
+    <h3>@copyrights 2023</h3>
+    
+</body>
+</html>

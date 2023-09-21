@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <!-- pay slip
+     name gender basic salary department-->
+    <div class="container">
+      <ul>
+        <li>
+          Enter Employee Name:
+          <input type="text" name="" id="eName" />
+        </li>
+        <li>
+          Gender:
+          <input type="radio" name="gender" value="Male" checked /> Male
+          <input type="radio" name="gender" value="Female" /> Female
+        </li>
+        <li class="salaryblock">
+          Enter Employee basic Salary:
+          <input type="number" id="eSalary" />
+        </li>
+        <li>
+          Department Name:
+          <select name="" id="edepartment">
+            <option>Cs</option>
+            <option>IT</option>
+            <option>Hr</option>
+            <option>Civil</option>
+            <option>Mechanical</option>
+          </select>
+        </li>
+        <li>
+            <input type="button" value="Submit" onclick="slipGenerator()">
+        </li>
+      </ul>
+    </div>
+    <div class="slipCard">
+      <ul>
+        <li>Employee name : <span id="empName"></span></li>
+        <li>Gender: <span id="empGen"></span></li>
+        <li>Department: <span id="empDepart"></span></li>
+        <li>Salary : <span id="empSalary"></span></li>
+        <li>PF : <span id="pf"></span></li>
+        <li>HRA : <span id="hra"></span></li>
+        <li>Total Salary : <span id="totalSal"></span></li>
+        <li>Tax : <span id="tax"></span></li>
+      </ul>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        var inputString = prompt("Enter a Paragraph to count: ");
+
+        // Define a variable to hold the word count
+        var wordCount = 0;
+
+        for (var i = 0; i < inputString.length; i++) {
+
+            // If the current character is a space, increment the word count
+            if (inputString[i] === " ") {
+                wordCount++;
+            }
+        }
+
+        // Add 1 to the word count to include the last word in the string
+        wordCount++;
+
+        console.log("The total number of words in the string is: " + wordCount);
+
+    </script>
+
+</body>
+
+</html>

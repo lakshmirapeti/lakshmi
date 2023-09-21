@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .header, .footer{
+            border: 2px solid blue;
+            text-align: center;
+            width: 900px;
+            margin: 20px;
+        }
+        body{
+            margin: 40px;
+            font-family: "Roboto", sans-serif;
+        }
+        .container{
+            border: 1px solid rgb(178, 12, 21);
+            background-color: #efefef33;
+            padding: 15px;
+            max-width: 900px;
+            overflow: auto;
+            margin: 20px;
+            border-radius: 4px;
+            
+        }
+        table{
+            width: 100%;
+            font-size: 13px;
+            color: #444;
+            white-space: nowrap;
+            border-collapse: collapse;
+        }
+        table>thead{
+            background-color: blue;
+            color: #fff;
+        }
+        table>thead th{
+            padding: 15px;
+        }
+        table th, table td{
+            border: 1px solid #00000017;
+        }
+        table>tbody>tr>td>img{
+            display: inline-block;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            box-shadow: 0 2px 6px #0003;
+        }
+        table>tbody>tr>td{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header"> Student Details </div>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Sno</th>
+                    <th>Name</th>
+                    <th>Picture</th>
+                    <th>Age</th>
+                    <th>Class</th>
+                    <th>Marks</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Aryan</td>
+                    <td>
+                        <img src="https://images.unsplash.com/photo-1559629819-638a8f0a4303?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" width="80px" height="60px">
+                    </td>
+                    <td>23</td>
+                    <td>9</td>
+                    <td>
+                        <table border="1px solid">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max</th>
+                                    <th>Min</th>
+                                    <th>Obtained</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Maths</td>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>80</td>
+                                </tr>
+                                <tr>
+                                    <td>Science</td>
+                                    <td>100</td>
+                                    <td>30</td>
+                                    <td>78</td>
+                                </tr>
+                                <tr>
+                                    <td>Sanskrit</td>
+                                    <td>120</td>
+                                    <td>35</td>
+                                    <td>90</td>
+                                </tr>
+                                <tr>
+                                    <td>SSt</td>
+                                    <td>150</td>
+                                    <td>50</td>
+                                    <td>120</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Aalok</td>
+                    <td>
+                        <img src=" https://media.gettyimages.com/id/1361217779/photo/portrait-of-happy-teenage-boy-at-park.jpg?s=612x612&w=gi&k=20&c=v2qPlxXiWb1NPSviqfScmVa9pci0eMe5SXmDiDiCqkQ=" width="80px" height="60px">
+                    </td>
+                    <td>20</td>
+                    <td>8</td>
+                    <td>
+                        <table border="1px solid">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max</th>
+                                    <th>Min</th>
+                                    <th>Obtained</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Maths</td>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>80</td>
+                                </tr>
+                                <tr>
+                                    <td>Science</td>
+                                    <td>100</td>
+                                    <td>30</td>
+                                    <td>78</td>
+                                </tr>
+                                <tr>
+                                    <td>Sanskrit</td>
+                                    <td>120</td>
+                                    <td>35</td>
+                                    <td>90</td>
+                                </tr>
+                                <tr>
+                                    <td>SSt</td>
+                                    <td>150</td>
+                                    <td>50</td>
+                                    <td>120</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Raj</td>
+                    <td>
+                        <img src="https://media.istockphoto.com/id/1270072400/photo/smiling-schoolboy-in-the-schoolyard.jpg?s=1024x1024&w=is&k=20&c=EuvnaFwEQv59wAtomHBRlUglISYdHe1I2HqiCzn8k3w= " width="80px" height="60px">
+                    </td>
+                    <td>21</td>
+                    <td>10</td>
+                    <td>
+                        <table border="1px solid">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max</th>
+                                    <th>Min</th>
+                                    <th>Obtained</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Maths</td>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>80</td>
+                                </tr>
+                                <tr>
+                                    <td>Science</td>
+                                    <td>100</td>
+                                    <td>30</td>
+                                    <td>78</td>
+                                </tr>
+                                <tr>
+                                    <td>Sanskrit</td>
+                                    <td>120</td>
+                                    <td>35</td>
+                                    <td>90</td>
+                                </tr>
+                                <tr>
+                                    <td>SSt</td>
+                                    <td>150</td>
+                                    <td>50</td>
+                                    <td>120</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Kausal</td>
+                    <td>
+                        <img src="https://funylife.in/wp-content/uploads/2022/11/20221118_172756-1024x1024.jpg" width="80px" height="60px">
+                    </td>
+                    <td>17</td>
+                    <td>7</td>
+                    <td>
+                        <table border="1px solid">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max</th>
+                                    <th>Min</th>
+                                    <th>Obtained</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Maths</td>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>80</td>
+                                </tr>
+                                <tr>
+                                    <td>Science</td>
+                                    <td>100</td>
+                                    <td>30</td>
+                                    <td>78</td>
+                                </tr>
+                                <tr>
+                                    <td>Sanskrit</td>
+                                    <td>120</td>
+                                    <td>35</td>
+                                    <td>90</td>
+                                </tr>
+                                <tr>
+                                    <td>SSt</td>
+                                    <td>150</td>
+                                    <td>50</td>
+                                    <td>120</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Amit</td>
+                    <td>
+                        <img src="https://t3.ftcdn.net/jpg/03/61/31/58/360_F_361315829_QW6bnbGDlbFXFdS6TqgKihc8wuXvQrDh.jpg" width="80px" height="60px">
+                    </td>
+                    <td>6</td>
+                    <td>1</td>
+                    <td>
+                        <table border="1px solid">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max</th>
+                                    <th>Min</th>
+                                    <th>Obtained</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Maths</td>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>80</td>
+                                </tr>
+                                <tr>
+                                    <td>Science</td>
+                                    <td>100</td>
+                                    <td>30</td>
+                                    <td>78</td>
+                                </tr>
+                                <tr>
+                                    <td>Sanskrit</td>
+                                    <td>120</td>
+                                    <td>35</td>
+                                    <td>90</td>
+                                </tr>
+                                <tr>
+                                    <td>SSt</td>
+                                    <td>150</td>
+                                    <td>50</td>
+                                    <td>120</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Suresh</td>
+                    <td>
+                        <img src="https://play-lh.googleusercontent.com/BYkmLMGbmLMdpvSOLK7XIkq0n0iEibmnjohznrV_LQkw6-OSpCXuUvtuyAk8zijmlQ" width="80px" height="60px">
+                    </td>
+                    <td>22</td>
+                    <td>6</td>
+                    <td>
+                        <table border="1px solid">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max</th>
+                                    <th>Min</th>
+                                    <th>Obtained</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Maths</td>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>80</td>
+                                </tr>
+                                <tr>
+                                    <td>Science</td>
+                                    <td>100</td>
+                                    <td>30</td>
+                                    <td>78</td>
+                                </tr>
+                                <tr>
+                                    <td>Sanskrit</td>
+                                    <td>120</td>
+                                    <td>35</td>
+                                    <td>90</td>
+                                </tr>
+                                <tr>
+                                    <td>SSt</td>
+                                    <td>150</td>
+                                    <td>50</td>
+                                    <td>120</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Rohan</td>
+                    <td>
+                        <img src="https://c8.alamy.com/comp/2JEGA48/attitude-boy-pictures-download-stylish-boy-free-stock-photos-on-alamy-2JEGA48.jpg" width="80px" height="60px">
+                    </td>
+                    <td>16</td>
+                    <td>2</td>
+                    <td>
+                        <table border="1px solid">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max</th>
+                                    <th>Min</th>
+                                    <th>Obtained</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Maths</td>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>80</td>
+                                </tr>
+                                <tr>
+                                    <td>Science</td>
+                                    <td>100</td>
+                                    <td>30</td>
+                                    <td>78</td>
+                                </tr>
+                                <tr>
+                                    <td>Sanskrit</td>
+                                    <td>120</td>
+                                    <td>35</td>
+                                    <td>90</td>
+                                </tr>
+                                <tr>
+                                    <td>SSt</td>
+                                    <td>150</td>
+                                    <td>50</td>
+                                    <td>120</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Ramesh</td>
+                    <td>
+                        <img src="https://www.verywellfamily.com/thmb/4aoJ6V29klxrWi-9uQKCVral0gc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-953957934-9716b92ea7184a9086d3029627417c2f.jpg" width="80px" height="60px">
+                    </td>
+                    <td>14</td>
+                    <td>5</td>
+                    <td>
+                        <table border="1px solid">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max</th>
+                                    <th>Min</th>
+                                    <th>Obtained</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Maths</td>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>80</td>
+                                </tr>
+                                <tr>
+                                    <td>Science</td>
+                                    <td>100</td>
+                                    <td>30</td>
+                                    <td>78</td>
+                                </tr>
+                                <tr>
+                                    <td>Sanskrit</td>
+                                    <td>120</td>
+                                    <td>35</td>
+                                    <td>90</td>
+                                </tr>
+                                <tr>
+                                    <td>SSt</td>
+                                    <td>150</td>
+                                    <td>50</td>
+                                    <td>120</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Sohan</td>
+                    <td>
+                        <img src="https://thumbs.dreamstime.com/b/boy-tablet-outdoor-portrait-happy-teen-year-old-schoolboy-watching-media-content-park-73641501.jpg" width="80px" height="60px">
+                    </td>
+                    <td>13</td>
+                    <td>4</td>
+                    <td>
+                        <table border="1px solid">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max</th>
+                                    <th>Min</th>
+                                    <th>Obtained</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Maths</td>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>80</td>
+                                </tr>
+                                <tr>
+                                    <td>Science</td>
+                                    <td>100</td>
+                                    <td>30</td>
+                                    <td>78</td>
+                                </tr>
+                                <tr>
+                                    <td>Sanskrit</td>
+                                    <td>120</td>
+                                    <td>35</td>
+                                    <td>90</td>
+                                </tr>
+                                <tr>
+                                    <td>SSt</td>
+                                    <td>150</td>
+                                    <td>50</td>
+                                    <td>120</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Rupesh</td>
+                    <td>
+                        <img src="https://thumbs.dreamstime.com/b/teen-boy-reading-book-outdoor-portrait-year-old-park-75109884.jpg" width="80px" height="60px">
+                    </td>
+                    <td>12</td>
+                    <td>3</td>
+                    <td>
+                        <table border="1px solid">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max</th>
+                                    <th>Min</th>
+                                    <th>Obtained</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Maths</td>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>80</td>
+                                </tr>
+                                <tr>
+                                    <td>Science</td>
+                                    <td>100</td>
+                                    <td>30</td>
+                                    <td>78</td>
+                                </tr>
+                                <tr>
+                                    <td>Sanskrit</td>
+                                    <td>120</td>
+                                    <td>35</td>
+                                    <td>90</td>
+                                </tr>
+                                <tr>
+                                    <td>SSt</td>
+                                    <td>150</td>
+                                    <td>50</td>
+                                    <td>120</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="footer"> @copy right 2023 </div>
+</body>
+</html>

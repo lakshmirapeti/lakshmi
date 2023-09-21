@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment8</title>
+</head>
+<body>
+    <div>Employe Salary Details</div>
+    <script>
+        var empName, empAge, empID, empMGender, empFGender, empTSal, empTaxPercent;
+
+        //var empName = prompt("employe Name");
+        var empAge = prompt("employe Age");
+        var empID = prompt("employe ID");
+        var empMGender = "male";
+        var empFGender = "female";
+        //var empGender = prompt("emp Gender");
+        //empGender = parseInt("male" + "female");
+
+        var empTSal = prompt("employe Total Salary");
+        empTSal = parseInt(empTSal);
+
+            if(empMGender == "male" && empTSal >= 500000){
+                console.log("emp gender = " + empMGender);
+                var empTaxPercent = (empTSal*15)/100;
+                var empTSal = empTSal + empTaxPercent;
+                console.log("emp Tax Per = " + empTaxPercent);
+                console.log("Employe Total salary = " + empTSal);
+            };
+
+            if(empMGender == "male" && empTSal >=300000){
+                console.log("emp Gender = " + empMGender);
+                var empTaxPercent = (empTSal*10)/100;
+                var empTSal = empTSal + empTaxPercent;
+                console.log("emp Tax Per = " + empTaxPercent);
+                console.log("Employe Total salary = " + empTSal);
+            }
+
+            if(empMGender == "male" && empTSal >=200000){
+                console.log("emp Gender = " + empMGender);
+                var empTaxPercent = (empTSal*10)/100;
+                var empTSal = empTSal + empTaxPercent;
+                console.log("emp Tax Per = " + empTaxPercent);
+                console.log("Employe Total salary = " + empTSal);
+            }
+
+            if(empMGender == "male" && empTSal <200000){
+                console.log("emp Gender = " + empMGender);
+                var empTaxPercent = (empTSal*0)/100;
+                var empTSal = empTSal + empTaxPercent;
+                console.log("emp Tax Per = " + empTaxPercent);
+                console.log("Employe Total salary = " + empTSal);
+            }
+            
+            if(empFGender == "female" && empTSal >= 500000){
+                console.log("emp gender = " + empFGender);
+                var empTaxPercent = (empTSal*10)/100;
+                var empTSal = empTSal + empTaxPercent ;
+                console.log("emp Tax Per = " + empTaxPercent);
+                console.log("Employe Total salary = " + empTSal);
+            };
+
+            if(empFGender == "female" && empTSal >= 300000){
+                console.log("emp gender = " + empFGender);
+                var empTaxPercent = (empTSal*10)/100;
+                var empTSal = empTSal + empTaxPercent ;
+                console.log("emp Tax Per = " + empTaxPercent);
+                console.log("Employe Total salary = " + empTSal);
+            };
+
+            if(empFGender == "female" && empTSal <300000){
+                console.log("emp gender = " + empFGender);
+                var empTaxPercent = (empTSal*0)/100;
+                var empTSal = empTSal + empTaxPercent ;
+                console.log("emp Tax Per = " + empTaxPercent);
+                console.log("Employe Total salary = " + empTSal);
+            };
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var rem, temp, x = prompt("Enter number ");
+        var final = 0;
+        temp = x;
+
+        while(x > 0){
+            rem = x % 10;
+            //x = parseInt(x/10);     or
+            x = x / 10;
+            x = parseInt(x)
+            final = final * 10 + rem;
+        }
+        if(final == temp){
+            console.log("polidrom");
+        }else{
+            console.log("not");
+        }
+
+    </script>
+    </script>
+</body>
+</html>

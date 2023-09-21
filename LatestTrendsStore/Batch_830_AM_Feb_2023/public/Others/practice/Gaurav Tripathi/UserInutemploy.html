@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                var empPloyeDetails={}
+                empPloyeDetails.Name=prompt("enter the employ name")
+                empPloyeDetails.Age= prompt("enter the age")
+                empPloyeDetails.Gen=prompt("enter the gender").toLocaleLowerCase()
+                    
+               empPloyeDetails.Dept=prompt("enter the departement")
+               empPloyeDetails.Basic= parseInt(prompt("enter the basic salery"))
+
+               empPloyeDetails.hra=15/100*empPloyeDetails.Basic
+              console.log(empPloyeDetails.hra)
+              empPloyeDetails.pf=25/100*empPloyeDetails.Basic
+              console.log(empPloyeDetails.pf)
+              empPloyeDetails.total=empPloyeDetails.Basic+empPloyeDetails.hra+empPloyeDetails.pf
+              console.log(empPloyeDetails.total)
+
+               console.log(empPloyeDetails)
+    </script>
+</body>
+</html>

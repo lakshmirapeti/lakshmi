@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var studentData = ['Teena', 'Male', [66, 56, 76, 54], 0, 0];
+         var total = 0;
+
+         for(var i = 0; i < studentData[2].length; i++) {
+            studentData[3] += studentData[2][i];
+         }
+         studentData[4] = studentData[3] / studentData[2].length;
+
+         console.log("Name is " +studentData[0]);
+         console.log("Gender is " +studentData[1]);
+         console.log("marks is " +studentData[2]);
+         console.log("total is " +studentData[3]);
+         console.log("avg is " +studentData[4]);
+    </script>
+</body>
+</html>

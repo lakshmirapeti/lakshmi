@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repeated Characters</title>
+    <style>
+      body{
+        background-color: goldenrod;
+      }
+    </style>
+</head>
+<body>
+    <p>To find out list of all the characters which are repeated more than once</p>
+    
+
+    <script>
+            var a = prompt("enter your string");
+            var elm = [];
+            var xlm = a.toLowerCase();
+            for(var s = 0; s < xlm.length; s++){
+                var count = 0;
+                for(var x = s + 1; x < xlm.length; x++){
+                    if(xlm[s] == xlm[x]){
+                       count++;
+                       break;
+                    }
+                }
+                if(count > 0){
+                  if(elm.includes(xlm[s]) || xlm[s] == ' '){
+                    break;
+                  }else{
+                    elm.push(xlm[s]);
+                  }
+                }
+            }
+            console.log("repeated characters are " + elm);
+    
+    </script>
+</body>
+</html>

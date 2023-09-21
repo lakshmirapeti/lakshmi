@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <pre>
+  menu:
+    1.Saturday, 15/04/2024
+    2.Sat, 15/04/2024
+    3.Sat, 15/Apr/2024
+    4.April 15th 2023
+    5.15th April, 2023 09:02:30
+    6.April/15/2023
+    7.9hrs : 05 min: 21sec</pre
+    >
+
+    <script>
+      var mydate = new Date();
+
+      var options = (input) => {
+        monthlist = ["January", "February", "April", "May", "June", "July"];
+        daylist = [
+          "Sunday",
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+        ];
+        daylistshort = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+        var one =
+          daylist[mydate.getDay()] +
+          ", " +
+          mydate.getDate() +
+          "/" +
+          mydate.getMonth() +
+          "/" +
+          mydate.getFullYear();
+
+        var two =
+          daylistshort[mydate.getDay()] +
+          ", " +
+          mydate.getDate() +
+          "/" +
+          mydate.getMonth() +
+          "/" +
+          mydate.getFullYear();
+
+        var three =
+          daylistshort[mydate.getDay()] +
+          ", " +
+          mydate.getDate() +
+          "/" +
+          monthlist[mydate.getMonth() - 1] +
+          "/" +
+          mydate.getFullYear();
+
+        var four =
+          monthlist[mydate.getMonth()] +
+          " " +
+          mydate.getDate() +
+          "th" +
+          " " +
+          mydate.getFullYear();
+
+        var five =
+          mydate.getDate() +
+          "th" +
+          " " +
+          monthlist[mydate.getMonth()] +
+          ", " +
+          mydate.getFullYear() +
+          " " +
+          mydate.getHours() +
+          ":" +
+          mydate.getMinutes() +
+          ":" +
+          mydate.getSeconds();
+
+        var six =
+          monthlist[mydate.getMonth()] +
+          "/" +
+          mydate.getDate() +
+          "/" +
+          mydate.getFullYear();
+
+        var seven =
+          mydate.getHours() +
+          "hrs" +
+          " : " +
+          mydate.getMinutes() +
+          "min" +
+          " : " +
+          mydate.getSeconds() +
+          "sec";
+
+        if (input == "1") {
+          console.log(one);
+        } else if (input == "2") {
+          console.log(two);
+        } else if (input == "3") {
+          console.log(three);
+        } else if (input == "4") {
+          console.log(four);
+        } else if (input == "5") {
+          console.log(five);
+        } else if (input == "6") {
+          console.log(six);
+        } else if (input == "7") {
+          console.log(seven);
+        }
+      };
+
+      var customDate = () => {
+        input = prompt("enter a number");
+        options(input);
+      };
+
+      customDate();
+    </script>
+  </body>
+</html>

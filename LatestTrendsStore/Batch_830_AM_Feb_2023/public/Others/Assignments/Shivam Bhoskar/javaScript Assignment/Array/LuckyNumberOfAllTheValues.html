@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky number of all the value form array</title>
+    <style>
+        body{
+            background-color: firebrick;
+        }
+    </style>
+</head>
+<body>
+    <p>To find lucky number of all the value from array</p>
+
+
+
+    <script>
+        var a = [];
+        var sum = 0;
+        var n = [];
+      
+      
+        for(var x = 0; x < 5; x++){
+          a[x] = prompt('Enter a value');
+          a[x] = parseInt(a[x]);
+        }
+      
+       
+        for(var i = 0; i < a.length; i++){
+          //console.log(a[i]);
+           var add = 0;
+      
+          while(a[i] > 0){
+           var s = a[i] % 10;
+           a[i] = parseInt(a[i] / 10);
+           add = add + s;
+           
+         } 
+         n.push(add);
+         
+      } 
+          //console.log(n);
+          //console.log(a);
+      
+          for(var i = 0; i < n.length; i++){
+           //console.log(n[i]);
+      
+         while(n[i] > 0){
+          var s = n[i] % 10;
+          n[i] = parseInt(n[i] / 10);
+          sum = sum + s;
+      
+          if(n[i] == 0 && sum > 9){
+          n[i] = sum;
+          sum = 0;
+         }
+        } 
+          
+      }
+      
+       console.log('The sum of array is '  + sum);
+      
+      </script>
+</body>
+</html>

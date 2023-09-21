@@ -1,0 +1,57 @@
+a = 30
+
+a = "hello"
+
+a = "30"
+
+
+a = '99'
+
+
+a = 'true'
+-----------------
+Other langues
+Datatype:
+    int, float, char, boolean, long, double, ....
+
+    int a;  integers, 2bytes 
+    a = 90234234;
+    a
+
+    double totalcount;
+    totalcount = 10;
+------------------
+
+    var a;
+    a  = 90234234234;
+
+
+    int subscriptionsCount = 20;
+
+    subscriptionsCount = 23423423
+
+---------------------
+
+    var firstValue, secondValue, result;
+
+    firstValue = 90;
+
+    secondValue = 99;
+
+    result = firstValue + secondValue;
+
+    alert("The sum is " + result)
+-----------------
+
+list of datatypes js supporting:
+    numbers, 
+    string 
+    boolean 
+    undefined
+    function 
+    null 
+    object 
+    =---------------
+Typecasting:
+    
+    

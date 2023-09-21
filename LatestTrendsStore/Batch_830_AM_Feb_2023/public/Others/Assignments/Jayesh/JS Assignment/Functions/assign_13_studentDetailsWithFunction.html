@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var name, age, gender, sub1, sub2, sub3, sub4;
+        var studentDetail = () => {
+            name = prompt('Enter Student Name :');
+            age = prompt('Enter age :');
+            gender = prompt('Enter Gender :')
+            sub1 = prompt('Subject 1 Marks :')
+            sub1 = parseInt(sub1);
+            sub2 = prompt('Subject 2 Marks :')
+            sub2 = parseInt(sub2);
+            sub3 = prompt('Subject 3 Marks :')
+            sub3 = parseInt(sub3);
+            sub4 = prompt('Subject 4 Marks :')
+            sub4 = parseInt(sub4);
+            getAvg();
+        }
+        var getAvg = () => {
+             total = sub1 + sub2 + sub3 + sub4;
+             avg = total / 3;
+        }
+        var getGrade = () => {
+            if (avg >= 40)
+            {
+                console.log('Student got passed');
+                if (avg >= 90)
+                {
+                    console.log('1st class');
+                }
+                else if (avg >= 60)
+                {
+                    console.log('2nd class');
+                }
+                else if (avg >= 40)
+                {
+                    console.log('3rd class')
+                }
+            }
+                else 
+                {
+                    console.log('student got filed');
+                }
+        }
+        var Display = () => {
+            studentDetail();
+            console.log('Student Name :' +name);
+            console.log('Student Age :' +age);
+            console.log('Student Gender :' +gender);
+            console.log('Subject 1 marks :' + sub1);
+            console.log('Subject 2 marks :' + sub2);
+            console.log('Subject 3 marks :' + sub3);
+            console.log('Subject 4 marks :' + sub4);
+            console.log('Total marks :' + total);
+            console.log('avg is :' + avg);
+            getGrade();
+        }
+        Display();
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Totaldigit</title>
+</head>
+<body>
+    <script>
+        var no, count=0;
+        no = prompt("Enter the number :")
+        no = parseInt(no)
+
+        while(no>0)
+        {
+            var rem = no % 10;
+           
+            if(rem > 0)
+            {
+                count++;
+            }
+            rem = 0;
+            no = no/10;   
+            no=parseInt(no)
+        }
+        console.log(count)
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the Reveres value</title>
+</head>
+<body>
+    <script>
+        // var Reveres =  (n) =>{
+        //     var rem;
+        //     var Reveres = 0;
+        //     while(n !=0){
+        //         var rem = n% 10;
+        //         Reveres = Reveres * 10+rem;
+        //         n = n/10;
+        //         n = parseInt(n);
+
+
+        //     }
+        //     return Reveres;
+        // }
+        // var Reveres = getReverse(125);
+        // var data = [234,654,67,89,76,567,];
+        // console.log(data);
+
+        // var ReveresArray = [];
+        // for(var i=0; i <data.length; i++){
+        //     var Reveres =getReverse(data[i]);
+        //     ReveresArray.push(Reveres);
+        // }
+        // console.log(ReveresArray);
+        // console.log(data.Reveres());
+
+        var getReverse = (n) => {
+                var rem;
+                var revNo = 0;
+                while (n != 0) {
+                    rem = n % 10;
+                    revNo = revNo * 10 + rem;
+                    n = n / 10;
+                    n = parseInt(n);
+                }
+                return revNo;
+            }
+
+
+
+            var res = getReverse(234);
+
+            var data = [3444, 56, 78 , 333, 234, 89];
+            console.log(data)
+
+            var reverseArray = [];
+
+            for (var i = 0 ; i < data.length; i++) {
+                var revValue = getReverse(data[i]);
+                reverseArray.push(revValue);
+            }
+
+            console.log(reverseArray)
+
+            console.log(data.reverse())
+    </script>
+</body>
+</html>

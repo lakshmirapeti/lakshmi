@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>demonstrating student details</title>
+    </head>
+    <body>
+        <script>
+            var studentDetails = {
+                "sName" : 'prasad',
+                "sAge" : 25,
+                "sGender" : 'Male',
+                "Marks" : [50,60,70,80,90],
+                "total":0,
+            }
+             for (var i = 0; i< studentDetails.Marks.length; i++){
+                studentDetails.total= studentDetails.total+ studentDetails.Marks[i];
+
+            }
+            
+            console.log(studentDetails);
+            console.log(studentDetails.sName);
+            console.log(studentDetails.sAge);
+            console.log(studentDetails.sGender);
+            console.log(studentDetails.avg);
+        </script>
+    </body>
+</html>

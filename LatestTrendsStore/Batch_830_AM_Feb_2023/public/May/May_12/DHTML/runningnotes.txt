@@ -1,0 +1,12 @@
+AJAX - 
+
+    Server 
+        1. Holding resourcses/ hosting resources 
+        2. Running single/multiple services
+            eg webservice urls 
+                http://abc.com/get/productdetails
+                http://amazon.com/sample
+
+
+
+                https://fakestoreapi.com/products

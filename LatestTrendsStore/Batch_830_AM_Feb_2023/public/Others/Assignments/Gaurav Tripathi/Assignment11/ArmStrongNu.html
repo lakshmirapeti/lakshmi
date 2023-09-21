@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    var rev,sum=0,temp
+        var n=parseInt(prompt("enter the number"))
+        temp=n;
+        while (n>0) {
+            rev=n%10
+            sum +=rev*rev*rev
+            n=parseInt(n/10)
+        }
+        if(temp==sum){
+            console.log(`${temp} is a Armstromg Number`)
+        }
+        else{
+            console.log(`${temp} not a Armstrong Number`)
+        }
+   </script> 
+</body>
+</html>

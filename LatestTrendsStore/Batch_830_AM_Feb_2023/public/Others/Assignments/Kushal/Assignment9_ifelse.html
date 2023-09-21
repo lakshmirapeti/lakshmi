@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmployeeDetails</title>
+</head>
+<body>
+    <script>
+        var ename,eage,edpt,basicsal,empGender,taxpercent=0;
+        ename = prompt("Enter The Name")
+        empGender = prompt("Enter Employee Gender")
+        empGender = empGender.toLowerCase();
+        eage = prompt("Enter The age")
+        edpt = prompt("Enter The Enter the Department")
+        basicsal = prompt("Enter The Basic Salary")
+	    basicsal = parseInt(basicsal)
+        var hra = (24/100)*basicsal;
+	    hra = parseInt (hra);
+        var pf = (basicsal*14)/100;
+	    pf = parseInt(pf)
+        var totalsal = pf + hra + basicsal;
+	    totalsal = parseInt(totalsal)
+
+    if (empGender == 'male') {
+        if (totalsal >= 500000){
+            taxpercent = 15;
+            console.log("Tax Percentage 15 is :"+taxpercent);
+            console.log("Total tax is :"+ (totalsal*taxpercent)/100)
+        }
+        else if (totalsal >=300000){
+            taxpercent = 10;
+            console.log("Tax Percentage 10 is :"+taxpercent);
+            console.log("Total tax is :"+ (totalsal*taxpercent)/100)
+        }
+        else {
+            taxpercent = 5;
+            console.log("Tax Percentage 5 is :"+taxpercent);
+            console.log("Total tax is :"+ (totalsal*taxpercent)/100)
+        }
+    }
+    else{
+        if (totalsal >= 500000){
+            taxpercent = 10;
+            console.log("Tax Percentage F10 is :"+taxpercent);
+            console.log("Total tax is :"+ (totalsal*taxpercent)/100)
+        }
+        else if (totalsal >=300000){
+            taxpercent = 5;
+            console.log("Tax Percentage F5 is :"+taxpercent);
+            console.log("Total tax is :"+ (totalsal*taxpercent)/100)
+        }
+        else {
+            console.log("Tax Percentage F0 is :"+taxpercent);
+        }
+    }
+        console.log ("Name is "+ename);
+        console.log ("Gender is "+empGender);
+        console.log ("Age is "+eage);
+        console.log ("Dept. is "+edpt);
+        console.log ("Basic Sal is "+basicsal);
+        console.log ("hra is "+hra);
+        console.log ("pf is "+pf);
+        console.log ("Total Salary is "+totalsal);
+    </script>
+</body>

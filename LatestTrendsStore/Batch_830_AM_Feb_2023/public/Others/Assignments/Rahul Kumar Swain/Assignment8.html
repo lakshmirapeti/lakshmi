@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment8</title>
+    <style>
+        .maincontainer > div{
+                margin: 10px;
+                padding: 10px;
+                border: 2px solid;
+                border-radius: 13px;
+                background-color: aquamarine;
+     }
+     .head{
+        
+        text-align: center;
+        font-size: 28px;
+        font-weight: bold;
+        
+     }
+     .foot{
+    
+        text-align: center;
+        font-size: 28px;
+        font-weight: bold;
+     }
+     .container{
+        height: 600px;
+        overflow: auto;
+     }
+     .content{
+        height: 300px;
+        margin: 20px 20px;
+          border: 1px solid;
+          border-radius: 5px;
+          
+     }
+     .block{
+        height: 50px;
+        width: 200px;
+        margin: 5px 5px;
+        border: 1px solid;
+        text-align: center;
+        position: relative;
+        left: 100px;
+        bottom: 23px;
+        background-color: aqua;
+        font-size: 22px;
+        font-weight: bold;
+     }
+     .details{
+        margin: 30px 30px;
+        font-size: 18px;
+
+     }
+     li{
+        margin: 30px 30px;
+        list-style: none;
+     }
+     .val{
+        display: inline;
+        margin-left: 300px;
+     }
+     input{
+        background-color: aqua;
+        font-size: 18px;
+     }
+     select{
+        background-color: aqua;
+     }
+     textarea{
+        background-color: aqua;
+     }
+    .btn{
+        float: right;
+        margin-right: 50px;
+        width: 180px;
+        border-radius: 5px;
+        height: 30px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    b{
+        font-size: 20px;
+    }
+    .btn:hover{
+        color: blue;
+        background-color: black;
+    }
+    
+     
+    </style>
+</head>
+<body>
+        <div class="maincontainer">
+            <div class="head"> Student Registration Page</div>
+            <div class="container">
+                <div class="content">
+                    <div class="block">Personal Details</div>
+                <ul class="details">
+                    <li><b>Name:</b>    <input type="text"> 
+                        <div class="val">
+                            <b>Country Name:</b> <select name="country" id="">
+                                <option value="checkbox"> India</option>
+                                <option value=""> China</option>
+                                <option value=""> USA</option>
+                                <option value=""> South Africa</option>
+                                <option value=""> Russia</option>
+                                <option value=""> UK</option>
+                            </select><br>
+                        </div>
+                </li>
+                    <li><b>Age:</b> <input type="text">  
+                        <div class="val">
+                            <b>Class:</b> <select name="" id="">
+                                <option value="">1st</option>
+                                <option value="">2nd</option>
+                                <option value="">3rd</option>
+                                <option value="">4rth</option>
+                                <option value="">5th</option>
+                                <option value="">6th</option>
+                                <option value="">7th</option>
+                                <option value="">8th</option>
+                                <option value="">9th</option>
+                                <option value="">10th</option>
+                                <option value="">11th</option>
+                                <option value="">12th</option>
+                            </select><br>
+                        </div>
+                    </li>
+                    <li><b>Gender</b> <input type="radio" name="gender" > Male <input type="radio" name="gender" >Female</li>
+                </ul>
+                    
+                </div>
+                <div class="content">
+                    <div class="block">Education Details</div>
+                <ul class="details">
+                   <li>
+                    <pre> <b>Languagues known:</b>          <input type="checkbox"> Hindi            <input type="checkbox">English             <input type="checkbox">Telugu</pre>
+                   </li>
+                   <li>
+                    <pre> <b>Qualification:</b>          <input type="checkbox"> MCA            <input type="checkbox">MBA             <input type="checkbox">BTech              <input type="checkbox">Graduation</pre>
+                   </li>
+                </ul>
+                    
+                </div>
+                <div class="content">
+                    <div class="block">Course Details</div>
+                <ul class="details">
+                    <li>
+                        <b>Course optiion for:</b><select name="" id="">
+                            <option></option>
+                            <option value="">UI Fullstack</option>
+                            <option value="">Java Fullstack</option>
+                            <option value="">Phyton Fullstack</option>
+                            <option value="">DotNet</option>
+                            <option value="">Salesforce</option>
+                            <option value="">Software Testing</option>
+            
+                        </select>
+                    </li>
+                    <li>
+                        <b>Languague:</b><select name="" id="">
+                            <option></option>
+                            <option value="">C </option>
+                            <option value="">C++</option>
+                            <option value="">Java</option>
+                            <option value="">Phyton</option>
+                            <option value="">Ruby</option>
+                            <option value="">Javascript</option>
+            
+                        </select> 
+                    </li>
+                </ul>
+                    
+                </div>
+                <div class="content">
+                    <div class="block">About urself</div>
+                <ul class="details">
+                   <li>
+                    <b>Few words about urself </b><br><textarea name="" id="" cols="150" rows="10"></textarea>
+                   </li>
+                </ul>
+                    
+                </div>
+                    <input type="button" class="btn" name="Save Details" value="Save Details">
+            </div>
+            <div class="foot">Copyrigts@2023</div>
+        </div>
+</body>
+</html>

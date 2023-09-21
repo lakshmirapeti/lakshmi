@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambola </title>
+    <style>
+        .coinContainer {
+            margin:  27px auto;
+            border-collapse: collapse;
+            border: 2px solid;
+            padding: 10px;
+        }
+
+        .oneCoin {
+            height: 30px;
+            width: 30px;
+            border: 1px solid;
+            background-color: aqua;
+            text-align: center;
+            vertical-align: middle;
+            border-radius: 50px;
+
+        }
+
+        .gameOverMessage {
+            border: 1px solid;
+            height: 40px;
+            width: 197px;
+            font-size: 20px;
+            margin: 10px;
+            position: absolute;
+            top: 256px;
+            display: none;
+            left: 924px;
+            text-align: center;
+            align-items: center;
+            background-color: chocolate;
+        }
+
+        .replayGame{
+            display: none;
+            text-align: center;
+            margin: 10px;
+            left: 20px;
+
+        }
+
+        #replayGameButton {
+            font-size: 25px;
+
+        }
+
+        #showNumber {
+            height: 30px;
+            width: 120px;
+            text-align: center;
+            vertical-align:middle;
+            border: 2px solid;
+            font-size: 25px;
+            padding-top: 20px;
+            margin-top: 10px;
+            position: absolute;
+            left: 606px;
+            top: 370px;
+            color:red;
+
+        }
+        .GenerateButton input{
+            position: absolute;
+            top: 450px;
+            left: 606px;
+            cursor: pointer;
+        }
+        .main {
+            text-align: center;
+            text-decoration: underline;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h3 class="main">Tambola Coin Picker</h3>
+    <div class="GenerateButton">
+        <input type="button" value="Generate Number" onclick="generateNumber(event)">
+    </div>
+    <div class="gameOverMessage">Game is over</div>
+
+    <div class="replayGame">
+        <input type="button" value="Replay Game" id="replayGameButton" onclick="replayGame()">
+    </div>
+    <div id="showNumber"></div>
+    <table class="coinContainer"></table>
+
+    <script>
+        var coinContainerTable = document.querySelector(".coinContainer");
+        var allNumbers = () => {
+            var count = 1;
+            var cells = [];
+            for (var i = 1; i <= 9; i++) {
+                var row = document.createElement("tr");
+                for (var j = 1; j <= 10; j++) {
+                    var cell = document.createElement("td");
+                    cell.textContent = count++;
+                    var id = 'coin' + count;
+                    cell.setAttribute("id", id);
+                    cell.setAttribute("class", "oneCoin");
+                    cells.push(cell);
+                    row.appendChild(cell);
+                }
+                coinContainerTable.appendChild(row);
+            }
+        }
+        allNumbers();
+        var pikedNumber = [];
+        var replayGame = () => {
+            window.location.reload();
+        }
+
+        var generateNumber = () => {
+            var genNUmber = Math.random() * 91;
+            genNUmber = Math.floor(genNUmber);
+            genNUmber = genNUmber + 1;
+
+            if (pikedNumber.includes(genNUmber) == true) {
+                if (pikedNumber.length == 90) {
+                    document.querySelector(".gameOverMessage").style.display = "block";
+                    document.querySelector(".replayGame").style.display = "block";
+
+                }
+                generateNumber();
+            } else {
+                var cId = 'coin' + genNUmber;
+                document.getElementById(cId).style.background = "red";
+                document.querySelector("#showNumber").innerText= genNUmber -1;
+                pikedNumber.push(genNUmber);
+
+            }
+          
+        }
+    </script>
+
+
+</body>
+
+</html>

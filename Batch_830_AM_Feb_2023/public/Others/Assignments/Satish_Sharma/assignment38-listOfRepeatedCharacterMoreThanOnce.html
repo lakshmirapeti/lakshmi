@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of All repeated characters more than once</title>
+</head>
+
+<body>
+    <h3>List of All repeated characters more than once</h3>
+    <script>
+        var readFromUser = () => {
+            var userString;
+            //User Input
+            userString = prompt("Enter a string")
+            console.log('User given string is ' + userString);
+            var strCount = userString.length;
+            // console.log('size of string is ' + strCount);
+            var charRepeat = repeatedChar(userString, strCount);
+            // console.log('The characters repeated is ' + charRepeat);
+
+        }
+
+        var repeatedChar = (userString, strCount) => {
+            var repeatArr = [];
+            for(var i = 0; i < strCount; i++){
+                var count = 1;
+                for(var j = i + 1; j < strCount; j++){
+                    if(userString[i] == userString[j] && userString[i] != " "){
+                        count = count + 1;
+                        userString[j] = '0';
+                    }
+                }
+                if(count > 1 && userString[i] != 0){
+                    repeatArr.push(userString[i]);
+                    // console.log(userString[i]);
+                }
+            }
+            console.log(repeatArr);
+        }
+
+        readFromUser();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment - 26</title>
+    </head>
+    <body>
+        <script>
+            var myarray = [];
+            var size = parseInt(prompt("Enter the size of the array"));
+
+            for (var i = 0; i < size; i++) {
+                var value = parseInt(prompt("Enter the value is : " + i))
+                console.log("given values " +value)
+                myarray.push(value)
+            }
+            var isprime = (n) => {
+
+                if ( n < 2) {
+                    return false;
+                }
+
+                for (var i = 2; i <= Math.sqrt(n); i++) {
+                    if (n % i == 0) {
+                        return false;
+                    }
+                }
+                return true;
+            }
+            for (var i = 0; i < myarray.length; i++) {
+                if (isprime(myarray[i])) {
+                    console.log(myarray[i] + " is a prime number ")
+                }
+            }
+        </script>
+    </body>
+</html>

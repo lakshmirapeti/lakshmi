@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-12</title>
+</head>
+<body>
+    <script>
+        function primeCheck(n){
+            if(n==1)
+            return false;
+            if(n==2)
+            return true;
+            for(var i=2;i<=Math.sqrt(n);i++)
+            {
+                if(n%i==0)
+                return false;
+
+            }
+            return true;
+        }
+        console.log("Checking a number is prime or not");
+        var number=parseInt(prompt("Enter number to check prime or not"));
+        if(number === 0)
+        console.log(0 + " is not a prime");
+        if(primeCheck(number))
+        console.log(number+" is prime");
+        else
+        console.log(number+" is not a prime");
+
+        console.log("Prime numbers from 1 to 100");
+        var sum=0;
+        for(var i=1;i<=100;i++)
+        {
+            if(primeCheck(i))
+            {
+                console.log(i);
+                sum+=i;
+            }
+        }
+        console.log("Sum of Prime numbers from 1 to 100 is "+sum);
+
+        var sum2=0;
+
+        for(var i = 150;i >= 60; i--)
+        {
+            if(primeCheck(i))
+            {
+                sum2+=i;
+            }
+        }
+        console.log("Sum of Prime numbers from 150 to 60 is "+sum2);
+        var digits = parseInt(prompt("Enter number to count digits"));
+        var digitsStore=digits;
+        var count = 0;
+        if(digits == 0)
+        console.log("Number of digits of " + digits + " is "+0);
+        else
+        {
+            while( digits > 0)
+            {
+                count++;
+                digits = parseInt(digits/10);
+            }
+            console.log("Number of digits of " + digitsStore + " is "+count);
+        }
+
+        console.log("Checking a number is whether amstrong number or not");
+        var amstrongNumber = parseInt(prompt("Enter number to check amstrong or not"));
+        var storeAmstrongNumber=amstrongNumber;
+        if(amstrongNumber === 0 )
+        console.log(storeAmstrongNumber + " is an amstrong number");
+        else
+        {
+            var sum3=0;
+            while( amstrongNumber > 0)
+            {
+                sum3 += Math.pow(amstrongNumber%10,3)
+                amstrongNumber = parseInt(amstrongNumber / 10);
+            }
+            if(sum3 === storeAmstrongNumber)
+            console.log(storeAmstrongNumber + " is an amstrong number");
+            else
+            console.log(storeAmstrongNumber + " is not an amstrong number");
+        }
+
+        var digits = parseInt(prompt("Enter number to count digits sum"));
+        var digitsStore=digits;
+        var sumDigit = 0;
+        if(digits == 0)
+        console.log("Number of digits of " + digits + " is "+0);
+        else
+        {
+            while( digits > 0)
+            {
+                sumDigit += digits % 10;
+                digits = parseInt(digits/10);
+            }
+            console.log("Sum of digits of " + digitsStore + " is " + sumDigit);
+        }
+
+        var digits = parseInt(prompt("Enter number to check palindrome or not"));
+        var digitsStore1=digits;
+        var sumDigit = 0;
+        if(digits == 0)
+        console.log(0 + " is a palindrome number");
+        else
+        {
+            while( digits > 0)
+            {
+                sumDigit = sumDigit*10 + digits % 10;
+                digits = parseInt(digits/10);
+            }
+            if(sumDigit === digitsStore1)
+            console.log(digitsStore1 + " is a palindrome number");
+            else
+            console.log(digitsStore1 + " is not a palindrome number");
+        }
+
+        var num=parseInt(prompt("Enter number to find lucky number"));
+        var array = new Array(num);
+        for( var i=1;i<=num;i++)
+        {
+            array[i]=i;
+        }
+        var countNum=2;
+        var totalNum=num;
+        while(countNum<=totalNum)
+        {
+            for( var i=1;i<=num;i++)
+            {
+                var count1Num=0;
+                for(var j=1;j<=num;j++)
+                {
+                    if(array[j]!==0)
+                    {
+                        count1Num++;
+                    }
+                    if(count1Num===countNum)
+                    {
+                        array[j]=0;
+                        totalNum--;
+                        count1Num=0;
+                    }
+                }
+                countNum++;
+            }
+        }
+        console.log("Lucky numbers are ");
+        for( var i=1;i<=num;i++)
+        {
+            if(array[i]!==0)
+            console.log(array[i]);
+        }
+        var boolean1 = false;
+        for( var i=1;i<=num;i++)
+        {
+            if(array[i]!==0 && i === num)
+            boolean1 = true;
+        }
+        if(boolean1)
+        console.log(num + " is a Lucky number");
+        else
+        console.log(num + " is Not a Lucky number");
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of all palindrome numbers in an array</title>
+</head>
+
+<body>
+    <h3>List of all palindrome numbers in an array</h3>
+    <script>
+        var readFromUser = () => {
+            var userArray = [];
+
+            //User Input
+
+            var size = prompt("Enter size of array");
+            size = parseInt(size);
+
+            for (var i = 0; i < size; i++) {
+                userArray[i] = prompt("Enter numbers");
+                userArray[i] = parseInt(userArray[i])
+            }
+            
+            listOfPalindrome(userArray, size);
+        }
+
+        var listOfPalindrome = (userArray, size) => {
+            // Iteration for checking every number
+            for (var j = 0; j < size; j++) {
+                var userNumber, reverse = 0, reminder, original;
+                userNumber = userArray[j];
+                original = userNumber;
+                for (var i = 0; userNumber != 0; i++) {
+                    reminder = userNumber % 10;
+                    reverse = reverse * 10 + reminder;
+                    userNumber = userNumber / 10;
+                    userNumber = parseInt(userNumber);
+                }
+                if (original == reverse) {
+                    console.log(original);
+                }
+
+            }
+        }
+
+        readFromUser();
+    </script>
+</body>
+
+</html>

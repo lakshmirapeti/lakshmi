@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration page</title>
+
+    <style>
+        body div{
+            margin: 5px;
+        }
+        .header, .footer{
+            border: 2px solid;
+            text-align: center;
+            background-color: rgb(203, 94, 224);
+        }
+        .container{
+            border: 2px solid;
+            height: 700px;
+            overflow: auto;
+        }
+        .firstblock{
+            border: 1px solid;
+            margin: 20px;
+            height: 230px;
+            border-radius: 10px;
+            
+        }
+        .block{
+            border: 1px solid;
+            position: relative;
+            top: -18px;
+            left: 60px;
+            height: 33px;
+            width: 160px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            background-color: rgb(252, 251, 250);
+        }
+        .bx_1, .bx_2, .bx_3, .bx_4{
+            /* border: 1px solid; */
+            float: left;
+            margin: 0px;
+            margin-left: 35px;
+            font-size: 20px;
+        }
+        .bx_1{
+            width: 45%;
+        }
+        .bx_2{
+            width: 45%;
+        }
+        ul{
+            list-style: none;
+        }
+        li{
+            padding: 10px;
+        }
+        ul li input[type="text"]{
+            height: 20px;
+            width: 200px;
+        }
+        select{
+            height: 25px;
+            width: 200px;
+        }
+        input[type="checkbox"]{
+            width: 100px;
+        }
+        .txt{
+            margin-left: 100px;
+            font-size: 20px;
+            margin-top: 0px;
+        }
+        .save{
+            margin: 10px;
+            height: 40px;
+            width: 200px;
+            font-size: 17px;
+            border-radius: 10px;
+            margin-left: 1250px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>STUDENT REGISTRATION PAGE</h2>
+    </div>
+
+    <div class="container">
+        <div class="firstblock">
+            <div class="block">Personal Details</div>
+            <div class="bx_1">
+                <ul>
+                    <li>
+                        <label for="uname"> Name: &nbsp;&nbsp;&nbsp;</label>
+                        <input type="text" name="name">
+                    </li>
+                    <li>
+                        <label for="uage"> Age: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <input type="text" name="age">
+                    </li>
+                    <li>
+                        <label for="ugender"> Gender: &nbsp;</label>
+                        <input type="radio" name="gender">Male
+                        <input type="radio" name="gender">Female
+                    </li>
+                </ul>
+            </div>
+            <div class="bx_2">
+                <ul>
+                    <li>
+                        <label for="cntname"> Country Name: </label>
+                        <select>
+                            <option>India</option>
+                            <option>London</option>
+                            <option>Asia</option>
+                            <option>Chaina</option>
+                            <option>USA</option>
+                            <option>Japan</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="class"> Class: </label>
+                        <select>
+                            <option>Btech</option>
+                            <option>BBA</option>
+                            <option>MCA</option>
+                            <option>CA</option>
+                            <option>Pharmacy</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="firstblock">
+            <div class="block">Education Details</div>
+                <div class="bx_3">
+                    <ul>
+                        <li>
+                            <label for="ulanguage"> Languages Known: </label>
+                            <input type="checkbox" name="n1">English
+                            <input type="checkbox" name="n1">Hindi
+                            <input type="checkbox" name="n1">Telgu
+                        </li>
+                        <li>
+                            <label for="uqualification"> Qualification: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                            <input type="checkbox" name="n2">MCA
+                            <input type="checkbox" name="n2">MBA
+                            <input type="checkbox" name="n2">B Tech
+                            <input type="checkbox" name="n2">CA
+
+                        </li>
+                    </ul>
+                </div>
+        </div>
+        <div class="firstblock">
+            <div class="block">Course Details</div>
+                <div class="bx_4">
+                    <ul>
+                        <li>
+                            <label for="ucoursdetails"> Course Option for: &nbsp;</label>
+                            <select>
+                                <option>B Tech</option>
+                                <option>BBA</option>
+                                <option>B Com</option>
+                                <option>CA</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="ulanguage"> Language: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                            <select>
+                                <option>English</option>
+                                <option>Hindi</option>
+                                <option>Marathi</option>
+                                <option>Urdu</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+        <div class="firstblock">
+            <div class="block">About Yourself</div>
+                <label for="uabout" class="txt"> Few words about yourself: </label>
+                <textarea name="about" cols="70" rows="10"></textarea>
+        </div>
+        
+        <input type="submit" value="Save Details" class="save">
+        
+    </div>
+
+    <div class="footer">
+        <h2>@ Copy Rights 2023</h2>
+    </div>
+</body>
+</html>

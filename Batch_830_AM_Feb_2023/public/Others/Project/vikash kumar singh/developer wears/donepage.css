@@ -1,0 +1,38 @@
+body{
+    background-image: url(/img/photo-1607743386760-88ac62b89b8a.avif);
+    background-size: cover;
+  
+}
+.container{
+    border: 2px solid black;
+    width: 700px;
+    height: 400px;
+    position: relative;
+    margin-left: 250px;
+    background-color: burlywood;
+    top: 80px;
+}
+  
+
+.e-mail{
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    margin-left: 235px;
+    top: 75px;
+    font-size: large;
+}
+
+
+.donebtn{
+    margin: 20px;
+    padding: 10px;
+    position: relative;
+    margin-left: 330px;
+    top: 75px;
+    width: 100px;
+   
+}
+
+
+

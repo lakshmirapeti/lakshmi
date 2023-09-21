@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            border: 1px solid black;
+            width: 500px;
+            padding: 10px;
+            margin: 20px auto;
+        }
+        li {
+            list-style: none;
+            padding: 5px;
+            margin: 5px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Enter First Value 
+            <input type="text" id="fval" onkeypress="return getvalid(event)">
+        </li>
+        <li>Enter Second Value 
+            <input type="text" id="sval" onkeypress="return getvalid (event)">
+        </li>
+        <li><input type="button" value="Get sum" onclick="doOperation();"></li>
+        <li>sum : <span id="result"></span>
+        </li>
+    </ul>
+    <script>
+        var doOperation = () => {
+            var data = {} ;
+            data.m1 = document.querySelector('#fval').value;
+            data.m1 = parseInt(data.m1);
+            data.m2 = document.querySelector('#sval').value;
+            data.m2 = parseInt(data.m2);
+            data.sum = data.m1 + data.m2;
+            document.querySelector("#result").innerText = data.sum;
+        }
+        var getvalid = (event) => {
+            if(event.charCode >= 48 && event.charCode <= 57)
+            {
+                return true;
+
+            }
+            else {
+                return false;
+            }
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Replacing word</title>
+    </head>
+    <body>
+        <script>
+            var readData=()=>{
+                var data=prompt("Enter a string:");
+                var word1=prompt("Enter the word to be replaced:");
+                var word2=prompt("Enter the word to be replaced with:");
+                replace(data, word1, word2);
+            }
+            var replace=(data, word1, word2)=>{
+                word1=word1.concat('/g');
+                var replacedData=data.replace(word1,word2);
+                // var replacedData=data.replace(word1/g,word2);
+                console.log(replacedData);
+            }
+            readData();
+        </script>
+    </body>
+</html>

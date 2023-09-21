@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Employe Details</title>
+</head>
+<body>
+    
+
+
+<script>
+
+    var eName, eAge, eGender, eDept, eSal;
+
+    eName   = prompt("Enter your name");
+    eAge    = prompt("Enter your age"); 
+    eGender = prompt("Enter your gender");
+    eDept   = prompt("Enter your deparment");
+    eSal    = prompt("Enter your salary per year");
+    eSal    = parseInt(eSal);
+    eGender = eGender.toLowerCase()
+
+    var pf, hra, tSal, tTax, tTax1, tTax2, tTax3;
+
+    pf  = (eSal * 14) / 100;
+    hra = (eSal * 24) / 100;
+   
+    
+    tTax1 = (eSal * 15) / 100;
+    tTax2 = (eSal * 10) / 100;
+    tTax3 = (eSal * 5) / 100;
+    tSal= eSal + pf + hra - tTax1 - tTax2 - tTax3;
+    console.log(tSal);
+if(eGender == 'male'){
+if(eSal >= 500000){
+    console.log("This is your total tax amount " + tTax1);
+    console.log("This is your total salary " + tSal);
+}
+if(eSal >= 300000 && eSal <= 500000){
+    console.log("This is your total tax amount " + tTax2);
+    console.log("This is your total salary " + tSal);
+}
+if( eSal >= 200000 && eSal <= 300000){
+    console.log("This is your total tax amount " + tTax3);
+    console.log("This is your total salary " + tSal);
+}
+if( eSal < 200000){
+    console.log("This is your total tax amount is 0");
+    console.log("This is your total salary " + tSal);
+}
+}
+
+if(eGender == 'female'){
+if(eSal >= 500000){
+    console.log("This is your total tax amount" + tTax2);
+    console.log("This is your total salary" + tSal);
+}
+if(eSal >= 300000 && eSal <= 500000){
+    console.log("This is your total tax amount" + tTax3);
+    console.log("This is your total salary" + tSal);
+}
+if(eSal < 300000){
+    console.log("This is your total tax amount 0" );
+    console.log("This is your total salary" + tSal);
+}
+}
+
+console.log('Dear ' + eName + ' your age is ' + eAge + ' your gender is ' + eGender + ' your deparment is '+ eDept + ' and your salary is ' + eSal);
+
+</script>
+
+</body>
+</html>

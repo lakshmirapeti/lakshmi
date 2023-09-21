@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>armstrongNoOrNot</title>
+</head>
+<body>
+    <script>
+        var count = 0;
+
+        var usernumber = prompt('enter the number');
+        usernumber = parseInt(usernumber);
+        var mainnumber = usernumber;
+        var sum = 0;
+        var countNum = usernumber.toString().length;
+        for (var i = 1; i <= countNum; i++) {
+            var second = 1;
+            var rem = usernumber % 10;
+            usernumber = usernumber / 10;
+            usernumber = parseInt(usernumber);
+            for (var j = 1; j <= countNum; j++) {
+                second = second * rem;
+            }
+            sum = sum + second;
+        }
+        if (mainnumber == sum) {
+            console.log('this is armstrong number')
+        }
+        else {
+            console.log('this is not a armstrong number')
+        }
+    </script>
+</body>
+
+</html>

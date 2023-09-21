@@ -1,0 +1,13 @@
+Webworkes 
+
+
+    Multi tasking
+
+    Multi Threading
+
+
+    Impleentatin of webworks"
+
+        Worker 
+
+        var m1 = new Worker();

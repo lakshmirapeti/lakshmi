@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var toCheckPalindromeNumber = (n) =>{
+            var temp = n; 
+            var rev = 0;
+        while( temp != 0 ){
+            var rem = temp % 10;
+            rev = rev * 10 + rem;
+            temp = parseInt (temp/10);
+           
+        }
+         if( rev == n){
+            palindromeNumber
+                
+              //  console.log( " The " + rev + " number is  a palindrome number ");
+            }
+            else{
+               // console.log( " The " + temp + " number is not a palindrome number ");
+            }
+            return(rev==n);
+        }
+       // console.log(toCheckPalindromeNumber(121));
+
+       var totalLength = prompt("length of array") ;
+        totalLength= parseInt(totalLength) ;
+
+        var number = [] ;
+    
+        for(var i = 0 ; i < totalLength ; i++){
+        number[i] = prompt(" enter numbers ");
+        number[i] = parseInt(number[i]);
+        
+        }
+    
+        var palindromeNumber = [] ;
+ 
+        for(var i = 0 ; i < number.length ; i++){
+            var result = toCheckPalindromeNumber(number[i]) ;
+
+            if (result){
+               palindromeNumber.push(number[i]);
+
+           }
+        }
+       
+         console.log (palindromeNumber) ;
+
+
+
+       /* var totalLength = prompt("length of array") ;
+        totalLength= parseInt(totalLength) ;
+
+        var n = [] ;
+        for( var i = 0 ; i<totalLength ; i++) {
+         n[i] = prompt( "enter any number");
+         n[i]=parseInt(n[i]);
+        
+        }
+         
+        var temp = n[i]; 
+        var rev = 0;
+        while( temp != 0 ){
+            var rem = temp % 10;
+            rev = rev * 10 + rem;
+            temp = parseInt (temp/10);
+           
+        }
+         if( rev == n){
+                console.log( " The " + rev + " number is  a palindrome number ");
+            }
+            else{
+                console.log( " The " + rev + " number is not a palindrome number ");
+            }*/
+    </script>
+    
+</body>
+</html>

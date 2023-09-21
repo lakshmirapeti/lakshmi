@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+           /* Type 1
+            var name = 'Teena';
+            var age = 20;
+            var m1 = 20;
+            var m2 = 90;
+            var m3 = 99;
+            var total = 0;
+            var avg;
+
+            var displayStudentDetails = () => {
+                console.log("Name is " + name);
+                console.log("Age is " + age);
+                console.log("Total is " + total);
+                console.log("Avg is " + avg)
+            }
+
+            var getTotalAndAvg = () => {
+                total = m1 + m2 + m3;
+                avg = total / 3;
+            }
+
+            getTotalAndAvg();
+            displayStudentDetails();
+            */
+
+            /*
+            // Type 2
+            var name = 'Teena';
+            var age = 20;
+            var marks = [50, 89, 90];
+            var total = 0;
+            var avg;
+
+            var displayStudentDetails = () => {
+                console.log("Name is " + name);
+                console.log("Age is " + age);
+                console.log("Total is " + total);
+                console.log("Avg is " + avg)
+            }
+
+            var getTotalAndAvg = () => {
+                for (var i = 0 ; i < marks.length; i++) {
+                    total += marks[i];
+                }
+                avg = total / marks.length;
+            }
+
+            getTotalAndAvg();
+            displayStudentDetails(); */ 
+
+            // Type 3
+
+           
+            var sdetails = {
+                name: 'Teena',
+                age: 20,
+                marks: [50, 89, 90],
+                total: 0,
+                displayStudentDetails: function() {
+                    sdetails.getTotalAndAvg();
+                    console.log("Name is " + sdetails.name);
+                    console.log("Age is " + sdetails.age);
+                    console.log("Total is " + sdetails.total);
+                    console.log("Avg is " + sdetails.avg)
+                },
+                getTotalAndAvg: () => {
+                    sdetails.total = 0;
+                    for (var i = 0 ; i < sdetails.marks.length; i++) {
+                        sdetails.total += sdetails.marks[i];
+                    }
+                    sdetails.avg = sdetails.total / sdetails.marks.length;
+                }
+            };
+
+            
+            sdetails.displayStudentDetails();
+
+
+        </script>
+    </body>
+</html>

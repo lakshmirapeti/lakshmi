@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Assignment4</title>
+    <style>
+        .header, .footer{
+            border: 1px solid;
+            text-align: center;
+            background-color: blue;
+            height: 30px;
+        }
+        .maincontainer{
+            border: 1px solid;
+            margin: 10px;
+            padding: 10px;
+            height: 460px;
+            background-color:brown;
+        }
+        .lblock{
+            border: 1px solid;
+            margin: 5px;
+            padding: 5px;
+            float: left;
+            height: 440px;
+            width: 35%;
+            overflow: auto;
+            background-color: yellowgreen;
+        }
+        .rblock{
+            border: 1px solid;
+            margin: 5px;
+            padding: 5px;
+            float: left;
+            height: 440px;
+            width: 60%;
+            overflow: auto;
+            background-color: greenyellow;
+        }
+        .lblock li{
+            border: 1px solid;
+            margin: 5px;
+            padding: 10px;
+            list-style-position: inside ;
+        }
+        .detailsblock > li{
+            border: 1px solid;
+            height: 120px;
+            list-style: none;
+            margin: 1px;
+            padding: 1px;
+
+        }
+        .imgblock{
+            float: left;
+            width: 150px;
+        }
+        .detailblock{
+            float: left;
+         
+        }
+        img{
+            width: 120px;
+            height: 120px;
+        }
+        .detailblock li{
+            list-style: none;
+            padding: 5px ;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">student details</div>
+    <div class="maincontainer">
+        <div class="lblock">
+            <ol>
+                <li><a href="#M_01">Murali</a></li>
+                <li><a href="#S_02">Suresh</a></li>
+                <li><a href="#P_03">Pranay</a></li>
+                <li><a href="#S_04">Shilpa</a></li>
+                <li><a href="#M_05">Mallesh</a></li>
+                <li><a href="#V_06">Vinay</a></li>
+                <li><a href="#S_07">Sravan kumar</a></li>
+                <li><a href="#N_08">Naveen</a></li>
+                <li><a href="#B_09">Bargav</a></li>
+                <li><a href="#D_10">Deepika</a></li>
+            </ol>
+        </div>
+        <div class="rblock">
+            <ul class="detailsblock">
+                <li id="M_01">
+                    <div class="imgblock">
+                        <img src="https://th.bing.com/th/id/OIP.NZT_Nc3SyccxDu10UwZh_AHaFj?pid=ImgDet&rs=1"/>
+                    </div>
+                    <div class="detailblock">
+                        <ul>
+                            <li>Name: Murali</li>
+                            <li>Age: 21</li>
+                            <li>Gender: male</li>
+                            <li>Loction: lb nagar</li>
+                        </ul>
+                     </div>
+                 </li>
+                 <li id="S_02">
+                    <div class="imgblock">
+                        <img src="https://centralaz.edu/wp-content/uploads/2018/10/iStock-463176541-705x470.jpg"/>
+                    </div>
+                    <div class="detailblock">
+                        <ul>
+                            <li>Name: Suresh</li>
+                            <li>Age: 22</li>
+                            <li>Gender: male</li>
+                            <li>Loction: dilsuknagar</li>
+                        </ul>
+                     </div>
+                 </li>
+                 <li id="P_03">
+                    <div class="imgblock">
+                        <img src="https://m.media-amazon.com/images/S/aplus-media/vc/dadf61f9-4c8d-43b4-adf4-e9cd4a934435.__CR0,0,300,300_PT0_SX300_V1___.jpg"/>
+                    </div>
+                    <div class="detailblock">
+                        <ul>
+                            <li>Name: Pranay</li>
+                            <li>Age: 22</li>
+                            <li>Gender: male</li>
+                            <li>Loction: BN Reddy Nagar</li>
+                        </ul>
+                     </div>
+                 </li>
+                 <li id="S_04">
+                    <div class="imgblock">
+                        <img src="https://th.bing.com/th/id/OIP.ThMEwAScVv6Af8WOG3sNDgAAAA?pid=ImgDet&rs=1"/>
+                    </div>
+                    <div class="detailblock">
+                        <ul>
+                            <li>Name: Shilpa</li>
+                            <li>Age: 21</li>
+                            <li>Gender: female</li>
+                            <li>Loction: uppal</li>
+                        </ul>
+                     </div>
+                 </li>
+                 <li id="M_05">
+                    <div class="imgblock">
+                        <img src="https://www.bankwest-sd.bank/wp-content/uploads/2020/02/College-Student-540X328.jpg"/>
+                    </div>
+                    <div class="detailblock">
+                        <ul>
+                            <li>Name: Mallesh</li>
+                            <li>Age: 22</li>
+                            <li>Gender: male</li>
+                            <li>Loction: ibp</li>
+                        </ul>
+                     </div>
+                 </li>
+                 <li id="V_06">
+                    <div class="imgblock">
+                        <img src="https://westvirginia.kvc.org/wp-content/uploads/sites/6/2017/12/iStock-482746131-1038x576.jpg"/>
+                    </div>
+                    <div class="detailblock">
+                        <ul>
+                            <li>Name: Vinay</li>
+                            <li>Age: 21</li>
+                            <li>Gender: male</li>
+                            <li>Loction: chaitanyapuri</li>
+                        </ul>
+                     </div>
+                 </li>
+                 <li id="S_07">
+                    <div class="imgblock">
+                        <img src="https://th.bing.com/th/id/OIP.euagQOTkzoBnWSDFLxCSkAAAAA?pid=ImgDet&rs=1"/>
+                    </div>
+                    <div class="detailblock">
+                        <ul>
+                            <li>Name: Sravn kumar</li>
+                            <li>Age: 22</li>
+                            <li>Gender: male</li>
+                            <li>Loction: kothapet</li>
+                        </ul>
+                     </div>
+                 </li>
+                 <li id="N_08">
+                    <div class="imgblock">
+                        <img src="https://becauseofcalvary.com/wp-content/uploads/bb-plugin/cache/bigstock-smiling-teen-boy-carrying-scho-46806349-1024x683-landscape.jpg"/>
+                    </div>
+                    <div class="detailblock">
+                        <ul>
+                            <li>Name: Naveen</li>
+                            <li>Age: 22</li>
+                            <li>Gender: male</li>
+                            <li>Loction: chintallkunta</li>
+                        </ul>
+                     </div>
+                 </li>
+                 <li id="B_09">
+                    <div class="imgblock">
+                        <img src="https://th.bing.com/th/id/OIP.91JFiUuVzzMcsLfxQj_MgwHaEo?pid=ImgDet&w=1920&h=1200&rs=1"/>
+                    </div>
+                    <div class="detailblock">
+                        <ul>
+                            <li>Name: Bargav</li>
+                            <li>Age: 21</li>
+                            <li>Gender: male</li>
+                            <li>Loction: bairamalguda</li>
+                        </ul>
+                     </div>
+                 </li>
+                 <li id="D_10">
+                    <div class="imgblock">
+                        <img src="https://s-i.huffpost.com/gen/1257364/images/o-COLLEGE-STUDENT-facebook.jpg"/>
+                    </div>
+                    <div class="detailblock">
+                        <ul>
+                            <li>Name: Dipika</li>
+                            <li>Age: 21</li>
+                            <li>Gender: female</li>
+                            <li>Loction: sagar ringroad</li>
+                        </ul>
+                     </div>
+                 </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">@copyrights 2023</div>
+</body>
+</html>

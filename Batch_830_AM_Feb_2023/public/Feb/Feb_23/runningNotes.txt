@@ -1,0 +1,30 @@
+DOM Structure
+    Document Object model
+        the Tree structure repreasentation of any webpage is called DOM Strutture of the current page
+
+Css Classes
+
+    grouping set of css props defined as a block, assigned with user defined name, starting with '.' operator is called a css class. 
+
+    'class' is predefined attribute usin which we can inject a class name to a html element.
+
+
+    Syntax:
+
+        .classname {
+            .... 
+            .... \
+            ....
+        }
+
+Eg:
+    // Class definition
+    .newsHeading {
+        color: red;
+        background-color: pink;
+    }
+
+    <h3 class="newsHeading">News Content 2: </h3>
+
+
+    <h3 class="newsHeading">News Content 3: </h3>

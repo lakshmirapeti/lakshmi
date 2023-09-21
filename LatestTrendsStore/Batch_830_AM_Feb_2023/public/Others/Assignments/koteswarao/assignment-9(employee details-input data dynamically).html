@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student details</title>
+</head>
+<body>
+    <script>
+        var empname,empage,empgen, tsal,basicsal,hra,pf,tax;
+         empname=prompt('enter employee name');
+         empage=prompt('enter employee age');
+         empgen=prompt('enter gender');
+        basicsal=prompt('enter basic salary');
+        console.log('employee Name:  '+empname);
+        console.log('employee age:'+empage);
+        console.log('employee gender:'+empgen);
+        basicsal=parseInt(basicsal);
+        hra=(24/100)*basicsal;
+        pf=(14/100)*basicsal;
+        tsal=basicsal+hra+pf;
+        console.log("total salary is: "+tsal);
+        if(empgen=='male'){
+            if(tsal>=500000){
+            tax=(15/100)*tsal;
+            console.log('total tax is='+tax);
+             }
+             if(tsal>=300000){
+            tax=(10/100)*tsal;
+            console.log('total tax is='+tax);
+             }
+             if(tsal>=2000000){
+            tax=(5/100)*tsal;
+            console.log('total tax is='+tax);
+             }
+             if(tsal<300000){
+                tax=(0/100)*tsal;
+                console.log('total tax is='+tax);
+             }
+
+        }
+        if(empgen=='female'){
+            if(tsal>=500000){
+            tax=(10/100)*tsal;
+            console.log('total tax is='+tax);
+             }
+             if(tsal>=300000){
+            tax=(5/100)*tsal;
+            console.log('total tax is='+tax);
+             }
+             if(tsal<300000){
+                tax=(0/100)*tsal;
+                console.log('total tax is='+tax);
+             }
+        }
+
+       
+     
+    </script>
+</body>
+</html>

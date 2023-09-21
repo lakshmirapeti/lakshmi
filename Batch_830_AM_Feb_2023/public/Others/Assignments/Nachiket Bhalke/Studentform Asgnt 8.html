@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Student Form
+        </title>
+
+        <style>
+            .title{
+                border: 2px solid;
+                text-align: center;
+                padding: 5px;
+                background-color: rgb(122, 113, 246);
+            }
+            .container{
+                height: 250px;
+                width: 950px;
+                position: relative;
+                z-index: 1;
+            }
+
+            .top{
+                border: 1px solid;
+                height: 200px; width: 900px;
+                position: relative; top: 25px;
+            }
+            .Pd{
+                border: 1px solid;
+                width: 150px; height: 30px;
+                text-align: center;
+                padding-top: 4px;
+                left: 30px; top: 60px;
+                position: relative;
+                background-color: rgb(160, 227, 227);
+                z-index: 2;
+            }
+            .i1{
+                position: relative;
+                top: 80px; left: 25px;
+            }
+            .i2{
+                position: relative;
+                bottom: 145px; right: 200px;
+                float: right;
+            }
+            .i3{
+                position: relative;
+                bottom: 100px; left: 37px ;
+            }
+            .i4{
+                position: relative;
+                bottom: 123px; right: 235px;
+                float: right;
+            }
+            .i5{
+                position: relative;
+                bottom: 70px; left: 30px ;
+            }
+
+            .Ed{
+                border: 1px solid;
+                position: relative;
+                width: 150px; height: 30px;
+                text-align: center;
+                padding-top: 4px;
+                background-color: rgb(160, 227, 227);
+                left: 30px; top: 53px;
+                z-index: 5;
+            }
+            .container2{
+                border: 1px solid;
+                height: 150px;
+                width: 900px;
+                position: relative;
+                top: 40px;
+                z-index: 4;
+            }
+            .e1{
+                position: relative;
+                top: 40px; left: 20px;
+            }
+            .e2{
+                position: relative;
+                top: 70px; left: 20px;
+            }
+
+            .Cd{
+                border: 1px solid;
+                position: relative;
+                width: 150px; height: 30px;
+                text-align: center;
+                padding-top: 4px;
+                background-color: rgb(160, 227, 227);
+                left: 30px; top: 65px;
+                z-index: 5;
+            }
+            .container3{
+                border: 1px solid;
+                height: 150px;
+                width: 900px;
+                position: relative;
+                top: 52px;
+                z-index: 4;
+            }
+            .c1{
+                position: relative;
+                top: 40px; left : 20px;
+            }
+            .c2{
+                position: relative;
+                top: 70px; left : 20px;
+            }
+
+            .container4{
+                border: 1px solid;
+                height: 160px;
+                width: 900px;
+                position: relative;
+                top: 130px;
+                z-index: 4;
+            }
+            .Ad{
+                border: 1px solid;
+                position: relative;
+                width: 150px; height: 30px;
+                text-align: center;
+                padding-top: 4px;
+                background-color: rgb(160, 227, 227);
+                left: 30px; top: 145px;
+                z-index: 5;
+            }
+            .a1{
+                position: relative;
+                top: 40px; left : 20px;
+            }
+            .urbox{
+                border: 1px solid;
+                height: 110px;
+                width: 650px;
+                position: relative;
+                top: 15px; left: 220px;
+            }
+
+            .button{
+                position: relative;
+                top: 295px;
+                padding: 10px;
+                left: 800px;
+                background-color: rgb(100, 100, 250);
+                border-radius: 5px;
+                color: white;
+            }
+            .button:hover{
+                box-shadow: 10px 10px;
+                cursor: pointer;
+            }
+            .button2{
+            position: relative;
+                top: 295px;
+                padding: 10px;
+                left: 570px;
+                background-color: rgb(100, 100, 250);
+                border-radius: 5px;
+                color: white;
+            }
+            .button2:hover{
+                cursor: pointer;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h2 class="title">
+            Student Review Form
+        </h2>
+            <div class="Pd">
+            Personal Details
+            </div>
+            
+        <div class="container">
+            
+            <div class="i1">
+            Name :&nbsp;&nbsp; <input type="text"> </div>
+
+            <div class="top"> </div>
+
+            <div class="i2">
+                Country Name :&nbsp;&nbsp;
+                <select> 
+                    <optgroup label="Choose One">
+                        <option> India </option>
+                        <option> Pakistan </option>
+                        <option> South Africa </option>
+                        <option> Brazil </option>
+                        <option> United States </option>
+                        <option> United Kingdom </option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div class="i3">
+                Age :&nbsp;&nbsp; <input type="text">
+            </div>
+
+            <div class="i4">
+                Class : &nbsp;&nbsp;
+                <select>
+                    <optgroup label="Choose One">
+                        <option> 1st Year </option>
+                        <option> 2nd Year </option>
+                        <option> 3rd Year </option>
+                        <option> Final Year </option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div class="i5">
+                <form>
+                    <label>
+                        Gender :
+                    </label>
+                    &nbsp; <input type="radio" name="gen">MALE
+                    &nbsp;&nbsp; <input type="radio" name="gen">FEMALE
+                </form>
+            </div>
+        </div>
+
+        <div class="Ed">
+            Educational Details
+        </div>
+
+        <div class="container2">
+            <div class="e1">
+                <label>Languages known: </label> &nbsp;&nbsp;&nbsp;
+                <input type="checkbox" checked>English&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox">Hindi&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox">Telugu&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox">Marathi
+            </div>
+
+            <div class="e2">
+                <label> Qualification : </label>&nbsp;&nbsp;&nbsp;
+                <input type="checkbox">MCA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox">MBA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox">B.Tech&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox">M.Tech
+            </div>
+        </div>
+            
+        <div class="Cd">
+            Course Details
+        </div>
+
+        <div class="container3">
+            <div class="c1">
+                Course Option :  &nbsp;&nbsp;&nbsp;
+                <select>
+                    <optgroup label="Choose One">
+                        <option> Java Developer </option>
+                        <option> Full-stack Developer </option>
+                        <option> Web-Developer </option>
+                        <option> Front-end Dev</option>
+                        <option> Back-end Dev</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div class="c2">
+                Language Known :  &nbsp;&nbsp;&nbsp;
+                <select>
+                    <optgroup label="Choose One">
+                        <option> Javascript </option>
+                        <option> Python </option>
+                        <option> Java </option>
+                        <option> C++ </option>
+                    </optgroup>
+                </select>
+            </div>
+
+
+            <div class="Ad">
+                About Yourself
+            </div>
+            <div class="container4">
+                <div class="a1">
+                Few words about yourself :
+                </div>
+
+                <div class="urbox">
+
+                </div>
+            </div>
+        </div>
+        
+        <button class="button">
+            Submit Form
+        </button>
+
+        <button class="button2">
+            Clear Form
+        </button>
+    </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Level Inheritance in javascript classes</title>
+</head>
+
+<body>
+    <script>
+        class UniversityDetails {
+            constructor(univInfo) {
+                this.nameOfUniversity = univInfo.nameOfUniv;
+                this.placeOfUniversity = univInfo.placeOfUniversity;
+                this.establishedDate = univInfo.establishedDate;
+            }
+            displayUniversityInfo() {
+                console.log('Name of university is ' + this.nameOfUniversity);
+                console.log('Place of university is ' + this.placeOfUniversity);
+                console.log('Established date of university is ' + this.establishedDate);
+            }
+        }
+
+        class CollegeDetails extends UniversityDetails {
+            constructor(college) {
+                super(college.univDet)
+                this.collegeName = college.nameOfCollege;
+                this.placeOfCollege = college.placeOfCollege;
+                this.establishDate = college.establishDate;
+            }
+            displayCollegeDetails() {
+                console.log('Name of college is ' + this.collegeName);
+                console.log('Place of college is ' + this.placeOfCollege);
+                console.log('Established date of college is ' + this.establishDate);
+            }
+        }
+
+        class StudentDetails extends CollegeDetails {
+            constructor(studentInfo) {
+                super(studentInfo.collegeDet);
+                this.name = studentInfo.name;
+                this.age = studentInfo.age;
+                this.gender = studentInfo.gender;
+            }
+            displayStudentDetails() {
+                console.log('Name of Student is ' + this.name);
+                console.log('Age of Student is ' + this.age);
+                console.log('Gender of Student is ' + this.gender);
+                this.displayCollegeDetails();
+                this.displayUniversityInfo();
+
+                console.log('Name of university is ' + this.nameOfUniversity);
+                console.log('Name of College is ' + this.collegeName);
+            }
+        }
+
+        var data = {
+            name: 'Sreekanth',
+            age: 27,
+            gender: 'Male',
+            collegeDet: {
+                nameOfCollege: 'JB Institute of Engineering & Technology',
+                placeOfCollege: 'Hyderabad',
+                establishDate: 1985,
+                univDet: {
+                    nameOfUniv: 'Jawaharlal Nehru Technology of University',
+                    placeOfUniversity: 'Hyderabad',
+                    establishedDate: 1955
+                }
+            }
+            
+        }
+
+        var s1 = new StudentDetails(data);
+        s1.displayStudentDetails();
+
+
+    </script>
+</body>
+
+</html>

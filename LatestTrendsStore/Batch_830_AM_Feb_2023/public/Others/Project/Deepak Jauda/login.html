@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loginpage</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'poppins', sans-serif;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-image: url(https://wallpaperaccess.com/full/530366.jpg);
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card{
+            border: 1px solid rgba(225, 225, 225, 0.3);
+            background-color: rgba(225, 225, 225, 0.2);
+            width: 25%;
+            height: 60%;
+            max-width: 440px;
+            color: black;
+            /* text-align: center; */
+            padding: 50px 35px;
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            position: absolute;
+            top: 20%;
+            left: 18%;
+        }
+        .card img{
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            border-radius: 80px;
+            position: absolute;
+            top: -17%;
+            left: 30%;
+        }
+        .card h3{
+            margin: 15px;
+            padding: 0 0 20px;
+            text-align: center;
+            font-size: 22px;
+        }
+        input[type="submit"]{
+            border: 1px solid;
+            outline: none;
+            height: 30px;
+            width: 100%;
+            /* background: black; */
+            color: #fff;
+            font-size: 18px;
+            font-weight: 700;
+            border-radius: 20px;
+            background: transparent;
+            margin-bottom: 0px;
+        }
+        input[type="submit"]:hover{
+            cursor: pointer;
+            background: red;
+            /* color: black; */
+        }
+        .card a{
+            text-decoration: none;
+            font-size: 12px;
+            line-height: 20px;
+            color: black;
+            margin: 5px;
+            position: absolute;
+            left: 15px;
+        }
+        .card a:hover{
+             color: red;
+        }
+        .card p{
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+        }
+        .card input{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .card input[type="text"], input[type="password"]{
+            border: none;
+            /* margin: none; */
+            border-bottom: 1px solid white;
+            background: transparent;
+            outline: none;
+            color: rgb(51, 53, 51);
+            font-size: 14px;
+            /* height: 40px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="card">
+        <img src="https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png">
+        <h3>Login Here</h3>
+        <p>Username</p><br>
+        <input type="text" placeholder="Enter the Username">
+        <p>Password</p><br> 
+        <input type="password" placeholder="Enter the Password">
+        <input type="Submit"value="Login" >
+        <br>
+       <a href="#">Lost your Password?</a><br>
+       <a href="#">Don't have an account?</a>
+    </div>
+    </div>
+</body>
+</html>

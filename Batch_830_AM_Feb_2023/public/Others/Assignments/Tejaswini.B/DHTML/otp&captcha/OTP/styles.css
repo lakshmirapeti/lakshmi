@@ -1,0 +1,9 @@
+#rblock {
+    text-align: center;
+    width: 50px;
+    border: 1px solid;
+    font-weight: bold;
+    padding: 30px;
+    margin: 30px;
+    color:blueviolet;
+}

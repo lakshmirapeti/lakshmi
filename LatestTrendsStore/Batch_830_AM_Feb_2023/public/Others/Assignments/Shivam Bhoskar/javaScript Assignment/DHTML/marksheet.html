@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Sheet</title>
+</head>
+<body>
+    <style>
+    body {
+        background-color: aqua;
+    }
+    .mainBody{
+        border: 2px solid white;
+        width: 40%;
+        margin: 20px;
+        padding: 20px;
+        float: left;
+
+    }
+    .Sdiv{
+        
+    }
+    .mainBody div{
+        border: 2px solid purple;
+        padding: 10px;
+        margin: 10px;
+    }
+    .result{
+        border: 2px solid white;
+        width: 40%;
+        float: right;
+        margin: 20px;
+        padding: 20px;
+    }
+    .result div{
+        border: 2px solid purple;
+        padding: 10px;
+        margin: 10px;
+    }
+</style>
+
+
+<div class="mainBody">
+<div>
+    Enter your name:  <input type="text" name="name" id="Sdiv-1" >
+</div>
+<div>
+    Enter your Class:  <input type="number" id="Sdiv-2">
+</div>
+<div>
+    Enter your roll no:  <input type="number" id="Sdiv-3">
+</div>
+<div>
+    Enter English mark:  <input type="number" id="Sdiv-4">
+</div>
+<div>
+    Enter Math mark:  <input type="number" id="Sdiv-5">
+</div>
+<div>
+    Enter Science mark:  <input type="number" id="Sdiv-6">
+</div>
+<div>
+    Enter GK mark:  <input type="number" id="Sdiv-7">
+</div>
+<div>
+    Enter Marathi mark:  <input type="number" id="Sdiv-8">
+</div>
+<div>
+    <input type="submit" onclick="result()">
+</div>
+</div>
+<div class="result">
+<div>
+    Your name is: <span id="name"></span>
+</div>
+<div>
+    Your class is: <span id="class"></span>
+</div>
+<div>
+    Your role no is: <span id="role"></span> 
+</div>
+<div>
+    Your English mark is: <span id="eng"></span> 
+</div>
+<div>
+    Your Math mark is: <span id="math"></span>
+</div>
+<div>
+    Your Science mark is: <span id="sci"></span>
+</div>
+<div>
+    Your GK mark is: <span id="gk"></span>
+</div>
+<div>
+    Your Marathi mark is: <span id="marathi"></span>
+</div>
+<div>
+    Average is: <span id="avg"></span>
+</div>
+
+</div>
+
+
+
+<script>
+
+var result = () => {
+    let sname = document.getElementById("Sdiv-1").value;
+    let name = document.getElementById("name").innerHTML = sname;
+
+    let sclass = document.getElementById("Sdiv-2").value;
+    let dev = document.getElementById("class").innerHTML = sclass;
+
+    let srole = document.getElementById("Sdiv-3").value;
+    let role = document.getElementById("role").innerHTML = srole;
+
+    let mark1 = parseInt(document.getElementById("Sdiv-4").value);
+    let  eng = document.getElementById("eng").innerHTML = mark1;
+
+    let mark2 = parseInt(document.getElementById("Sdiv-5").value);
+    let math = document.getElementById("math").innerHTML = mark2;
+
+    let mark3 = parseInt(document.getElementById("Sdiv-6").value);
+    let  sci = document.getElementById("sci").innerHTML = mark3;
+
+    let mark4 = parseInt(document.getElementById("Sdiv-7").value);
+    let  gk = document.getElementById("gk").innerHTML = mark4;
+
+    let mark5 = parseInt(document.getElementById("Sdiv-8").value);
+    let marathi  = document.getElementById("marathi").innerHTML = mark5;
+
+    let avg = document.getElementById('avg');
+
+    let total = mark1 + mark2 + mark3 + mark4 + mark5 ;
+    let sum = total / 5;
+
+    avg.innerHTML = sum;
+} 
+
+</script>
+
+
+</body>
+</html>

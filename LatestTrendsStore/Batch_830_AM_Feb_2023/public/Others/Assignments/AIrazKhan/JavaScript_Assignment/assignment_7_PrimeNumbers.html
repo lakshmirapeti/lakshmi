@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prime Number</title>
+  </head>
+  <body>
+    <script>
+        
+      // Write a program to check weather a given number is prime number or not ?
+
+      // var n = prompt("Enter a Number");
+      // n = parseInt(n)
+      // var count = 0;
+      // for(var i = 2; i < n; i++){
+      //     var rem = n % i
+
+      //     if(rem==0){
+      //         count++;
+      //         break;
+      //      }
+
+      // }
+      // console.log("no of iteration " + (i-1))
+      // if(count ==0){
+      //     console.log("Prime is -" + n)
+      // }else {
+      //     console.log("Not Prime " + n)
+      // }
+
+      // Write a program to display all the prime number b/w 1 to 100 ?
+
+      //     for(var j = 1; j<=100; j++){
+      //     var n = j;
+      //     var count = 0;
+      //     for(var i = 2; i < n; i++){
+      //         var rem = n % i
+
+      //         if(rem==0){
+      //             count++;
+      //             break;
+      //          }
+
+      //     }
+      //     if(count ==0){
+      //         console.log("Prime is -" + n)
+      //     }else {
+      //         console.log("Not Prime " + n)
+      //     }
+      // }
+
+       // Write a program to find the sum of prime number b/w 150 to 60 ?
+     
+      var sum = 0;
+      for (var j = 160; j >= 60; j--) {
+        var n = j;
+        var count = 0;
+        for (var i = 2; i < n; i++) {
+          var rem = n % i;
+
+          if (rem == 0) {
+            count++;
+            break;
+          }
+        }
+        if (count == 0) {
+          console.log("Prime is -" + n);
+          //   sum = sum + n;
+          sum += n;
+        } else {
+          console.log("Not Prime " + n);
+        }
+      }
+
+      console.log("sum is " + sum);
+
+
+    </script>
+  </body>
+</html>

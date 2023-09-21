@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //write a program to read a dynamic array of 10 values
+      //and list out all the prime numbers within it
+
+      var prime = () => {
+        num = [];
+        prime = [];
+        for (let i = 0; i < 7; i++) {
+          num[i] = parseInt(prompt("enter number-"));
+        }
+
+        for (let i = 0; i < num.length; i++) {
+          let isPrime = true;
+          if (num[i] == 1) {
+            isPrime = false;
+          }
+          for (let j = 2; j <= Math.sqrt(num[i]); j++) {
+            if (num[i] % j === 0) {
+              isPrime = false;
+            }
+          }
+          if (isPrime == true) {
+            prime.push(num[i]);
+          }
+        }
+
+        console.log(prime);
+        sum(prime);
+      };
+
+      var sum = (prime) => {
+        sum = 0;
+        for (let i = 0; i < prime.length; i++) {
+          sum += prime[i];
+        }
+        console.log(sum);
+      };
+
+      prime();
+    </script>
+  </body>
+</html>

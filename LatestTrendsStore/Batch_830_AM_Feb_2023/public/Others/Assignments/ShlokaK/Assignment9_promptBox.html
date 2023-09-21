@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>EMployee details with prompt</title>
+    </head>
+    <body>
+        <script>
+            var ename,eage,edept,basicsal,hra,pf,totalsal;
+            ename=prompt("Enter Employee's name:");
+            eage=prompt("Enter employee's age:");
+            edept=prompt("Enter employee's department:");
+            basicsal=prompt("Enter employee's basic salary:");
+            basicsal=parseInt(basicsal);
+            hra=(24*basicsal)/100;
+            pf=(14*basicsal)/100;
+            totalsal=basicsal+hra+pf;
+            console.log("TotalSalary is "+totalsal);
+        </script>
+    </body>
+</html>

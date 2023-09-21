@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var employeeDetails = {
+            getemployeeDetail ()  {
+                this.name = prompt('Enter name');
+                this.age = prompt('Enter age');
+                this.gender = prompt('Enter gender');
+                this.salary = prompt('Enter salary');
+                this.salary = parseInt(this.salary);
+            },
+            getPfAndHra () {
+                this.pf = (this.salary * 14) / 100;
+                this.hra = (this.salary * 24) / 100;
+                this.totalSal = (this.salary + this.pf + this.hra);
+            },
+            display () {
+                employeeDetails.getemployeeDetail();
+                employeeDetails.getPfAndHra();
+                console.log('name :' +this.name);
+                console.log('age :' +this.age);
+                console.log('gender :' +this.gender);
+                console.log('salary :' +this.totalSal);
+            }
+
+        }
+        employeeDetails.display();
+    </script>
+</body>
+</html>

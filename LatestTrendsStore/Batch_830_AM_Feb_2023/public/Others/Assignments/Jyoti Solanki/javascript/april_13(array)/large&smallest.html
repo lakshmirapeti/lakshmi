@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>smallest and largest number of an array</title>
+    </head>
+    <script>
+       function main(){
+        var array = [20,30,56500,99,5,15];
+            function largest(){
+               var i = 0;
+                    for(var j = i+1; j<=array.length-1; j++){
+                        if(array[i]<array[j]){
+                           max = array[j];
+                           array[j] = array[i];
+                           array[i] = max; 
+                        }
+                        
+                    }
+                    console.log(max);
+                   
+                }
+            function smallest(){
+                 var i = 0;
+                    for(var j = i+1; j<=array.length-1; j++){
+                        if(array[i]>array[j]){
+                           min = array[j];
+                           array[j] = array[i];
+                           array[i] = min; 
+                        }                        
+                    }
+                    console.log(min);                   
+                }
+                largest();
+                smallest();
+            }           
+            main();
+    </script>
+    <body>
+        
+    </body>
+</html>

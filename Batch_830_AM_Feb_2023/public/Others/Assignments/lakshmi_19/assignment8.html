@@ -1,0 +1,118 @@
+<html>
+    <head>
+  <style>
+    h2{border:5px solid;
+     text-align: center;
+     width:60%;
+     left:200px;
+     right:30px;
+     position:relative;
+      }
+      ul{border:5px solid;
+         height:80%;
+        width:60%;
+        left:200px;
+        position:relative;
+    overflow-y: auto;}
+        div{border:1px solid;
+            margin:20px;
+           height:200px;}
+           h3{border:5px solid;
+            width:60%;
+            left:200px;
+            position:relative;
+            text-align: center;}
+            .box{border:2px blue solid;
+              height:30px;
+            width:100px;
+          text-align: center;
+        font-size:12px;
+        background-color:pink;
+      bottom:30px;
+      position:relative;
+      z-index: 2;}
+         lable{font-size:15px;}
+      li{list-style: none;
+        bottom:50px;
+      position:relative;
+       margin:10px;}
+      #content_3{font-size:12px;}
+      
+  </style>
+    </head>
+    <body>
+        <h2>student register form</h2>
+      <ul>
+            <div class="x">
+              <div class="box">personal details</div>
+              <li><lable for="username" style="top:10px;position:relative;">Name:</lable>
+                <input type="text" name="username" style="top:10px;position:relative;"></input><br>
+               <lable style="top:20px;position:relative;">Gender:</lable>
+               <select type="click to select gender" style="top:20px;position:relative;">
+                <option>male</option>
+                <option>female</option>
+                <option>others</option>
+               </select><br>
+                <lable for="age" style="top:35px;position:relative;">Age:</lable>  
+                <input type="text" name="age" style="top:35px;position:relative;"><br>
+                <lable style="top:49px;position:relative;">District:</lable>
+                <input type="text" name="district" style="top:49px;position:relative;"><br>
+                <lable style="float:right;top:-40px;position:relative;right:210px;">State:</lable>
+                <input type="text" name="state" style="float:right;top:-40px;position:relative;">
+                <lable style="float:right;top:10px;position:relative;">Pincode:</lable>
+                <input type="text" name="pincode" style="float:right;top:10;position:relative;left:230px;">
+
+              
+            </li>
+            </div>
+            <div>
+               <div class="box">education details</div>
+          <li> <lable>Languages known:</lable>
+               <input type="radio" name="checkbox">English
+               <input type="radio" name="checkbox">telugu
+               <input type="radio" name="checkbox">hindi
+               <lable><br><br><br><br>Qualification:</lable>
+               <input type="checkbox" name="edu">MBA
+               <input type="checkbox" name="edu">MCA
+               <input type="checkbox" name="edu">BTECH
+               <input type="checkbox" name="edu">Graduation
+            </li>
+            </div>
+            <div>
+                <div class="box">course details</div>
+              
+                  <li>
+                    <lable>Course type:</lable>
+                    <select title="click to get course name">
+                      <option>ui fullstack webdeveloper </option>
+                      <option>devops </option>
+                      <option>html&css</option>
+                      <option>fullstack java</option>
+                      <option>testing tools </option>
+                      <option>python </option>
+                      <option>java</option>
+                      <option>sql </option>
+                      <option>selenium </option>
+                    </select>
+                    <lable><br><br><br>Languages:</lable>
+                    <input type="checkbox" name="language" style="font-size:12px;" >English
+                    <input type="checkbox" name="language">Telugu
+
+                  </li>
+                
+                
+ 
+            </div>
+            <div>
+                <div class="box">About yourself</div>
+                <li>
+                  <lable for="type" style="top:50px;left:90px;position:relative;font-size:20px;">Write about yourself:</lable>
+                  <textarea name="text" rows="10" cols="50" style="float:right;right:100px;position:relative;"></textarea>
+                </li>
+
+            </div>
+            <span style="left:400px;right:200px;position:relative;"><input type="submit" name="submit" value="Submit Registration" style="background-color:blue;"> </span>
+        </ul>
+        <h3>@copyright</h3>
+    </body>
+</html>

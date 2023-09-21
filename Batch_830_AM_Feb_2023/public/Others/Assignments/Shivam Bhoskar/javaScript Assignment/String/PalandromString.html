@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palandrome string</title>
+    <style>
+        body{
+            background-color: orchid;
+        }
+    </style>
+</head>
+<body>
+    <p>To check wether the given string is palandrom or not </p>
+
+<script>
+
+    var s = prompt('Enter a word to check the given word is palandrome or not');
+    var ls = s.toLowerCase();
+    var d ='';
+
+
+
+    for(let x =(ls.length)-1; x >= 0; x--){ 
+        d = d + ls[x];
+    }  
+
+    if(ls == d){
+        console.log('The given word is palandrome word');
+    }
+    else{
+        console.log('The given word is not palandrome word');
+    }
+</script>
+</body>
+</html>

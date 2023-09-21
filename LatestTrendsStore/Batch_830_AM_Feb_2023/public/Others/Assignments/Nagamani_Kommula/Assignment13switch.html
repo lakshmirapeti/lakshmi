@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Switch Case</title>
+</head>
+<body>
+    <script>
+        var number = prompt("Enter a number : ");
+        var len = number.length;
+        number = parseInt(number);
+        var temp = number;
+        var result = 0;
+        var userinput = prompt("choose armstrong/palindrome/lucky/sumofdigits/no.ofdigits/prime");
+        switch(userinput){
+            case 'armstrong':
+                 while (number != 0){
+                    rem= number % 10;
+                result= result + (rem ** len);
+                number = parseInt(number / 10);
+                }
+                if (temp == result){
+                    console.log("armstrong number")
+                }
+                else{
+                    console.log("Not a armstrong number")
+                }
+                break;
+            case 'palindrome':
+                while(number!=0){
+                    rem = number % 10;
+                    result = result * 10 + rem;
+                    number = parseInt(number /10);
+                }
+                if( temp == result){
+                    console.log("palindrome number");
+                }
+                else{
+                    console.log("Not a palindrome");
+                }
+                break;
+            case  'lucky':
+                while(number != 0){
+                    rem = number % 10;
+                    result += rem;
+                    number = parseInt(number / 10);
+                    if(number == 0 && result > 9){
+                        number = result;
+                        result = 0;
+                    }
+                }
+                console.log(result);
+                break;
+            case  'sumofdigits':
+                while(number != 0){
+                    rem = number % 10;
+                    result += rem;
+                    number = parseInt(number / 10);
+                }
+                console.log(result);
+                break;
+            case 'no.ofdigits':
+                while(number!=0){
+                    rem=number % 10;
+                    result++;
+                    number = parseInt(number / 10);
+                }
+                console.log(result);
+                break;
+            case 'prime':
+                for(var i = 2; i < number; i++){
+                    if( number   % i== 0){
+                        result++;
+
+                    }
+                }
+                if(result == 0){
+                    console.log("Prime number");
+
+                }
+                else{
+                    console.log("Not a Prime number");
+                }
+                break;
+        }
+    </script>
+</body>
+</html>

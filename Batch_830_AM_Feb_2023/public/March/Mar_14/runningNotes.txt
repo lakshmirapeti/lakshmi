@@ -1,0 +1,18 @@
+css display property:
+
+    display: none/ inline / block/ inline-block/ grid/ flex etc.;
+
+CSS positions property:
+
+    left 
+    top 
+    bottom
+    right  - will only be applied for non static elements
+
+    position: static/ relative/ absolute / fixed / sticky
+
+
+    position: static;
+
+
+any dom element with position non static(relative, fixed, absolute, stickty) will always move from default x, y axis to Z axis 

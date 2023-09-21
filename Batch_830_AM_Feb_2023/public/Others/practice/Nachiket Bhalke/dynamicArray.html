@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+
+    <body>
+        <script>
+            var s_name = prompt("Enter Student NAme");
+            var s_age = prompt("Enter Student Age");
+
+            var marks = [];
+            var total = 0;
+
+            for (var i=0; i<=3 ; i++){
+                marks[i] = prompt("Enter Marks");
+                marks[i] = parseInt(marks[i]);
+            }
+            console.log(marks);
+
+            for (var i=0; i<=3 ; i++){
+                total = total + marks[i];
+            }
+            var avg = total/4;
+            console.log("Student name : " + s_name);
+            console.log("Student Age : " + s_age);
+            console.log("Total marks = " + total);
+            console.log("Average of Marks =" + avg);
+
+        </script>
+    </body>
+</html>

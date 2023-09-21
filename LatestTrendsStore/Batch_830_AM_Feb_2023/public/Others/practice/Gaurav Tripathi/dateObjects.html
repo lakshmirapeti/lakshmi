@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    const facebookProfiles = [
+
+{
+
+    firstName: "Gaurav",
+
+    lastName: "Tripathi",
+
+    location: "Rewa",
+
+},
+
+{
+
+    firstName: "Saurabh",
+
+    lastName: "Kumar",
+
+    location: "gurgaon",
+
+},
+
+{
+
+    firstName: "Prashu",
+
+    lastName: "Tripathi",
+
+    location: "gurgaon",
+
+},
+
+{
+
+    firstName: "Suyash",
+
+    lastName: "Kashyap",
+
+    location: "alwar",
+
+},
+
+{
+
+    firstName: "Jay",
+
+    location: "gurgaon",
+
+},
+
+];
+
+
+             function gurgaonPeaa(obj){
+                 if(obj.location==="gurgaon"){
+                    if(obj.firstName!=undefined && obj.lastName!=undefined){
+                        return obj.firstName + " " +obj.lastName
+                    }
+                    else{
+                        return obj.firstName
+                    }
+                 }
+                 else{
+                  console.log("not gurgaon people")
+                   }
+             }
+             console.log(gurgaonPeaa(facebookProfiles[4]))
+   </script> 
+</body>
+</html>

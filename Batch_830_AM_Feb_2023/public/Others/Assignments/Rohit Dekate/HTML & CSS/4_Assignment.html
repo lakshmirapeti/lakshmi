@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(204, 201, 201);
+        }
+        h3{
+            border: solid 2px black;
+            background-color: rgb(11, 233, 215);
+            text-align: center;
+            padding: 12px;
+
+        }
+        .bigcontainer{
+            width: 1330px;
+            height: 1050px;
+            border: Solid 2px black;
+            
+        }
+        .medcont{
+            width: 310px;
+            height: 1020px;
+            border: Solid 1px black;
+            float: left;
+            margin: 10px;
+            background-color: rgb(11, 233, 215);
+            list-style-position: inside;
+            font-weight: bold;
+            font-style: italic;
+        }
+        .medcont_2{
+            width: 970px;
+            height: 1020px;
+            border: Solid 1px black;
+            float: left;
+            margin: 10px;
+            overflow: auto;
+            background-color: rgb(240, 28, 28);
+        }
+        .smallcon1{
+            border: solid 1px;
+            background-color: aqua;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            background-color: rgb(224, 160, 41);
+        }
+        .smallcon1:hover{
+            background-color: rgb(235, 38, 38);
+        }
+        .smallcon2{
+            border: solid 1px;
+            width: 920px;
+            height: 140px;
+            background-color: aqua;
+            margin: 10px;
+            background-color: rgb(11, 233, 215);
+            font-weight: bold;
+            font-style: italic;
+        }
+        .litsmall{
+            border: solid 1px;
+            height: 120px;
+            width: 120px;
+            margin: 10px;
+            float: left;
+        }
+        .litsmall2{
+            border: solid 1px;
+            height: 120px;
+            width: 750px;
+            margin: 10px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <h3><b> Student Details</b></h3>
+    <div class="bigcontainer">
+        <div class="medcont">
+            <ol>
+            <li class="smallcon1"> Rohit </li>
+            <li class="smallcon1"> Sarang </li>
+            <li class="smallcon1"> Sonal </li>
+            <li class="smallcon1"> Pranali </li>
+            <li class="smallcon1"> Ashish </li>
+            <li class="smallcon1"> Roshan </li>
+            <li class="smallcon1"> Akshay </li>
+            <li class="smallcon1"> Satej </li>
+            <li class="smallcon1"> Rahul </li>
+            <li class="smallcon1"> Anup </li>
+            </ol>
+        </div>
+
+        <div class="medcont_2">
+            <div class="smallcon2">
+                <div class="litsmall">
+                    <img src="https://e7.pngegg.com/pngimages/407/726/png-clipart-cartoon-school-cartoon-child-child-photography-thumbnail.png" width="120px" height="120px" alt="Rohit">
+                </div>
+                <div class="litsmall2">
+                    <ul>
+                        <li>Name: Rohit </li>
+                        <li>Age: 30 </li>
+                        <li>Gender: Male </li>
+                        <li>Address:Nagpur </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="smallcon2">
+                <div class="litsmall">
+                    <img src="https://e7.pngegg.com/pngimages/960/32/png-clipart-twin-girl-cartoon-cute-school-boy-cartoon-character-blue-thumbnail.png" width="120px" height="120px" alt="">
+                </div>
+                <div class="litsmall2">
+                    <ul>
+                        <li>Name: Sarang</li>
+                        <li>Age: 30 </li>
+                        <li>Gender: Male </li>
+                        <li>Address: Wardha</li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="smallcon2">
+                <div class="litsmall">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs8Pp4mFafyknDfuYB9oORBZHWMCoM8dr1yA&usqp=CAU" width="120px" height="120px" alt="">
+                </div>
+                <div class="litsmall2">
+                    <ul>
+                        <li>Name: Sonal </li>
+                        <li>Age: 25 </li>
+                        <li>Gender: Female </li>
+                        <li>Address: Pune </li>
+
+                    </ul>
+                </div>
+            </div> <div class="smallcon2">
+                <div class="litsmall">
+                    <img src="data:image/jpeg;base64,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"  width="120px" height="120px" alt="">
+                </div>
+                <div class="litsmall2">
+                    <ul>
+                        <li>Name: Pranali </li>
+                        <li>Age: 26</li>
+                        <li>Gender: female </li>
+                        <li>Address:Nagpur </li>
+
+                    </ul>
+                </div>
+            </div> <div class="smallcon2">
+                <div class="litsmall">
+                    <img src="https://e7.pngegg.com/pngimages/763/251/png-clipart-red-haired-boy-wearing-blue-shirt-and-backpack-illustration-student-school-child-school-boy-child-hand-thumbnail.png" width="120px" height="120px" alt="">
+                </div>
+                <div class="litsmall2">
+                    <ul>
+                        <li>Name: Ashish</li>
+                        <li>Age: 30 </li>
+                        <li>Gender: Male </li>
+                        <li>Address:Wardha </li>
+
+                    </ul>
+                </div>
+            </div> <div class="smallcon2">
+                <div class="litsmall">
+                    <img src="data:image/jpeg;base64,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" width="120px" height="120px" alt="">
+                </div>
+                <div class="litsmall2">
+                    <ul>
+                        <li>Name: Roshan </li>
+                        <li>Age: 30 </li>
+                        <li>Gender: Male </li>
+                        <li>Address: chandrapur </li>
+
+                    </ul>
+                </div>
+            </div> <div class="smallcon2">
+                <div class="litsmall">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSzptu-J0TVC13khXZXRBjiNRcZ47R0OCbqw&usqp=CAU" width="120px" height="120px" alt="">
+                </div>
+                <div class="litsmall2">
+                    <ul>
+                        <li>Name: Akshay </li>
+                        <li>Age: 30 </li>
+                        <li>Gender: Male </li>
+                        <li>Address:Nagpur </li>
+
+                    </ul>
+                </div>
+            </div> <div class="smallcon2">
+                <div class="litsmall">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnDv8nOYt6ZVtoW1sQ0EF140HJW5xeGNgJmA&usqp=CAU" width="120px" height="120px" alt="">
+                </div>
+                <div class="litsmall2">
+                    <ul>
+                        <li>Name: Satej </li>
+                        <li>Age: 30 </li>
+                        <li>Gender: Male </li>
+                        <li>Address:Mumbai </li>
+
+                    </ul>
+                </div>
+            </div> <div class="smallcon2">
+                <div class="litsmall">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVpTkVzSJjqS0mXPGNa3eoUrkayZv7TGmkWQ&usqp=CAU" width="120px" height="120px" alt="">
+                </div>
+                <div class="litsmall2">
+                    <ul>
+                        <li>Name: Rahul </li>
+                        <li>Age: 30 </li>
+                        <li>Gender: Male </li>
+                        <li>Address:Banglore </li>
+
+                    </ul>
+                </div>
+            </div> <div class="smallcon2">
+                <div class="litsmall">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUU3JCMo-2XEiGPKswVoPwAMEb-12If5x_lYt0AT2sbUnOG_-rXOTEx4osowPla6b_92w&usqp=CAU" width="120px" height="120px" alt="">
+                </div>
+                <div class="litsmall2">
+                    <ul>
+                        <li>Name: Anup </li>
+                        <li>Age: 30 </li>
+                        <li>Gender: Male </li>
+                        <li>Address:Amravti </li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

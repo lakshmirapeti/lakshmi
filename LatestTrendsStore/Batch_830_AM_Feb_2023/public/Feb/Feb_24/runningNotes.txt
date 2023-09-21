@@ -1,0 +1,16 @@
+Colors:
+    1. direct color name 
+        color: red;
+    2. RGB
+        color: rgb(20, 120, 200); -> 0 - 255
+    4. Hashcode
+        ASCII:
+            #6 char 
+            # a1 b2 cd
+            rgb(0-255, 0-255, 0-255) -> 
+
+
+
+    3. RGBA 
+        color: rgba(20, 120, 200, 0.3);
+    5. HSLA

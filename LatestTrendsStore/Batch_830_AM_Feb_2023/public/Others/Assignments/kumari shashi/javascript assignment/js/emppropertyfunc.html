@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Employee Details
+        </title>
+    </head>
+    <body>
+        <script>
+            var empDetails = {
+
+            empData:()=>
+            {
+                empDetails.empName = prompt("Enter employee name");
+                empDetails.empGender = prompt("Enter emp gender");
+                empDetails.empBasicSal = prompt("Enter employee Basic sal");
+                empDetails.empBasicSal = parseInt(empDetails.empBasicSal)
+               
+            }  , 
+            
+            pfAndHra:()=>
+            {
+            empDetails.pf = (empDetails.empBasicSal * 14) / 100;
+            empDetails.hra = (empDetails.empBasicSal * 25) / 100;
+
+            empDetails.empTotalSal = empDetails.empBasicSal + empDetails.pf + empDetails.hra;
+            
+            },
+
+            comparsion:()=>
+            {
+            empDetails.taxPercent;
+            empDetails.empGender = empDetails.empGender.toLowerCase(); // male
+            if (empDetails.empGender == 'male') {
+                if (empDetails.empTotalSal >= 500000) {
+                    empDetails.taxPercent = 15;
+                } else if (empDetails.empTotalSal >= 400000) {
+                    empDetails.taxPercent = 10;
+                } else if (empDetails.empTotalSal >= 300000) {
+                    empDetails.taxPercent = 5;
+                }
+            } else { // female
+                if (empDetails.empTotalSal >= 500000) {
+                    empDetails.taxPercent = 10;
+                } else if (empDetails.empTotalSal >= 400000) {
+                    empDetails.taxPercent = 5;
+                } 
+            }
+            empDetails.TaxTobePaid = (empDetails.empTotalSal * empDetails.taxPercent) / 100;
+        },
+
+        display:()=>
+        {
+            empDetails.empData();
+            empDetails.pfAndHra();
+            empDetails.comparsion();
+            console.log(empDetails)
+            console.log(empDetails.empName);
+            console.log(empDetails.empGender);
+            console.log(empDetails.empBasicSal);
+            console.log(empDetails.pf);
+            console.log(empDetails.hra);
+            console.log(empDetails.empTotalSal);
+            console.log(empDetails.taxPercent);
+            console.log(empDetails.TaxTobePaid);
+        },
+    };
+
+        empDetails.display();   
+
+        </script>
+    </body>
+</html>

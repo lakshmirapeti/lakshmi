@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            if (condition)
+        </title>
+    </head>
+<body>
+    <script>
+        var empname, empage, gender, empdep, basicsal;
+        empname = prompt("Enter your name");
+        empage = prompt("Enter your age");
+        gender = prompt("Gender");
+        empdep = prompt("Entert your department");
+        basicsal = prompt("Enter your salary");
+        basicsal = parseInt(basicsal);
+
+        var HRA = (basicsal * 24)/100;
+        var PF = (basicsal * 14)/100;
+
+        var total = basicsal + HRA + PF;
+
+        var tax15 = (total * 15)/100;
+        var tax10 = (total * 10)/100;
+        var tax5 = (total * 5)/100;
+
+        var Totalsal15 = (total - tax15);
+        var Totalsal10 = (total - tax10);
+        var Totalsal5 = (total - tax5);
+
+        console.log("Name is " + empname);
+        console.log("Age is " + empage);
+        console.log("Gender " + gender);
+        console.log("Department is " + empdep);
+        console.log("HRA +" + HRA);
+        console.log("PF +" + PF);
+        console.log("Totalsal is " + total);
+
+        if (total >= 500000 && gender == "male"){
+            console.log("Tax15% -" + tax15);
+            console.log("Totalsalary " + Totalsal15);
+        }
+        if (total >= 300000 && gender == "male"){
+            console.log("Tax10% -" + tax10);
+            console.log("Totalsalary " + Totalsal10);
+        }
+        if (total >= 200000 && total < 300000 && gender == "male"){
+            console.log("Tax5% -" + tax5);
+            console.log("Totalsalary " + Totalsal5);
+        }
+        if(total >= 500000 && gender == "female"){
+            console.log("Tax10% -" + tax10);
+            console.log("Totalsalary " + Totalsal10)
+        }
+        if(total >= 300000 && total < 500000 && gender == "female"){
+            console.log("Tax5% -" + tax5);
+            console.log("Totalsalary " + Totalsal5)
+        }
+        if (total < 200000) {
+            console.log("Taxpercentage -0")
+        }
+
+
+    </script>
+</body>
+</html>

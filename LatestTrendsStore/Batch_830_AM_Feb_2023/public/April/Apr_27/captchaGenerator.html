@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Captcha generator
+        </title>
+        <style>
+            #rblock {
+                text-align: center;
+                width: 50px;
+                border: 1px solid;
+                font-weight: bold;
+                padding: 10px;
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="rblock"></div><input type="text" placeholder="Enter Captcha">
+        <input type="button" value="Generate Captcha" onclick="generateCapthca()">
+
+        <script>
+            var upperCaseChar = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
+            var lowerCaseChar = ['a', 'b', 'c', 'd', 'e', 'f'];
+
+            var generateCapthca = () => {
+                // uppercase char -  lowercase - lower case - number - upper case  Nbc8T
+                var CaptchaValue = getRandomUppeCaseChar() + getRandomLowerCaseChar() + getRandomLowerCaseChar() + getRandomNumber() + getRandomUppeCaseChar();
+
+                document.querySelector("#rblock").innerText = CaptchaValue;
+                
+
+
+            }
+            
+
+            var getRandomUppeCaseChar = () => {
+                var randomIndex = Math.floor(Math.random() * upperCaseChar.length);
+                return upperCaseChar[randomIndex];
+            }
+
+            var getRandomLowerCaseChar = () => {
+                var randomIndex = Math.floor(Math.random() * lowerCaseChar.length);
+                return lowerCaseChar[randomIndex];
+            }
+
+            var getRandomNumber = () => { // return random no. between 0 - 10
+                var maxCount = 10;
+                var randomNum = Math.floor(Math.random() * maxCount);
+                return randomNum;
+            }
+            generateCapthca();
+        </script>
+    </body>
+</html>

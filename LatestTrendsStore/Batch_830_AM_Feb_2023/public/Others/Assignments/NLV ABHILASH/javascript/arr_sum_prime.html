@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>sum of all prime num in array</h3>  
+    <script>
+    var primeNum = (n) =>{
+        for(var i=2;i<n;i++){
+            if((n%i)==0){
+                return false;
+            }
+        }
+        return true;
+    }
+    var a = [];
+    for(var i=0;i<5;i++){
+        a[i]=parseInt(prompt("enter "+i+" element of array"));
+    }
+    var sum=0;
+    for(var i=0;i<5;i++){
+     var p = primeNum(a[i]);
+    //  console.log(p);
+        if(p){
+            sum+=a[i];
+        }
+    }
+    // console.log(sum);
+    console.log("sum of all prime num in array "+sum);
+    </script>
+</body>
+</html>

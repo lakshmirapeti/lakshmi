@@ -1,0 +1,31 @@
+Display: inline 
+        block 
+        inline-block 
+        none 
+
+
+        grid 
+        flex 
+
+    display: flex;
+
+
+    Flex CSS 
+        flex container css 
+            flex-direction
+            flex-wrap
+            flex-flow 
+
+
+
+        flex items css porp 
+            order
+----------------
+
+Acheive The responsiveness of webpages
+    Media queries
+
+    min-height
+    max-height
+    min-width 
+    max-width

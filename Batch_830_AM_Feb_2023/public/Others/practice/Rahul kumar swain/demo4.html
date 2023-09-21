@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice3 contactform</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        .header {
+            border: 2px solid;
+        }
+
+        .head {
+            background-color: greenyellow;
+            padding: 20px 40px;
+        }
+
+        span {
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 20px;
+            margin-left: 40px;
+            background-color: antiquewhite;
+        }
+
+        label {
+            margin: 30px;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        textarea {
+            background-color: antiquewhite;
+            margin: 20px;
+            margin-left: 40px;
+        }
+
+        .btn {
+            width: 72px;
+            height: 28px;
+            margin-left: 70px;
+            font-size: 20px;
+        }
+
+        .btn:hover {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="head">
+            <span>Contact Form </span> <br>
+            please fill all the texts in the fields.
+        </div>
+        <label for="name">Your Name:</label>
+        <div>
+            <input type="text" value="Your Full Name" id="name"> 
+        </div>
+
+        <label for="email">Your Email:</label>
+        <div>
+            <input type="email" value="Valid Email Adress" id="email"> 
+        </div>
+
+        <label for="Message">Message: </label>
+        <div>
+            <textarea id="Message" cols="30" rows="05"></textarea> 
+        </div>
+
+        <label for="subject">Subject: </label>
+        <div>
+            <input type="text" value="Job Inquiry" id="subject"> 
+        </div>
+
+        <label for="button">
+            <input type="button" value="send" class="btn">
+        </label>
+    </div>
+</body>
+
+</html>

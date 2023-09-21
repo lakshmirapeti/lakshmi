@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>palindromeString</title>
+</head>
+<body>
+    <script>
+        var str, temp, st;
+        var userInput=()=>{
+         str=prompt("Enter the string")
+        console.log(str)
+        }
+
+        var palindrome=()=>{
+        temp = str.split(" ")
+
+         st = str.split(" ").reverse()
+       // console.log(st)
+      
+        for(var i=0; i<st.length; i++)
+        {
+       if(temp[i] == st[i])
+       {
+        console.log("Palindrome string")
+        break;
+       }
+       else{
+        console.log("not palindrome string")
+        break;
+       }
+    }
+}
+userInput();
+palindrome();
+       
+       
+        
+    </script>
+</body>
+</html>

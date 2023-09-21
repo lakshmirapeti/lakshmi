@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>
+            SortingArray
+        </title>
+    </head>
+    <body>
+        <script>
+            var readData=() => {
+                var data=[];
+                for(var i=0;i<10;i++)
+                {
+                    data[i]=parseInt(prompt("Enter "+(i+1)+" value "));
+                }
+                console.log("Ascending array:"+ascending(data));
+                console.log("Descending array:"+descending(data));
+            }
+            var ascending = (dataToAsc) => {
+                for(var i=0;i<dataToAsc.length;i++)
+                {
+                    for(var j=0;j<dataToAsc.length;j++)
+                    {
+                        if(dataToAsc[i]<dataToAsc[j])
+                        {
+                            var temp=dataToAsc[i];
+                            dataToAsc[i]=dataToAsc[j];
+                            dataToAsc[j]=temp;
+                        }
+                    }
+                }
+                return dataToAsc;
+            }
+            var descending = (dataToDesc) => {
+                for(var i=0;i<dataToDesc.length;i++)
+                {
+                    for(var j=0;j<dataToDesc.length;j++)
+                    {
+                        if(dataToDesc[i]>dataToDesc[j])
+                        {
+                            var temp=dataToDesc[i];
+                            dataToDesc[i]=dataToDesc[j];
+                            dataToDesc[j]=temp;
+                        }
+                    }
+                }
+                return dataToDesc;
+            }
+            readData();
+        </script>
+    </body>
+</html>

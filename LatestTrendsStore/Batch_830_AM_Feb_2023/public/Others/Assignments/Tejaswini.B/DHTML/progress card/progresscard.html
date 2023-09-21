@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>progresscard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <div id="progress-card">
+        <h2>Progress Card</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="class">Class:</label>
+            <input type="text" id="class" name="class" required>
+
+            <label for="m1">M1:</label>
+            <input type="number" id="m1" name="m1" required>
+
+            <label for="m2">M2:</label>
+            <input type="number" id="m2" name="m2" required>
+
+            <label for="m3">M3:</label>
+            <input type="number" id="m3" name="m3" required>
+
+            <label for="m4">M4:</label>
+            <input type="number" id="m4" name="m4" required>
+
+            <label for="m5">M5:</label>
+            <input type="number" id="m5" name="m5" required />
+            <label></label>
+            <input type="button" value="Submit" onclick="calculateTotal()" />
+        </form>
+
+        <div id="result"></div>
+    </div> 
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment - 21</title>
+    </head>
+    <body>
+        <script>
+            var readingdatafromuser = () => {
+                var sname, sage, sgender, smarks1, smarks2, smarks3 , stotalmarks, savg;
+                sname = prompt("Enter the student name")
+                sage = prompt("Enter the student age")
+                sgender = prompt("Enter the student gender")
+                dispaly_studentdetails(sname, sage, sgender)
+                student_marks(sname, sage, sgender);
+
+            } 
+            var student_marks = (sname, sage, sgender) => {
+                smarks1 = prompt("Enter the smarks1")
+                smarks1 = parseInt(smarks1)
+                smarks2 = prompt("Enter the smarks2")
+                smarks2 = parseInt(smarks2)
+                smarks3 = prompt("Enter the smarks3")
+                smarks3 = parseInt(smarks3)
+
+                stotalmarks = smarks1 + smarks2 + smarks3;
+                savg = stotalmarks / 3;
+                console.log("marks 1 " +smarks1 )
+                console.log("marks 2 " +smarks2 )
+                console.log("marks 3 " +smarks3 )
+                console.log("Student Totalmarks is " + stotalmarks)
+                console.log("Student avg is " + savg)
+                finding_grade(savg);
+                
+            }
+            var finding_grade = (savg) => {
+                if (savg >= 75) {
+                    console.log("Student pass in first class")
+
+                } else if (savg >= 90) {
+                    console.log("Student pass in distinction")
+
+                } else if (savg <= 65) {
+                    console.log("Student pass in Second class")
+
+                } else if (savg < 35) {
+                    console.log("Student is fail")
+                }
+            }
+            var dispaly_studentdetails = (sname, sage, sgender) => {
+                console.log("Student name is " + sname)
+                console.log("Student Age is " + sage)
+                console. log("Student Gender is " + sgender)
+            }
+            readingdatafromuser();
+        </script>
+    </body>
+</html>

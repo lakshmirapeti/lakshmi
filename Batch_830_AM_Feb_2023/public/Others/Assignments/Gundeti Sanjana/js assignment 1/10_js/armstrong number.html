@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    var num=parseInt(prompt("enter a number"));
+    numStr=num.toString();    //convert num to string
+    var len=numStr.length; //find the length
+    var sum=0;
+
+    //go through each single digit in number
+    for (i=0;i<len;i++){
+      var digit=parseInt(numStr[i]); //convert each digit to integer from string
+      //console.log(digit);
+
+      var cube=Math.pow(digit,len); //use Math to find the power of a number. (base number,exponent) base no. is the number which is 152 in this case and exponent is the power in this case 3
+      sum+=cube; //add to sum
+    }
+
+    console.log(sum);
+
+    if(num==sum){
+      console.log("it is an armstrong number");
+    }
+    else{
+      console.log("it is not an armstrong number");
+    }
+  </script>
+</body>
+</html>
+

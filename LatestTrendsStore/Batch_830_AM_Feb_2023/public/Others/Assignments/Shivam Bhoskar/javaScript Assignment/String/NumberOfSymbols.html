@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number of Symbols</title>
+    <style>
+        body{
+            background-color: darkorange;
+        }
+    </style>
+</head>
+<body>
+    <p>To find out total number of symbols with in given string</p>
+
+    <script>
+    
+         var s = prompt('write something with symbols');
+         var d = ['!','@','#','$','%','&','*','?','~','^','>','<',':',';'];
+         var i = [];
+         var count = 0;
+    
+         for(let x = 0; x < d.length; x++){
+            if(s.includes(d[x])){
+                count++;
+                i.push(d[x]);      
+            };
+         }
+        
+    console.log('Total numbers of symbols are -> ' + count);
+    console.log('Symbols are present -> ' + i);
+        
+    </script>
+</body>
+</html>

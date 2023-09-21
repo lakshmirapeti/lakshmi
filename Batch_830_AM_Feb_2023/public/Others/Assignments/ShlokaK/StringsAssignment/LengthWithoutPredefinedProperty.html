@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Find Length of a string without predefined</title>
+    </head>
+    <body>
+        <script>
+            var readData=() => {
+                var data=prompt("Enter a string:");                
+                console.log("The length of the string is: "+length(data));
+            }
+            var length = (data) => {
+                var count=0;
+                for(var i=0;data[i]!='\0';i++)
+                {
+                    count++;
+                }
+                return count;
+            }
+            readData();
+        </script>
+    </body>
+</html>

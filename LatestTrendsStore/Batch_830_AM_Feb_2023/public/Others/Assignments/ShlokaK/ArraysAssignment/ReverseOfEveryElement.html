@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>
+            Reverse of every element
+        </title>
+    </head>
+    <body>
+        <script>
+            var readData=() => {
+                var data=[];
+                for(var i=0;i<10;i++)
+                {
+                    data[i]=parseInt(prompt("Enter "+(i+1)+" value "));
+                }
+                console.log("Original Array is:"+data);
+                console.log("Reverse Array is:"+reverse(data));
+            }
+            var reverse = (data) => {
+                var reverseData=[];
+                for(var i=0;i<data.length;i++)
+                {
+                    var rev=0,rem=0,duplicate=data[i];
+                    do{
+                        rem=data[i]%10;
+                        rev=(rev*10)+rem;
+                        data[i]=parseInt(data[i]/10);
+                    }while(data[i]!=0);
+                    reverseData.push(rev);
+                }
+                return reverseData;
+            }
+            readData();
+        </script>
+    </body>
+</html>

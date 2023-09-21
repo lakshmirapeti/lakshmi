@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of Prime Number</title>
+</head>
+<body>
+    <script>
+         var fnum = prompt("Enter the first number");
+        fnum = parseInt(fnum);
+        var lnum = prompt("Enter thelast number");
+        lnum = parseInt(lnum);
+        console.log("Here all the Prime number between "+fnum+" & "+lnum)
+        var s=0;
+        for(var j=fnum;j<=lnum;j++)
+        {
+            var c=0;
+            var n=j;
+            for(var i=2;i<n;i++)
+           {
+            var r=n%i;
+            if(r==0)
+            {
+                c++;
+                break;
+            }
+           }
+        if(c==0)
+        {
+            console.log(n);
+            s=s+n;
+            
+        }
+        }
+        console.log("Sum of Prime number between "+fnum+" & "+lnum+" is " +s);
+    </script>
+</body>
+</html>

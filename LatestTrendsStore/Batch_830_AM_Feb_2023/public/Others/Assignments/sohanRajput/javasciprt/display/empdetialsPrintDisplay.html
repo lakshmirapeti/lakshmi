@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+<h2 class="title"> employ deteils </h2>
+<div class="tabel">
+<ul class  = "underlist">
+    <li>
+        Enter Employe Name :
+        <input type="text" id="ename" >
+    </li>
+    <li>
+        AGE :
+        <input type="number" id="eage" >
+
+    </li>
+    <li>
+        Gender:
+        <input type="radio" name="sohan" id="emale" value="male" checked> Male
+        <input type="radio" name="sohan" id="efemale" value="female"> Female
+    </li>
+    <li>
+        Basic Salary : 
+        <input type="number" id="esalary">
+    </li>
+    <li>
+       <input type="button" value="genrerate empolye pay "  onclick="generateEmployslip()" >
+    </li>
+</ul>
+</div>
+<div id = "employepay">
+    <ul class = "underlist display">
+        <li>Name :- <span id="eName" ></span></li>
+        <li>Age :- <span id ="eAge"></span></li>
+        <li>Gender :- <span id ="eGender"></span></li>
+        <li>Basic salary  : - <span id ="eBasic"></span></li>
+        <li>Total salary : - <span id ="eTotal"></span></li>
+        <li>Hra  : - <span id ="eHra"> </span></li>
+        <li>Pf  : -  <span id ="ePF">        </span></li>
+        <li> 
+            Tax : - <span id = "tax"></span>
+        </li>
+    </ul>
+
+</div>
+</body>
+</html>

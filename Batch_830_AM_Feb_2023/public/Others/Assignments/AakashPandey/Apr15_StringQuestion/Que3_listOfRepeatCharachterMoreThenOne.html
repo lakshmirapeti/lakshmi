@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>listOfRepeatCharachterMoreThenOne</title>
+</head>
+
+<body>
+    <script>
+        // var userString = prompt("Enter a String");
+        // console.log("User string is " + userString);
+        // var strCount = userString.length;
+
+        // var repeatArr = [];
+        // for (var i = 0; i < strCount; i++) {
+        //     var count = 1;
+        //     for (var j = i + 1; j < strCount; j++) {
+        //         if (userString[i] == userString[j]) {
+        //             count = count + 1;
+        //             userString[j] = '0';
+        //         }
+        //     }
+        //     if (count > 1 && userString[i] != 0) {
+        //         repeatArr.push(userString[i]);
+        //     }
+        // }
+        // console.log(repeatArr);
+
+        var readFromUser = () => {
+        var userString = prompt("Enter String");
+        console.log("User String is" + userString);
+        var strCount = userString.length;
+        var charRepeat = repeatedChar(userString, strCount);
+        }
+        
+        repeatedChar = (userString, strCount) => {
+        var repeatArr = [];
+
+        for(i = 0; i < strCount; i++){
+            var count = 1;
+            for(j = i + 1; j < strCount; j++){
+                if(userString[i] == userString[j]){
+                    count += 1;
+                    userString[j] = '0';
+                }
+            }
+            if(count > 1 && userString[i] != 0){
+                repeatArr.push(userString[i]);
+            }
+        }
+        console.log(repeatArr);
+        }
+        
+        readFromUser();
+    </script>
+</body>
+
+</html>

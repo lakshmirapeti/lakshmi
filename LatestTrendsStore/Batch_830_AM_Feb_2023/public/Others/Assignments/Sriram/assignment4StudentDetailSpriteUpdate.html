@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mainContainer > div {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid;
+        }
+        .header{
+            text-align: center;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .footer{
+            text-align: center;
+            font-size: 16px;
+        }
+        .mainContent{
+            height: 480px;
+        }
+        .lBlock, .rBlock{
+            border: 1px solid;
+            margin: 5px;
+            padding: 5px;
+            float: left;
+            height: 450px;
+            overflow: auto;
+        }
+        .lBlock{
+            width: 30%;
+        }
+        .rBlock{
+            width: 62%;
+        }
+        .lBlock li {
+            border: 1px solid;
+            margin: 15px;
+            padding: 10px;
+            list-style-position: inside;
+        }
+        ol, ul{
+            margin: 5px;
+            padding: 5px;
+        }
+        .detailsBlock > li{
+            list-style: none;
+            height: 130px;
+            border: 1px solid;
+            margin: 10px;
+            padding: 10px;
+        }
+        .imgBlock, .detailBlock {
+            float: left;
+        }
+        .detailBlock li{
+            list-style: none;
+            padding: 5px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .imgBlock{
+            border: 1px solid;
+            width: 120px;
+            height: 120px;
+            background-image: url("./images/spriteImage.png");
+        }
+        .emp2{
+            background-position: -119px 1px;
+        }
+        .emp3{
+            background-position: -240px 1px;
+        }
+        .emp4{
+            background-position: -358px 1px;
+        }
+        .emp5{
+            background-position: -471px 1px;
+        }
+        .emp6{
+            background-position: -594px 1px;
+        }
+        .emp7{
+            background-position: -721px 1px;
+        }
+        .emp8{
+            background-position: -920px -120px;
+        }
+        .emp9{
+            background-position: -1038px -121px;
+        }
+        .emp10{
+            background-position: -1166px -122px;
+        }
+        .emp11{
+            background-position: -1286px -122px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="header">
+            Student Details
+        </div>
+        <div class="mainContent">
+            <div class="lBlock">
+                <ol>
+                    <li><a href="#stu01">Ram</a></li>
+                    <li><a href="#stu02">Vinay</a></li>
+                    <li><a href="#stu03">Prasad</a></li>
+                    <li><a href="#stu04">Sidhu</a></li>
+                    <li><a href="#stu05">Ravi</a></li>
+                    <li><a href="#stu06">Venkat</a></li>
+                    <li><a href="#stu07">Arati</a></li>
+                    <li><a href="#stu08">Amrutha</a></li>
+                    <li><a href="#stu09">Murali</a></li>
+                    <li><a href="#stu10">Srikant</a></li>
+                    <li><a href="#stu11">Sujit</a></li>
+                </ol>
+            </div>
+            <div class="rBlock">
+                <ul class="detailsBlock">
+                    <li id="stu01"><div class="imgBlock emp1">
+                        </div>
+                        <div class="detailBlock">
+                            <ul>
+                                <li>Name: Ram</li>
+                                <li>Age: 20</li>
+                                <li>Gender: Male</li>
+                                <li>Location: Hyderabad</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="detailsBlock">
+                    <li id="stu02"><div class="imgBlock emp2">
+                        </div>
+                        <div class="detailBlock">
+                            <ul>
+                                <li>Name: Vinay</li>
+                                <li>Age: 21</li>
+                                <li>Gender: Male</li>
+                                <li>Location: Hyderabad</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="detailsBlock">
+                    <li id="stu03"><div class="imgBlock emp3">
+                        </div>
+                        <div class="detailBlock">
+                            <ul>
+                                <li>Name: Prasad</li>
+                                <li>Age: 26</li>
+                                <li>Gender: Male</li>
+                                <li>Location: Vadodara</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="detailsBlock">
+                    <li id="stu04"><div class="imgBlock emp4">
+                        </div>
+                        <div class="detailBlock">
+                            <ul>
+                                <li>Name: Sidhu</li>
+                                <li>Age: 24</li>
+                                <li>Gender: Male</li>
+                                <li>Location: Amritsar</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="detailsBlock">
+                    <li id="stu05"><div class="imgBlock emp5">
+                        </div>
+                        <div class="detailBlock">
+                            <ul>
+                                <li>Name: Ravi</li>
+                                <li>Age: 23</li>
+                                <li>Gender: Male</li>
+                                <li>Location: Visakhapatnam</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="detailsBlock">
+                    <li id="stu06"><div class="imgBlock emp6">
+                        </div>
+                        <div class="detailBlock">
+                            <ul>
+                                <li>Name: Venkat</li>
+                                <li>Age: 27</li>
+                                <li>Gender: Male</li>
+                                <li>Location: Bhubaneswar</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="detailsBlock">
+                    <li id="stu07"><div class="imgBlock emp7">
+                        </div>
+                        <div class="detailBlock">
+                            <ul>
+                                <li>Name: Arati</li>
+                                <li>Age: 22</li>
+                                <li>Gender: Female</li>
+                                <li>Location: Pune</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="detailsBlock">
+                    <li id="stu08"><div class="imgBlock emp8">
+                        </div>
+                        <div class="detailBlock">
+                            <ul>
+                                <li>Name: Amrutha</li>
+                                <li>Age: 25</li>
+                                <li>Gender: Female</li>
+                                <li>Location: Delhi</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="detailsBlock">
+                    <li id="stu09"><div class="imgBlock emp9">
+                        </div>
+                        <div class="detailBlock">
+                            <ul>
+                                <li>Name: Murali</li>
+                                <li>Age: 28</li>
+                                <li>Gender: Male</li>
+                                <li>Location: Mumbai</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="detailsBlock">
+                    <li id="stu10"><div class="imgBlock emp10">
+                        </div>
+                        <div class="detailBlock">
+                            <ul>
+                                <li>Name: Srikant</li>
+                                <li>Age: 22</li>
+                                <li>Gender: Male</li>
+                                <li>Location: Gurgaon</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="detailsBlock">
+                    <li id="stu11"><div class="imgBlock emp11">
+                        </div>
+                        <div class="detailBlock">
+                            <ul>
+                                <li>Name: Sujit</li>
+                                <li>Age: 26</li>
+                                <li>Gender: Male</li>
+                                <li>Location: Hyderabad</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer">
+            @copy rights 2023
+        </div>
+    </div>
+</body>
+</html>

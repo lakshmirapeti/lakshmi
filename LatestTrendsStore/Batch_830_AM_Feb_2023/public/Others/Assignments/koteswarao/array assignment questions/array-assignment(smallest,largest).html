@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smallest and largest value</title>
+</head>
+<body>
+    <script>
+         var a=[];
+        for(var i=0;i<8;i++){
+            a[i]=prompt('enter number');
+            a[i]=parseInt(a[i]);
+        }
+        console.log(a);
+        var temp=0;
+        //ascending order
+        for(var i=0;i<a.length;i++){
+              for(j=i;j<a.length;j++) {
+                          if(a[i]>a[j]) {
+                            temp=a[i];
+                            a[i]=a[j];
+                            a[j]=temp;
+                          }
+              }  
+            }
+            //smallest value
+        for(j=0;j<1;j++){
+            console.log('samallest value='+a[0]);
+        }
+          //descending order
+          for(var i=0;i<a.length;i++){
+              for(j=i;j<a.length;j++) {
+                          if(a[i]<a[j]) {
+                            temp=a[i];
+                            a[i]=a[j];
+                            a[j]=temp;
+                          }
+              }  
+            }
+            //largest value
+            for(j=0;j<1;j++){
+            console.log('largest value='+a[0]);
+        }
+    </script>
+</body>
+</html>

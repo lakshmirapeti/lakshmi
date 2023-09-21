@@ -1,0 +1,22 @@
+<html><head>
+    <title>Palindrome</title>
+</head>
+<body>
+    <script>
+        var num=parseInt(prompt("Enter the number:"));
+        var rev=0,rem=0,duplicate=num;
+        do{
+            rem=num%10;
+            rev=(rev*10)+rem;
+            num=parseInt(num/10);
+        }while(num!=0);
+        if(duplicate==rev)
+        {
+            console.log(duplicate+" is a Palindrome");
+        }
+        else{
+            console.log(duplicate+" is not a Palindrome");
+        }
+    </script>
+</body>
+</html>

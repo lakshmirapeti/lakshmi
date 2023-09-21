@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>This Operator Employee Details</title>
+    </head>
+    <body>
+        <script>
+            var employeeDetail = {
+            
+                readEmpData () {    
+                    this.empname = prompt( " Employee Name " ) ;
+                    this.empage = prompt( " Age " ) ;
+                    this.empgender = prompt( " Gender " ) ;
+                    this.basesal = prompt( " Salary " ) ;
+                    this.basesal = parseInt(this.basesal)
+            
+                    this.employeeSalaryCalculation();
+                },
+            
+                employeeSalaryCalculation () {
+
+                    this.tax15 = (this.basesal*15)/100 ;
+                    this.tax10 = (this.basesal*10)/100 ;
+                    this.tax05 = (this.basesal*5)/100 ;
+                
+                    this.tsalary15 = (this.basesal - this.tax15);
+                    this.tsalary10 = (this.basesal - this.tax10);
+                    this.tsalary05 = (this.basesal - this.tax05); 
+                    this.salaryAfterTax ();
+                },
+
+                salaryAfterTax (){ 
+
+                    this.empgender = this.empgender.toLowerCase();
+    
+                if (this.empgender == 'male') {
+                        if (this.basesal >= 500000) {
+                            console.log(" Total Salary is " + this.tsalary15)
+                            
+                        } else if (this.basesal >= 300000) {
+                            console.log(" Total Salary is " + this.tsalary10)
+        
+                        } else if (this.basesal >= 200000) {
+                            console.log(" Total Salary is " + this.tsalary05)
+                        }
+                    } else { 
+                        if (this.basesal >= 500000) {
+                            console.log(" Total Salary is " + this.tsalary10)
+        
+                        } else if (this.basesal >= 300000) {
+                            console.log(" Total Salary is " + this.tsalary05)
+                        } 
+                    }
+                    this.showingEmployeeDetail();
+                },
+
+                showingEmployeeDetail () {
+                    console.log(" Name is " + this.empname);
+                    console.log(" Age is " + this.empage);
+                    console.log(" Gender is " + this.empgender);
+                    console.log( " Base Salary " + this.basesal)
+    
+                    
+                }
+            }           
+                    employeeDetail.readEmpData();
+        </script>
+        
+    </body>
+</html>

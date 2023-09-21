@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wlcmBlock {
+            border: 1px solid;
+            width: 500px;
+            margin: 10px;
+            padding: 30px;
+            text-align: center;
+            position: absolute;
+            left: 30%;
+            bottom: 20px;
+            background-color: aquamarine;
+            display: none;
+        }
+        .taskContainer {
+            width: 500px;
+            margin: 10px auto;
+            padding: 130px;
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <h3>Job Allocator - Applications</h3>
+
+    <input type="text" placeholder="Enter Name" id="empName">
+    <input type="button" value="Save" onclick="saveUserName()">
+    <input type="button" value="Create Task Box" onclick="createTaskBox()">
+    <input type="button" value="Show Task" onclick="showTask()">
+
+    <div class="wlcmBlock">
+        Thanks for using our page
+    </div>
+    
+    <script>
+        var taskList = [
+                "Do the code review of the project",
+                "Lead the team in delivering new project",
+                "Implement and submit the code of new component ",
+                "Finish teh assigned trainings",
+                "Add test cases and code coverage"
+        ];
+
+        var userName;
+        var saveUserName = () => {
+            userName = document.querySelector('#empName').value;
+            document.querySelector('#empName').value = ' ';
+        };
+        var createTaskBox = () => {
+            var divTag = document.createElement('div');
+            divTag.setAttribute('id', 'taskBlock');
+            divTag.setAttribute('class', 'taskContainer');
+            document.querySelector('body').append(divTag);
+        }
+        getRandomTask = () => {
+            var randomIndex = Math.floor(Math.random()) * (taskList.length);
+            var task = 'Mr ' + userName + '-' + taskList[randomIndex];
+            return task;
+        }
+        var showTask = () => {
+            var task = getRandomTask();
+        
+                document.querySelector("#taskBlock").innerHTML = task;
+            // } catch (error) {
+            //     alert('Make sure u create task block, before u get to know the task')
+            // }
+
+            setTimeout (() => {
+            document.querySelector('.wlcmBlock').style.display = 'block';
+        },2000)
+    }
+    </script>
+</body>
+</html>

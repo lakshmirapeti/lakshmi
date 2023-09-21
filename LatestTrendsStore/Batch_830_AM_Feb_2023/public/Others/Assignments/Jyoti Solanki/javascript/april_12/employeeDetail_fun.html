@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Employee details with if</title>
+        <script>
+            var mainEmp = () =>{
+            var empName, empBasicSalary, empAge, empDepart ,empTax;
+              empName = prompt("Please Enter youir name.");
+              empAge = prompt("Enter Your age");
+              empGender = prompt("Enter your gender");
+              empDepart = prompt("Enter your department");
+              empBasicSalary = prompt("Enter your salary");
+              empBasicSalary = parseInt(empBasicSalary);
+              var empTsalary = employeeTotal(empBasicSalary); 
+              var empInfo = [empTsalary,empGender] 
+              var empTax =   employeeTax(empInfo);
+              displayEmployeeDetail(empName, empBasicSalary,empAge, empDepart,empTax,empGender,empTsalary);   
+
+            }
+            
+            var employeeTotal = (empBasicSalary) =>{  
+            var pf =  (empBasicSalary * 14) / 100;
+            var hra = (empBasicSalary * 24) / 100;
+            var empTsalary = empBasicSalary + pf + hra;
+            return empTsalary;
+            }
+            
+            var employeeTax = (empInfo) =>{
+                var empGender = empInfo[1];
+                var empTsalary = empInfo[0];
+          //male tax part
+           if(empGender == 'male'){
+             if(empTsalary >= 500000){
+                empTax = (empTsalary * 15) / 100;
+                return empTax;
+             }
+             else if(empTsalary >= 300000 && empTsalary <= 500000){
+                empTax = (empTsalary * 10) / 100;
+                return empTax;
+             }
+             else{
+                return "0% tax";
+             }
+           }
+           
+           //female tax part
+           if(empGender == 'female'){
+             if(empTsalary >= 500000){
+                empTax = (empTsalary * 10) / 100;
+                return empTax;
+             }
+            else if(empTsalary >= 300000 && empTsalary <= 500000){
+                empTax = (empTsalary * 5) / 100;
+                return empTax;
+             }
+            else{
+                return "0% tax";
+           }
+        }
+      }
+      var displayEmployeeDetail = (empName, empBasicSalary,empAge, empDepart,empTax,empGender,empTsalary) =>{
+        console.log(`employee name is ${empName}`);
+        console.log(`employee age is ${empAge}`);
+        console.log(`employee Gender is ${empGender}`);
+        console.log(`employee basic salary  is ${empBasicSalary}`);
+        console.log(`employee total salary is ${empTsalary}`);
+        console.log(`employee Tax is ${empTax}`);
+        
+      }
+      mainEmp();
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employees Tax</title>
+</head>
+
+<body>
+    <script>
+        var ename, gender, age, salary, tax;
+
+        ename = prompt("Enter Employee Name");
+        gender = prompt("Enter Employee Gender");
+        age = prompt("Enter Employee Age");
+        salary = prompt("Enter Employee Salary");
+
+        salary = parseInt(salary);
+        console.log("Total salary = " + salary);
+
+        if (salary >= 500000 && gender == 'male') {
+
+            tax = (salary * 15) / 100;
+            console.log("Male Heigher Tax : " + tax);
+
+        }
+        if (salary < 500000 && salary >= 300000 && gender == 'male') {
+
+            tax = (salary * 10) / 100;
+            console.log("Male Medium Tax = " + tax);
+
+        }
+        if (salary < 300000 && salary >= 200000 && gender == 'male') {
+
+            tax = (salary * 5) / 100;
+            console.log("Male Lower Tax = " + tax);
+
+        }
+        if (salary < 200000 && gender == 'male') {
+
+            tax = 0;
+            console.log("Male No Tax = " + tax);
+
+        }
+
+        if (salary >= 500000 && gender == 'female') {
+
+            tax = (salary * 10) / 100;
+            console.log("Female Heigher Tax : " + tax);
+
+        }
+        if (salary < 500000 && salary >= 300000 && gender == 'female') {
+
+            tax = (salary * 5) / 100;
+            console.log("Female Medium Tax = " + tax);
+
+        }
+        if (salary < 300000 && gender == 'female') {
+
+            tax = 0;
+            console.log("Female No Tax = " + tax);
+
+        }
+
+    </script>
+</body>
+
+</html>

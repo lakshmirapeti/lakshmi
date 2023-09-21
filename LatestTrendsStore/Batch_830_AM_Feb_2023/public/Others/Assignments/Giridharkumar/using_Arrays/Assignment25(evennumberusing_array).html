@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment - 25</title>
+    </head>
+    <body>
+        <script>
+            var myarray = [];
+            var size = prompt("Enter the size value ")
+            size = parseInt(size)
+            for (var i = 0; i < size; i++ ) {
+                var value = prompt("Enter the number : " + i)
+                value = parseInt(value)
+                console.log("values given :" + value)
+                myarray.push(value)
+
+
+            }
+            var sumOfeven = 0;
+            for (var i = 0; i < myarray.length; i++) {
+                if (myarray[i] %2 == 0) {
+                    sumOfeven += myarray[i]
+                }
+            }
+            console.log("The sum of even number by using array --> " + sumOfeven)
+        </script>
+    </body>
+</html>

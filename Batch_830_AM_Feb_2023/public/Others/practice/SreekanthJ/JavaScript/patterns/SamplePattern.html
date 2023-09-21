@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample pattern</title>
+    <script>
+
+        var n = 5; // row or column count
+        // defining an empty string
+        var string = "";
+
+        for (var i = 0; i < n; i++) { // external loop
+            for (var j = 0; j < n; j++) { // internal loop
+                string += "*";
+            }
+            // newline after each row
+            string += "\n";
+        }
+        // printing the string
+        console.log(string);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

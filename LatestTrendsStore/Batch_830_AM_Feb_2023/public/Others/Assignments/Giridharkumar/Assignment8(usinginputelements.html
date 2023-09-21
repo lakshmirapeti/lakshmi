@@ -1,0 +1,233 @@
+<html>
+    <head>
+        <title>
+            Assignment-8
+        </title>
+    </head>
+    <style>
+        .body{
+            background-color: bisque;
+        }
+        .header{
+            border: 1px solid;
+            margin: 5px;
+            padding: 5px;
+            text-align: center;
+            font-weight: bold;
+            background-color: rgb(78, 241, 241);
+        }
+        .container{
+            border: 2px solid;
+            margin: 5px;
+            padding: 5px;
+            height: 650px;
+            overflow: auto;
+            background-color: blueviolet;
+        }
+        .footer{
+            border: 1px solid;
+            margin: 15px;
+            padding: 5px;
+            text-align: center;
+            font-weight: bold;
+            background-color: rgb(110, 230, 235);
+        }
+        .content{
+            border: 1px solid;
+            width: 250px;
+            height: 20px;
+            margin: 12px;
+            padding: 10px;
+            position: relative;
+            left: 40px;
+            bottom: 35px;
+            z-index: 7;
+            background-color: brown;
+        }
+        .grandparent{
+            border: 1px solid;
+            height: 170px;
+            position: relative;
+            margin: 35px;
+            z-index: 5;
+            background-color: burlywood;
+        
+        }
+        .parent{
+            text-align: center;
+            font-weight: bold;
+        }
+        .name{
+            position: absolute;
+            left: 140px;
+            top: 40px;
+            font-weight: bold;
+        }
+        .age{
+            position: absolute;
+            left: 153px;
+            top: 80px;
+            font-weight: bold;
+
+        }
+        .gender{
+            position: absolute;
+            top: 120px;
+            left: 125px;
+            font-weight: bold;
+        }
+        .country{
+            position: absolute;
+            left: 750px;
+            top: 40px;
+            font-weight: bold;
+        }
+        .class{
+            position: absolute;
+            left: 750px;
+            top: 80px;
+            font-weight: bold;
+        }
+        .button{
+            position: absolute;
+            right: 720px;
+            bottom:18px;
+            background-color:rgb(37, 245, 47);
+            padding: 5px ;
+        
+        }
+        .grandbutton{
+            margin: 2px;
+            padding: 10px;
+            
+        }
+        .degree{
+            position: absolute;
+            left: 140px;
+            top: 90px;
+            font-weight: bold;
+
+        }
+        .yourself{
+            position: absolute;
+            left: 140px;
+            top: 40px;
+            font-weight: bold;
+        }
+        .grandself{
+            border: 1px solid;
+            height: 210px;
+            position: relative;
+            margin: 35px;
+            z-index: 5;
+            background-color: burlywood;
+
+        }
+    </style>
+    <body class="body">
+        <div class="header">Student Registration Page</div>
+        <div class="container">
+            <div class="grandparent">
+                <div class="content">
+                    <div class="parent">Personal Details</div>
+                </div>
+                <div class="name">
+                    <label for="uname">Name :</label>
+                    <input type="text" name="uname">
+                </div>
+                <div class="age">
+                    <label for="">Age :</label>
+                    <input type="text" name="age">
+                </div>
+                <div class="gender">
+                    <label for="gender">Gender :</label>
+                    <input type="radio" name="gender" checked>Male
+                    <input type="radio" name="gender">Female
+                </div>
+                <div class="country">
+                    <label for="">Country Name :</label>
+                    <select name="" id="">
+                        <option value="">Australia</option>
+                        <option value="">USA</option>
+                        <option value=""> India</option>
+                        <option value="">West Indies</option>
+                        <option value="">South Africa</option>
+                        <option value="">England</option>
+                    </select>
+                </div>
+                <div class="class">
+                    <label for="">Class :</label>
+                    <select name="" id="">
+                        <option value="">BE</option>
+                        <option value="">B-TECH</option>
+                        <option value="">MCA</option>
+                        <option value="">MSC</option>
+                        <option value="">MBA</option>
+                        <option value="">MPCS</option>
+                    </select>
+                </div>
+            </div>
+            <div class="grandparent">
+                <div class="content">
+                    <div class="parent">Educational Details</div>
+            </div>
+            <div class="name">
+                <label for="">Language Known :</label>
+                <input type="checkbox">English
+                <input type="checkbox">Hindi
+                <input type="checkbox">Telugu
+            </div>
+            <div class="degree">
+                <label for="">Qualification : </label>
+                <input type="checkbox">MCA
+                <input type="checkbox">MBA
+                <input type="checkbox">Graduation
+                <input type="checkbox">Post Graduation
+            </div>
+        </div>
+        <div class="grandparent">
+            <div class="content">
+                <div class="parent">Course Details</div>
+            </div>
+            <div class="name">
+                <label for="">Course Option For :</label>
+                <select name="" id="">
+                    <option value="">Data Science</option>
+                    <option value="">Software Testing</option>
+                    <option value="">Manual Testing</option>
+                    <option value="">Automation</option>
+                    <option value="" selected>Web Developer</option>
+                    <option value="">Web Designer</option>
+                </select>
+            </div>
+            <div class="degree">
+                <label for="">Language :</label>
+                <select name="" id="">
+                    <option value="">C</option>
+                    <option value="">C++</option>
+                    <option value="">Python </option>
+                    <option value="">Java</option>
+                    <option value="" selected>Html </option>
+                    <option value="">JavaScript </option>
+                    <option value="">CSs</option>
+                </select>
+            </div>
+        </div>
+        <div class="grandself">
+            <div class="content">
+                <div class="parent">About YourSelf</div>
+            </div>
+            <div class="yourself">
+                <label for="about yourself">Few Words About YourSelf :</label>
+                <textarea name="about yourself" id="" cols="50" rows="10"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="grandbutton">
+        <div class="button">
+            <input type="button" value="Save Details">
+        </div>
+    </div>
+        <div class="footer">@Copy Right 2023</div>
+    </body>
+</html>

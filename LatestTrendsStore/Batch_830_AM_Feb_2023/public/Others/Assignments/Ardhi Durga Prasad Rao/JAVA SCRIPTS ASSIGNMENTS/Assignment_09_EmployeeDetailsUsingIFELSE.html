@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstrating Employee Details by using IF ELSE</title>
+</head>
+<body>
+    <script>
+        var EmpName,EmpAge,Empgender,Empdepartment,Emplocation;
+        EmpName = prompt("Enter Employee Name");
+        Empage = parseInt(prompt("enter employe age"));
+        Empgender=prompt("Enter Gender").toLowerCase();
+        Empdepartment = prompt("enter employe department");
+        Emplocation = prompt("enter employe location");
+
+        var basicsal=prompt("Enter Basic Salary")
+            basicsal=parseInt(basicsal);
+        var hra = (basicsal*24)/100;
+        var pf = (basicsal*14)/100;
+        var total = basicsal + hra + pf;
+        
+        console.log("Employee Name is" + EmpName);
+        console.log("Employee Age is" + Empage);
+        console.log("Employee Gender is" + Empgender);
+        console.log("Employee Department is" + Empdepartment);
+        console.log("basicsal is"+ basicsal);
+        console.log("pf is"+ pf);
+        console.log("hra is"+ hra);
+        console.log("totalsal is"+ total);
+
+        if (Empgender == "male") {
+            if (total >= 500000) {
+                total = total - (total * 15) / 100;
+                console.log("Tax is 15%");
+            }
+            if (total >= 300000 && total < 500000) {
+                total = total - (total * 10) / 100;
+                console.log("Tax is 10%");
+            }
+            if (total >= 200000 && total < 300000) {
+                total = total - (total * 5) / 100;
+                console.log("Tax is 5%");
+            }
+            if (total < 200000) {
+                total = total;
+                console.log("Tax is 0%");
+            }
+        }
+        if (Empgender == "female") {
+            if (total >= 500000) {
+                total = total - (total * 10) / 100;
+                console.log("Tax is 10%");
+            }
+            if (total >= 300000 && total < 500000) {
+                total = total - (total * 5) / 100;
+                console.log("Tax is 5%");
+            }
+            if (total < 300000) {
+                total = total;
+                console.log("Tax is 0%");
+            }
+        }
+    </script>
+</body>
+</html>

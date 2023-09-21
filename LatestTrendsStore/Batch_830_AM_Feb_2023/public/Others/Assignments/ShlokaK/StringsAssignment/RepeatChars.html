@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>
+            Repetitive Characters
+        </title>
+    </head>
+    <body>
+        <script>
+             var readData=() => {
+                var data=prompt("Enter a string:");                
+                console.log("Repetitive characters are: "+repetitiveChars(data));                
+            }
+            var repetitiveChars = (data) => {
+                var repeat='';
+                for(var i=0; i<data.length; i++)
+                {  
+                    if(data.split(data[i]).length>2)
+                    {
+                        if(!repeat.includes(data[i]))
+                        {
+                            repeat=repeat.concat(data[i]);
+                        }
+                    }
+                }
+                return repeat;
+            }
+            readData();
+        </script>
+    </body>
+</html>

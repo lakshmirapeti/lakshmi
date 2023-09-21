@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var empname ,empage ,empid, empgender ,basesal;
+         empname= prompt("enter employee name");
+         empage= prompt(" enter employee age");
+         empid=prompt("enter employee id");
+         empgender= prompt(" enter employee gender");
+            basesal= prompt(" enter employee basesal");
+            basesal =parseInt(bascsal);
+           hra=(basesal*24)/100;
+           pf=(basesal*14)/100;
+           totalsalary=basesal+hra+pf;
+          
+         console.log("name is" + empname);
+         console.log("age is" + empage);
+         console.log("gender is" + empgender); 
+         console.log("basesal is" + basesal);
+
+         if (gender=='male'){
+             if(salary >=500000){
+                 taxpercent=(15/100*salary);
+                 console.log("taxpecent is"+taxpercent);
+             }
+
+             else if (salary >= 300000){
+                 taxpercent=(10/100*salary);
+                 console.log("taxpercent is"+taxpercent);
+             }
+             else if (salary >=200000){
+                 taxpercent=(5/100*salary);
+                 console.log("taxpercent is"+taxpercent);
+             }
+             else{
+                 taxpercent=(0*salary);
+               console.log("NO tax applied");
+             }
+         }
+          else {//female
+             if (salary >=500000){
+                 taxpercent=(10/100*salary);
+                 console.log("tax is"+taxpercent);
+             }
+             else if (salary >= 300000){
+                 taxpercent=(5/100*salary);
+                 console.log("tax is"+ taxpercent);
+             }
+             else {
+                 taxpercent=0*salary;
+               console.log("NO tax applied");
+
+             }
+         }
+     
+    </script>
+</body>
+</html>

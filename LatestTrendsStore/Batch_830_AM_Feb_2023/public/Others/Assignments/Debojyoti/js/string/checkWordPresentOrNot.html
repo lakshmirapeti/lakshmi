@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checking word is present in this string or not</title>
+</head>
+
+<body>
+    <h3>Checking word is present in this string or not</h3>
+    <script>
+        var userInput = () => {
+            var userString;
+            //User Input
+            userString = prompt("Enter a string")
+            console.log('User given string is  = ' + userString);
+            var userWord = prompt("Enter the word you want");
+            var word = checkWord(userString, userWord);
+            word == 1 ? console.log('Word is present in this string') : console.log('Word is not present in this string') 
+        }
+        var checkWord = (userString, userWord) => {
+            var strCount = userString.length;
+            userString = userString.toLowerCase();
+            userWord = userWord.toLowerCase();
+            var arr = userString.split(" ");
+            var arrSize = arr.length;
+            var count = 0;
+            for (var i = 0; i < arrSize; i++) {
+                if (arr[i] == userWord) {
+                    count = count + 1;
+                    break;
+                }
+            }
+            if (count == 1) {
+                // console.log('The word is present in this string');
+                return 1;
+            } else {
+                // console.log('The word is not present in this string');
+                return 0;
+            }
+        }
+        userInput();
+    </script>
+</body>
+
+</html>

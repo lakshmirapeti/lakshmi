@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emp Details</title>
+</head>
+
+<body>
+    <script>
+        var empName, gender, age, dept, basicSal, pf, hra, totalSalary;
+
+        empName = prompt("Enter Employee Name");
+        gender = prompt("Enter Employee gender");
+        age = prompt("Enter Employee age");
+        dept = prompt("Enter Employee Department");
+        basicSal = prompt("Enter Basic Salary");
+        basicSal = parseInt(basicSal);
+
+        pf = (basicSal * 18) / 100;
+        console.log("PF Amount is = " + pf);
+        hra = (basicSal * 24) / 100;
+        console.log("HRA = " + hra);
+        totalSalary = basicSal + pf + hra;
+        console.log("Total Salary = " + totalSalary);
+
+    </script>
+</body>
+
+</html>

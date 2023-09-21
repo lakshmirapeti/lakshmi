@@ -1,0 +1,60 @@
+body {
+    background-color: #ccc;
+}
+
+.hbar,
+.fbar,
+.mblock {
+    border: 1px solid;
+    position: absolute;
+    border: 1px solid;
+    padding: 5px;
+    left: 5px;
+    right: 5px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.mblock {
+    top: 50px;
+    bottom: 50px;
+}
+
+.fbar {
+    bottom: 10px;
+}
+
+.lblock,
+.rblock {
+    border: 1px solid;
+    padding: 5px;
+    float: left;
+    height: 530px;
+    margin: 5px;
+    overflow: auto;
+}
+
+.lblock {
+    width: 25%;
+}
+.rblock {
+    width: 65%;
+}
+
+ul li {
+    list-style: none;
+    border: 1px solid;
+    margin: 10px;
+    padding: 10px;
+}
+
+.detailsBlock {
+    border: 1px solid;
+    height: 200px;
+    margin: 5px;
+    padding: 5px;
+}
+
+prasad {
+    display: inline;
+}

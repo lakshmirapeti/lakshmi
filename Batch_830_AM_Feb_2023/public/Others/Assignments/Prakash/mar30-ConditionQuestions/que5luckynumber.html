@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Find Lucky Number</title>
+</head>
+<body>
+    <h3>To Find Lucky Number</h3>
+    <script>
+        var rem=0; count = 0, sum =0, lengthNum=0;
+        var userNumber = prompt("Enter a number to find lucky number");
+        userNumber = parseInt(userNumber);
+        var mainNumber = userNumber;
+        for(i=1; sum>0 && sum>9; i++){
+            var mod = userNumber % 10;
+            userNumber = userNumber / 10;
+            userNumber = parseInt(userNumber);
+            sum = sum + mod;
+            lengthNum = sum.toString().length;
+        }
+       console.log(sum);
+
+    </script>
+</body>
+</html>

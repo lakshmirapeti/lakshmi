@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>
+            Palindromes in an array
+        </title>
+    </head>
+    <body>
+        <script>
+            var userData = () => {
+                var data=[];
+                for(var i=0;i<10;i++)
+                {
+                    data[i]=parseInt(prompt("Enter the value:"));
+                }
+                findPalindrome(data);
+            }
+            var findPalindrome = (data) => {
+                var palindromes=[];
+                for(var i=0;i<data.length;i++)
+                {
+                    var rev=0,rem=0,duplicate=data[i];
+                    do{
+                        rem=data[i]%10;
+                        rev=(rev*10)+rem;
+                        data[i]=parseInt(data[i]/10);
+                    }while(data[i]!=0);
+                    if(duplicate==rev)
+                    {
+                        palindromes.push(duplicate);                        
+                    }
+                }
+                console.log("Palindromes are:"+palindromes);
+            }
+            userData();
+        </script>
+    </body>
+</html>

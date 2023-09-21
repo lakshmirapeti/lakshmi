@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h3>sum of all digits of the given number</h3>
+
+     <script>
+         
+         var firstNumber , secondNumber , sum = 0 ;
+
+         firstNumber = prompt("Enter The First Number");
+         secondNumber = prompt("Enter The Second Number")
+         firstNumber = parseInt(firstNumber);
+         secondNumber = parseInt(secondNumber);
+
+         for(var i = firstNumber ; i <= secondNumber; i++){
+            sum = sum + i ;
+         }
+         console.log(sum)
+     </script>
+</body>
+</html>

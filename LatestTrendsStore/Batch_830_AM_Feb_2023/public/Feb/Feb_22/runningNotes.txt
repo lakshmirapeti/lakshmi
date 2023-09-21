@@ -1,0 +1,52 @@
+html
+head 
+br 
+body
+title 
+
+p 
+
+h1, h2, h3 ... h6
+
+---------------------------
+
+HTML Attributes: 
+    Predefined html attrbs 
+        id 
+        class 
+        style 
+        alt 
+        title 
+        href 
+        src 
+        name 
+        etc... 
+
+        Syntax :
+
+        <tagname attrname="value" attrname2="value2" .. .. .. >
+            .... 
+        </tagname>
+
+        eg: 
+            <p name="test" id ="sample" title="hello">
+                .... 
+            </p>
+
+--------------------------- 
+
+inline css - using style attribute 
+
+            <tagname style="csspropname:value ; csspropname2:value; value3 ..">
+                ..... 
+            </tagname>
+
+            <p id="test" name="sample"></p>
+            <h2 id="test_2" name="test"></h2>
+
+
+        <body style="color:blue;background-color:green;font-size:20px;">
+            
+        </body>
+
+        

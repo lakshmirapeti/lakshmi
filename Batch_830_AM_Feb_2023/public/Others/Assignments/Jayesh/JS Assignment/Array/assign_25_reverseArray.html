@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        var data = [47, 58, 69, 14, 25, 36];
+
+         console.log(data);
+         console.log(data.reverse());
+
+        var getReverse = (n) => {
+                var rem;
+                var revNo = 0;
+                while (n != 0) {
+                    rem = n % 10;
+                    revNo = revNo * 10 + rem;
+                    n = n / 10;
+                    n = parseInt(n);
+                }
+                return revNo;
+            }
+
+
+         var reverseArray = [];
+         for (var i = 0 ; i < data.length; i++) {
+                var revValue = getReverse(data[i]);
+                reverseArray.push(revValue);
+            }
+         console.log(reverseArray);
+
+    </script>
+</body>
+</html>

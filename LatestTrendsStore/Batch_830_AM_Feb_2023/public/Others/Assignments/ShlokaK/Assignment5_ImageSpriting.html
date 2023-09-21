@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Details</title>
+        <style>
+            .mainContainer > div {
+                border: 1px solid;
+                margin: 10px;
+                padding: 10px;
+            }
+            .heading {
+                height: 25px;
+                font-size: 21px;
+                text-align: center;
+            }
+            .mainblock {
+                height: 600px;
+            }       
+            .leftblock, .rightblock {
+                border: 1px solid;
+                margin: 5px ;
+                padding: 5px;
+                height: 540px;
+                float: left;
+                overflow: auto; 
+            } 
+            .leftblock {
+                width: 30%;                
+            }
+            .rightblock {
+                width: 62%;
+            }
+            .leftblock li {
+                border: 1px solid;
+                margin: 5px;
+                padding: 10px ;
+                list-style-position: inside;
+            }
+            ol, ul {
+                padding:5px;
+                margin: 5px;
+            }
+            img {
+                height: 150px;
+                width: 100px;
+            }
+            .rightblock > li {
+                border: 1px solid;
+                margin: 5px;
+                padding: 10px;
+                list-style: none;
+            }
+            .rightblock ul > li {
+                list-style: none;
+            }
+            .DetailsBlock > li {
+                height: 170px;
+                border: 1px solid;
+                margin: 10px;
+                padding: 10px;
+            }
+            .imageblock {
+                clear: both;
+                padding: 10px;
+                float: left;
+                background-image: url("file:///C:/Users/shloka.kanchanapalli/OneDrive%20-%20Accenture/Desktop/UI/Image_Sprite.png");
+            }
+            .student1 {
+                background-position: 100px 100px;
+            }
+            .student2 {
+                background-position: 100px 100px;
+            }
+            .student3 {
+                background-position: 100px 100px;
+            }
+            .student4 {
+                background-position: 100px 100px;
+            }
+            .student5 {
+                background-position: 100px 100px;
+            }
+            .StudentDetails {
+                padding: 10px;
+                margin: 10px;
+            }
+            .Footer {
+                height: 25px;
+                font-size: 21px;
+                font: bold ;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="mainContainer">
+            <div class="heading">
+                <b>Student Details</b>
+            </div>
+            <br>
+            <div class="mainblock">
+                <div class="leftblock">
+                    <ol>
+                        <li id="student_1">Teena</li>
+                        <li id="student_2">Meena</li>
+                        <li id="student_3">Deepika</li>
+                        <li id="student_4">Pooja</li>
+                        <li id="student_5">Leena</li>
+                    </ol>
+                </div>
+                <div class="rightblock">
+                    <ul class="DetailsBlock">
+                        <li id="student_1">
+                            <div class="imageblock student1"></div>
+                            <div class="StudentDetails">
+                                <ul>
+                                    <li>Name: Teena</li>
+                                    <li>Age: 20</li>
+                                    <li>Gender: Female</li>
+                                    <li>Location: Hyderabad</li>
+                                </ul>                                
+                            </div>                            
+                        </li>
+                        <li id="student_2">
+                            <div class="imageblock student2"></div>
+                            <div class="StudentDetails">
+                                <ul>
+                                    <li>Name: Meena</li>
+                                    <li>Age: 23</li>
+                                    <li>Gender: Female</li>
+                                    <li>Location: Coimbatore</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li id="student_3">
+                            <div class="imageblock student3"></div>
+                            <div class="StudentDetails">
+                                <ul>
+                                    <li>Name: Deepika</li>
+                                    <li>Age: 27</li>
+                                    <li>Gender: Female</li>
+                                    <li>Location: Chennai</li>
+                                </ul>
+                            </div>                            
+                        </li>
+                        <li id="student_4">
+                            <div class="imageblock student4"></div>
+                            <div class="StudentDetails">
+                                <ul>
+                                    <li>Name: Pooja</li>
+                                    <li>Age: 26</li>
+                                    <li>Gender: Female</li>
+                                    <li>Location: Pune</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li id="student_5">
+                            <div class="imageblock student5"></div>
+                            <div class="StudentDetails">
+                                <ul>
+                                    <li>Name: Leena</li>
+                                    <li>Age: 21</li>
+                                    <li>Gender: Female</li>
+                                    <li>Location: Gurgaon</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="Footer">
+                <b>@copy rights 2023</b>
+            </div>
+        </div>
+    </body>
+</html>

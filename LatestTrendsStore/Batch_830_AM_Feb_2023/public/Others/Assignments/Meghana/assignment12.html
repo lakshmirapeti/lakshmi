@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>emp details</title>
+</head>
+<body>
+    <script>
+        var getempDetails = () => {
+        // var empname ,empage ,empid, empgender ,basesal;
+         var empname= prompt("enter  name");
+           var  gender= prompt(" enter  gender"); 
+           var    basicsal= parseInt(prompt(" enter  basicsal"));
+
+           var pf,hra,totalsal;
+           var saldata= gettotalsal(basicsal);
+              pf=saldata[0];
+              hra=saldata[1];
+              totalsal=saldata[2];
+    
+         var taxtobepaid=gettotaltax(gender,totalsal);
+             
+          displayemployeedetails(empname,gender,basicsal,taxtobepaid);
+        }
+        var gettotalsal=(basicsal)=>{
+          var hra=(basicsal*24)/100;
+          var pf=(basicsal*14)/100;
+          var  totalsal=basicsal+hra+pf;
+              //var data=[pf,hra,totalsal];
+              //return data;
+              return[pf,hra,totalsal];
+         
+        }
+        
+    var gettotaltax=(gender,tsal)=>{
+     var taxpercent=0;
+     
+
+         if (gender=='male'){
+             if(tsal >=500000){
+                 taxpercent=15
+             }
+
+             else if (tsal >= 400000){
+                 taxpercent=10
+                
+             }
+             else if (tsal >=300000){
+                 taxpercent=5
+                
+             }
+            
+         }
+          else {//female
+             if (tsal >=500000){
+                 taxpercent=10
+                
+             }
+             else if (tsal >= 400000){
+                 taxpercent=5
+                 
+             }
+             
+         }
+         var taxtobepaid=(tsal*taxpercent)/100;
+         return taxtobepaid;
+        }
+        var displayemployeedetails=(name,gender,basicsal,taxtobepaid)=>{
+           
+           console.log("name is" + name);
+           console.log("gender is" + gender); 
+           console.log("basicsal is" + basicsal);
+           console.log("taxtobepaid" + taxtobepaid);
+       } 
+        getempDetails();
+
+      
+    </script>
+</body>
+</html>

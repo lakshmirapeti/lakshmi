@@ -1,0 +1,72 @@
+
+function <name of function> () {
+    .... 
+    .... 
+}
+
+function sample() {
+    .... ..
+    ....
+    ...
+}
+
+sample();
+----------------------------------------
+
+
+function doJob() {
+
+}
+
+var doJob = function() {
+
+}
+
+var doJob = () => {
+
+}
+
+doJob();
+----------------------
+
+Overloading
+
+scope of variables
+
+3 scopes 
+
+    Global scope 
+
+    Local scope 
+
+    block scope 
+--------------------
+
+3 diffr ways we cn access private data of one function into another 
+    1. By passing values as parameters - 1 
+    2. By returning values from function 
+    3. By both returning value and passing parameter 
+
+    ------------------
+
+    function addValues(float a, float b) {
+        ....
+    }
+
+    function addValues(int a, int b) {
+        ....
+    }
+
+    function addValues(int a, float b) {
+
+    }
+
+    function addValues(int a, float b, float c) {
+        ...
+    }
+    addValues(10, 10);
+    addValues(10.2, 10.4);
+   addValues(10, 10.4); 
+   addValues(10, 10.4, 3.4);
+
+   addValues(2, 4, 5, 6)

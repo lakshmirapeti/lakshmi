@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Employee Details
+        </title>
+    </head>
+<body>
+    <script>
+        var empname, empage, empdepartment, empbasicsal;
+        empname = "Pavan";
+        empage = 25;
+        empdepartment = 'IT'
+        empbasicsal = 100000
+
+        var HRA = (empbasicsal * 24)/100;
+        var PF = (empbasicsal * 14)/100;
+        
+        var total = empbasicsal + HRA + PF;
+        console.log("Employee Details")
+        console.log("Name is" + empname);
+        console.log("Age is" + empage);
+        console.log("Department is" + empdepartment);
+        console.log("Total is" + total);
+    </script>
+</body>
+</html>

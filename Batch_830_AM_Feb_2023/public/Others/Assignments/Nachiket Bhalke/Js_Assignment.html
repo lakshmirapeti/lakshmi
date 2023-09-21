@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Employee Assignment
+        </title>
+    </head>
+    <body>
+        <script>
+            var ename, salary, gender, taxpercent;
+
+            ename = prompt("Enter Your Name");
+            salary = prompt("Enter Salary");
+            gender = prompt("Enter Gender");
+
+            if (gender = "Male"){
+                if(salary >= 500000){
+
+                    taxpercent = (15/100 * salary);
+
+                    console.log("Taxpercent is "+ taxpercent);
+                }
+                else if(salary >= 300000){
+
+                    taxpercent = (10/100 * salary);
+                    console.log = ("Taxpercent is " + taxpercent);
+                }
+                else if(salary >= 2000000){
+                    
+                    taxpercent = (5/100 * salary);
+                    console.log("Taxpercent is "+ taxpercent);
+                }
+                else{
+                    taxpercent = 0 * salary;
+                    console.log("No Tax Applied");
+                }
+            }
+            else (gender = "Female"){
+                if(salary >= 500000){
+
+                    taxpercent = (10/100 * salary);
+                    console.log("Tax is " + taxpercent);
+                }
+                else if(salary >= 300000){
+
+                    taxpercent = (5/100 * salary);
+                    console.log("Tax is " + taxpercent);
+                }
+                else{
+
+                    taxpercent = 0 * salary;
+                    console.log("No Tax is Applied");
+                }
+            }
+        </script>
+    </body>
+</html>

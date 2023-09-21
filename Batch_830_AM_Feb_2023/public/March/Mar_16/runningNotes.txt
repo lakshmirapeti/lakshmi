@@ -1,0 +1,38 @@
+Making dom element to center
+
+Tables:
+
+    table, tbody, thead , tfoot , tr , td , th 
+
+        table 
+            thead 
+                tr 
+                    th 
+                    th 
+                    th 
+            tbody 
+                tr 
+                    td 
+                    td 
+                    td 
+            tfoot 
+                tr 
+                    td 
+                    td 
+                    td 
+        
+        table 
+            tr 
+                    th 
+                    th 
+                    th 
+             
+                tr 
+                    td 
+                    td 
+                    td 
+             
+                tr 
+                    td 
+                    td 
+                    td 

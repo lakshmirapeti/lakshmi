@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="add"></div>
+    <div class="sub"></div>
+    <div class="mul"></div>
+    <div class="div"></div>
+    <div class="mod"></div>
+    <div class="sum"></div>
+    <script>
+       var a=parseInt(prompt('Enter a Number'));
+       var b=parseInt(prompt('Enter a Number'));
+       var add=a+b;
+       var sub=a-b;
+       var mul=a*b;
+       var div=a/b;
+       var mod=a%b;
+       var sum =add+sub+mul+div+mod;
+       document.querySelector('.add').innerText='The add of two numbers is : '+add;
+       document.querySelector('.sub').innerText='The sub of two numbers is : '+sub;
+       document.querySelector('.mul').innerText='The mul of two numbers is : '+mul;
+       document.querySelector('.div').innerText='The div of two numbers is : '+div;
+       document.querySelector('.mod').innerText='The mod of two numbers is : '+mod;
+       document.querySelector('.sum').innerText='The sum of all operation numbers is : '+sum;
+      
+    </script>
+    
+</body>
+</html

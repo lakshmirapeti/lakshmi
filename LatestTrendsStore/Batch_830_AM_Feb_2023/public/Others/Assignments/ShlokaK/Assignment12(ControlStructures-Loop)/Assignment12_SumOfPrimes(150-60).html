@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Sum Of Primes(150-60)</title>
+        <body>
+            <script>
+                var sum=0;
+                for(var j=150;j>=60;j--)
+                {
+                    var count=0;
+                    for( var i=2;i<j;i++)
+                    {
+                        if(j%i==0)
+                        {
+                            count++;
+                        }
+                    }
+                    if(count==0)
+                    {
+                        sum=sum+j;
+                    }
+                }
+                console.log("Sum of primes between 150 to 60 are:"+sum);
+            </script>
+        </body>
+    </head>
+</html>

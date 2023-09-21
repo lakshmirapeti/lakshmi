@@ -1,0 +1,27 @@
+Tech Stack: 
+
+	CodeRepo: GITHUB
+
+	Webtechnologies: HTML5, CSS3, JS, Object Oriented Javascript, ECMA 6,
+                 XML, JSON, AJAX, DHTML
+	Libraries and Frameworks:   Jquery, Angular, React, Handlebars, axios
+	
+	CSS Frameworks: LESS, CSS, SASS
+	Web Server: Node js with Express framework
+
+	Database: Mongodb
+
+	Tools: POSTMAN, GIT Desktop, Debugging Tool, Mongo Compass
+
+	Editors: Visual studio code, Sublime 
+
+-----------------------------------------------------------
+
+Project: Description
+Client: Internship
+
+Tech stack: java, javaspringboot, kafka, html5, angular, css3, mongo, sql
+
+Roles and Resp: 1. Code Review
+		2. Development of user login module
+		3. Implemented all api interactions through axios library

@@ -1,0 +1,39 @@
+<!-- Write a program to work with employee details like Employeename, age, Department, BesicSalary calculate the  
+ totalsalary=pf+hra Salary, when hr is 24 percentage of basic salary pf is 14% of besic salary  -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee details</title>
+</head>
+
+<body>
+    <script>
+        var empName = prompt("Enter the name :");
+        var empAge = prompt("Enter the Age :");
+        var empGender = prompt("Enter the Gender :");
+        var empDepartment = prompt("Enter the Department :");
+        var Besicsalary = prompt("Enter the Besic Salary :");
+        var Besicsalary = parseInt(Besicsalary)
+
+
+        var pf = Besicsalary * 14 / 100;
+
+        var Hra = Besicsalary * 24 / 100;
+
+        var totalsalary = Besicsalary + pf + Hra;
+        console.log("The Employee name is:" + empName);
+        console.log("The Employee Age is " + empAge);
+        console.log("The Employee Departjment is " + empDepartment);
+        console.log("The Employee totalsalary is " + totalsalary);
+    </script>
+</body>
+
+</html>

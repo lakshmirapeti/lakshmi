@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Largest number Array</title>
+</head>
+
+<body>
+    <script>
+        // var sumvalue = () => {
+        //     var dataArray = [];
+
+        //     var size = prompt("enter size of Array");
+        //     size = parseInt(size);
+
+        //     for (var i = 0; i < 5; i++) {
+        //         dataArray[i] = prompt("enter th Number");
+        //         dataArray[i] = parseInt(dataArray[i]);
+
+        //     }
+        //     console.log('user given array' + dataArray[i]);
+        //     var sortedArr = sortedArr(dataArray, size);
+        //     console.log('the seconde largest value in the Array is' + sortedArr[5 - 2]);
+
+        //     var sort = (dataArray,size) =>{
+        //     for (var i = 0; i < 5; i++) {
+        //         for (var j = 1; j < 5; i++) {
+        //             if (dataArray[i] > dataArray[j + 1]) {
+        //                 var temp = dataArray[i];
+        //                 dataArray[i] = dataArray[j + 1];
+        //                 dataArray[j + 1] = temp;
+        //             }
+        //         }
+        //     }
+        //     }
+        //     return dataArray;
+        // }
+        // sumvalue();
+        // sort();
+
+
+
+
+
+        var readFromUser = () => {
+            var userArray = [];
+
+
+            var size = prompt("Enter size of array");
+            size = parseInt(size);
+
+            for (var i = 0; i < 5; i++) {
+                userArray[i] = prompt("Enter numbers");
+                userArray[i] = parseInt(userArray[i])
+            }
+
+            console.log('User given array is ' + userArray);
+
+            var sortedArr = sort(userArray, size);
+
+
+            console.log('The second largest value in this array is ' + sortedArr[5 - 2]);
+        }
+
+
+        var sort = (userArray, size) => {
+
+        for (var i = 0; i < 5; i++) {
+            for (var j = i; j < 5; j++) {
+                if (userArray[i] > userArray[j + 1]) {
+                    var temp = userArray[i];
+                    userArray[i] = userArray[j + 1];
+                    userArray[j + 1] = temp;
+                }
+            }
+        }
+        return userArray;
+        }
+
+        readFromUser();
+    </script>
+
+</body>
+
+</html>

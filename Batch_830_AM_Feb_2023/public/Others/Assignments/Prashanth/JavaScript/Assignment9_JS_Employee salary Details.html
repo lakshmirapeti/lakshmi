@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+
+</head>
+<body>
+    
+     <script>
+
+      var employeename, employeeage, employeegender, basicsal;
+        employeename = prompt("enter your name");
+        employeeage = prompt("enter your age");
+        employeegender = prompt("gender")
+        basicsal = prompt("enter your salary")
+        basicsal = parseInt(basicsal)
+
+           var taxpercent15 = ( basicsal * 15)/100
+           var taxpercent10 = ( basicsal * 10)/100
+           var taxpercent05 = ( basicsal * 5)/100 
+
+           var totalsal15 = ( basicsal - taxpercent15);
+           var totalsal10 = ( basicsal - taxpercent10);
+           var totalsal05 = ( basicsal - taxpercent05);
+         
+
+             console.log("name " + employeename);
+             console.log("age " + employeeage);
+             console.log("gender " + employeegender);
+             console.log("basic salary" +  basicsal); 
+
+
+             if ( basicsal >=500000 && employeegender == 'male') {
+                console.log("total salary is" + totalsal15);
+             }
+            
+            if(  basicsal < 500000 &&  basicsal >= 300000  && employeegender == 'male' ){
+            console.log(" Total Salary is " + totalsal10)
+            }
+            
+            if(  basicsal < 300000  &&  basicsal >= 200000  && employeegender == 'male' ){
+            console.log(" Total Salary is " + totalsal05)
+            }
+            if(  basicsal < 200000 && employeegender == 'male' ){
+            console.log(" Total Salary is " +  basicsal)
+            }
+            if(  basicsal >= 500000 && employeegender == 'female' ){
+            console.log(" Total Salary is " + totalsal10)
+            }
+            if(  basicsal < 500000  &&  basicsal >= 300000  && employeegender == 'female' ){
+            console.log(" Total Salary is " + totalsal05)
+            } 
+            if(  basicsal < 300000  && employeegender == 'female' ){
+            console.log(" Total Salary is " +  basicsal)
+             }
+        
+
+     </script>
+
+</body>
+</html>

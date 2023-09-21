@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+             var contactDetails = {
+                gender : 'male',
+                maritalStatus : 'single',
+                profilepic : 'myProfile.png',
+                name : {
+                    firstName : 'snigdha',
+                    lastName : 'Gundu',
+                    
+                },
+                contactNo :{
+                    officeNo : '9398xxxxxx',
+                    personalNo : ['9703xxxxx1','801480xxxx','90005xxxx4'],
+
+                },
+                address :{
+                    office :{
+                        buildingNo: '11-168',
+                        state :'Telangana',
+                        officeSpace : 'Hyderabad', 
+                    },
+                    personal :{
+                        Dno :'11-168/p-236 sp/316',
+                        stateInfo :{
+                            stateCode : '500073',
+                            stateName : 'Telangana',
+                        },
+
+                    country : 'INDIA',
+                },
+                },   
+                emailID :{
+                    office : 'snigdhavenkatesh123@gmail.com',
+                    personal :['snigdha1819@gmail.com','snigdhagundu18@gmail.com','gundusnigdha19@gmail.com'],
+
+                },
+                socialId : {
+                    twitter : 'snigdhagundu',
+                    linkdID : 'snigdha181907hduiwh',
+                    fbID :'snigdhagundu19',
+                }
+            }
+            // for(var tempkey in contactDetails){
+            //     console.log (tempkey);
+            //     console.log (contactDetails[tempkey]);
+                
+            //     if(typeof(contactDetails[tempkey])=='object'){
+            //         for(var tempkey2 in contactDetails[tempkey]){
+            //             console.log(tempkey2);
+            //             console.log (contactDetails[tempkey][tempkey2]);
+                        
+            //         }
+            //     }else{
+            //          console.log (tempkey);
+            //          console.log (contactDetails[tempkey]);
+            //          }
+            // } 
+            
+            //recursive function
+
+            function retrieveDataFromTheObject(data){
+                for(var temp in data){
+                    if (typeof (data[temp]) == 'object'){
+                         retrieveDataFromTheObject (data[temp])
+                    } else {
+                        console.log(temp)
+                        console.log(data[temp])
+                    }
+                }
+            }
+            retrieveDataFromTheObject(contactDetails);
+        </script>
+    </body>

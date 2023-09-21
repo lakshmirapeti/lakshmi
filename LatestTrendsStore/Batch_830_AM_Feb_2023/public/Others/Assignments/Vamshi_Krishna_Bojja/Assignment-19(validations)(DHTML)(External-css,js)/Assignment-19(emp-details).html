@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Assignment-19(emp-details).css">
+    <script src="Assignment-19(emp-details).js"></script>
+</head>
+<body>
+    <div class="container">
+        <h3>Employee pay slip generator</h3>
+        <ul>
+            <li>
+                Enter employee name:
+                <input type="text" id = "ename" onkeypress="return validateName(event)">
+            </li>
+            <li>
+                Enter employee age:
+                <input type="text" id = "eage" onkeypress="return validateAge(event)">
+            </li>
+            <li>
+                Enter employee department:
+                <input type="text" id = "edept" onkeypress="return validateName(event)">
+            </li>
+            <li>
+                Enter employee basic salary:
+                <input type="text" id = "ebsal" onkeypress="return validateNum(event)">
+            </li>
+            <li>
+                <input type="button" value="Pay slip generator" onclick="payslipgenerator()">
+            </li>
+        </ul>
+    </div>
+    <div class="details">
+        <ul>
+            <li>
+                Employee name:
+                <span id = "name"></span>
+            </li>
+            <li>
+                Employee age:
+                <span id = "age"></span>
+            </li>
+            <li>
+                Employee department:
+                <span id = "dept"></span>
+            </li>
+            <li>
+                Employee Total salary:
+                <span id = "total"></span>
+            </li>
+            <li>
+                Tax:
+                <span id = "tax"></span>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body {
+                background-color: aqua;
+            }
+            header, footer, main {
+                position: absolute;
+                left: 5px;
+                right: 5px;
+                background-color: #fff;
+                padding: 10px;
+            }
+            main {
+                top: 50px;
+                bottom: 60px;
+            }
+            footer {
+                bottom: 10px;
+            }
+            .addsBlock {
+                border: 1px solid rebeccapurple;
+                width: 120px;
+                height: 120px;
+                background-color: yellow;
+                position: absolute;
+                right: 20px;
+                bottom: 20px;
+                
+            }
+
+            .msgBlock {
+                border: 1px solid;
+                width: 400px;
+                padding: 20px;
+                background-color: palevioletred;
+            }
+
+            @media screen and (max-width: 300px) {
+                .msgBlock { 
+                    width: 200px;
+                    background-color: red;
+                }
+            }
+
+            @media screen and (max-width: 600px) and (min-width: 300px){
+                .msgBlock {
+                    background-color: yellow;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>Online shopping app</header>
+        <main>
+            <div class="msgBlock">
+                About to show user msg
+            </div>
+            <div class="addsBlock">
+                <marquee behavior="" direction="">Adds about to come</marquee>
+            </div> 
+        </main>
+        <footer>@copy rights 2023</footer>
+    </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  SUPER
+  <body>
+    <script>
+
+
+
+   class school{
+    constructor(name){
+          this.name=name;
+    }
+  msg(){
+    console.log("hello message...")
+  }
+
+
+
+   }
+   class  clg extends school{
+    constructor(t,s){
+        super(t);
+        this.collegeteacher=s;
+    }
+   }
+
+   class allinherit extends clg{
+
+   }
+
+   let hsc1= new allinherit("Vikash","Trinity college")
+   console.log(hsc1)
+
+ 
+
+
+
+
+
+    //   class TeamMate {
+    //     constructor(playername) {
+    //       this.playername = playername;
+    //     }
+    //   }
+    //   class matches extends TeamMate {
+    //     constructor(p,t) {
+    //       super(p);
+    //       this.tournament = t;
+    //     }
+    //   }
+
+    //   let match = new matches("VIRAT KOHLI", "WORLD CUP");
+    //   console.log(match);
+
+   //   class emp {
+     //   constructor(name) {
+     //     this.name = name;
+     //   }
+     // }
+     // class manager extends emp {
+     //   constructor(p, dept) {
+     //     super(p);
+     //     this.dept = dept;
+     //   }
+     // }
+     // let emp1 = new manager("ROHIT", "Web Development");
+      //console.log(emp1);
+    </script>
+  </body>
+</html>

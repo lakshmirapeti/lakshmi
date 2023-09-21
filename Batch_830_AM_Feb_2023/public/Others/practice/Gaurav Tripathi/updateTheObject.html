@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const person = {
+    name: "Akash",
+    mobile: 999999999,
+    address: {
+        pincode: 1234,
+        city: "gurgaon",
+        state: "haryana",
+        emails: ["asd@gmail.com", "abc@yahoo.com", "rty@hotmail.com"],
+    },
+};
+
+let personcopy ={
+    ...person
+}
+let addresscopy={
+    ...person.address
+}
+let [a,...rest]=personcopy.address.emails
+personcopy.name="Rahul"
+personcopy.address=addresscopy
+personcopy.address.pincode=4567
+personcopy.address.emails=["asd@outlook.com",...rest]
+
+console.log(person)
+console.log("============================")
+console.log(personcopy)
+    </script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+   
+    <style>
+    .subcontainer{
+        border: 1px solid;
+        width: 300px;
+        height: 350px;
+        margin: 10px;
+        position: relative;
+        left: 35%;
+        top: 0px;
+        background-color:cyan;
+        
+    }
+    .form{
+        position: relative;
+        top: 100px;
+        left: 40px;
+        width: 130px;
+    }
+    .pswd{
+       position: relative; 
+      right: 180px;
+      top: 150px;
+     
+        
+    }
+    .pswd.ps{
+        position: relative; 
+        top: 130px;
+       width: 130px;
+       left: 125px;
+
+    }
+    .container{
+        background-color:black;
+    }
+    
+
+    .header,.footer{
+        text-align: center;
+        border: 1px solid;
+        background-color: crimson;
+        
+        
+    }
+.login{
+position: relative;
+    top: 180px;
+}
+.fgtp{
+    position: relative;
+    top: 200px;
+    left: 110px;
+}
+.signup{
+    position: relative;
+    top: 230px;
+    left: 30px;
+}
+.signup:hover{
+    background-color: coral;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h3 class="header">Login Form</h3>
+    <div class="subcontainer">
+    <label for="form" class="form">User Name :</label>
+    <input type="text" class="form" maxlength="10">
+    <label for="" class="pswd" >Password :</label>
+    <input type="password" class="pswd ps" maxlength="10">
+    <input type="button" value="Login" class="login">
+    <a href="#" class="fgtp">ForgotPassword?</a>
+    <a href="SignupPage.html" class="signup">Signup</a>
+    </div>
+    <h3 class="footer">@Jada Naveen Kumar</h3>
+</div>
+    
+</body>
+</html>

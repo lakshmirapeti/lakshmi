@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuckyNum</title>
+</head>
+
+<body>
+    <script>
+let myArray = [];
+
+let size = parseInt(prompt("Enter the size of the array:"));
+
+for (let i = 0; i < size; i++) {
+  let value = parseInt(prompt("Enter a value for index " + i + ":"));
+  myArray.push(value);
+}
+
+function isLuckyNumber(n) {
+
+  let count = 0;
+
+  while (n > 0) {
+
+    // If the digit is 4 or 7, increment the count
+    if (n % 10 === 4 || n % 10 === 7) {
+      count++;
+    }
+
+    // Divide the number by 10 to move on to the next digit
+    n = Math.floor(n / 10);
+  }
+
+  // If the count is either 4 or 7, return true, otherwise return false
+  return count === 4 || count === 7;
+}
+
+let luckyNumbers = [];
+
+for (let i = 0; i < myArray.length; i++) {
+
+  if (isLuckyNumber(myArray[i])) {
+
+
+    luckyNumbers.push(myArray[i]);
+  }
+}
+
+
+console.log("The lucky numbers in the array are: " + luckyNumbers);
+
+    </script>
+</body>
+
+</html>

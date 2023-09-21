@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee payslip</title>
+    <link rel="stylesheet" href="emp.css">
+    <script src="emp.js"></script>
+</head>
+<body>
+    <h3 class="title">EMPLOYEE DETAILS</h3>
+    <div class="container">
+        <ul>
+            <li>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+            </li>
+            <li>
+                <label for="Age">Age:</label>
+                <input type="text" id="age" name="age">
+            </li>
+            <li>
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </li>
+            <li>
+                <label for="department">Department:</label>
+                <input type="text" id="department" name="department">
+            </li>
+
+            <li>
+                <label for="basicSalary">Basic Salary:</label>
+                <input type="text" id="basicSalary" name="basicSalary">
+            </li>
+
+            <li>
+                <input type="submit" value="Submit" onclick="calculateSalary()">
+            </li>
+            
+        </ul>
+    </div>
+    <div class="result">
+        <ul>
+            <li><h2>Employee Payslip</h2></li>
+            <li>Name : <span id="rname"></span></li>
+            <li>Age : <span id="rage"></span></li>
+            <li>Gender : <span id="rgender"></span></li>
+            <li>HRA: <span id="rhra"></span></li>
+            <li>PF : <span id="rpf"></span></li>
+            <li>Total Salary : <span id="rtotal"></span></li>
+            <li>Tax percent : <span id="rtax"></span></li>
+        </ul>
+    </div>
+</body>
+</html>

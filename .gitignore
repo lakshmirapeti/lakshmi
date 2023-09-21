@@ -1,0 +1,14 @@
+.DS_Store
+node_modules/
+**/node_modules/
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+Batch_830_AM_Feb_2023/public/Others/Project/SreekanthJ/LatestTrendsStore/public/lib/bootstrap
+LatestTrendsStore/package-lock.json
+=======
+Batch_830_AM_Feb_2023/public/Others/Project/SreekanthJ/LatestTrendsStore/public/lib/bootstrap
+>>>>>>> Stashed changes
+=======
+Batch_830_AM_Feb_2023/public/Others/Project/SreekanthJ/LatestTrendsStore/public/lib/bootstrap
+LatestTrendsStore/package-lock.json
+>>>>>>> 2b4cdfa47db7e8f804dba01889675d9079a23a06

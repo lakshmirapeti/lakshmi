@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating employee details - with passing parameters and returning values
+        </title>
+    </head>
+    <body>
+        <script>
+            var getEmpDetails = () => {
+                var empname = prompt("Enter name");
+                var gender = prompt("Enter gender");
+                var basicSal = parseInt(prompt("Enter basic sal"));
+                
+                var pf, hra, totalSal;
+                var salData = getTotalSal(basicSal);
+                pf = salData[0]; 
+                hra = salData[1];
+                totalSal = salData[2];
+                var taxTobePaid = getTotalTax(gender, totalSal);
+
+                dispalyEmployeeDetails(empname, gender, basicSal, taxTobePaid);
+            }
+
+            var getTotalSal = (basicSal) => {
+                var pf = (basicSal * 14) / 100;
+                var hra = (basicSal * 24) / 100;
+                var totalSal = pf + hra + basicSal;
+                // var data = [pf, hra, totalSal];
+                // return data;
+                return [pf, hra, totalSal]; // [34534, 343, 333];
+
+            }
+
+            var getTotalTax = (gender, tsal) => {
+                var taxPercent = 0;
+                if (gender == 'male') {
+                    if (tsal >= 500000)  {
+                        taxPercent = 15
+                    } else if (tsal >= 400000) {
+                        taxPercent = 10
+                    } else if (tsal >= 300000) {
+                        taxPercent = 5;
+                    }
+                } else { // female
+                    if (tsal >= 500000)  {
+                        taxPercent = 10
+                    } else if (tsal >= 400000) {
+                        taxPercent = 5
+                    }
+                }
+                var taxTobePaid = (tsal * taxPercent) / 100;
+                return taxTobePaid;
+            }
+
+            var dispalyEmployeeDetails = (empname, gender, basicSal, taxTobePaid) => {
+                console.log("name is " + empname);
+                console.log("Gender is " + gender);
+                console.log("Basic sal is " + basicSal);
+                console.log("Tax to be paid " + taxTobePaid);
+            }
+
+            getEmpDetails() ;
+        </script>
+    </body>
+</html>

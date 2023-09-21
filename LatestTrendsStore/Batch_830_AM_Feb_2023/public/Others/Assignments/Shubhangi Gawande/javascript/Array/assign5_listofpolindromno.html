@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var readUser = () => {
+            var userArray = [];
+
+            var size = prompt("Enter size of array ");
+            size = parseInt(size);
+
+            for(var i = 0; i < size; i++){
+                userArray[i] = prompt("Enter number");
+                userArray[i] = parseInt(userArray[i]);
+            }
+            console.log(userArray);
+
+            listofpolidrome(userArray, size);
+        }
+
+        var listofpolidrome = (userArray, size) => {
+            for(j = 0; j < size; j++){
+                var userNumber,  reminder, original,
+                reverse = 0 
+                
+                userNumber = userArray[j];
+                original = userNumber;
+
+                for(var i = 0; userNumber != 0; i++){
+                    reminder = userNumber % 10;
+                    reverse = reverse * 10 + reminder;
+                    userNumber = userNumber / 10;
+                    userNumber = parseInt(userNumber)
+                } 
+                if(original == reverse){
+                    console.log(original);
+                }
+            }
+        }
+
+        readUser();
+    </script>
+</body>
+</html>

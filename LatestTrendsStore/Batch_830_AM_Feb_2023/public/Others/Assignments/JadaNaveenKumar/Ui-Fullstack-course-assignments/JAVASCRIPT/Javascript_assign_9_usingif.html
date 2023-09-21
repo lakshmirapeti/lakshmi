@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+  <script>
+//     var a,b;
+// a=20;
+// b=20;
+// var c= a+b;
+// alert(c);
+
+// console.log(typeof(a));
+
+// var firstname,secondname;
+// firstname="naveen";
+// secondname="sujankumar";
+// var result =firstname+secondname;
+// console.log(result);
+
+// type casting 
+//  var a;
+//  var b;
+//  a="230";
+//  a= parseInt(a);
+//  console.log(a)
+ 
+//  b='30';
+//  b=parseInt(b)
+//  console.log(b);
+
+// var a;
+// a=30;
+// console.log(typeof(a));
+// a="Naveen";
+// console.log(a);
+// console.log(typeof(a));
+// a=74.7
+// console.log(a);
+// console.log(typeof(a));
+
+
+// var empname,age,sal;
+// empname="naveen";
+// age="24";
+// sal=30000;
+// var pf =0.14*30000;
+// var hra=0.24*30000;
+// var totalsal=pf+hra+sal;
+// console.log("pf is "+pf +"  hra is "+hra+" Total Sal is "+totalsal)
+
+
+
+// variable hoisting
+// var a,b;
+// a=20;
+// b=40;
+// z=1000;
+// console.log(z); //eventhough variable is decclared after printing  the variable decclaration is starts from beggining and it will prints undefined if we prints it will show undefined  then we assign a value i will prints value 
+// var z=60;// 
+// console.log(z);
+
+
+// var a= prompt("Enter First Number");
+// a=parseInt(a);
+// var b= prompt("Enter Second Number");
+// b=parseInt(b);
+// console.log(a);
+// console.log(b);
+
+
+
+
+//Assignment
+var empname= prompt("Enter your Name");
+console.log("Employee  Name is "+empname);
+var empage=prompt("enter your age");
+console.log("Employee Age is "+empage);
+var gender=prompt("enter your gender");
+gender=gender.toLowerCase();
+console.log("Employee Gender is "+gender);
+var empsal=prompt("enter your sal");
+console.log("your monthly inhand income or basic sal is "+empsal)
+empsal=parseInt(empsal);
+
+
+console.log(empsal);
+var pf =0.14*empsal;
+console.log("Employee Pf Monthly "+pf);
+var hra=0.20*empsal;
+console.log("Employee hra Monthly "+hra);
+var TotalSalinMonthly=empsal+pf+hra;
+console.log("Employee slary in  Monthly "+TotalSalinMonthly);
+var TotalSalinYearly=TotalSalinMonthly*12
+console.log("Employee slary in  Yearly "+TotalSalinMonthly*12);
+
+
+
+//mens salary 
+if(TotalSalinYearly>=500000 && gender==="male"){
+  console.log(" male emp Total Tax is 15% of his salary ");
+   var TotalTaxYearly=0.15*TotalSalinYearly;
+   console.log("Men Total tax in yearly "+TotalTaxYearly);
+   var TotalSalinMonthly=0.15*TotalSalinMonthly;
+   console.log("Men Total tax in monthly "+TotalSalinMonthly);
+
+  
+}
+if(TotalSalinYearly>=300000 && TotalSalinYearly<500000 && gender==="male"){
+  console.log("male emp Total Tax is 10% of his salary");
+  var TotalTaxYearly=0.10*TotalSalinYearly;
+   console.log("Men Total tax in yearly "+TotalTaxYearly);
+   var TotalSalinMonthly=0.10*TotalSalinMonthly;
+   console.log("Men Total tax in monthly "+TotalSalinMonthly);
+
+}
+if(TotalSalinYearly>=200000 && TotalSalinYearly<300000 && gender==="male"){
+  console.log("male emp Total Tax is 5% of his salary");
+  var TotalTaxYearly=0.05*TotalSalinYearly;
+   console.log("Men Total tax in yearly "+TotalTaxYearly);
+   var TotalSalinMonthly=0.05*TotalSalinMonthly;
+   console.log("Men Total tax in monthly "+TotalSalinMonthly);
+}
+if(TotalSalinYearly<200000 && gender==="male"){
+  console.log("male emp Total Tax is 0% of his salary");
+  var TotalTaxYearly=0*TotalSalinYearly;
+   console.log("Men Total tax in yearly "+TotalTaxYearly);
+   var TotalSalinMonthly=0*TotalSalinMonthly;
+   console.log("Men Total tax in Monthly "+TotalSalinMonthly);
+}
+//WOMENS SALARY 
+if(TotalSalinYearly>=500000 && gender==="female"){
+  console.log(" Female emp Total Tax is 10% of his salary");
+  var TotalTaxYearly=0.10*TotalSalinYearly;
+   console.log("Women Total tax in yearly "+TotalTaxYearly);
+   var TotalSalinMonthly=0.10*TotalSalinMonthly;
+   console.log("Women Total tax in monthly "+TotalSalinMonthly);
+}
+if(TotalSalinYearly>=300000 && TotalSalinYearly<500000 && gender==="female"){
+  console.log("Female emp Total Tax is 5% of his salary");
+  var TotalTaxYearly=0.05*TotalSalinYearly;
+   console.log("Women Total tax in yearly "+TotalTaxYearly);
+   var TotalSalinMonthly=0.05*TotalSalinMonthly;
+   console.log("Women Total tax in monthly "+TotalSalinMonthly);
+}
+if(TotalSalinYearly<300000 && gender==="female"){
+  console.log("Female emp Total Tax is 0% of his salary");
+  var TotalTaxYearly=0*TotalSalinYearly;
+   console.log("Women Total tax in yearly "+TotalTaxYearly);
+   var TotalSalinMonthly=0*TotalSalinMonthly;
+   console.log("Women Total tax in Monthy "+TotalSalinMonthly);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>  
+</body>
+</html>

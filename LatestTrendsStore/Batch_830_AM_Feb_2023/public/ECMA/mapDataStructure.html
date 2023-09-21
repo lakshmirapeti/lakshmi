@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            MAP
+        </title>
+    </head>
+    <body>
+        <script>
+            var m1 = new Map();
+
+            m1.set("username", "teena");
+            m1.set("age", 20);
+            m1.set("location", 'Hyderabad');
+
+            // m1.delete("username");
+            //m1.clear();
+            console.log(m1.has("username1"));
+
+            console.log(m1);
+
+            for (var [key, value] of m1.entries()) {
+                console.log(key);
+                console.log(value)
+            }
+
+            // for , while, do while, for in, for each, for of
+        </script>
+    </body>
+</html>

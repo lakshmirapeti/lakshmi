@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    text-decoration: underline;
+    text-align: center;
+}
+.empdetailsblock {
+    border: 1px solid;
+    width: 500px;
+    background-color: gray;
+    margin: 10px auto;
+    padding: 9px;
+}
+li {
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    list-style: none;
+
+}
+.payslip {
+    border: 1px solid;
+    background-color: aquamarine;
+    width: 500px;
+    margin: 10px auto;
+    padding: 7px;
+}
+.empdetailsblock #button {
+    padding: 5px;
+    background-color: aqua;
+}

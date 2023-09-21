@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+    <script>
+        function checkNumber() {
+            var num = prompt("Enter a number:"); // Ask user for a number
+
+            var option = prompt(`Choose an option:
+1. Check if it's a prime number
+2. Check if it's an Armstrong number
+3. Check if it's an odd or even number
+4. Check if it's a palindrome`);
+
+            switch (option) {
+                case "1":
+                    isPrime(num);
+                    break;
+
+                case "2":
+                    isArmstrong(num);
+                    break;
+
+                case "3":
+                    isOddOrEven(num);
+                    break;
+
+                case "4":
+                    isPalindrome(num);
+                    break;
+
+                default:
+                    console.log("Invalid option. Please choose a valid option.");
+            }
+        }
+        function isPrime(num) {
+            let isPrime = true;
+            for (let i = 2; i < num; i++) {
+                if (num % i === 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+            if (isPrime) {
+                console.log(`${num} is a prime number.`);
+            } else {
+                console.log(`${num} is not a prime number.`);
+            }
+        }
+        function isArmstrong(num) {
+            let sum = 0;
+            let temp = num;
+            while (temp > 0) {
+                let digit = temp % 10;
+                sum += digit ** 3;
+                temp = parseInt(temp / 10);
+            }
+            if (sum == num) {
+                console.log(`${num} is an Armstrong number.`);
+            } else {
+                console.log(`${num} is not an Armstrong number.`);
+            }
+        }
+
+        function isOddOrEven(num) {
+            if (num % 2 === 0) {
+                console.log(`${num} is an even number.`);
+            } else {
+                console.log(`${num} is an odd number.`);
+            }
+        }
+
+        function isPalindrome(num) {
+            let str = num.toString();
+            let reverseStr = str.split("").reverse().join("");
+            if (str === reverseStr) {
+                console.log(`${num} is a palindrome.`);
+            } else {
+                console.log(`${num} is not a palindrome.`);
+            }
+        }
+
+        checkNumber();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

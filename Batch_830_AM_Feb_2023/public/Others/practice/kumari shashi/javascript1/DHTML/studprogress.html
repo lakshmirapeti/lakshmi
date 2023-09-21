@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            width: 500px;
+            margin: 10px auto;
+            padding: 20px;
+        }
+
+        li{
+            list-style: none;
+            border: 1px solid;
+            margin: 10px;
+            padding: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            Enter the Student Name :
+            <input type="text" name="" id="sname">
+        </li>
+        <li>
+            Enter the Student class :
+            <input type="text" name="" id="sclass">
+        </li>
+        <li>
+            Enter the Student roll Number :
+            <input type="number" name="" id="sroll">
+        </li>
+        <li>
+            Enter the subject 1st Marks :
+            <input type="number" name="" id="smark1">
+        </li>
+        <li>
+            Enter the subject 2nd Marks :
+            <input type="number" name="" id="smark2">
+        </li>
+        <li>
+            Enter the subject 3rd Marks :
+            <input type="number" name="" id="smark3">
+        </li>
+        <li>
+            <input type="button" value="GET RESILT" onclick="getTotalAndPercent();">
+        </li>
+        <li>
+            Total Marks obtained :
+            <span id="stotal"></span>
+        </li>
+        <li>
+            Percentage :
+            <span id="spercent"></span>
+        </li>
+    </ul>
+
+    <script>
+        var getTotalAndPercent = () => 
+        {
+            var data={}
+
+            data.total=0;
+            data.percent=0;
+            
+        
+            data.name=document.querySelector("#sname").value;
+
+            data.class=document.querySelector("#sclass").value;
+
+            data.roll=document.querySelector("#sroll").value;
+
+            data.m1=document.querySelector("#smark1").value;
+            data.m1=parseInt(data.m1)
+
+            data.m2=document.querySelector("#smark2").value;
+            data.m2=parseInt(data.m2)
+
+            data.m3=document.querySelector("#smark3").value;
+            data.m3=parseInt(data.m3)
+
+            data.total = (data.m1 + data.m2 + data.m3);
+        
+            data.percent = (data.total/300)*100;
+        
+        document.querySelector("#stotal").innerText = data.total;
+        document.querySelector("#spercent").innerText = data.percent;
+        }
+    </script>
+</body>
+</html>

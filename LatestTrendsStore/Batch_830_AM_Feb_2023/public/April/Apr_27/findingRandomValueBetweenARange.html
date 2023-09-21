@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <input type="button" value="getRandom" onclick="generate()">
+        <script>
+            100 - 190
+
+
+            var minRange = 65;
+            var maxRange = 90;
+            var diff = maxRange- minRange;
+            var generate = () => {
+                var randomValue = getRandomNumber();
+                console.log(randomValue);
+            }
+            
+            var getRandomNumber = () => { // return random no. between 0 - 10
+                var randomNum = Math.floor(Math.random() * diff);
+                console.log("randomNum -> " + randomNum )
+                randomNum = minRange + randomNum
+                return randomNum;
+            }
+        </script>
+    </body>
+</html>

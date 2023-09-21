@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Employee Details
+    </title>
+</head>
+
+<body>
+    <script>
+        var eName, eAge, eGender, eDepat, eSalary, ePf, eHRA, totalSa, taxSlab1, taxSlab2, taxslab3, noTax;
+        function empDetails() {
+            eName = prompt('Enter Name');
+            eAge = prompt('Enter Age');
+            eGender = prompt('Enter Gender');
+            eDepat = prompt('Enter Depat');
+            eSalary = prompt('Enter Salary');
+            eSalary = parseInt(eSalary);
+        }
+        function empSalaryDetils() {
+            ePF = (eSalary * 14) / 100;
+            eHRA = (eSalary * 24) / 100;
+            totalSal = eSalary + ePF + eHRA;
+            taxSlab1 = (totalSal * 5) / 100;
+            taxSlab2 = (totalSal * 10) / 100;
+            taxslab3 = (totalSal * 15) / 100;
+            noTax = totalSal * 0;
+        }
+        function displayEmplDetails() {
+            console.log("Name: " + eName);
+            console.log("Age: " + eAge);
+            console.log("Gender: " + eGender);
+            console.log("Department: " + eDepat);
+            console.log("Salary: " + eSalary);
+            console.log("PF: " + ePF);
+            console.log("HRA: " + eHRA);
+            console.log("Total Salary is : " + totalSal);
+        }
+        function maleEmplDetils() {
+            //For Male Employee
+            if (totalSal >= 500000 && eGender === "male") {
+                console.log("Payble Tax is : " + taxslab3);
+            }
+            if (totalSal >= 300000 && eGender === "male") {
+                console.log("Payble Tax is : " + taxSlab2);
+            }
+            if (totalSal >= 200000 && eGender === "male") {
+                console.log("Payble Tax is : " + taxSlab1);
+            }
+            if (totalSal < 200000 && eGender === "male") {
+                console.log("No tax is applicable" + noTax);
+            }
+        }
+        function femaleEmplDetils() {
+            //For Female Employee
+            if (totalSal >= 500000 && eGender === "female") {
+                console.log("Payble Tax is : " + taxSlab2);
+            }
+            if (totalSal >= 300000 && eGender === "female") {
+                console.log("Payble Tax is : " + taxSlab1);
+            }
+            if (totalSal < 300000 && eGender === "female") {
+                console.log("No tax is applicable" + noTax);
+            }
+        }
+        empDetails();
+        empSalaryDetils();
+        displayEmplDetails();
+        maleEmplDetils();
+        femaleEmplDetils();
+
+    </script>
+</body>
+
+</html>

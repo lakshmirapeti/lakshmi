@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date of birth</title>
+</head>
+<body>
+    <script>
+        var dobString = prompt("Enter your date of birth (MM/DD/YYYY)");
+
+        var dob = new Date(dobString);
+
+        var today = new Date();
+        var ageInDays = (today - dob) / (1000 * 60 * 60 * 24); //8,64,00,000 milliseconds in a day.
+        ageInDays = parseInt(ageInDays);
+
+        var ageInYears = today.getFullYear() - dob.getFullYear();
+        var ageInMonths = today.getMonth() - dob.getMonth();
+        if (today.getDate() < dob.getDate()) {
+            ageInMonths--;
+        }
+        if (ageInMonths < 0) {
+            ageInYears--;
+            ageInMonths += 12;
+        }
+        var daysInLastMonth = new Date(today.getFullYear(), today.getMonth(), 0).getDate();
+        var ageInDaysRemainder = today.getDate() - dob.getDate();
+        if (ageInDaysRemainder < 0) {
+            ageInDaysRemainder += daysInLastMonth;
+            ageInMonths--;
+            if (ageInMonths < 0) {
+                ageInYears--;
+                ageInMonths += 12;
+            }
+        }
+
+        var ageString = "Your age is " + ageInDays + " days or " + ageInYears + " years, " + ageInMonths + " months, and " + ageInDaysRemainder + " days.";
+
+        console.log(ageString);
+
+    </script>
+</body>
+</html>

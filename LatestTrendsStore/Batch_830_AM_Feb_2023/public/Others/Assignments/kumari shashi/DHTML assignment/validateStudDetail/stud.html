@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stud.css">
+    <script src="stud.js"></script>
+</head>
+<body>
+    <h3>
+        STUDENT PROGRESS REPORT
+    </h3>
+    <div id="container">
+        <ul>
+            <li>
+                Student'Name :
+                <input type="text" name="" id="sname" onkeypress= "return validateName(event)">
+            </li>
+            <li>
+                Student class :
+                <select name="" id="sclass">
+                    <option value="c1">class I</option>
+                    <option value="c2">class II</option>
+                    <option value="c3">class III</option>
+                    <option value="c4">class IV</option>
+                    <option value="c5">class V</option>
+                </select>
+            </li>
+            <li>
+                Student Age :
+                <input type="text" name="" id="sage" onkeypress="return validateAge(event)" maxlength="2">
+            </li>
+            <li>
+                Student gender :
+                <input type="radio" name="gender" value="male" checked>male
+                <input type="radio" name="gender" value="female">female
+            </li>
+            <li class="marksContainer" onkeypress="return validateMark(event)">
+                Marks :
+                <input type="text" name="" id="m1" maxlength="2" >
+                <input type="text" name="" id="m2" maxlength="2">
+                <input type="text" name="" id="m3" maxlength="2">
+                <input type="text" name="" id="m4" maxlength="2">
+                <input type="text" name="" id="m5" maxlength="2">
+            </li>
+            <li>
+                <input type="button" value="GET RESULT" onclick="getResult();">
+            </li>
+        </ul>
+    </div>
+
+    <div id="progress">
+        <ul>
+            <li>
+                Student Name :<span id="rname"></span>
+            </li>
+            <li>
+                Student Class :<span id="rclass"></span>
+            </li>
+            <li>
+                Student Age :<span id="rage"></span>
+            </li>
+            <li>
+                Student Gender :<span id="rgender"></span>
+            </li>
+            <li>
+                Student marks :
+                <span id="rm1"></span>
+            </li>
+            <li>
+                Student total :<span id="rtotal"></span>
+
+            </li>
+            <li>
+                Student Average : <span id="raverage"></span>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Sum of Digits in Number</title>
+        <body>
+            <script>
+                var num=parseInt(prompt("Enter the number:"));
+                var sum=0,rem=0, duplicate=num;
+                do
+                {
+                    rem=num%10;
+                    sum=sum+rem;
+                    num=parseInt(num/10);
+                }while(num!=0);
+                console.log("Sum of digits in "+duplicate+" is:"+sum);
+            </script>
+        </body>
+    </head>
+</html>

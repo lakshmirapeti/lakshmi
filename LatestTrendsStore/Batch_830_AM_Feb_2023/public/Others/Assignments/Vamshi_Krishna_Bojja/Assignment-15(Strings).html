@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numberOfCharacters = () => {
+            var str = prompt("Enter String to count number of characters");
+            var ivalue = 0;
+            while(str.charAt(ivalue))
+            {
+                ivalue++;
+            }
+            console.log("Number of characters of " + str + " are " + ivalue);
+            numberOfWords();
+        }
+        var numberOfWords = () => {
+            var str = prompt("Enter String to count number of words");
+            var array = str.split(" ");
+            console.log("Number of words of " + str + " are " + array.length);
+            charactersRepeatingMoreThanOnce();
+        }
+        var charactersRepeatingMoreThanOnce = () => {
+            var str = prompt("Enter String to count number of characters repeating more than once");
+            var str1 = str;
+            str = str.toLowerCase();
+            var array = [];
+            var i = 0;
+            var j = str.length - 1;
+            while(i <= j)
+            {
+                if(str.charAt(i) === str.charAt(j) && i !== j)
+                {
+                    if(!array.includes(str.charAt(i)))
+                    array.push(str.charAt(i));
+                    str = str.substring(0,i) + str.substring(i + 1, j) + str.substring( j + 1, str.length);
+                    i = 0;
+                    j = str.length - 1;
+                }
+                else
+                {
+                    j--;
+                }
+                if(j == 0)
+                {
+                    str = str.substring( j + 1, str.length);
+                    i = 0;
+                    j = str.length - 1;
+                }
+            }
+            console.log("Repeating characters are of " + str1 + " are " + array);
+            numberOfVowels();
+        }
+        var isVowel = (c) => {
+            if(c === 'a' || c === 'e' || c === 'i' || c === 'o' || c === 'u')
+            {
+                return true;
+            }
+            return false;
+        }
+        var numberOfVowels = () => {
+            var str = prompt("Enter String to count number of vowels");
+            var str1 = str;
+            str = str.toLowerCase();
+            var c = 0;
+            for(var i = 0; i < str.length; i++)
+            {
+                if(isVowel(str.charAt(i)))
+                c++;
+            }
+            console.log("Number of vowels are of " + str1 + " are " + c);
+            searchString();
+        }
+        var searchString = () => {
+            var str = prompt("Enter String for searching a word");
+            var word = prompt("Enter word to be searched");
+            if(str.includes(word))
+            console.log(word + " is present in " + str);
+            else
+            console.log(word + " is not present in " + " are " + str);
+            stringPalindrome();
+        }   
+        var stringPalindrome = () => {
+            var str = prompt("Enter String to check whether it is palindrome or not");
+            var check = true;
+            for(var i = 0; i < str.length; i++)
+            {
+                if(str.charAt(i) !== str.charAt(str.length - i - 1))
+                {
+                    check = false;
+                    break;
+                }
+            }
+            if(check)
+            console.log(str + " is palindrome");
+            else
+            console.log(str + " is not a palindrome");
+            reverseStrings();
+        }
+        var reverseString = (str) => {
+            var res = "";
+            var n = str.length;
+            for( var i = n - 1; i >= 0; i--)
+                res += str.charAt(i);
+            return res;
+        }
+        var reverseStrings = () => {
+            var str = prompt("Enter string to print reverse of each words");
+            var array = str.split(" ");
+            var str1 = "";
+            array.forEach(element => {
+                str1 += reverseString(element);
+            });
+            console.log("reverse of all words of " + str + " are " + str1);
+            countDigits();
+        }
+       var isDigit = (c) => {
+            var n = "09";
+            var lowerlimit = n.charCodeAt(0);
+            var upperlimit = n.charCodeAt(1);
+            if(c >= lowerlimit && c <= upperlimit)
+            return true;
+            return false;
+       }
+       var countDigits = () => {
+            var str = prompt("Enter string to count number of digits");
+            var c = 0;
+            for(var i = 0; i < str.length; i++)
+            {
+                if(isDigit(str.charCodeAt(i)))
+                c++;
+            }
+            console.log("Number of digits in " + str + " are " + c);
+            countTotalSysmbols();
+       }
+       var isSymbol = (c) => {
+            var n = "09";
+            var lowerlimitDigit = n.charCodeAt(0);
+            var upperlimitDigit = n.charCodeAt(1);
+            if(c >= lowerlimitDigit && c <= upperlimitDigit)
+            return false;
+            var n = "az";
+            var lowerlimitSmall = n.charCodeAt(0);
+            var upperlimitSmall = n.charCodeAt(1);
+            if(c >= lowerlimitSmall && c <= upperlimitSmall)
+            return false;
+            var n = "AZ";
+            var lowerlimitBig = n.charCodeAt(0);
+            var upperlimitBig = n.charCodeAt(1);
+            if(c >= lowerlimitBig && c <= upperlimitBig)
+            return false;
+            return true;
+       }
+       var countTotalSysmbols = () => {
+            var str = prompt("Enter string to count number of symbols");
+            var c = 0;
+            for(var i = 0; i < str.length; i++)
+            {
+                if(isSymbol(str.charCodeAt(i)))
+                c++;
+            }
+            console.log("Number of symbols are in " + str + " are " + c);
+            replaceWord();
+       }
+       var replaceWord = () => {
+        var str = prompt("Enter string to replace a word");
+        var str1 = str;
+        str = str.replace(/hello/ig, "Hi");
+        console.log("Replaced string of " + str1 + " is " + str);
+       }
+       numberOfCharacters();
+    </script>
+</body>
+</html>

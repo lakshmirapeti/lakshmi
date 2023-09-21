@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var daysList = ['Sun', 'Monday', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+
+       var monthsList = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun']
+
+       var mydate = new Date();
+       
+       var dayIndex = mydate.getDay();
+    //    console.log(daysList[dayIndex]);
+    var type_1 = daysList[dayIndex] + ',' + mydate.getDate() +'/'+ mydate.getMonth() + '/' + mydate.getFullYear();
+    console.log(type_1);
+    </script>
+</body>
+</html>

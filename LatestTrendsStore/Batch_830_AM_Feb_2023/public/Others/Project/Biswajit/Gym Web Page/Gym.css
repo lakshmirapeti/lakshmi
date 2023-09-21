@@ -1,0 +1,422 @@
+* {
+    margin: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.logo {
+    width: 100px;
+    height: 60px;
+    margin-left: 30px;
+    float: left;
+}
+
+.nav .h3 {
+    display: flex;
+    float: left;
+    margin-left: 15px;
+    margin-top: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    color: orange;
+
+}
+
+.nav .h3:hover {
+    cursor: pointer;
+    text-shadow: 5px 5px 10px rgb(237, 146, 10);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    box-shadow: 5px 2px 10px rgb(236, 164, 8), 5px 3px 10px rgb(236, 179, 8);
+}
+
+.nav ul {
+    margin-left: 17%;
+
+}
+
+.nav ul li {
+    list-style: none;
+    display: inline;
+    margin-top: 80px;
+    font-size: 20px;
+    padding: 20px;
+    color: orange;
+    transition: all 0.4s ease-in-out;
+}
+
+li:hover {
+    width: 100px;
+    height: 15px;
+    border: 2px solid rgb(174, 0, 255);
+    box-shadow: 2px 2px 10px rgb(255, 153, 0), 2px 2px 10px rgb(212, 0, 255);
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: orange;
+}
+
+.nav .time {
+    margin-top: 20px;
+    color: orange;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    float: right;
+}
+
+.Image-slider {
+    margin-top: 8px;
+    margin-left: 10%;
+    width: 80%;
+    height: 600px;
+    background-size: 100% 100%;
+    border-radius: 0px 50px 0px 50px;
+    animation: changeimage 30s alternate infinite;
+    box-shadow: 0px 3px 10px rgba(236, 217, 8), 0px 2px 10px rgba(236, 217, 8);
+}
+
+@keyframes changeimage {
+    0% {
+        background-image: url(Images/Gym\ Background1.jpg);
+    }
+
+    10% {
+        background-image: url(Images/Gym\ Background2.jpg);
+    }
+
+    20% {
+        background-image: url(Images/Gym\ Background3.jpg);
+    }
+
+    30% {
+        background-image: url(Images/Gym\ Background4.jpg);
+    }
+
+    40% {
+        background-image: url(Images/Gym\ Background5.jpg);
+    }
+
+    50% {
+        background-image: url(Images/Gym\ Background6.jpg);
+    }
+
+    60% {
+        background-image: url(Images/Gym\ Background7.jpg);
+    }
+
+    70% {
+        background-image: url(Images/Gym\ Background8.jpg);
+    }
+
+    80% {
+        background-image: url(Images/Gym\ Background9.jpg);
+    }
+
+    90% {
+        background-image: url(Images/Gym\ Background10.jpg);
+    }
+
+    100% {
+        background-image: url(Images/Gym\ Background11.jpg);
+    }
+}
+
+#details {
+    width: 60%;
+    height: 50px;
+    margin-left: 20%;
+    text-align: center;
+    margin-top: 2px;
+    border-radius: 10px 40px;
+    background-color: orange;
+    box-shadow: 0 0 10px white;
+
+}
+
+.trainer {
+    height: 450px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    text-align: center;
+    overflow: hidden;
+    transform: scale(1);
+    transition: transform 0.5s;
+
+}
+
+.John {
+    height: 250px;
+    width: 200px;
+    padding: 20px;
+    margin-left: 8%;
+    background-image: url(Images/John.jpg);
+    background-size: cover;
+    box-sizing: 100px 150px;
+    border-radius: 40%;
+    transition: 0.3s ease-in;
+}
+
+.John:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: rgba(19, 19, 19, 0.461);
+    box-shadow: 2px 2px 20px white;
+}
+
+.trainer .John .j_det {
+    height: 250px;
+    width: 200px;
+    position: relative;
+    z-index: -1;
+    color: aliceblue;
+    border-radius: 40%;
+    text-align: center;
+    transition: 0.1s ease-in ;
+}
+
+.trainer .John .j_det:hover {
+    position: relative;
+    transform: scale(1.2);
+    cursor: pointer;
+    background-color: rgba(19, 19, 19, 0.838);
+}
+.trainer .John .j_det h2,p{
+    position: relative;
+    top: 60px;
+}
+
+.Peter {
+    height: 250px;
+    width: 200px;
+    padding: 20px;
+    margin-left: 20px;
+    background-image: url(Images/Peter.jpg);
+    background-size: cover;
+    box-sizing: 100px 150px;
+    border-radius: 40%;
+    transition: all 0.3s ease-in-out;
+}
+
+.Peter:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 2px 2px 20px white;
+}
+.trainer .Peter .p_det {
+    height: 250px;
+    width: 200px;
+    position: relative;
+    z-index: -1;
+    color: aliceblue;
+    border-radius: 40%;
+    text-align: center;
+    transition: 0.1s ease-in ;
+}
+
+.trainer .Peter .p_det:hover {
+    position: relative;
+    transform: scale(1.2);
+    cursor: pointer;
+    background-color: rgba(19, 19, 19, 0.838);
+}
+.trainer .Peter .p_det h2,p{
+    position: relative;
+    top: 60px;
+}
+
+.Saloni {
+    height: 250px;
+    width: 200px;
+    padding: 20px;
+    margin-left: 20px;
+    background-image: url(Images/Saloni.jpg);
+    background-size: cover;
+    box-sizing: 100px 150px;
+    border-radius: 40%;
+    transition: all 0.3s ease-in-out;
+}
+
+.Saloni:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 2px 2px 20px white;
+}
+.trainer .Saloni .s_det {
+    height: 250px;
+    width: 200px;
+    position: relative;
+    z-index: -1;
+    color: aliceblue;
+    border-radius: 40%;
+    text-align: center;
+    transition: 0.1s ease-in ;
+}
+
+.trainer .Saloni .s_det:hover {
+    position: relative;
+    transform: scale(1.2);
+    cursor: pointer;
+    background-color: rgba(19, 19, 19, 0.838);
+}
+.trainer .Saloni .s_det h2,p{
+    position: relative;
+    top: 60px;
+}
+
+.Lucas {
+    height: 250px;
+    width: 200px;
+    padding: 20px;
+    margin-left: 20px;
+    background-image: url(Images/Lucas.jpg);
+    background-size: cover;
+    box-sizing: 100px 150px;
+    border-radius: 40%;
+    transition: all 0.3s ease-in-out;
+}
+
+.Lucas:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 2px 2px 20px white;
+}
+.trainer .Lucas .l_det {
+    height: 250px;
+    width: 200px;
+    position: relative;
+    z-index: -1;
+    color: aliceblue;
+    border-radius: 40%;
+    text-align: center;
+    transition: 0.1s ease-in ;
+}
+
+.trainer .Lucas .l_det:hover {
+    position: relative;
+    transform: scale(1.2);
+    cursor: pointer;
+    background-color: rgba(19, 19, 19, 0.838);
+}
+.trainer .Lucas .l_det h2,p{
+    position: relative;
+    top: 60px;
+}
+
+.Emma {
+    height: 250px;
+    width: 200px;
+    padding: 20px;
+    margin-left: 20px;
+    background-image: url(Images/Emma.jpg);
+    background-size: cover;
+    box-sizing: 100px 150px;
+    border-radius: 40%;
+    transition: all 0.3s ease-in-out;
+}
+
+.Emma:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 2px 2px 20px white;
+}
+.trainer .Emma .e_det {
+    height: 250px;
+    width: 200px;
+    position: relative;
+    z-index: -1;
+    color: aliceblue;
+    border-radius: 40%;
+    text-align: center;
+    transition: 0.1s ease-in ;
+}
+
+.trainer .Emma .e_det:hover {
+    position: relative;
+    transform: scale(1.2);
+    cursor: pointer;
+    background-color: rgba(19, 19, 19, 0.838);
+}
+.trainer .Emma .e_det h2,p{
+    position: relative;
+    top: 60px;
+}
+.about {
+    margin-left: 5px;
+}
+
+.abt {
+    margin-left: 25px;
+    margin-top: 20px;
+    color: orange;
+    font-size: 30px;
+    transition: 0.5s ease-in-out;
+}
+
+.abt:hover {
+    border-bottom: 10px solid;
+    width: 130px;
+}
+
+.about p {
+    margin-left: 10px;
+    width: 95%;
+    padding: 15px;
+    color: white;
+    text-indent: 30px;
+    text-align: justify;
+    background-color: rgba(255, 255, 255, 0.155);
+    border-radius: 0px 20px 20px 0px;
+    font-size: 20px;
+}
+
+.Contact {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    width: 380px;
+    height: 100px;    
+    position: relative;
+    top: 50px;
+    left: 1000px;
+    border-radius: 30px 0px 30px 0px;
+    box-shadow: 2px 2px 10px orange;
+}
+
+.last_h2 {
+    align-items: center;
+    font-size: 30px;
+    color: orange;
+    margin-left: 80px;
+}
+
+.icon a {
+   
+    margin-left: 20px;
+    padding-top: 5px;
+
+}
+
+.footer {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    color: black;
+    background-color: orange;
+}
+
+.footer h1 {
+    align-items: center;
+    margin-left: 50%;
+    font-size: 20px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Demonstrating switch case </title>
+    </head>
+    <body>
+        <script>
+            var a1 = prompt("Enter first value");
+            var a2 = prompt("Enter second value");
+            a1 = parseInt(a1);
+            a2 = parseInt(a2);
+
+            var userInput = prompt("choose an option add/sub/mul/div");
+            var result;
+
+            // if(userInput == "add") {
+            //     result = a1 + a2;
+            //     console.log("sum of values is " +result);
+            // } else if(userInput == "sub") {
+            //     result = a1 - a2;
+            //     console.log("Difference of values is " +result);
+            // } else if(userInput == "mul") {
+            //     result = a1 * a2;
+            //     console.log("product of values is " +result);
+            // } else if(userInput == "div") {
+            //     result = a1 / a2;
+            //     console.log("division of values is " +result);
+            // }
+            // else {
+            //     console.log("choosen wrong option");
+            // }
+
+            switch(userInput) {
+                
+                case "add":
+                    result = a1 + a2;
+                    console.log("The sum of values is " +result);
+                    break;
+
+                case "sub":
+                    result = a1 - a2;
+                    console.log("The difference of value is " +result);
+                    break;
+
+                case "mul":
+                    result = a1 * a2;
+                    console.log("the product of value is " +result);
+                    break;
+                case "div":
+                    result = a1 / a2;
+                    console.log("The division of value is " +result);
+                    break;
+                default:
+                    console.log("wrong option choosen");
+                    break;
+
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Img Sprinting  </title>
+    <style>
+        h3{
+            border: 2px solid ;
+            padding:5px;
+            margin: 5px;
+            text-align: center;
+            background-color: rgb(253, 192, 79);
+        }
+        .container{
+            border: 2px solid;
+            padding: 5px;
+            list-style: none;
+            margin: 10px;
+        }
+        /* img{
+            width: 120px;
+            height: 120px;
+        } */
+        .imgContainer{
+            background-image: url("Img_Spriting_student_detail.png");
+            width: 120px;
+            height: 120px;
+            border: solid 1px;
+        }
+        .e1{
+            background-position: -175px 1px;
+        }
+        .e2{
+            background-position: -378px -6px;
+        }
+        .e3{
+            background-position: -571px 1px;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>Student Detail</h3>
+    <ul>
+        <li class="container">
+                <div class="imgContainer"></div>
+                <div> Name : Rohit</div>
+                <div>  Age : 25 </div>
+                <div> Address : Nagpur</div>
+            
+        </li>
+        <li class="container">
+            <div class="imgContainer e1"></div>
+            <div> Name : Rohit</div>
+            <div>  Age : 25 </div>
+            <div> Address : Nagpur</div>
+        
+    </li>
+    <li class="container">
+        <div class="imgContainer e2"></div>
+        <div> Name : Rohit</div>
+        <div>  Age : 25 </div>
+        <div> Address : Nagpur</div>
+    
+    </li>
+     <li class="container">
+        <div class="imgContainer e3"></div>
+        <div> Name : Rohit</div>
+        <div>  Age : 25 </div>
+     <div> Address : Nagpur</div>
+
+    </li>
+    </ul>
+</body>
+</html>

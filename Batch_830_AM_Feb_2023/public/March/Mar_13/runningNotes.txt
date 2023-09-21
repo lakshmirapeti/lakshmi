@@ -1,0 +1,10 @@
+background images:
+
+    background: url 
+    background-image - url 
+    background-color
+
+    background: color / imge 
+
+
+    image spriting
