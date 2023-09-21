@@ -1,7 +1,0 @@
-Exploring more tags :
-    a - anchor tag
-    img 
-
-    <a href="... link to the external webpag to be linked">
-            TEXT
-        </a>

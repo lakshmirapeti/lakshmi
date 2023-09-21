@@ -1,8 +1,0 @@
-for, while, do while, for in 
-
-forEach
-
-for of - Set, map
--------------
-
-Arrow Functions:

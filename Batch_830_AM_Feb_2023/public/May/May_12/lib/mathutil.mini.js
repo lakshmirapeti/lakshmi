@@ -1,1 +1,0 @@
-var getAddition=(r,t)=>{return r+t},getMultiplication=(r,t)=>{return r*t},getDivision=(r,t)=>{return r/t},getSubstraction=(r,t)=>{return r-t};

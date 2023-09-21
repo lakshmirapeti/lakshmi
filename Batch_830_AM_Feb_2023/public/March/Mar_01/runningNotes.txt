@@ -1,3 +1,0 @@
-Debugging Tool:
-
-CRUD - live page changes can be done 
